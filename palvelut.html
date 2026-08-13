@@ -50,8 +50,8 @@
   }
   .brand { font-family:'Montserrat',sans-serif; font-weight:800; font-size:1.15rem; color:var(--ink); letter-spacing:0.5px; }
   .brand span { font-weight:500; color: var(--gris); }
-  .brand-logo { height: 34px; width: auto; display: block; }
-  footer .brand-logo { height: 26px; }
+  .brand-logo { height: 56px; width: auto; display: block; }
+  footer .brand-logo { height: 40px; }
   .topbar-right { display:flex; align-items:center; gap:22px; }
   .topbar-meta {
     font-family:'Montserrat',sans-serif;
@@ -85,6 +85,14 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 16px;
+    position: relative;
+  }
+  @media (min-width: 1101px) {
+    .nav-tabs {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
   .nav-tabs { display: flex; gap: 0; flex-wrap: nowrap; white-space: nowrap; }
   .nav-tab {
@@ -550,6 +558,10 @@
   @media (max-width:720px) {
     .hamburger-btn { display: flex; }
   }
+  @media (orientation: portrait) {
+    .nav-tabs { display: none; }
+    .hamburger-btn { display: flex; }
+  }
 </style>
 <script type="application/ld+json">
 {
@@ -635,7 +647,7 @@
 </div>
 
 <div class="nav-row">
-  <img src="images/logo.svg" alt="MERCONSULT" class="brand-logo">
+  <a href="index.html" aria-label="MERCONSULT"><img src="images/logo.svg" alt="MERCONSULT" class="brand-logo"></a>
   <div class="nav-tabs">
     <a class="nav-tab" href="index.html">Etusivu</a>
     <a class="nav-tab active" href="palvelut.html">Palvelut</a>
@@ -672,7 +684,7 @@
       </div>
       <p class="pkg-desc">Pikaselvitys Mercosur-sopimuksen vaikutuksista liiketoimintaanne — nyt, siirtymäaikana ja sen jälkeen. Selvitys antaa nopeasti ja taloudellisesti selkeän kuvan riskeistä ja mahdollisuuksista juuri teidän toimialallanne. Toimitus 5–8 sivun raporttina.</p>
       <div class="pkg-meta">Toimitusaika n. 2 viikkoa</div>
-      <a class="pkg-btn pkg-btn-fill" href="yhteystiedot.html">Ota yhteytt&auml; &rarr;</a>
+      <a class="pkg-btn pkg-btn-fill" href="yhteystiedot.html?aihe=Pikaselvitys">Ota yhteytt&auml; &rarr;</a>
     </div>
 
     <div class="pkg-card">
@@ -685,7 +697,7 @@
       </div>
       <p class="pkg-desc">Kattava strateginen suunnitelma markkinoille etabloitumiseksi sekä realistinen markkinoilletuloprojektin budjetointi. Kartoitamme tullietuudet, zona francas -mahdollisuudet, optimaaliset yritysmuodot sekä sopimusrakenteet, ja laskemme tarkat kustannusarviot suunnitelman läpiviennille. Tämä palvelu keskittyy strategian ja taloudellisen raamin luomiseen erillään käytännön toteutuksesta, varmistaen vakaan ja ennakoitavan pohjan laajentumiselle.</p>
       <div class="pkg-meta">Kesto 4–8 viikkoa</div>
-      <a class="pkg-btn" href="yhteystiedot.html">Ota yhteytt&auml; &rarr;</a>
+      <a class="pkg-btn" href="yhteystiedot.html?aihe=Markkinoilletulostrategia">Ota yhteytt&auml; &rarr;</a>
     </div>
 
     <div class="pkg-card">
@@ -697,7 +709,7 @@
         </div>
       </div>
       <p class="pkg-desc">Kun strategia on valmis, viemme sen käytäntöön. Hoidamme kumppani- ja jakelijahaun, logistiikkaketjujen suunnittelun, paikallisen byrokratian selättämisen sekä sopimusneuvottelut puolestanne suoraan paikan päällä.</p>
-      <a class="pkg-btn" href="yhteystiedot.html">Ota yhteytt&auml; &rarr;</a>
+      <a class="pkg-btn" href="yhteystiedot.html?aihe=K%C3%A4yt%C3%A4nn%C3%B6n%20markkinoilletulo%20ja%20toteutus">Ota yhteytt&auml; &rarr;</a>
     </div>
 
     <div class="pkg-card">
@@ -709,7 +721,7 @@
         </div>
       </div>
       <p class="pkg-desc">Kohdemarkkinan avointen lähteiden tiedustelu (OSINT) sekä fyysisesti paikan päällä tapahtuva kartoitus. Selvitämme esimerkiksi kuluttajatuotteiden saatavuuden sekä kilpailutilanteen paikallisesti ja toimitamme tuloksista kattavan raportin.</p>
-      <a class="pkg-btn" href="yhteystiedot.html">Ota yhteytt&auml; &rarr;</a>
+      <a class="pkg-btn" href="yhteystiedot.html?aihe=Markkinatiedustelu%20ja%20kentt%C3%A4tutkimus">Ota yhteytt&auml; &rarr;</a>
     </div>
 
     <div class="pkg-card">
@@ -722,7 +734,7 @@
       </div>
       <p class="pkg-desc">Jatkuvaa tukea yritykselle, joka on jo aloittanut toiminnan alueella. Palvelu kattaa kiintiöiden seurannan, uusien tuoteryhmien tuonnin suunnittelun, ongelmatilanteiden ratkaisun tullissa sekä käytännön asioinnin tuen.</p>
       <div class="pkg-meta">Sopimus kuukausittain irtisanottavissa</div>
-      <a class="pkg-btn" href="yhteystiedot.html">Ota yhteytt&auml; &rarr;</a>
+      <a class="pkg-btn" href="yhteystiedot.html?aihe=Jatkuva%20neuvonantajarooli">Ota yhteytt&auml; &rarr;</a>
     </div>
 
     <div class="pkg-card">
@@ -734,7 +746,7 @@
         </div>
       </div>
       <p class="pkg-desc">Toteutamme monipuolisesti erilaisia vaativia erikoistoimeksiantoja täysin yrityksenne yksilöllisten tarpeiden ja tilanteen pohjalta suunniteltuna.</p>
-      <a class="pkg-btn" href="yhteystiedot.html">Ota yhteytt&auml; &rarr;</a>
+      <a class="pkg-btn" href="yhteystiedot.html?aihe=R%C3%A4%C3%A4t%C3%A4l%C3%B6idyt%20erikoistoimeksiannot">Ota yhteytt&auml; &rarr;</a>
     </div>
 
   </div>
@@ -755,7 +767,7 @@
 </main>
 
 <footer>
-  <img src="images/logo.svg" alt="MERCONSULT" class="brand-logo">
+  <a href="index.html" aria-label="MERCONSULT"><img src="/favicon.svg" alt="MERCONSULT" class="brand-logo"></a>
   <div style="font-family:'Lora',serif; font-style:italic; color:#9A9A9A; font-size:0.85rem;">© 2026 MERCONSULT · Industria Nordica Oy</div>
 </footer>
 

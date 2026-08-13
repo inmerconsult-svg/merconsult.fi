@@ -50,8 +50,8 @@
   }
   .brand { font-family:'Montserrat',sans-serif; font-weight:800; font-size:1.15rem; color:var(--ink); letter-spacing:0.5px; }
   .brand span { font-weight:500; color: var(--gris); }
-  .brand-logo { height: 34px; width: auto; display: block; }
-  footer .brand-logo { height: 26px; }
+  .brand-logo { height: 56px; width: auto; display: block; }
+  footer .brand-logo { height: 40px; }
   .topbar-right { display:flex; align-items:center; gap:22px; }
   .topbar-meta {
     font-family:'Montserrat',sans-serif;
@@ -85,6 +85,14 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 16px;
+    position: relative;
+  }
+  @media (min-width: 1101px) {
+    .nav-tabs {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
   .nav-tabs { display: flex; gap: 0; flex-wrap: nowrap; white-space: nowrap; }
   .nav-tab {
@@ -549,6 +557,10 @@
   @media (max-width:720px) {
     .hamburger-btn { display: flex; }
   }
+  @media (orientation: portrait) {
+    .nav-tabs { display: none; }
+    .hamburger-btn { display: flex; }
+  }
 </style>
 <script type="application/ld+json">
 {
@@ -634,7 +646,7 @@
 </div>
 
 <div class="nav-row">
-  <img src="../images/logo.svg" alt="MERCONSULT" class="brand-logo">
+  <a href="index.html" aria-label="MERCONSULT"><img src="../images/logo.svg" alt="MERCONSULT" class="brand-logo"></a>
   <div class="nav-tabs">
     <a class="nav-tab" href="index.html">Início</a>
     <a class="nav-tab active" href="palvelut.html">Serviços</a>
@@ -671,7 +683,7 @@
       </div>
       <p class="pkg-desc">Uma avaliação rápida do impacto do acordo Mercosul nos seus negócios — agora, durante o período de transição e no futuro. A avaliação fornece, de forma rápida e económica, uma visão clara dos riscos e oportunidades especificamente no seu setor. Entrega num relatório de 5 a 8 páginas.</p>
       <div class="pkg-meta">Prazo de entrega aprox. 2 semanas</div>
-      <a class="pkg-btn pkg-btn-fill" href="yhteystiedot.html">Contacto &rarr;</a>
+      <a class="pkg-btn pkg-btn-fill" href="yhteystiedot.html?aihe=Avalia%C3%A7%C3%A3o%20R%C3%A1pida">Contacto &rarr;</a>
     </div>
 
     <div class="pkg-card">
@@ -684,7 +696,7 @@
       </div>
       <p class="pkg-desc">Um plano estratégico abrangente para o estabelecimento no mercado, juntamente com um orçamento realista para o projeto de entrada. Mapeamos as preferências tarifárias, oportunidades em zonas francas, estruturas corporativas ideais e quadros de contratos, calculando estimativas de custos precisas para a execução do plano. Este serviço foca-se na criação da estratégia e do quadro financeiro separadamente da implementação prática, garantindo uma base estável e previsível para a expansão.</p>
       <div class="pkg-meta">Duração 4–8 semanas</div>
-      <a class="pkg-btn" href="yhteystiedot.html">Contacto &rarr;</a>
+      <a class="pkg-btn" href="yhteystiedot.html?aihe=Estrat%C3%A9gia%20de%20Entrada%20no%20Mercado">Contacto &rarr;</a>
     </div>
 
     <div class="pkg-card">
@@ -696,7 +708,7 @@
         </div>
       </div>
       <p class="pkg-desc">Assim que a estratégia estiver pronta, colocamo-la em prática. Tratamos da procura de parceiros e distribuidores, planeamento das cadeias logísticas, superação da burocracia local e negociação de contratos em seu nome, diretamente no local.</p>
-      <a class="pkg-btn" href="yhteystiedot.html">Contacto &rarr;</a>
+      <a class="pkg-btn" href="yhteystiedot.html?aihe=Entrada%20no%20Mercado%20e%20Execu%C3%A7%C3%A3o%20Pr%C3%A1tica">Contacto &rarr;</a>
     </div>
 
     <div class="pkg-card">
@@ -708,7 +720,7 @@
         </div>
       </div>
       <p class="pkg-desc">Inteligência de fontes abertas (OSINT) no mercado-alvo e mapeamento físico presencial. Por exemplo, investigamos a disponibilidade de produtos de consumo e o cenário competitivo a nível local, entregando um relatório abrangente com os resultados.</p>
-      <a class="pkg-btn" href="yhteystiedot.html">Contacto &rarr;</a>
+      <a class="pkg-btn" href="yhteystiedot.html?aihe=Intelig%C3%AAncia%20de%20Mercado%20e%20Pesquisa%20de%20Campo">Contacto &rarr;</a>
     </div>
 
     <div class="pkg-card">
@@ -721,7 +733,7 @@
       </div>
       <p class="pkg-desc">Apoio contínuo para empresas que já iniciaram operações na região. O serviço abrange a monitorização de quotas, planeamento da importação de novos grupos de produtos, resolução de problemas nas alfândegas e apoio prático nas transações diárias.</p>
       <div class="pkg-meta">Cancelável mensalmente</div>
-      <a class="pkg-btn" href="yhteystiedot.html">Contacto &rarr;</a>
+      <a class="pkg-btn" href="yhteystiedot.html?aihe=Papel%20de%20Consultoria%20Cont%C3%ADnua">Contacto &rarr;</a>
     </div>
 
     <div class="pkg-card">
@@ -733,7 +745,7 @@
         </div>
       </div>
       <p class="pkg-desc">Realizamos uma ampla variedade de missões especiais e exigentes, concebidas de forma totalmente personalizada, com base nas necessidades e na situação única da sua empresa.</p>
-      <a class="pkg-btn" href="yhteystiedot.html">Contacto &rarr;</a>
+      <a class="pkg-btn" href="yhteystiedot.html?aihe=Miss%C3%B5es%20Especiais%20Personalizadas">Contacto &rarr;</a>
     </div>
 
   </div>
@@ -754,7 +766,7 @@
 </main>
 
 <footer>
-  <img src="../images/logo.svg" alt="MERCONSULT" class="brand-logo">
+  <a href="index.html" aria-label="MERCONSULT"><img src="/favicon.svg" alt="MERCONSULT" class="brand-logo"></a>
   <div style="font-family:'Lora',serif; font-style:italic; color:#9A9A9A; font-size:0.85rem;">© 2026 MERCONSULT · Industria Nordica Oy</div>
 </footer>
 

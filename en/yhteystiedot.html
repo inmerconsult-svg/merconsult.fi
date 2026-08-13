@@ -50,8 +50,8 @@
   }
   .brand { font-family:'Montserrat',sans-serif; font-weight:800; font-size:1.15rem; color:var(--ink); letter-spacing:0.5px; }
   .brand span { font-weight:500; color: var(--gris); }
-  .brand-logo { height: 34px; width: auto; display: block; }
-  footer .brand-logo { height: 26px; }
+  .brand-logo { height: 56px; width: auto; display: block; }
+  footer .brand-logo { height: 40px; }
   .topbar-right { display:flex; align-items:center; gap:22px; }
   .topbar-meta {
     font-family:'Montserrat',sans-serif;
@@ -85,6 +85,14 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 16px;
+    position: relative;
+  }
+  @media (min-width: 1101px) {
+    .nav-tabs {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
   .nav-tabs { display: flex; gap: 0; flex-wrap: nowrap; white-space: nowrap; }
   .nav-tab {
@@ -515,6 +523,10 @@
   @media (max-width:720px) {
     .hamburger-btn { display: flex; }
   }
+  @media (orientation: portrait) {
+    .nav-tabs { display: none; }
+    .hamburger-btn { display: flex; }
+  }
 </style>
 <script type="application/ld+json">
 {
@@ -551,7 +563,7 @@
 </div>
 
 <div class="nav-row">
-  <img src="../images/logo.svg" alt="MERCONSULT" class="brand-logo">
+  <a href="index.html" aria-label="MERCONSULT"><img src="../images/logo.svg" alt="MERCONSULT" class="brand-logo"></a>
   <div class="nav-tabs">
     <a class="nav-tab" href="index.html">Home</a>
     <a class="nav-tab" href="palvelut.html">Services</a>
@@ -633,7 +645,7 @@
 </main>
 
 <footer>
-  <img src="../images/logo.svg" alt="MERCONSULT" class="brand-logo">
+  <a href="index.html" aria-label="MERCONSULT"><img src="/favicon.svg" alt="MERCONSULT" class="brand-logo"></a>
   <div style="font-family:'Lora',serif; font-style:italic; color:#9A9A9A; font-size:0.85rem;">© 2026 MERCONSULT · Industria Nordica Oy</div>
 </footer>
 
@@ -661,6 +673,18 @@
   if(!form) return;
   const submitBtn = form.querySelector('.form-submit-btn');
   const note = document.getElementById('cf-note');
+
+  /* Prefill message based on ?aihe= URL parameter (set by service buttons across the site) */
+  const params = new URLSearchParams(window.location.search);
+  const aihe = params.get('aihe');
+  const msgField = document.getElementById('cf-message');
+  if (msgField) {
+    if (aihe) {
+      msgField.value = 'Hi, I\'m interested in the following service: ' + aihe + '.';
+    } else {
+      msgField.value = 'Hi, I\'m interested in doing business in the Mercosur region.';
+    }
+  }
 
   form.addEventListener('submit', function(e){
     e.preventDefault();

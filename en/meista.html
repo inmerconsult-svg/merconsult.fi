@@ -50,8 +50,8 @@
   }
   .brand { font-family:'Montserrat',sans-serif; font-weight:800; font-size:1.15rem; color:var(--ink); letter-spacing:0.5px; }
   .brand span { font-weight:500; color: var(--gris); }
-  .brand-logo { height: 34px; width: auto; display: block; }
-  footer .brand-logo { height: 26px; }
+  .brand-logo { height: 56px; width: auto; display: block; }
+  footer .brand-logo { height: 40px; }
   .topbar-right { display:flex; align-items:center; gap:22px; }
   .topbar-meta {
     font-family:'Montserrat',sans-serif;
@@ -85,6 +85,14 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 16px;
+    position: relative;
+  }
+  @media (min-width: 1101px) {
+    .nav-tabs {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
   .nav-tabs { display: flex; gap: 0; flex-wrap: nowrap; white-space: nowrap; }
   .nav-tab {
@@ -418,8 +426,8 @@
     font-family:'Lora',serif; font-weight:600; font-size:1.3rem;
     color:var(--ink); margin:36px 0 14px;
   }
-  .about-text a { color:var(--ink); border-bottom:1px solid var(--gris-light); text-decoration:none; }
-  .about-text a:hover { border-bottom-color:var(--ink); }
+  .about-text p a { color:var(--ink); border-bottom:1px solid var(--gris-light); text-decoration:none; }
+  .about-text p a:hover { border-bottom-color:var(--ink); }
 
   .about-text p {
     font-family:'Lora',serif; font-size:1.05rem; color:var(--ink-soft);
@@ -444,8 +452,8 @@
   .partner-logo-item { text-align:center; }
   .partner-logo-card {
     background:#FFFFFF; border:1px solid var(--line);
-    padding:22px 26px; display:flex; align-items:center; justify-content:center;
-    width:220px; height:120px;
+    padding:20px 24px; display:flex; align-items:center; justify-content:center;
+    width:320px; height:180px;
   }
   .partner-logo-card img { max-width:100%; max-height:100%; height:auto; display:block; }
   /* ═══ BACKGROUND WATERMARK ═══ */
@@ -501,6 +509,10 @@
   @media (max-width:720px) {
     .hamburger-btn { display: flex; }
   }
+  @media (orientation: portrait) {
+    .nav-tabs { display: none; }
+    .hamburger-btn { display: flex; }
+  }
 </style>
 <script type="application/ld+json">
 {
@@ -540,7 +552,7 @@
 </div>
 
 <div class="nav-row">
-  <img src="../images/logo.svg" alt="MERCONSULT" class="brand-logo">
+  <a href="index.html" aria-label="MERCONSULT"><img src="../images/logo.svg" alt="MERCONSULT" class="brand-logo"></a>
   <div class="nav-tabs">
     <a class="nav-tab" href="index.html">Home</a>
     <a class="nav-tab" href="palvelut.html">Services</a>
@@ -576,10 +588,10 @@
 
     <div class="partner-logos">
       <div class="partner-logo-item">
-        <div class="partner-logo-card"><img src="../images/mercosur-logo.png" alt="Mercosur"></div>
+        <a class="partner-logo-card" href="https://www.mercosur.int/" target="_blank" rel="noopener"><img src="../images/mercosur-logo.png" alt="Mercosur"></a>
       </div>
       <div class="partner-logo-item">
-        <div class="partner-logo-card"><img src="../images/finlac-logo.jpg" alt="Finnish-Latin American Business Council"></div>
+        <a class="partner-logo-card" href="https://kauppayhdistys.fi/suomalais-latinalaisamerikkalainen-kauppayhdistys/" target="_blank" rel="noopener"><img src="../images/finlac-logo.jpg" alt="Finnish-Latin American Business Council"></a>
       </div>
     </div>
 
@@ -591,7 +603,7 @@
 </main>
 
 <footer>
-  <img src="../images/logo.svg" alt="MERCONSULT" class="brand-logo">
+  <a href="index.html" aria-label="MERCONSULT"><img src="/favicon.svg" alt="MERCONSULT" class="brand-logo"></a>
   <div style="font-family:'Lora',serif; font-style:italic; color:#9A9A9A; font-size:0.85rem;">© 2026 MERCONSULT · Industria Nordica Oy</div>
 </footer>
 
