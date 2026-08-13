@@ -77,6 +77,9 @@
     padding: 5px 8px;
     cursor: pointer;
     transition: color .15s;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
   }
   .lang-btn:hover { color: var(--ink-soft); }
   .lang-btn.active { color: var(--ink); text-decoration: underline; text-underline-offset: 4px; }
@@ -452,6 +455,7 @@
     display:flex; justify-content:space-between; align-items:flex-start;
     gap:24px; flex-wrap:wrap; margin-bottom:18px;
   }
+  .pkg-icon { flex-shrink:0; opacity:0.85; }
   .pkg-num {
     font-family:'Lora',serif; font-style:italic; font-size:0.85rem;
     color:var(--gris-light); margin-bottom:6px;
@@ -643,10 +647,10 @@
 
 <div class="topbar" style="justify-content:flex-end;">
   <div class="lang-switch">
-    <a class="lang-btn" href="../palvelut.html">FI</a>
-    <a class="lang-btn" href="../en/palvelut.html">EN</a>
-    <a class="lang-btn active" href="palvelut.html">ES</a>
-      <a class="lang-btn" href="../pt/palvelut.html">PT</a>
+    <a class="lang-btn" href="../palvelut.html"><svg width="16" height="12" viewBox="0 0 18 13" style="flex-shrink:0;"><rect width="18" height="13" fill="#FFFFFF"/><rect x="6" width="3" height="13" fill="#002F6C"/><rect y="5" width="18" height="3" fill="#002F6C"/></svg>FI</a>
+    <a class="lang-btn" href="../en/palvelut.html"><svg width="16" height="12" viewBox="0 0 18 13" style="flex-shrink:0;"><rect width="18" height="13" fill="#012169"/><path d="M0,0 L18,13 M18,0 L0,13" stroke="#FFF" stroke-width="2.6"/><path d="M0,0 L18,13 M18,0 L0,13" stroke="#C8102E" stroke-width="1.3"/><rect x="7.5" width="3" height="13" fill="#FFF"/><rect y="5" width="18" height="3" fill="#FFF"/><rect x="8" width="2" height="13" fill="#C8102E"/><rect y="5.5" width="18" height="2" fill="#C8102E"/></svg>EN</a>
+    <a class="lang-btn active" href="palvelut.html"><svg width="16" height="12" viewBox="0 0 18 13" style="flex-shrink:0;"><rect width="18" height="13" fill="#AA151B"/><rect y="3.25" width="18" height="6.5" fill="#F1BF00"/></svg>ES</a>
+      <a class="lang-btn" href="../pt/palvelut.html"><svg width="16" height="12" viewBox="0 0 18 13" style="flex-shrink:0;"><rect width="18" height="13" fill="#FF0000"/><rect width="7" height="13" fill="#046A38"/><circle cx="7" cy="6.5" r="2.3" fill="#FFCC00" stroke="#FFF" stroke-width="0.4"/></svg>PT</a>
   </div>
 </div>
 
@@ -684,6 +688,7 @@
           <div class="pkg-num">01</div>
           <h3>Evaluación Rápida</h3>
           <div class="pkg-sub">Análisis de Impacto Mercosur</div>
+      <div class="pkg-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0A0A0A" stroke-width="1.4"><circle cx="10" cy="10" r="6.5"/><line x1="15" y1="15" x2="21" y2="21"/></svg></div>
         </div>
       </div>
       <p class="pkg-desc">Una evaluación rápida del impacto del acuerdo Mercosur en su negocio: ahora, durante el período de transición y en el futuro. La evaluación proporciona de manera rápida y económica una visión clara de los riesgos y oportunidades específicos en su sector. Entrega en formato de informe de 5 a 8 páginas.</p>
@@ -697,6 +702,7 @@
           <div class="pkg-num">02</div>
           <h3>Estrategia de Entrada al Mercado</h3>
           <div class="pkg-sub">Plan Integral y Presupuesto para el Mercado LATAM</div>
+      <div class="pkg-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0A0A0A" stroke-width="1.4"><circle cx="12" cy="12" r="9.5"/><path d="M12,7 L14.5,12 L12,17 L9.5,12 Z" fill="#0A0A0A" stroke="none"/></svg></div>
         </div>
       </div>
       <p class="pkg-desc">Un plan estratégico integral para establecerse en el mercado, junto con un presupuesto realista para el proyecto de entrada. Analizamos las preferencias arancelarias, oportunidades de zonas francas, estructuras corporativas óptimas y marcos contractuales, calculando estimaciones de costos precisas para la ejecución del plan. Este servicio se centra en crear la estrategia y el marco financiero de forma independiente a la implementación práctica, asegurando una base estable y predecible para la expansión.</p>
@@ -710,6 +716,7 @@
           <div class="pkg-num">03</div>
           <h3>Entrada al Mercado y Ejecución Práctica</h3>
           <div class="pkg-sub">De la Estrategia a la Acción Concreta</div>
+      <div class="pkg-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0A0A0A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="19" y2="12"/><polyline points="14,7 19,12 14,17"/></svg></div>
         </div>
       </div>
       <p class="pkg-desc">Una vez que la estrategia está lista, la llevamos a la práctica. Nos encargamos de la búsqueda de socios y distribuidores, la planificación de cadenas logísticas, la superación de la burocracia local y la negociación de contratos en su nombre, directamente en el lugar.</p>
@@ -722,6 +729,7 @@
           <div class="pkg-num">04</div>
           <h3>Inteligencia de Mercado e Investigación de Campo</h3>
           <div class="pkg-sub">Conocimiento Basado en Datos para la Toma de Decisiones</div>
+      <div class="pkg-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0A0A0A" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1" fill="#0A0A0A" stroke="none"/></svg></div>
         </div>
       </div>
       <p class="pkg-desc">Inteligencia de fuentes abiertas (OSINT) en el mercado objetivo y mapeo físico in situ. Por ejemplo, investigamos la disponibilidad de productos de consumo y el panorama competitivo a nivel local, entregando un informe exhaustivo con los resultados.</p>
@@ -734,6 +742,7 @@
           <div class="pkg-num">05</div>
           <h3>Rol de Asesoría Continua</h3>
           <div class="pkg-sub">Soporte Mensual de Nuestros Expertos</div>
+      <div class="pkg-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0A0A0A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4,7 a8,8 0 1,1 -0.9,7"/><polyline points="2.5,10 4,7 7,8.5"/></svg></div>
         </div>
       </div>
       <p class="pkg-desc">Apoyo continuo para empresas que ya han iniciado operaciones en la región. El servicio cubre el monitoreo de cuotas, la planificación de la importación de nuevos grupos de productos, la resolución de problemas en aduanas y el apoyo práctico en gestiones diarias.</p>
@@ -747,6 +756,7 @@
           <div class="pkg-num">06</div>
           <h3>Encargos Especiales Personalizados</h3>
           <div class="pkg-sub">Soluciones Flexibles Según sus Necesidades</div>
+      <div class="pkg-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0A0A0A" stroke-width="1.4" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><circle cx="14" cy="7" r="1.8" fill="#FCFAF6"/><line x1="4" y1="12" x2="20" y2="12"/><circle cx="9" cy="12" r="1.8" fill="#FCFAF6"/><line x1="4" y1="17" x2="20" y2="17"/><circle cx="16" cy="17" r="1.8" fill="#FCFAF6"/></svg></div>
         </div>
       </div>
       <p class="pkg-desc">Realizamos una amplia variedad de encargos especiales y exigentes, diseñados íntegramente en base a las necesidades y a la situación única de su empresa.</p>
