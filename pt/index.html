@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<title>MERCONSULT – Ferramenta de análise tarifária UE-Mercosul</title>
+<meta name="description" content="Ferramenta gratuita de análise tarifária do acordo UE-Mercosul. Consulte o calendário de redução tarifária da sua categoria de produto.">
+<link rel="canonical" href="https://www.merconsult.fi/pt/">
+<link rel="alternate" hreflang="fi" href="https://www.merconsult.fi/">
+<link rel="alternate" hreflang="en" href="https://www.merconsult.fi/en/">
+<link rel="alternate" hreflang="es" href="https://www.merconsult.fi/es/">
+<link rel="alternate" hreflang="pt" href="https://www.merconsult.fi/pt/">
+<link rel="alternate" hreflang="x-default" href="https://www.merconsult.fi/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MERCONSULT">
+<meta property="og:title" content="MERCONSULT – Ferramenta de análise tarifária UE-Mercosul">
+<meta property="og:description" content="Ferramenta gratuita de análise tarifária do acordo UE-Mercosul. Consulte o calendário de redução tarifária da sua categoria de produto.">
+<meta property="og:url" content="https://www.merconsult.fi/pt/">
+<meta property="og:locale" content="pt_PT">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MERCONSULT – Ferramenta de análise tarifária UE-Mercosul">
+<meta name="twitter:description" content="Ferramenta gratuita de análise tarifária do acordo UE-Mercosul. Consulte o calendário de redução tarifária da sua categoria de produto.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0A0A0A;
+    --ink-soft: #333333;
+    --gris: #6E6E6E;
+    --gris-light: #9A9A9A;
+    --line: #D8D4CC;
+    --line-soft: #ECE8E0;
+    --paper: #FCFAF6;
+    --off: #F5F1E9;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Lora',serif; background:var(--paper); color:var(--ink); }
+
+  /* ═══ TOP BAR ═══ */
+  .topbar {
+    border-bottom: 1px solid var(--line);
+    padding: 10px 48px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+  .brand { font-family:'Montserrat',sans-serif; font-weight:800; font-size:1.15rem; color:var(--ink); letter-spacing:0.5px; }
+  .brand span { font-weight:500; color: var(--gris); }
+  .brand-logo { height: 34px; width: auto; display: block; }
+  footer .brand-logo { height: 26px; }
+  .topbar-right { display:flex; align-items:center; gap:22px; }
+  .topbar-meta {
+    font-family:'Montserrat',sans-serif;
+    font-size:0.7rem;
+    letter-spacing:1.2px;
+    text-transform:uppercase;
+    color: var(--gris-light);
+  }
+  .lang-switch { display:flex; gap:2px; }
+  .lang-btn {
+    font-family:'Montserrat',sans-serif;
+    font-size:0.72rem;
+    font-weight:700;
+    letter-spacing:0.5px;
+    color: var(--gris-light);
+    background: transparent;
+    border: none;
+    text-decoration: none;
+    padding: 5px 8px;
+    cursor: pointer;
+    transition: color .15s;
+  }
+  .lang-btn:hover { color: var(--ink-soft); }
+  .lang-btn.active { color: var(--ink); text-decoration: underline; text-underline-offset: 4px; }
+
+  /* ═══ SITE NAV ═══ */
+  .nav-row {
+    padding: 22px 48px;
+    border-bottom: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .nav-tabs { display: flex; gap: 0; flex-wrap: nowrap; white-space: nowrap; }
+  .nav-tab {
+    font-family:'Montserrat',sans-serif;
+    font-size: 0.84rem;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    color: var(--gris);
+    text-decoration: none;
+    padding: 4px 18px;
+    border-right: 1px solid var(--line);
+    transition: color .15s;
+  }
+  .nav-tab:first-child { padding-left: 0; }
+  .nav-tab:last-child { border-right: none; }
+  .nav-tab.active { color: var(--ink); text-decoration: underline; text-underline-offset: 5px; }
+  .nav-tab:hover { color: var(--ink-soft); }
+
+  /* ═══ HERO ═══ */
+  .hero {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 72px 48px 56px;
+    border-bottom: 1px solid var(--line);
+  }
+  .eyebrow {
+    font-family:'Montserrat',sans-serif;
+    font-size:0.72rem;
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color: var(--gris);
+    margin-bottom:22px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+  }
+  .eyebrow::before { content:''; width:28px; height:1px; background:var(--ink); display:inline-block; }
+
+  h1 {
+    font-family:'Lora',serif;
+    font-weight:600;
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: var(--ink);
+    max-width: 780px;
+    line-height:1.28;
+    margin-bottom: 22px;
+    letter-spacing: -0.3px;
+  }
+  h1 em { font-style:italic; font-weight:500; }
+
+  .sub {
+    font-family:'Lora',serif;
+    color: var(--gris);
+    max-width:600px;
+    font-size:1.08rem;
+    line-height:1.75;
+  }
+
+  .hero-pitch {
+    font-family:'Lora',serif;
+    color: var(--ink-soft);
+    max-width:680px;
+    font-size:1.05rem;
+    line-height:1.75;
+    margin-top:22px;
+  }
+
+  /* ═══ SEARCH ═══ */
+  .search-section {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 44px 48px 40px;
+    border-bottom: 1px solid var(--line);
+  }
+  .search-label {
+    font-family:'Montserrat',sans-serif;
+    font-size:0.7rem;
+    font-weight:700;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    color: var(--gris);
+    margin-bottom: 14px;
+  }
+  .search-box {
+    display: flex;
+    gap: 0;
+    border-bottom: 2px solid var(--ink);
+  }
+  .search-box input {
+    flex:1;
+    border:none;
+    outline:none;
+    font-size: 1.15rem;
+    font-family:'Lora',serif;
+    font-style: italic;
+    padding: 14px 4px;
+    color: var(--ink);
+    background:transparent;
+  }
+  .search-box input::placeholder { color:#B8B8B4; }
+  .search-btn {
+    background: transparent;
+    color: var(--ink);
+    border:none;
+    padding: 0 8px;
+    font-family:'Montserrat',sans-serif;
+    font-weight:700;
+    font-size:0.85rem;
+    letter-spacing:0.8px;
+    text-transform:uppercase;
+    cursor:pointer;
+    white-space:nowrap;
+    transition: opacity .2s;
+  }
+  .search-btn:hover { opacity:0.55; }
+
+  .chips {
+    display:flex; gap:0; flex-wrap:wrap;
+    margin-top: 24px;
+  }
+  .chip {
+    background: transparent;
+    border:none;
+    border-right: 1px solid var(--line);
+    color: var(--ink-soft);
+    font-family:'Montserrat',sans-serif;
+    font-size:0.76rem;
+    font-weight:600;
+    letter-spacing:0.4px;
+    padding: 4px 18px;
+    cursor:pointer;
+    transition: color .15s;
+  }
+  .chip:first-child { padding-left:0; }
+  .chip:last-child { border-right:none; }
+  .chip:hover { color: var(--gris-light); text-decoration: underline; text-underline-offset:4px; }
+
+  /* ═══ ORIGIN SELECTOR ═══ */
+  .origin-bar {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 18px 48px;
+    border-bottom: 1px solid var(--line);
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+  .origin-question {
+    font-family:'Montserrat',sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: var(--gris);
+  }
+  .origin-buttons { display:flex; gap:0; }
+  .origin-btn {
+    font-family:'Montserrat',sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--gris-light);
+    background: transparent;
+    border: none;
+    border-right: 1px solid var(--line);
+    padding: 4px 14px;
+    cursor: pointer;
+    transition: color .15s;
+  }
+  .origin-btn:last-child { border-right: none; }
+  .origin-btn.active { color: var(--ink); text-decoration: underline; text-underline-offset: 4px; }
+  .origin-btn:hover { color: var(--ink-soft); }
+
+  #originPanel { max-width: 1040px; margin: 0 auto; padding: 0 48px; }
+  .origin-panel-box {
+    border-left: 3px solid var(--ink);
+    background: var(--off);
+    padding: 22px 26px;
+    margin: 28px 0 0;
+  }
+  .origin-panel-title {
+    font-family:'Montserrat',sans-serif;
+    font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 1px; color: var(--ink); margin-bottom: 10px;
+  }
+  .origin-panel-text { font-family:'Lora',serif; font-size: 0.96rem; color: var(--ink-soft); line-height: 1.75; }
+
+  /* ═══ MAIN ═══ */
+  main { max-width: 1040px; margin: 0 auto; padding: 56px 48px 120px; }
+
+  #resultado { min-height: 60px; }
+
+  .placeholder {
+    color: var(--gris-light);
+    padding: 50px 0;
+    font-size:1rem;
+    font-style: italic;
+    border-left: 2px solid var(--line-soft);
+    padding-left: 24px;
+  }
+
+  /* ═══ RESULT CARD ═══ */
+  .result-header {
+    display:flex; justify-content:space-between; align-items:flex-end; gap:20px;
+    margin-bottom:36px; flex-wrap:wrap;
+    border-bottom: 1px solid var(--ink);
+    padding-bottom: 20px;
+  }
+  .result-eyebrow {
+    font-family:'Montserrat',sans-serif; font-size:0.68rem; font-weight:700;
+    letter-spacing:1.5px; text-transform:uppercase; color:var(--gris-light); margin-bottom:8px;
+  }
+  .result-title { font-family:'Lora',serif; font-weight:600; font-size:1.9rem; color:var(--ink); line-height:1.25; }
+  .hs-badge {
+    font-family:'Montserrat',sans-serif;
+    font-size:0.75rem;
+    font-weight:700;
+    letter-spacing:0.8px;
+    color: var(--gris);
+    border: 1px solid var(--line);
+    padding:7px 14px;
+    white-space:nowrap;
+  }
+
+  .metric-row {
+    display:grid; grid-template-columns: repeat(3,1fr);
+    margin-bottom:40px;
+    border-top: 1px solid var(--line);
+  }
+  .metric {
+    padding: 22px 24px 22px 0;
+    border-right: 1px solid var(--line);
+  }
+  .metric:last-child { border-right:none; }
+  .metric:nth-child(2) { padding-left:24px; }
+  .metric:nth-child(3) { padding-left:24px; }
+  .metric-label {
+    font-family:'Montserrat',sans-serif; font-size:0.68rem; text-transform:uppercase;
+    letter-spacing:1px; color:var(--gris-light); font-weight:700; margin-bottom:10px;
+  }
+  .metric-value { font-family:'Lora',serif; font-size:1.45rem; font-weight:600; color:var(--ink); }
+  .metric-value.accent { border-bottom: 2px solid var(--ink); display:inline-block; padding-bottom:2px; }
+
+  .timeline {
+    border-top: 1px solid var(--ink);
+    border-bottom: 1px solid var(--ink);
+    padding: 26px 0;
+    margin-bottom: 36px;
+  }
+  .timeline-label {
+    font-family:'Montserrat',sans-serif; font-size:0.7rem; text-transform:uppercase;
+    letter-spacing:1.5px; color:var(--gris); font-weight:700; margin-bottom:16px;
+  }
+  .timeline-bar { height:2px; background:var(--line); position:relative; margin-bottom:14px; }
+  .timeline-fill { height:100%; background: var(--ink); position:relative; }
+  .timeline-fill::after {
+    content:''; position:absolute; right:0; top:-3px;
+    width:8px; height:8px; background:var(--ink); border-radius:50%;
+  }
+  .timeline-text { font-family:'Lora',serif; font-size:1rem; color:var(--ink-soft); line-height:1.6; font-style:italic; }
+
+  .notes {
+    font-family:'Lora',serif; font-size:1.02rem; color: var(--ink-soft);
+    line-height:1.85; margin-bottom:28px;
+  }
+
+  .risk-block {
+    padding: 20px 0 20px 24px;
+    margin-bottom: 36px;
+  }
+  .risk-block.bajo { border-left: 2px solid var(--ink); }
+  .risk-block.medio { border-left: 2px dashed var(--ink); }
+  .risk-block.alto { border-left: 4px solid var(--ink); }
+  .risk-label {
+    font-family:'Montserrat',sans-serif; font-size:0.72rem; font-weight:700;
+    letter-spacing:1px; text-transform:uppercase; color:var(--ink); margin-bottom:8px;
+  }
+  .risk-text { font-family:'Lora',serif; font-size:0.98rem; color:var(--gris); line-height:1.7; }
+
+  .cta-box {
+    border: 1px solid var(--ink);
+    padding: 32px 36px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:28px;
+    flex-wrap:wrap;
+  }
+  .cta-text { font-family:'Lora',serif; font-size:0.98rem; color: var(--ink-soft); line-height:1.6; max-width:420px; }
+  .cta-btn {
+    background: var(--ink);
+    color:#fff;
+    border:none;
+    display:inline-block;
+    text-decoration:none;
+    padding:15px 32px;
+    font-family:'Montserrat',sans-serif;
+    font-weight:700;
+    font-size:0.82rem;
+    letter-spacing:0.6px;
+    text-transform:uppercase;
+    cursor:pointer;
+    white-space:nowrap;
+    transition: opacity .2s;
+  }
+  .cta-btn:hover { opacity:0.78; }
+
+  /* ═══ EMPTY STATE ═══ */
+  .empty-title { font-family:'Lora',serif; font-size:1.5rem; color:var(--ink); margin-bottom:16px; font-style:italic; }
+  .empty-text { font-family:'Lora',serif; color:var(--gris); font-size:1rem; max-width:480px; margin-bottom:28px; line-height:1.75; }
+
+  /* ═══ FOOTER ═══ */
+  footer {
+    border-top: 1px solid var(--line);
+    padding: 32px 48px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:12px;
+  }
+  footer .brand { font-size: 0.95rem; }
+  #footNote {
+    font-family:'Lora',serif; font-style:italic; color:var(--gris-light); font-size:0.85rem;
+  }
+
+  @media (max-width:720px) {
+    .topbar, .nav-row, .hero, .search-section, main, footer { padding-left:24px; padding-right:24px; }
+    .metric-row { grid-template-columns: 1fr; }
+    .metric { border-right:none; border-bottom:1px solid var(--line); padding-left:0 !important; }
+    .result-header { flex-direction:column; align-items:flex-start; }
+    .cta-box { flex-direction:column; align-items:flex-start; }
+    .topbar { flex-direction:column; align-items:flex-start; gap:10px; }
+    .nav-tabs { display: none; }
+  }
+
+  /* ═══ NEWS SECTION (homepage) ═══ */
+  .news-section { border-top: 1px solid var(--line); padding: 80px 48px 100px; }
+  .news-inner { max-width: 1040px; margin: 0 auto; }
+  .news-title {
+    font-family:'Lora',serif; font-weight:600; font-size: clamp(1.7rem, 3vw, 2.2rem);
+    color: var(--ink); margin-bottom: 40px;
+  }
+  .news-grid { display:grid; grid-template-columns: 1fr; max-width: 420px; gap: 1px; background: var(--line); border: 1px solid var(--line); }
+  .news-card {
+    background: var(--paper); padding: 32px 28px; text-decoration: none; display:block;
+    transition: background .15s;
+  }
+  .news-card:hover { background: var(--off); }
+  .news-card-tag {
+    font-family:'Montserrat',sans-serif; font-size: 0.68rem; font-weight:700;
+    letter-spacing: 1px; text-transform: uppercase; color: var(--gris-light); margin-bottom: 14px;
+  }
+  .news-card h3 {
+    font-family:'Lora',serif; font-weight:600; font-size: 1.15rem; color: var(--ink);
+    margin-bottom: 10px; line-height: 1.35;
+  }
+  .news-card p { font-family:'Lora',serif; font-size: 0.9rem; color: var(--gris); line-height: 1.6; }
+  .news-more {
+    display:inline-block; margin-top: 36px;
+    font-family:'Montserrat',sans-serif; font-size: 0.82rem; font-weight:700;
+    letter-spacing: 0.4px; color: var(--ink); text-decoration: none;
+    border-bottom: 1.5px solid var(--ink); padding-bottom: 3px;
+  }
+  .news-more:hover { opacity: 0.6; }
+  @media (max-width:720px) {
+    .news-section { padding: 60px 24px 80px; }
+    .news-grid { grid-template-columns: 1fr; }
+  }
+  /* ═══ BACKGROUND WATERMARK ═══ */
+  .bg-watermark {
+    position: fixed;
+    top: 4%;
+    right: 0;
+    width: 460px;
+    height: 575px;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.05;
+    will-change: transform;
+  }
+  .bg-watermark svg { width: 100%; height: 100%; display: block; }
+  @media (max-width: 900px) {
+    .bg-watermark { width: 440px; height: 550px; right: 0; top: 2%; opacity: 0.045; }
+  }
+
+  .hamburger-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 32px; height: 32px;
+    background: none; border: none; padding: 0; cursor: pointer;
+  }
+  .hamburger-btn span {
+    display: block; width: 24px; height: 2px; background: var(--ink);
+    transition: transform .25s ease, opacity .25s ease;
+  }
+  .hamburger-btn[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .hamburger-btn[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+  .hamburger-btn[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  .mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: var(--paper);
+    z-index: 50;
+    flex-direction: column;
+    padding: 100px 32px 40px;
+    overflow-y: auto;
+  }
+  .mobile-menu.open { display: flex; }
+  .mobile-menu-link {
+    font-family:'Lora',serif; font-size: 1.4rem; font-weight:500; color: var(--ink);
+    text-decoration: none; padding: 18px 0; border-bottom: 1px solid var(--line);
+  }
+  .mobile-menu-link.active { color: var(--gris); font-style: italic; }
+  .mobile-menu-link:last-child { border-bottom: none; }
+  @media (max-width:720px) {
+    .hamburger-btn { display: flex; }
+  }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "MERCONSULT",
+  "alternateName": "Industria Nordica Oy",
+  "description": "Consultoria de internacionalização e entrada no mercado entre a UE e a América Latina / a região do Mercosul.",
+  "url": "https://www.merconsult.fi/pt/",
+  "areaServed": ["Finland", "European Union", "Mercosur", "Latin America"],
+  "knowsLanguage": ["fi", "en", "es", "pt"],
+  "makesOffer": [
+    {
+      "@type": "Offer",
+      "name": "Avaliação Rápida",
+      "description": "Análise do impacto do acordo com o Mercosul para uma categoria de produto e mercado de destino."
+    },
+    {
+      "@type": "Offer",
+      "name": "Pacote de Entrada no Mercado",
+      "description": "Serviço integral de entrada no mercado para o comércio UE-Mercosul."
+    },
+    {
+      "@type": "Offer",
+      "name": "Função de Aconselhamento Contínuo",
+      "description": "Consultoria com retainer mensal para o comércio com o Mercosul e a LATAM."
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<div class="bg-watermark" id="bgWatermark">
+  <svg viewBox="0 0 100 125" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet"><g fill="#4A3D30"><path d="M86.2,45c0-0.6-0.1-1.4-0.4-2c-0.3-0.7-0.6-0.4-1.3-0.5c-1.1-0.3-1.8-1.5-2.7-2c-0.4-0.2-0.6-0.2-1-0.2c-0.4,0-0.6,0-1-0.1   c-0.3,0-0.4,0-0.7-0.1c-0.2-0.1-0.3-0.2-0.5-0.3c-0.3,0-0.6,0.3-0.9,0c-0.2-0.2-0.4-1.6-0.8-1c-0.6-0.4-2.4-1.4-3-0.4   c0-0.2,0.2-0.5,0.1-0.6c-0.1-0.3-0.4-0.1-0.7-0.3c-0.2-0.1-0.5-0.6-0.8-0.5c0-0.3,0.2-0.7,0.1-1.1c0-0.3-0.2-0.5-0.5-0.8   c-0.2-0.3-0.4-0.4-0.5-0.8c-0.1-0.3-0.1-0.7-0.2-1c-0.2-0.5-1-1-1.4-1.4c-0.6-0.4-1.4-0.7-2.1-0.8c-0.7,0-1.2,0.2-1.9-0.1   c-0.3-0.2-0.6-0.5-0.9-0.7c-0.2-0.2-0.1-0.1-0.3-0.3C65,30,65,29.8,64.9,29.7c-0.2-0.3-0.7-0.6-1-0.8c-0.2-0.1-0.4-0.2-0.5-0.2   c-0.1,0-0.2,0.1-0.3,0c-0.2-0.2,0-0.5-0.1-0.7c-0.1-0.3-0.5-0.3-0.6-0.6c0.6-0.1,0.5-0.4,0.5-1c-0.3,0-0.5,0-0.7,0.2   c0.3,0.3,0.1,0.4-0.2,0.6c-0.4,0.2-0.4,0-0.7-0.3c0.3,0,0.6-0.1,0.9-0.2c-0.3-0.2-0.8-0.1-1.1-0.1c-0.1,0-0.8,0.1-0.8,0.1   c-0.4,0.1-0.2,0.1-0.4,0.2c-0.9,0.6-1.1-0.1-1.8-0.2c-0.5-0.1-1.2,0.3-1.5,0c-0.1-0.1,0-0.4-0.1-0.5c-0.1-0.2-0.3-0.3-0.5-0.3   c-0.1,0-0.6,0-0.6-0.1c-0.1-0.1,0-0.4-0.1-0.5c-0.4-0.4-0.5,0.2-0.3,0.6c-0.4,0.2-0.9,0.3-1.3,0.6c-0.1-0.2-0.2-0.4-0.3-0.6   c0.3-0.1,0.9-0.3,0.7-0.7c-0.2-0.4-0.6-0.2-0.8-0.1c-0.3,0.2-0.4,0.4-0.8,0.6c-0.2,0.1-0.3,0.3-0.5,0.3c-0.1,0-0.4-0.1-0.5-0.1   c-0.1,0-0.2,0.1-0.2,0.1c0,0.2-0.1,0.3-0.2,0.2c-0.1,0-0.2-0.1-0.4,0c-0.3,0.1-0.5,0.5-0.6,0.8c-0.1,0.2,0,0.7-0.1,0.9   c0,0.1-0.3,0.1-0.4,0.2c-0.3,0.3-0.8,0.7-0.6,1c-0.5-0.1-0.8-0.8-1.2-1.1c-0.4-0.2-1-0.4-1.4-0.2c-0.4,0.2-0.9,0.7-1.3,0.7   c-0.5,0-0.5-0.7-0.7-0.1c-0.3-0.5-0.7-0.8-1-1.3c-0.4-0.6-0.6-0.9-0.4-1.6c0.1-0.6,0.1-1.1,0.1-1.7c0-0.2,0.2-0.4,0.2-0.7   c0.1-0.4-0.2-0.6,0.1-0.8c-0.7-0.7-1.2-1-2.1-1c-0.3,0-0.3-0.1-0.6-0.1c-0.4,0.1-0.6,0.2-1,0.2c-0.2,0-0.4-0.1-0.7-0.1   c-0.1,0.2-0.2,0.2-0.4,0.1c-0.1-0.1-0.3-0.1-0.4,0c0.1-0.3,0.4-0.4,0.5-0.8c0.1-0.4,0-0.8,0-1.2c0.6,0.3,0.6-2.3,0.9-2.6   c0,0.1,0.1,0.2,0.1,0.3c0.3-0.3,0.3-0.5,0.2-0.8c-0.1-0.6,0-0.6-0.6-0.6c-0.6-0.1-1.9,0-2.5,0.4c-0.5,0.4-0.2,1.2-0.6,1.8   c-0.5,0.8-1.6,0.8-2.4,1c-0.5,0.1-0.6,0.3-1,0c-0.1-0.1-0.2-0.2-0.3-0.2c-0.2-0.1-0.4-0.1-0.6-0.1c-0.2-0.1-0.4-0.5-0.6-0.8   c-0.2-0.4-0.4-0.6-0.6-1c-0.2-0.2-0.2-0.4-0.3-0.6c0-0.1,0-0.3,0-0.4c-0.1-0.1-0.1-0.2-0.2-0.2c-0.2-0.5-0.2-0.7-0.2-1.2   c0-0.5,0-1,0.1-1.5c0.1-0.4,0.6-1.2,0.4-1.6c-0.4,0.1-1.3-0.2-1.6-0.5c-0.3-0.3-0.4-0.9-0.6-1.2c-0.5-0.7-1.5-2.9-2.7-2.1   c-0.2,0.1-0.2,0.6-0.4,0.7c-0.3,0.1-0.6-0.2-0.8-0.3c-0.6-0.4-0.6-1-1.1-1.4c-0.5-0.4-1-1-1.6-1c-0.2,0-0.8-0.1-1,0   c-0.1,0.1-0.1,0.3-0.1,0.3c-0.2,0.1-0.4,0.1-0.7,0.1c-0.8,0-1.5,0.1-2.3-0.2c-0.9-0.3-1.8-0.6-2.7-0.9c-0.5-0.2,0.6-0.2-0.5-0.2   c-0.2,0-0.4,0-0.6,0.1c-0.3,0-0.8,0-1,0.1c-0.5,0.2-0.1,0.3,0,0.7c0.1,0.3,0.2,0.5,0.3,0.8c0.2,0.5,0.5,1.3,0.9,1.7   c0.3,0.3,1.5,0.8,1.2,1.5c-0.2,0.4-0.8,0-0.6,0.5c0.1,0.3,0.8,0.7,1,0.9c0.6,0.3,1.5,0.5,1.5,1.3c0,0.3-0.2,0.6,0,0.9   c0.2,0.2,0.7,0.3,0.9,0.5c0.3,0.2,0.6,0.5,0.8,0.8c0.2,0.3,0,0.4,0.4,0.4c0.8-0.1,0.1-1.2-0.1-1.6c-0.2,0.2-0.3,0-0.5-0.2   c-0.1,0-0.2,0.2-0.1,0.4c-0.3-0.2-0.1-0.2-0.2-0.4c0.2-0.1,0.2-0.2,0.1-0.3c0-0.1-0.1-0.1-0.1-0.1c-0.2-0.4-0.4-0.5-0.3-1   c-0.1,0-1.3-1.5-1.4-1.7c-0.1-0.2-0.3-0.6-0.4-0.8c-0.2-0.4-0.2-0.7-0.5-1.1c-0.6,0.8-1.3-1.6-1-2.1c0.4,0.3,0.7,0.3,1,0.5   c0.3,0.2,0.2,0.1,0.3,0.4c0.1,0.3,0.2,0.6,0.4,1c0.1,0.3,0.1,0.5,0.2,0.8c0,0.1-0.1,0.2,0,0.4c0.1,0.1,0.2,0.1,0.3,0   c0.1,0.1,0.4,0.3,0.6,0.5c0.2,0.2,0.4,0.6,0.8,0.4c0,0.5,0.2,0.5,0.5,0.8c0.1,0.1,0.1,0.3,0.2,0.4c0.1,0.1,0.3-0.1,0.4,0.1   c0.1,0.3-0.2,0.5,0,0.8c0.2,0.4,0.8,0.5,1,0.8c0.6,0.8,1.8,1.5,2.2,2.4c0.1,0.2,0,0.4,0.1,0.6c0.1,0.1,0.2,0.3,0.3,0.4   c0.1,0.4-0.3,0.6,0,0.9c-0.7,0.2,0.1,1.2,0.4,1.4c0.3,0.2,0.7,0.4,1,0.7c0.4,0.3,0.7,0.5,1.1,0.6c0.8,0.2,1.3,0.8,2.1,1.1   c0.3,0.1,0.7,0.2,1,0.3c0.4,0.1,0.7,0.4,1.1,0.6c0.3,0.1,0.7,0.3,1,0.3c0.5,0.1,0.8-0.3,1.2-0.4c1-0.4,1.7,0.4,2.3,1.1   c0.3,0.3,0.6,0.8,1,0.9c0.4,0.2,0.8,0.1,1.3,0.3c0.4,0.2,2,1,2.2,0.4c0.3,0.3-0.2,0.2-0.1,0.5c0.1,0.2,0.5,0.4,0.6,0.6   c0.3,0.3,0.8,0.8,1.1,1.2c0,0.1-0.1,0.2-0.1,0.2c0.2,0.1,0.3,0.2,0.2,0.3c0,0.1-0.2,0.2-0.2,0.4c0,0.5,0.8,0.8,1,0.4   c0,0.5,0.7,0.6,0.9,1c0.1,0.2,0,0.3,0.1,0.5c0.1,0.1,0.5,0.3,0.6,0.4c0-0.1,0.1-0.2,0.1-0.3c0.4,0.1,0.6,0.1,0.9,0.3   c0.2,0.2,0.4,0.4,0.7,0.6c0.2,0.1-0.1,0.2,0.2,0.3c0.1,0,0.3-0.1,0.4-0.2c0.5-0.3,0.2-0.4-0.1-0.9c0.6-0.2,1.1-1.4,1.7-0.3   c0.2,0.4,0.2,0.8,0.5,1.2c0.1,0.2,0.3,0.4,0.4,0.6c0.1,0.3,0,0.2,0,0.5c0,0.1,0,0.1,0.1,0.2c0.2,0.1,0.2,0.3,0,0.4   c-0.2,0.1-0.2,0.2,0,0.3c0,0.1,0,0.2,0.1,0.2c0,0.3-0.1,0.5-0.1,0.7c0,0.1-0.1,0.1-0.1,0.2c0.1,0.2,0.2,0.3,0.3,0.5   c0,0.3-0.5,0.9-0.7,1c-0.4,0.3-0.7,0.1-0.6,0.8c-0.5-0.1-0.4,0.3-0.2,0.5c-0.3,0.2-1,0.3-1.1,0.6c-0.1,0.2,0,0.6-0.1,0.8   c0,0.1-0.2,0.3-0.3,0.4c-0.1,0.1-0.1,0.3-0.1,0.4c0,0.1-0.2,0.1-0.3,0.2c-0.1,0.4,0.4,1-0.1,1.2c0.3,0.2,0.7,0.5,0.7,0.9   c0.1-0.1,0.2-0.1,0.3-0.2c-0.1,0.7-1.2,0.8-1.3,1.7c0,0.2,0.2,0.5,0.2,0.8c0,0.2,0.1,0.3,0.1,0.4c0,0.2-0.2,0.2,0,0.5   c0.2,0.3,0.8,0.5,1.1,0.8c0.3,0.4,0.5,0.9,0.8,1.3c0.5,0.8,0.7,1.8,1.1,2.7c0.2,0.5,0.5,1.1,0.8,1.6c0.2,0.4,0.4,0.7,0.4,1.2   c0,0.3-0.1-0.1,0,0.4c0.1,0.2,0.3,0.5,0.4,0.7c1.1,1.3,2.8,1.7,3.9,2.8c0.2,0.2,0.7,0.6,0.9,0.9c0.2,0.3,0.1,0.9,0.2,1.3   c0.1,1.1,0.1,2.3-0.2,3.3c-0.2,0.6-0.1,1.3-0.1,2.1c0,0.8-0.2,1.8-0.4,2.6c-0.1,0.4-0.2,0.8-0.4,1.1c-0.1,0.5,0,0.4,0,0.9   c0.1,0.6-0.2,0.5-0.3,0.8c-0.1,0.5,0.1,1,0.1,1.5c0.1,0.7-0.1,1.3-0.2,2c-0.2,0.8-0.6,1.7-0.9,2.5c-0.1,0.2-0.1,0.3-0.3,0.5   c0,0.1,0,0.1,0,0.2c0,0.3-0.1,0.4-0.4,0.3c-0.2,0.3,0,0.7,0.1,1.1c0,0.3,0.3,1,0.2,1.3c-0.1,0.4-0.4,0.6-0.5,1.1   c0,0.2-0.1,0.4-0.1,0.6c0,0.2,0.2,0.4,0.2,0.5c0-0.1-0.3,0.4-0.3,0.5c-0.1,0.3,0,0.4-0.1,0.7c0,0.1-0.2,0.4-0.2,0.5   c0,0.1,0.6,0.2,0.7,0.2c0.2-0.1,0.2-0.6,0.1-0.8c0.3-0.1,0.2-0.5,0.1-0.8c0.2,0,0.4-0.1,0.4-0.3c0.3,0.3,0,1.5-0.2,2   c-0.2,0.4,0,1.2-0.6,0.9c0.1-0.2,0.3-0.8-0.2-0.7c-0.4,0.1,0,0.2-0.1,0.4c-0.1,0.1-0.6,0.3-0.6,0.4c-0.1,0.3,0.2,0.1,0.3,0.4   c0.1,0.2,0,0.4-0.1,0.5c-0.1,0.2-0.2,0.2-0.3,0.4c-0.1,0-0.1,0-0.2,0.1c0,0.1,0,0.2,0,0.2c-0.1,0.1-0.5,0.5-0.5,0.5   c-0.1,0.4,0.3,0.6,0.5,0.1c0.3,0.2,0.9,0.3,0.6,0.8c-0.2,0.3-0.3,0-0.5,0.1c0,0-0.2,0.3-0.2,0.3c-0.1,0.2-0.2,0.5-0.2,0.8   c0,0.6,0.1,1,0.2,1.5c0,0.2-0.1,0.4,0,0.6c0.1,0,0.2,0,0.3,0c0.1,0.1,0.1,0.3,0.2,0.4c-0.7-0.1-0.3,0.8,0.1,1.1   c0.2,0.1,0.2-0.1,0.5,0c0.3,0.1,0.2,0.4,0.5,0.5c-0.5,0.2-1.3-0.5-0.7,0.2c0.4,0.5,0.3-0.1,0.7,0.3c-0.5,0.2,0,0.4,0.3,0.6   c-0.1,0.1-0.1,0.2-0.1,0.3c0.5,0,0.7-0.1,0.9,0.3c0.5-0.2,0.4-0.1,0.6,0.2c0.2-0.1,0.3,0,0.3,0.2c0.2,0.1,0.4,0.1,0.5,0.2   c0.3,0.1,0.5,0,0.8,0c0.2,0.1,0.5,0.3,0.8,0.3c0.1,0,0.3,0,0.5,0c0.5,0.1,0.7,0.4,1.3,0.4c-0.1-0.2,0-0.4-0.3-0.4   c-0.2,0-0.3,0.2-0.3,0.2c-0.2,0-0.1,0.5-0.2-0.4c0.5,0,1,0.3,1.2-0.2c0.1,0,0.1,0.1,0,0.2c0.2,0.1,0.2,0,0.3-0.1   c0.1,0,0.3-0.2,0.5-0.2c0.4-0.1,0.6,0.1,0.7-0.4c-0.9,0-2-0.4-2.6-1.1c-0.2-0.3-0.2-0.7-0.6-0.9c-0.3-0.1-0.4,0.2-0.6-0.2   c0.3,0,0.6,0.1,1,0c-0.3-0.4-0.7-0.9-0.7-1.5c0-0.7,0.7-0.5,1.1-0.9c0.4-0.4,0.2-1,0.7-1.3c0.5-0.4,1.4-0.6,1.3-1.3   c-0.1-0.8-2.5-0.6-1.3-1.9c0.2-0.2,0.3-0.2,0.5-0.3c0.2-0.1,0.6-0.1,0.7-0.2c0.3-0.2,0.5-0.5,0.6-0.9c0.1-0.7,0.1-0.7,0.7-1   c0.3-0.1,1.1-0.4,0.7-0.9c-0.3-0.4-0.9,0.2-1.2-0.2c-0.1-0.1-0.1-0.6-0.1-0.7c0-0.4-0.1-0.5,0.3-0.4c0.6,0.1,1,0.5,1.7,0.2   c0.7-0.3,0.3-0.4,0.4-0.9c0-0.4,0.5-1.1,0.7-1.2c0.3-0.1,0.8,0,1.1-0.1c0.4-0.1,0.8-0.2,1.2-0.3c0.7-0.2,1-0.3,1.4-0.9   c0.3-0.6,0.9-1,0.5-1.6c-0.1-0.2-0.4-0.1-0.5-0.4c0-0.3,0.3-0.3,0.1-0.6c-0.2-0.4-1.3-0.5-1-1.1c0.4,0.3,0.4,0.2,0.9,0.3   c0.3,0.1,0.6,0.4,0.9,0.5c0.2,0,0.3-0.1,0.4-0.1c0.2,0,0.4,0,0.5,0c0.5,0,0.7,0,1.1-0.3c0.7-0.6,1.1-1.4,1.6-2.2   c0.2-0.4,0.7-0.6,1-0.9c0.4-0.3,0.6-0.7,0.8-1.2c0.2-0.4,0.3-0.9,0.6-1.2c0.4-0.5,0.7-0.6,0.9-1.2c0.2-0.5,0.1-0.5,0-0.9   c-0.1-0.3,0-0.5,0-0.8c0.1-0.5,0.1-0.5,0.4-1c0.3-0.4,0.4-0.5,0.7-0.7c0.7-0.5,1-0.8,1.8-0.6c-0.1-1,1.7-0.9,2.4-1   c0.6-0.1,0.2-0.2,0.6-0.6c0.3-0.3,0.6-0.2,0.8-0.6c0.2-0.6,0.1-0.7,0.5-1.2c0.2-0.3,0.5-0.8,0.6-1.1c0.1-0.4,0-0.8,0.1-1.2   c0.1-0.4,0.4-0.5,0.4-0.9c0.2-1,0.1-1.9,0.1-2.9c0-0.4,0-1.2,0.2-1.5c0.1-0.1,0.3-0.1,0.4-0.2c0.2-0.2,0.3-0.3,0.4-0.6   c0.3-0.4,0.4-0.9,0.7-1.4c0.2-0.4,0.6-0.5,0.8-0.8C85.7,47.1,86.3,46.1,86.2,45z"/><path d="M41.9,15.4c0.3-0.2,0.6-0.3,0.9-0.4c0.5-0.3,0.8-0.6,1.4-0.4c-1,0.3,0.8,0.5,1,0.5c0.4,0.1,1,0.3,1.5,0.5   c0.4,0.2,0.1,0,0.4,0.3c0.2,0.2,0.2,0.4,0.6,0.6c0.2,0.1,0.7-0.1,0.7,0.3c0,0.1-0.5,0.4-0.5,0.6c0.3,0.2,1.1-0.1,1.4-0.1   c0.6,0,1,0.1,1.5-0.1c0.4-0.1,0.5,0,0.2-0.4c-0.2-0.3-0.8-0.4-1.1-0.4c0.1-0.5-1-0.6-1.4-0.9c-0.3-0.2-0.7-0.8-1.1-0.9   c-0.2-0.1-0.4,0.2-0.6,0.1c-0.3-0.1-0.2-0.2-0.4-0.3c-0.7-0.4-1.9-0.5-2.6-0.4c-0.4,0.1-0.9,0.2-1.3,0.4c-0.4,0.3-0.5,0.7-1,0.9   C41.5,15.6,41.7,15.3,41.9,15.4C42,15.3,41.7,15.3,41.9,15.4z"/><path d="M52.1,17.1c-0.2,0.2-0.4,0.1-0.5,0.4c0.6,0.2,0.6,0.1,0.6,0.7c-0.1-0.1-0.3-0.1-0.4,0c0.1,0.2,0.4,0.4,0.7,0.2   c-0.1,0.6-1.1-0.1-1.5,0c-0.4,0.2-0.2,0.5,0.1,0.6c0.3,0.1,0.9,0,1.3,0c0.7,0,0.7,0.1,1.1,0.6c0.3-0.5,0.3-0.6,0.7-0.7   c0.2-0.1,0.5-0.2,0.7-0.2c0.1,0,0.3,0,0.5,0c0.3,0.1,0.4,0.4,0.6,0.3c0.5-0.2,0-0.7-0.2-0.9c-0.1-0.1-0.1-0.1-0.2-0.1   c-0.2,0-0.2-0.1-0.1-0.2c-0.1,0-0.2-0.1-0.3-0.1c0.1,0-0.6-0.3-0.4-0.2c-0.2-0.1-0.3-0.1-0.5-0.2c-0.5-0.1-0.8-0.1-1.3-0.1   C52.8,17.3,52.2,17,52.1,17.1z"/><path d="M65.5,89.5c-0.4-0.1-1-0.1-1.4-0.1c-0.3,0-0.7,0.2-1,0.1c-0.1,0.1,0,0.2,0.2,0.3c-0.2,0.1-0.2,0.1-0.2,0.3   c-0.3-0.2-0.6,0-0.2,0.3c0.4,0.3,0.7-0.1,1.1-0.2c-0.1,0.6,0.5,0.3,0.8,0.2C64.9,90.3,66.4,89.7,65.5,89.5z"/><path d="M47.9,18.6c-0.9,0-0.6,0.5-0.1,0.8c0.5,0.2,1,0.1,1.5,0C49.1,18.8,48.4,18.6,47.9,18.6z"/><path d="M47,10.7c0.3-0.1,0.8-0.4,1-0.3c0.4,0.2,0,0.7,0.3,1c0.1-0.5,0.3-0.8-0.2-1.1c-0.4-0.3-1,0.1-1.5,0.1   C46.8,10.6,46.9,10.7,47,10.7z"/><path d="M47.7,13c0.1,0.5,0.1,0.5,0.4,0.5c0-0.2-0.2-1.6-0.5-1.6c-0.2,0-0.1,0.2-0.2,0.3C47.1,12.7,47.2,12.6,47.7,13   C47.7,13.5,47.5,12.8,47.7,13z"/><path d="M57.2,19.3c0.4,0,1.5,0.1,1.8-0.3c-0.4-0.2-0.5-0.4-1.1-0.4C57.3,18.6,57.2,18.7,57.2,19.3C57.4,19.3,57.2,19.2,57.2,19.3z   "/><path d="M52.1,15.7c-0.2,0.3-0.6,0.1-0.7,0.6C51.9,16.3,52.2,16.3,52.1,15.7C52,15.9,52.2,16.1,52.1,15.7z"/><path d="M42.9,15.6c0,0.4,0.8,0.2,0.6-0.2C43.4,15,42.9,15.2,42.9,15.6z"/><path d="M50.9,14.5c0.1,0,0.2,0.1,0.2,0.1c-0.1,0.2-0.3,0.2-0.3,0.4c0.5-0.2,0.7-0.9-0.1-0.7C50.9,14.4,50.9,14.4,50.9,14.5z"/><path d="M62.1,21.2c0,0.4,0.4-0.1,0.7-0.1c-0.1-0.1-0.2-0.3-0.3-0.4C62.1,20.9,62,20.8,62.1,21.2z"/><path d="M49,11.8c0.3,0.2,0.3,0.3,0,0.5c0.1,0,0.2,0.1,0.3,0.1c0.2-0.6-0.1-0.7-0.6-1C48.7,11.7,48.8,11.8,49,11.8z"/><path d="M60.3,93.1c0-0.1,0.1-0.1,0.1-0.2c-0.3,0-0.7,0-0.9,0.2C59.7,93.2,60,93.1,60.3,93.1z"/><path d="M62.6,22.4c-0.2,0.2,0.2,0.5,0.4,0.5C63,22.8,62.8,22.1,62.6,22.4z"/><path d="M50,13.4c-0.1,0.4,0.3,0.8,0.5,1C50.5,14,50.3,13.7,50,13.4C49.9,13.7,50,13.5,50,13.4z"/><path d="M59.7,26.4c0.1,0,1,0.1,0.6-0.2C60.2,26.1,59.7,26.2,59.7,26.4C59.8,26.4,59.7,26.2,59.7,26.4z"/><path d="M50.1,13c-0.1-0.2-0.3-0.6-0.6-0.6C49.7,12.8,49.7,13.1,50.1,13C50,12.8,50,13,50.1,13z"/><path d="M62.4,21.5c-0.2,0.2-0.2,0.2,0,0.6C62.7,22,62.7,21.8,62.4,21.5z"/><path d="M63,23.6c0-0.1,0-0.3,0-0.4C62.6,23.1,62.6,23.8,63,23.6C62.9,23.4,62.8,23.6,63,23.6z"/><path d="M55.6,24.8c-0.3,0.2,0.1,0.6,0.3,0.4C55.9,25,55.6,25,55.6,24.8C55.4,24.9,55.6,25,55.6,24.8z"/><path d="M53.3,15.5c0-0.3-0.2-0.3-0.4-0.3C53,15.5,53.1,15.5,53.3,15.5z"/><path d="M44.1,29.9c0.1,0.2,0.2,0.2,0.3,0.1c-0.1-0.1-0.1-0.3-0.2-0.4C44.2,29.7,44.1,29.8,44.1,29.9z"/><path d="M22,15.6c0.1,0.1,0.2,0.2,0.4,0.1c-0.1-0.1-0.2-0.2-0.2-0.3C22,15.4,22,15.5,22,15.6z"/><path d="M64.1,24.3c0.2,0.1-0.1-0.4-0.1-0.5C64,24.1,63.9,24.1,64.1,24.3z"/><path d="M14.3,8.7C14.2,9,14.2,9,14.4,9.2C14.5,8.9,14.5,8.8,14.3,8.7z"/><path d="M56.1,25c0.1,0.1,0.1,0.2,0.2,0.3C56.6,25.2,56.3,24.8,56.1,25C56.2,25.1,56.2,24.9,56.1,25z"/><path d="M39.9,21.1c0.2-0.1,0.3-0.2,0.5-0.3C40,20.7,39.9,20.8,39.9,21.1z"/><path d="M63.3,25.9C63,26,63,26,62.9,26.2C63.2,26.2,63.2,26.2,63.3,25.9z"/><path d="M62.6,23.8c-0.2,0.2-0.2,0.2,0,0.4C62.7,24.1,62.8,24,62.6,23.8z"/><path d="M52.2,14.7c-0.1,0-0.2-0.1-0.3,0.1c0.2,0,0.3,0.1,0.4,0.1C52.4,14.8,52.3,14.7,52.2,14.7z"/><path d="M59.4,19.6c0.1,0,0.2,0,0.3-0.1C59.7,19.1,59.1,19.6,59.4,19.6z"/><path d="M59.9,18.7c-0.2-0.1-0.3-0.1-0.5,0.2C59.6,18.9,59.8,18.9,59.9,18.7z"/><path d="M47.9,12.2c0.1,0,0.3,0,0.4,0C48.1,11.9,48.1,11.9,47.9,12.2z"/><path d="M46.9,29.1c0.1-0.1,0.1-0.2,0-0.3C46.5,28.9,46.8,29.2,46.9,29.1z"/><path d="M62,20c-0.3,0.1,0.2,0.3,0.2,0.3C62.2,20.1,62.2,20,62,20z"/><path d="M62.2,25c-0.2,0.1-0.2,0.3-0.1,0.4C62.2,25.3,62.5,25.1,62.2,25C62.1,25.1,62.3,25.1,62.2,25z"/><path d="M62.2,19.8C62.3,19.2,61.6,19.6,62.2,19.8C62.2,19.6,62,19.7,62.2,19.8z"/><path d="M38.8,20c0.1-0.1,0.2-0.2,0.1-0.4C38.6,19.8,38.6,19.8,38.8,20z"/><path d="M44.5,18c0.2,0.1,0.3,0.1,0.4-0.1C44.8,17.8,44.6,17.7,44.5,18C44.6,18,44.6,17.8,44.5,18z"/><path d="M50.8,13.2c0.1-0.1,0.1-0.2,0-0.3C50.6,13,50.7,13.3,50.8,13.2z"/><path d="M50.4,81.7c0.1,0,0.2,0,0.3,0C50.5,81.5,50.5,81.5,50.4,81.7z"/><path d="M58.9,26.3c0,0-0.1,0.1-0.1,0.1c0,0.1,0.1,0.2,0.3,0.1C59.1,26.3,59,26.3,58.9,26.3z"/><path d="M54.9,24.9c0-0.2-0.1-0.2-0.2-0.3C54.7,24.9,54.7,24.9,54.9,24.9z"/><path d="M49.7,13.7c-0.1-0.1-0.2-0.2-0.3-0.3C49.3,13.6,49.5,13.7,49.7,13.7C49.6,13.6,49.5,13.7,49.7,13.7z"/><path d="M61.4,20c-0.1-0.3-0.1-0.3-0.3-0.2C61.2,20,61.2,20.1,61.4,20z"/><path d="M18.1,18.3c-0.2,0.1,0,0.3,0.2,0.2C18.3,18.4,18.3,18.3,18.1,18.3z"/><path d="M61.1,18.8C61,18.9,60.9,19,60.8,19C61.1,19.1,61.1,19.1,61.1,18.8z"/><path d="M62.5,21.2c-0.1,0.1-0.1,0.2,0.1,0.3C62.8,21.3,62.7,21.3,62.5,21.2C62.5,21.2,62.6,21.2,62.5,21.2z"/><path d="M61.7,20.6c0.2,0,0-0.3,0-0.2C61.7,20.4,61.6,20.6,61.7,20.6z"/><path d="M50.3,82.9c0,0-0.1-0.1-0.1-0.1c-0.1,0.2-0.1,0.1,0.1,0.3C50.3,83,50.3,82.9,50.3,82.9z"/><path d="M44.2,24.8c0,0,0,0.1,0.1,0.1C44.4,24.7,44.2,24.7,44.2,24.8z"/></g></svg>
+</div>
+
+
+<div class="topbar" style="justify-content:flex-end;">
+  <div class="lang-switch">
+    <a class="lang-btn" href="/">FI</a>
+    <a class="lang-btn" href="/en/">EN</a>
+    <a class="lang-btn" href="/es/">ES</a>
+      <a class="lang-btn active" href="/pt/">PT</a>
+  </div>
+</div>
+
+<div class="nav-row">
+  <img src="../images/logo.svg" alt="MERCONSULT" class="brand-logo">
+  <div class="nav-tabs">
+    <a class="nav-tab active" href="index.html">Início</a>
+    <a class="nav-tab" href="palvelut.html">Serviços</a>
+    <a class="nav-tab" href="uutiset.html">Notícias</a>
+    <a class="nav-tab" href="sanasto.html">Glossário</a>
+    <a class="nav-tab" href="meista.html">Sobre nós</a>
+    <a class="nav-tab" href="yhteystiedot.html">Contacto</a>
+  </div>
+  <button class="hamburger-btn" id="hamburgerBtn" aria-label="Menú" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</div>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a class="mobile-menu-link active" href="index.html">Início</a>
+  <a class="mobile-menu-link" href="palvelut.html">Serviços</a>
+  <a class="mobile-menu-link" href="uutiset.html">Notícias</a>
+  <a class="mobile-menu-link" href="sanasto.html">Glossário</a>
+  <a class="mobile-menu-link" href="meista.html">Sobre nós</a>
+  <a class="mobile-menu-link" href="yhteystiedot.html">Contacto</a>
+</div>
+
+<div class="hero">
+  <div class="eyebrow" id="eyebrow"></div>
+  <h1 id="h1"></h1>
+  <p class="sub" id="sub"></p>
+  <p class="hero-pitch">A América Latina e o novo acordo UE-Mercosul oferecem um mercado de mais de 600 milhões de consumidores e uma oportunidade excecional para diversificar as exportações com segurança. A redução da burocracia e a eliminação de tarifas abrem um caminho direto para o crescimento escalável e rentável das empresas europeias.</p>
+</div>
+
+<div class="search-section">
+  <div class="search-label" id="searchLabel"></div>
+  <div class="search-box">
+    <input type="text" id="buscar" onkeydown="if(event.key==='Enter')buscar()">
+    <button class="search-btn" onclick="buscar()"><span id="searchBtnText"></span></button>
+  </div>
+  <div class="chips" id="chips"></div>
+</div>
+
+<div class="origin-bar">
+  <span class="origin-question" id="originQuestion"></span>
+  <div class="origin-buttons">
+    <button class="origin-btn active" data-origin="eu" onclick="setOrigin('eu')"></button>
+    <button class="origin-btn" data-origin="usa" onclick="setOrigin('usa')"></button>
+    <button class="origin-btn" data-origin="canada" onclick="setOrigin('canada')"></button>
+    <button class="origin-btn" data-origin="other" onclick="setOrigin('other')"></button>
+  </div>
+</div>
+<div id="originPanel"></div>
+
+<main>
+  <div id="resultado"></div>
+</main>
+
+<section class="news-section">
+  <div class="news-inner">
+    <h2 class="news-title">Novedades</h2>
+
+    <div class="news-grid">
+      <a class="news-card" href="uutinen-eu-mercosur-2026.html">
+        <div class="news-card-tag">Política Comercial</div>
+        <h3>Acordo UE-Mercosul: Um Avanço Histórico</h3>
+        <p>Tarifas eliminadas em mais de 90% dos produtos. O que significa para a sua empresa?</p>
+      </a>
+    </div>
+
+    <a class="news-more" href="uutiset.html">Todas las noticias &rarr;</a>
+  </div>
+</section>
+
+<footer>
+  <img src="../images/logo.svg" alt="MERCONSULT" class="brand-logo">
+  <div id="footNote"></div>
+</footer>
+
+<script>
+/* ═══════════════ TRANSLATIONS (UI) ═══════════════ */
+const I18N = {
+  fi: {
+    eyebrow: "Tullianalyysityökalu",
+    h1_pre: "Miten ", h1_em: "Mercosur–EU-sopimus", h1_post: " vaikuttaa tuoteryhmääsi?",
+    sub: "Hae tuoteryhmäsi ja näe todellinen tullinalennusaikataulu — perustuu virallisen EU–Mercosur-sopimuksen liitteeseen 2-A.",
+    searchLabel: "Hae tuoteryhmää",
+    placeholder: "esim. autot, koneet, viini, liha, lääkkeet...",
+    searchBtn: "Hae",
+    resultEyebrow: "Tuoteryhmäanalyysi",
+    metricLabels: ["Tulli ennen sopimusta","Tilanne nyt (2026)","Poistoaika"],
+    yearsWord: "vuotta",
+    timelineLabel: "Vapautumisaikataulu",
+    timelineConnector: " — tulli noin 0 % vuoteen ",
+    riskLabels: {bajo:"Matala sääntelyriski", medio:"Kohtalainen sääntelyriski", alto:"Korkea sääntelyriski — vaatii asiantuntemusta"},
+    ctaText: "Tarvitsetko tuotteesi tarkan tullinimikkeen ja markkinoillepääsysuunnitelman? Räätälöity analyysimme kattaa juuri sinun nimikkeesi.",
+    ctaBtn: "Pyydä analyysi",
+    emptyTitle: t => `"${t}" ei vielä löydy julkisesta tietokannastamme.`,
+    emptyText: "Täysi tietokantamme kattaa yli 200 tuoteryhmää tarkalla tullinimikkeellä (8-numeroinen HS-koodi). Pyydä räätälöity analyysi omalle tuotteellesi.",
+    ctaEmptyText: "Räätälöity analyysi. Yksityiskohtainen raportti tullinimikkeestäsi 5–10 arkipäivässä.",
+    placeholderResult: "Kirjoita tuoteryhmä yllä, tai valitse jokin ehdotuksista, nähdäksesi täyden analyysin.",
+    footNote: "Analyysi perustuu Euroopan unionin virallisiin lähteisiin · Päivitetty 2026",
+    originQuestion: "Etkö ole EU:ssa? Valitse sijaintisi:",
+    originEU: "EU",
+    originUSA: "USA",
+    originCanada: "Kanada",
+    originOther: "Muut LATAM-maat",
+    originUsaTitle: "USA:n kilpailuasema",
+    originUsaText: "Yhdysvalloilla ei ole vapaakauppasopimusta Mercosurin kanssa. Kun eurooppalainen kilpailijasi maksaa alenevaa tai poistuvaa tullia tässä tuoteryhmässä, sinä maksat edelleen täyden MFN-tullin. Voimme selvittää tarkan kilpailuhaittasi ja mahdolliset strategiat, kuten toimimisen EU-kumppanuuden kautta.",
+    originCanadaTitle: "Kanadan tilanne",
+    originCanadaText: "Kanada neuvottelee parhaillaan omaa Mercosur-sopimustaan tavoitteenaan solmia se vuoden 2026 loppuun mennessä. Ehdot eivät ole vielä julkisia, mutta yritykset jotka rakentavat suhteita alueelle jo nyt ovat valmiimpia kun sopimus astuu voimaan.",
+    originOtherTitle: "Muut Latinalaisen Amerikan maat",
+    originOtherText: "Jokaisella Mercosurin ulkopuolisella LATAM-maalla on oma kauppasuhteensa alueeseen. Ota yhteyttä, niin käymme läpi juuri sinun tilanteesi."
+  },
+  en: {
+    eyebrow: "Tariff analysis tool",
+    h1_pre: "How does the ", h1_em: "EU–Mercosur Agreement", h1_post: " affect your product category?",
+    sub: "Search your product category to see the real tariff reduction schedule — based on Annex 2-A of the official EU–Mercosur agreement.",
+    searchLabel: "Search product category",
+    placeholder: "e.g. cars, machinery, wine, textiles, pharmaceuticals...",
+    searchBtn: "Search",
+    resultEyebrow: "Category analysis",
+    metricLabels: ["Tariff before the agreement","Current situation (2026)","Elimination period"],
+    yearsWord: "years",
+    timelineLabel: "Liberalisation timeline",
+    timelineConnector: " — tariff reaches approx. 0% by ",
+    riskLabels: {bajo:"Low regulatory risk", medio:"Moderate regulatory risk", alto:"High regulatory risk — requires expert advice"},
+    ctaText: "Need the exact tariff code for your product and a market-entry plan? Our tailored analysis covers your specific line.",
+    ctaBtn: "Request analysis",
+    emptyTitle: t => `"${t}" is not yet in our public database.`,
+    emptyText: "Our full database covers over 200 product categories with specific tariff codes (8-digit HS code). Request a tailored analysis for your exact product.",
+    ctaEmptyText: "Tailored analysis. A detailed report on your tariff line, in 5–10 business days.",
+    placeholderResult: "Type a product category above, or select one of the suggestions, to see the full analysis.",
+    footNote: "Analysis based on official European Union sources · Updated 2026",
+    originQuestion: "Not in the EU? Select your location:",
+    originEU: "EU",
+    originUSA: "USA",
+    originCanada: "Canada",
+    originOther: "Other LATAM countries",
+    originUsaTitle: "US competitive position",
+    originUsaText: "The United States has no free trade agreement with Mercosur. While your European competitor pays a declining or eliminated tariff on this product category, you continue to pay the full MFN tariff. We can map your exact competitive gap and possible strategies, such as operating through an EU partnership.",
+    originCanadaTitle: "Canada's situation",
+    originCanadaText: "Canada is currently negotiating its own Mercosur agreement, aiming to conclude it by the end of 2026. Terms are not yet public, but companies building relationships in the region now will be better positioned once the agreement takes effect.",
+    originOtherTitle: "Other Latin American countries",
+    originOtherText: "Every non-Mercosur LATAM country has its own trade relationship with the bloc. Get in touch and we'll walk through your specific situation."
+  },
+  es: {
+    eyebrow: "Herramienta de análisis arancelario",
+    h1_pre: "¿Cómo afecta el ", h1_em: "Acuerdo Mercosur–UE", h1_post: " a tu categoría de producto?",
+    sub: "Consulte el cronograma de reducción arancelaria por categoría, basado en el Anexo 2-A del acuerdo oficial entre la Unión Europea y el Mercosur.",
+    searchLabel: "Buscar categoría de producto",
+    placeholder: "ej. automóviles, maquinaria, vino, textiles, farmacéuticos...",
+    searchBtn: "Buscar",
+    resultEyebrow: "Análisis de categoría",
+    metricLabels: ["Arancel antes del acuerdo","Situación actual (2026)","Período de eliminación"],
+    yearsWord: "años",
+    timelineLabel: "Cronograma de liberalización",
+    timelineConnector: " — arancel 0% aproximadamente en ",
+    riskLabels: {bajo:"Riesgo regulatorio bajo", medio:"Riesgo regulatorio medio", alto:"Riesgo regulatorio alto — requiere asesoría"},
+    ctaText: "¿Necesita el código arancelario exacto de su producto y un plan de entrada al mercado? Nuestro análisis personalizado cubre su partida específica.",
+    ctaBtn: "Solicitar análisis",
+    emptyTitle: t => `"${t}" no figura aún en nuestra base pública.`,
+    emptyText: "Nuestra base de datos completa cubre más de 200 categorías con código arancelario específico (HS de 8 dígitos). Solicite un análisis personalizado para su producto exacto.",
+    ctaEmptyText: "Análisis a medida. Un informe detallado sobre su partida arancelaria, en 5–10 días hábiles.",
+    placeholderResult: "Escriba una categoría de producto arriba, o seleccione una de las sugerencias, para ver el análisis completo.",
+    footNote: "Análisis basado en fuentes oficiales de la Unión Europea · Actualizado 2026",
+    originQuestion: "¿No está en la UE? Seleccione su ubicación:",
+    originEU: "UE",
+    originUSA: "EE. UU.",
+    originCanada: "Canadá",
+    originOther: "Otros países de LATAM",
+    originUsaTitle: "Posición competitiva de EE. UU.",
+    originUsaText: "Estados Unidos no tiene acuerdo de libre comercio con Mercosur. Mientras su competidor europeo paga un arancel decreciente o eliminado en esta categoría, usted sigue pagando el arancel NMF completo. Podemos analizar su brecha competitiva exacta y posibles estrategias, como operar a través de una asociación con la UE.",
+    originCanadaTitle: "Situación de Canadá",
+    originCanadaText: "Canadá está negociando actualmente su propio acuerdo con Mercosur, con el objetivo de concluirlo antes de finales de 2026. Los términos aún no son públicos, pero las empresas que ya construyen relaciones en la región estarán mejor posicionadas cuando el acuerdo entre en vigor.",
+    originOtherTitle: "Otros países de América Latina",
+    originOtherText: "Cada país de LATAM fuera del Mercosur tiene su propia relación comercial con el bloque. Contáctenos y revisaremos su situación específica."
+  },
+  pt: {
+    eyebrow: "Ferramenta de análise tarifária",
+    h1_pre: "Como o ", h1_em: "Acordo Mercosul–UE", h1_post: " afeta a sua categoria de produto?",
+    sub: "Consulte o calendário de redução tarifária por categoria, com base no Anexo 2-A do acordo oficial entre a União Europeia e o Mercosul.",
+    searchLabel: "Pesquisar categoria de produto",
+    placeholder: "ex. automóveis, maquinaria, vinho, têxteis, farmacêuticos...",
+    searchBtn: "Pesquisar",
+    resultEyebrow: "Análise de categoria",
+    metricLabels: ["Tarifa antes do acordo","Situação atual (2026)","Período de eliminação"],
+    yearsWord: "anos",
+    timelineLabel: "Calendário de liberalização",
+    timelineConnector: " — tarifa 0% aproximadamente em ",
+    riskLabels: {bajo:"Risco regulatório baixo", medio:"Risco regulatório médio", alto:"Risco regulatório alto — requer aconselhamento"},
+    ctaText: "Precisa do código pautal exato do seu produto e de um plano de entrada no mercado? A nossa análise personalizada abrange a sua posição específica.",
+    ctaBtn: "Solicitar análise",
+    emptyTitle: t => `"${t}" ainda não consta na nossa base pública.`,
+    emptyText: "A nossa base de dados completa abrange mais de 200 categorias com código pautal específico (SH de 8 dígitos). Solicite uma análise personalizada para o seu produto exato.",
+    ctaEmptyText: "Análise personalizada. Um relatório detalhado sobre a sua posição pautal, em 5–10 dias úteis.",
+    placeholderResult: "Escreva uma categoria de produto acima, ou selecione uma das sugestões, para ver a análise completa.",
+    footNote: "Análise baseada em fontes oficiais da União Europeia · Atualizado 2026",
+    originQuestion: "Não está na UE? Selecione a sua localização:",
+    originEU: "UE",
+    originUSA: "EUA",
+    originCanada: "Canadá",
+    originOther: "Outros países da LATAM",
+    originUsaTitle: "Posição competitiva dos EUA",
+    originUsaText: "Os Estados Unidos não têm acordo de comércio livre com o Mercosul. Enquanto o seu concorrente europeu paga uma tarifa decrescente ou eliminada nesta categoria, você continua a pagar a tarifa NMF completa. Podemos analisar a sua diferença competitiva exata e possíveis estratégias, como operar através de uma parceria com a UE.",
+    originCanadaTitle: "Situação do Canadá",
+    originCanadaText: "O Canadá está atualmente a negociar o seu próprio acordo com o Mercosul, com o objetivo de o concluir antes do final de 2026. Os termos ainda não são públicos, mas as empresas que já constroem relações na região estarão mais bem posicionadas quando o acordo entrar em vigor.",
+    originOtherTitle: "Outros países da América Latina",
+    originOtherText: "Cada país da LATAM fora do Mercosul tem a sua própria relação comercial com o bloco. Contacte-nos e analisaremos a sua situação específica."
+  },
+};
+
+/* ═══════════════ PRODUCT DATABASE (multilingual) ═══════════════ */
+const DB = {
+  automoviles: {
+    hs: "HS 8703", purga: 15, riesgo: "medio",
+    short: {fi:"Autot", en:"Cars", es:"Automóviles", pt:"Automóveis"},
+    nombre: {fi:"Moottoriajoneuvot (henkilöautot)", en:"Motor vehicles (passenger cars)", es:"Vehículos de motor (automóviles de pasajeros)", pt:"Veículos automóveis (automóveis de passageiros)"},
+    arancelAntes: {fi:"35 %", en:"35%", es:"35%", pt:"35%"},
+    arancelHoy: {fi:"17,5–25 % tuotteen mukaan", en:"17.5–25% depending on type", es:"17,5–25% según tipo", pt:"17,5–25% consoante o tipo"},
+    inicio: {fi:"1.5.2026", en:"1 May 2026", es:"1 mayo 2026", pt:"1 de maio de 2026"},
+    finApprox: {fi:"noin 2041", en:"around 2041", es:"~2041", pt:"~2041"},
+    detalle: {fi:"Sähkö- ja hybridiajoneuvojen tulli laski välittömästi 35 %:sta 25 %:iin 1.5.2026, ja se laskee vuosittain 18 vuoden siirtymäkauden aikana. Polttomoottoriautoilla on siirtymäkiintiö 50 000 yksikköä/vuosi puolella perustullista (17,5 %) ensimmäiset 7 vuotta, minkä jälkeen poisto nopeutuu.", en:"Tariffs on electric and hybrid vehicles dropped immediately from 35% to 25% on 1 May 2026, with annual reductions over an 18-year transition. Combustion-engine vehicles have a transitional quota of 50,000 units/year at half the base tariff (17.5%) for the first 7 years, after which elimination accelerates.", es:"Los vehículos eléctricos e híbridos bajaron inmediatamente del 35% al 25% el 1 de mayo de 2026, con reducciones anuales durante un período de transición de 18 años. Los vehículos de combustión interna tienen una cuota transitoria de 50.000 unidades/año a la mitad de la tarifa base (17,5%) durante los primeros 7 años; después la eliminación se acelera.", pt:"Os veículos elétricos e híbridos desceram imediatamente de 35% para 25% em 1 de maio de 2026, com reduções anuais durante um período de transição de 18 anos. Os veículos de combustão interna têm uma quota transitória de 50.000 unidades/ano a metade da tarifa base (17,5%) durante os primeiros 7 anos; depois a eliminação acelera."},
+    notas: {fi:"Alan sääntely on monimutkaista — kiintiöt ja kaksoisaikataulu moottorityypin mukaan. Vaatii tarkkaa mallikohtaista/tullikoodikohtaista analyysiä.", en:"Highly complex regulatory sector — quotas and dual schedules by engine type. Requires model- and tariff-code-specific analysis.", es:"Sector con mayor complejidad regulatoria — cuotas y calendario dual según tipo de motor. Requiere análisis específico por modelo/código arancelario.", pt:"Setor com maior complexidade regulatória — quotas e calendário duplo consoante o tipo de motor. Requer análise específica por modelo/código pautal."},
+    terms: {fi:["auto","autot","ajoneuvo","ajoneuvot","henkilöauto"], en:["car","cars","automobile","automobiles","vehicle","vehicles"], es:["automóviles","autos","vehículos","coches"], pt:["automóveis","carros","veículos"]}
+  },
+
+  maquinaria: {
+    hs: "HS 84–85", purga: 10, riesgo: "bajo",
+    short: {fi:"Koneet", en:"Machinery", es:"Maquinaria", pt:"Maquinaria"},
+    nombre: {fi:"Teollisuuskoneet ja -laitteet", en:"Industrial machinery and equipment", es:"Maquinaria y equipos industriales", pt:"Maquinaria e equipamentos industriais"},
+    arancelAntes: {fi:"14–20 %", en:"14–20%", es:"14–20%", pt:"14–20%"},
+    arancelHoy: {fi:"Alennus alkanut 1.5.2026", en:"Reduction started 1 May 2026", es:"Reducción iniciada 1 may 2026", pt:"Redução iniciada em 1 mai 2026"},
+    inicio: {fi:"1.5.2026", en:"1 May 2026", es:"1 mayo 2026", pt:"1 de maio de 2026"},
+    finApprox: {fi:"noin 2036", en:"around 2036", es:"~2036", pt:"~2036"},
+    detalle: {fi:"Mercosurin EU-koneille asettamat tullit, jotka olivat historiallisesti 14–20 %, alkoivat alentua 1.5.2026. Suurin osa teollisuuskoneiden tullinimikkeistä noudattaa 10 vuoden poistoaikataulua.", en:"Mercosur's tariffs on EU machinery, historically ranging from 14% to 20%, began reducing on 1 May 2026. Most industrial machinery tariff lines follow a 10-year elimination schedule.", es:"Los aranceles de Mercosur sobre maquinaria industrial de la UE, que históricamente oscilaban entre 14% y 20%, comenzaron su reducción el 1 de mayo de 2026. La mayoría de líneas arancelarias de maquinaria industrial siguen un cronograma de eliminación de 10 años.", pt:"As tarifas do Mercosul sobre maquinaria industrial da UE, que historicamente oscilavam entre 14% e 20%, começaram a sua redução em 1 de maio de 2026. A maioria das linhas pautais de maquinaria industrial segue um calendário de eliminação de 10 anos."},
+    notas: {fi:"Yksi suotuisimmista kategorioista — suhteellisen lyhyt (10 v) aikataulu ilman monimutkaisia kiintiöitä. Hyvä ehdokas varhaiseen markkinoilletuloon.", en:"One of the most favourable categories — a relatively short (10-year) schedule without complex quotas. A good candidate for early market entry.", es:"Una de las categorías más favorables — cronograma relativamente corto (10 años) sin cuotas complejas. Buen candidato para entrada temprana al mercado.", pt:"Uma das categorias mais favoráveis — calendário relativamente curto (10 anos) sem quotas complexas. Bom candidato para entrada precoce no mercado."},
+    terms: {fi:["kone","koneet","laite","laitteet","teollisuuskone"], en:["machinery","machine","machines","equipment","industrial"], es:["maquinaria","máquinas","equipos"], pt:["maquinaria","máquinas","equipamentos"]}
+  },
+
+  farmaceuticos: {
+    hs: "HS 30", purga: 10, riesgo: "bajo",
+    short: {fi:"Lääkkeet", en:"Pharmaceuticals", es:"Farmacéuticos", pt:"Farmacêuticos"},
+    nombre: {fi:"Lääkevalmisteet", en:"Pharmaceutical products", es:"Productos farmacéuticos", pt:"Produtos farmacêuticos"},
+    arancelAntes: {fi:"jopa 14 %", en:"up to 14%", es:"hasta 14%", pt:"até 14%"},
+    arancelHoy: {fi:"Alennus alkanut 1.5.2026", en:"Reduction started 1 May 2026", es:"Reducción iniciada 1 may 2026", pt:"Redução iniciada em 1 mai 2026"},
+    inicio: {fi:"1.5.2026", en:"1 May 2026", es:"1 mayo 2026", pt:"1 de maio de 2026"},
+    finApprox: {fi:"noin 2036", en:"around 2036", es:"~2036", pt:"~2036"},
+    detalle: {fi:"Mercosurin EU-lääkkeille asettamat tullit, jotka olivat joissain luokissa jopa 18 %, alkoivat alentua vaiheittain 1.5.2026 alkaen.", en:"Mercosur's tariffs on EU pharmaceuticals, which reached up to 18% in some categories, began their phased reduction from 1 May 2026.", es:"Los aranceles de Mercosur sobre productos farmacéuticos de la UE, que alcanzaban hasta 18% en algunas categorías, comenzaron su reducción escalonada desde el 1 de mayo de 2026.", pt:"As tarifas do Mercosul sobre produtos farmacêuticos da UE, que chegavam a 18% nalgumas categorias, começaram a sua redução escalonada a partir de 1 de maio de 2026."},
+    notas: {fi:"EU:lle strategisesti tärkeä ala sopimuksessa. Tarkista tullin lisäksi paikalliset viranomaisvaatimukset (ANVISA Brasiliassa, ANMAT Argentiinassa) — ei-tariffiesteet ovat usein tullia merkittävämpiä.", en:"A strategically important sector for the EU in the agreement. Beyond the tariff, check local regulatory requirements (ANVISA in Brazil, ANMAT in Argentina) — non-tariff barriers are often more significant than the tariff itself.", es:"Sector estratégico para la UE en el acuerdo. Verificar requisitos regulatorios locales (ANVISA en Brasil, ANMAT en Argentina) además del arancel — la barrera no arancelaria suele ser mayor que la arancelaria.", pt:"Setor estratégico para a UE no acordo. Verifique os requisitos regulatórios locais (ANVISA no Brasil, ANMAT na Argentina) além da tarifa — a barreira não pautal costuma ser maior do que a pautal."},
+    terms: {fi:["lääke","lääkkeet","farmasia","lääkevalmiste"], en:["pharma","pharmaceutical","pharmaceuticals","medicine","medicines","drugs"], es:["farmacéuticos","farmacia","medicamentos"], pt:["farmacêuticos","farmácia","medicamentos"]}
+  },
+
+  vino: {
+    hs: "HS 2204", purga: 8, riesgo: "bajo",
+    short: {fi:"Viinit", en:"Wine", es:"Vino", pt:"Vinho"},
+    nombre: {fi:"Viini, väkevät juomat ja olut", en:"Wine, spirits and beer", es:"Vino, bebidas espirituosas y cerveza", pt:"Vinho, bebidas espirituosas e cerveja"},
+    arancelAntes: {fi:"jopa 35 %", en:"up to 35%", es:"hasta 35%", pt:"até 35%"},
+    arancelHoy: {fi:"Ensimmäinen alennus 1.5.2026", en:"First cut applied 1 May 2026", es:"Primer corte aplicado 1 may 2026", pt:"Primeiro corte aplicado em 1 mai 2026"},
+    inicio: {fi:"1.5.2026", en:"1 May 2026", es:"1 mayo 2026", pt:"1 de maio de 2026"},
+    finApprox: {fi:"noin 2034", en:"around 2034", es:"~2034", pt:"~2034"},
+    detalle: {fi:"Sopimus tuo välittömän ensimmäisen tullinalennuksen useimmille maataloustuotteille kuten viinille, väkeville juomille ja oliiviöljylle, mikä avaa uusia vientimahdollisuuksia heti.", en:"The agreement provides an immediate first tariff cut for most agri-food products such as wine, spirits and olive oil, opening new export opportunities from day one.", es:"El acuerdo prevé un primer recorte arancelario inmediato para la mayoría de productos agroalimentarios como vino, bebidas espirituosas y aceite de oliva, con nuevas oportunidades de exportación desde el día uno.", pt:"O acordo prevê um primeiro corte pautal imediato para a maioria dos produtos agroalimentares como vinho, bebidas espirituosas e azeite, com novas oportunidades de exportação desde o primeiro dia."},
+    notas: {fi:"Selkeä kilpailuetu eurooppalaisille tuottajille — välitön alennus ensimmäisestä päivästä, ei vain tulevaisuuden lupaus.", en:"A clear competitive advantage for European producers — an immediate reduction from day one, not merely a future promise.", es:"Categoría con ventaja competitiva clara para productores europeos — reducción inmediata desde el primer día, no solo anuncio de cronograma futuro.", pt:"Categoria com vantagem competitiva clara para os produtores europeus — redução imediata desde o primeiro dia, não apenas o anúncio de um calendário futuro."},
+    terms: {fi:["viini","viinit","alkoholi","juomat"], en:["wine","spirits","beer","alcohol","beverages"], es:["vino","bebidas","cerveza"], pt:["vinho","bebidas","cerveja"]}
+  },
+
+  lacteos: {
+    hs: "HS 04", purga: 11, riesgo: "medio",
+    short: {fi:"Maitotuotteet", en:"Dairy", es:"Lácteos", pt:"Lacticínios"},
+    nombre: {fi:"Maitotuotteet (juustot, maitojauhe)", en:"Dairy products (cheese, milk powder)", es:"Productos lácteos (quesos, leche en polvo)", pt:"Produtos lácteos (queijos, leite em pó)"},
+    arancelAntes: {fi:"28 %", en:"28%", es:"28%", pt:"28%"},
+    arancelHoy: {fi:"Alkuvaihe", en:"Initial phase", es:"Fase inicial", pt:"Fase inicial"},
+    inicio: {fi:"1.5.2026", en:"1 May 2026", es:"1 mayo 2026", pt:"1 de maio de 2026"},
+    finApprox: {fi:"noin 2037", en:"around 2037", es:"~2037", pt:"~2037"},
+    detalle: {fi:"Suurin osa EU:n teollisuustuotteista ja maitotuotteista saavuttaa 0 % tullin vuonna 10/11 (noin 2036). EU:n juustokiintiö (30 000 t) on tällöin täysin toiminnassa.", en:"Most EU industrial goods and dairy products reach 0% tariff in Year 10/11 (around 2036). An EU cheese quota (30,000 t) will be fully operational by then.", es:"La mayoría de bienes industriales y lácteos de la UE alcanzan 0% en el Año 10/11 (~2036). Se establece una cuota TRQ de queso de la UE (30.000 t) que estará plenamente operativa para esa fecha.", pt:"A maioria dos bens industriais e lacticínios da UE atinge 0% no Ano 10/11 (~2036). É estabelecida uma quota TRQ de queijo da UE (30.000 t) que estará plenamente operacional nessa data."},
+    notas: {fi:"Yhdistää asteittaisen tullinalennuksen juustojen erityiskiintiöön. Pitkän aikavälin horisontti — merkityksellinen strategiselle suunnittelulle, ei välittömälle hyödylle.", en:"Combines a progressive tariff reduction with a specific cheese quota. A long-term horizon — relevant for strategic planning, not immediate gain.", es:"Combina reducción arancelaria progresiva con cuota específica para quesos. Horizonte de largo plazo — relevante para planificación estratégica, no ganancia inmediata.", pt:"Combina redução pautal progressiva com quota específica para queijos. Horizonte de longo prazo — relevante para planeamento estratégico, não ganho imediato."},
+    terms: {fi:["maito","maitotuote","juusto","maitojauhe"], en:["dairy","cheese","milk"], es:["lácteos","queso","leche"], pt:["lacticínios","queijo","leite"]}
+  },
+
+  quimicos: {
+    hs: "HS 28–39", purga: 10, riesgo: "bajo",
+    short: {fi:"Kemikaalit", en:"Chemicals", es:"Químicos", pt:"Químicos"},
+    nombre: {fi:"Kemialliset tuotteet", en:"Chemical products", es:"Productos químicos", pt:"Produtos químicos"},
+    arancelAntes: {fi:"jopa 18 %", en:"up to 18%", es:"hasta 18%", pt:"até 18%"},
+    arancelHoy: {fi:"Alennus alkanut 1.5.2026", en:"Reduction started 1 May 2026", es:"Reducción iniciada 1 may 2026", pt:"Redução iniciada em 1 mai 2026"},
+    inicio: {fi:"1.5.2026", en:"1 May 2026", es:"1 mayo 2026", pt:"1 de maio de 2026"},
+    finApprox: {fi:"noin 2036", en:"around 2036", es:"~2036", pt:"~2036"},
+    detalle: {fi:"Mercosurin EU-kemikaaleille asettamat tullit, jotka olivat joissain luokissa jopa 18 %, aloittivat vaiheittaisen alenemisensa 1.5.2026 alkaen.", en:"Mercosur's tariffs on EU chemicals, up to 18% in some categories, began their phased reduction schedule from 1 May 2026.", es:"Los aranceles de Mercosur sobre productos químicos de la UE, de hasta 18% en algunas categorías, iniciaron su cronograma de reducción escalonada desde el 1 de mayo de 2026.", pt:"As tarifas do Mercosul sobre produtos químicos da UE, até 18% nalgumas categorias, iniciaram o seu calendário de redução escalonada a partir de 1 de maio de 2026."},
+    notas: {fi:"Laaja kategoria jonka alaryhmät poikkeavat suuresti toisistaan — suositellaan tarkan tullinimikkeen (8-numeroinen HS-koodi) tunnistamista ennen vientisuunnittelua.", en:"A broad category with very diverse subcategories — identifying the exact tariff line (8-digit HS code) is recommended before planning exports.", es:"Categoría amplia con subcategorías muy distintas entre sí — recomendable identificar la partida arancelaria exacta (HS de 8 dígitos) antes de planificar exportación.", pt:"Categoria ampla com subcategorias muito distintas entre si — recomendável identificar a posição pautal exata (SH de 8 dígitos) antes de planear a exportação."},
+    terms: {fi:["kemikaali","kemikaalit","kemia"], en:["chemical","chemicals"], es:["químicos","química"], pt:["químicos","química"]}
+  },
+
+  papel: {
+    hs: "HS 47–48", purga: 15, riesgo: "medio",
+    short: {fi:"Paperi ja sellu", en:"Paper & pulp", es:"Papel y celulosa", pt:"Papel e celulose"},
+    nombre: {fi:"Sellu, paperi ja kartonki", en:"Pulp, paper and paperboard", es:"Celulosa, papel y cartón", pt:"Celulose, papel e cartão"},
+    arancelAntes: {fi:"vaihteleva, useissa luokissa suojattu", en:"variable, protected in several categories", es:"variable, protegido en varias categorías", pt:"variável, protegido em várias categorias"},
+    arancelHoy: {fi:"Ei alenna heti — asteittainen poisto alkanut", en:"No immediate cut — phased elimination begun", es:"Sin reducción inmediata — eliminación gradual iniciada", pt:"Sem redução imediata — eliminação gradual iniciada"},
+    inicio: {fi:"1.5.2026", en:"1 May 2026", es:"1 mayo 2026", pt:"1 de maio de 2026"},
+    finApprox: {fi:"noin 2041, osa tuotteista pysyvästi rajattuna", en:"around 2041, some products permanently excluded", es:"~2041, algunos productos excluidos permanentemente", pt:"~2041, alguns produtos excluídos permanentemente"},
+    detalle: {fi:"Sellun ja paperin tullit eivät poistu sopimuksen voimaantullessa — suurin osa alennuksista toteutuu vaiheittain 4–15 vuoden aikana. Kauden lopussa noin 85 % EU:n sellunviennistä ja 90 % paperinviennistä (volyymissä) hyötyy tullittomuudesta. Jalostetut paperi- ja kartonkituotteet pysyvät vahvasti suojattuina — vain 54 % EU:n viennistä (arvossa) vapautuu. Painotuotteet vapautuvat eniten: 93 % arvosta.", en:"Tariffs on pulp and paper will not be removed at entry into force — most reductions are phased in over 4 to 15 years. By the end of the period, around 85% of EU pulp exports and 90% of paper exports (by volume) will benefit from tariff elimination. Converted paper and board products remain heavily protected — only 54% of EU exports (by value) will be liberalised. Printed products see the highest liberalisation: 93% by value.", es:"Los aranceles de celulosa y papel no se eliminan al entrar en vigor el acuerdo — la mayoría de las reducciones se aplican gradualmente durante 4 a 15 años. Al final del período, cerca del 85% de las exportaciones de celulosa de la UE y el 90% de papel (en volumen) se benefician de la eliminación arancelaria. Los productos de papel y cartón convertidos siguen muy protegidos — solo el 54% de las exportaciones de la UE (en valor) se liberaliza. Los productos impresos son los más liberalizados: 93% en valor.", pt:"As tarifas de celulose e papel não são eliminadas com a entrada em vigor do acordo — a maioria das reduções aplica-se gradualmente ao longo de 4 a 15 anos. No final do período, cerca de 85% das exportações de celulose da UE e 90% de papel (em volume) beneficiam da eliminação pautal. Os produtos de papel e cartão transformados continuam muito protegidos — apenas 54% das exportações da UE (em valor) é liberalizado. Os produtos impressos são os mais liberalizados: 93% em valor."},
+    notas: {fi:"Suomelle strategisesti tärkeä ala. Huomaa ero: raakasellu ja perinteinen paperi vapautuvat hyvin, mutta jalostetut kartonki-/pakkaustuotteet pysyvät suojattuina — tuotelinja ratkaisee lopputuloksen merkittävästi.", en:"A strategically important sector for Finland. Note the distinction: raw pulp and standard paper liberalise well, but converted board/packaging products remain protected — the specific product line significantly determines the outcome.", es:"Sector estratégicamente importante para Finlandia. Nótese la distinción: la celulosa cruda y el papel estándar se liberalizan bien, pero los productos de cartón/embalaje convertidos siguen protegidos — la línea de producto específica determina el resultado de forma significativa.", pt:"Setor estrategicamente importante para a Finlândia. Note-se a distinção: a celulose bruta e o papel padrão liberalizam-se bem, mas os produtos de cartão/embalagem transformados continuam protegidos — a linha de produto específica determina o resultado de forma significativa."},
+    terms: {fi:["paperi","sellu","kartonki","pakkaus","metsäteollisuus"], en:["paper","pulp","paperboard","packaging","forestry"], es:["papel","celulosa","cartón","embalaje"], pt:["papel","celulose","cartão","embalagem"]}
+  },
+
+  textiles: {
+    hs: "HS 50–63", purga: 8, riesgo: "bajo",
+    short: {fi:"Tekstiilit", en:"Textiles", es:"Textiles", pt:"Têxteis"},
+    nombre: {fi:"Tekstiilit ja vaatteet", en:"Textiles and apparel", es:"Textiles y prendas de vestir", pt:"Têxteis e vestuário"},
+    arancelAntes: {fi:"35 %", en:"35%", es:"35%", pt:"35%"},
+    arancelHoy: {fi:"Ensimmäinen 3,9 %-yksikön alennus heti", en:"First 3.9 percentage-point cut on day one", es:"Primer recorte de 3,9 puntos porcentuales de inmediato", pt:"Primeiro corte de 3,9 pontos percentuais imediato"},
+    inicio: {fi:"1.5.2026", en:"1 May 2026", es:"1 mayo 2026", pt:"1 de maio de 2026"},
+    finApprox: {fi:"noin 2034", en:"around 2034", es:"~2034", pt:"~2034"},
+    detalle: {fi:"Tekstiilien 35 %:n tulli aloittaa kahdeksan vuoden siirtymän kohti nollaa kaikessa EU:n Mercosur-viennissä, ensimmäisenä päivänä 3,9 prosenttiyksikön alennuksella.", en:"Duties on textiles of 35% begin their eight-year transition to 0% for all EU exports to Mercosur, with a first tariff cut of 3.9 percentage points on day one.", es:"Los aranceles del 35% sobre textiles inician su transición de ocho años hacia el 0% para todas las exportaciones de la UE a Mercosur, con un primer recorte de 3,9 puntos porcentuales el primer día.", pt:"As tarifas de 35% sobre têxteis iniciam a sua transição de oito anos rumo a 0% para todas as exportações da UE para o Mercosul, com um primeiro corte de 3,9 pontos percentuais no primeiro dia."},
+    notas: {fi:"Yksi selkeimmistä ja nopeimmista poistoaikatauluista koko sopimuksessa — houkutteleva ala varhaiseen markkinoilletuloon, koska alennus alkaa välittömästi eikä vasta vuosien päästä.", en:"One of the clearest and fastest elimination schedules in the entire agreement — an attractive sector for early market entry since the reduction begins immediately, not years down the line.", es:"Uno de los cronogramas de eliminación más claros y rápidos de todo el acuerdo — sector atractivo para entrada temprana al mercado, ya que la reducción comienza de inmediato, no años después.", pt:"Um dos calendários de eliminação mais claros e rápidos de todo o acordo — setor atrativo para entrada precoce no mercado, já que a redução começa de imediato, não anos depois."},
+    terms: {fi:["tekstiili","tekstiilit","vaatteet","vaatetus"], en:["textile","textiles","apparel","clothing","garments"], es:["textiles","prendas","ropa","vestir"], pt:["têxteis","vestuário","roupa"]}
+  },
+
+  acero: {
+    hs: "HS 72–73", purga: 10, riesgo: "medio",
+    short: {fi:"Teräs ja metallit", en:"Steel & metals", es:"Hierro y acero", pt:"Ferro e aço"},
+    nombre: {fi:"Rauta, teräs ja metallituotteet", en:"Iron, steel and metal products", es:"Hierro, acero y productos metálicos", pt:"Ferro, aço e produtos metálicos"},
+    arancelAntes: {fi:"noin 12–18 %", en:"around 12–18%", es:"aproximadamente 12–18%", pt:"aproximadamente 12–18%"},
+    arancelHoy: {fi:"Alennus alkanut 1.5.2026", en:"Reduction started 1 May 2026", es:"Reducción iniciada 1 may 2026", pt:"Redução iniciada em 1 mai 2026"},
+    inicio: {fi:"1.5.2026", en:"1 May 2026", es:"1 mayo 2026", pt:"1 de maio de 2026"},
+    finApprox: {fi:"noin 2036", en:"around 2036", es:"~2036", pt:"~2036"},
+    detalle: {fi:"Teräs ja metallituotteet kuuluvat teollisuustuotteisiin, joita Mercosur vapauttaa suurelta osin 10 vuoden kuluessa — sopimuksen tavoitteena on poistaa tullit lähes kokonaan EU:n keskeisimmiltä teollisuudenaloilta.", en:"Steel and metal products fall under industrial goods that Mercosur will largely liberalise within 10 years — the agreement aims to eliminate tariffs almost entirely on the EU's most important industrial sectors.", es:"El acero y los productos metálicos se encuadran en los bienes industriales que Mercosur liberalizará en gran medida en 10 años — el acuerdo pretende eliminar casi por completo los aranceles en los sectores industriales clave de la UE.", pt:"O aço e os produtos metálicos enquadram-se nos bens industriais que o Mercosul liberalizará em grande medida em 10 anos — o acordo pretende eliminar quase por completo as tarifas nos setores industriais chave da UE."},
+    notas: {fi:"Yleisluontoinen kategoria jossa on paljon alanimikkeitä — erikoisteräkset, rakenneteräkset ja jalostetut metallituotteet voivat noudattaa eri aikatauluja. Suositellaan tarkkaa HS-koodin tunnistamista.", en:"A broad category with many sub-headings — specialty steels, structural steel and finished metal products may follow different schedules. Identifying the exact HS code is recommended.", es:"Categoría amplia con numerosas subpartidas — los aceros especiales, el acero estructural y los productos metálicos acabados pueden seguir cronogramas distintos. Se recomienda identificar el código HS exacto.", pt:"Categoria ampla com numerosas subposições — os aços especiais, o aço estrutural e os produtos metálicos acabados podem seguir calendários distintos. Recomenda-se identificar o código SH exato."},
+    terms: {fi:["teräs","rauta","metalli","metallit"], en:["steel","iron","metal","metals"], es:["hierro","acero","metal","metales"], pt:["ferro","aço","metal","metais"]}
+  },
+
+  plasticos: {
+    hs: "HS 39", purga: 10, riesgo: "bajo",
+    short: {fi:"Muovit", en:"Plastics", es:"Plásticos", pt:"Plásticos"},
+    nombre: {fi:"Muovit ja muovituotteet", en:"Plastics and plastic products", es:"Plásticos y sus manufacturas", pt:"Plásticos e suas obras"},
+    arancelAntes: {fi:"jopa 18 %", en:"up to 18%", es:"hasta 18%", pt:"até 18%"},
+    arancelHoy: {fi:"Alennus alkanut 1.5.2026", en:"Reduction started 1 May 2026", es:"Reducción iniciada 1 may 2026", pt:"Redução iniciada em 1 mai 2026"},
+    inicio: {fi:"1.5.2026", en:"1 May 2026", es:"1 mayo 2026", pt:"1 de maio de 2026"},
+    finApprox: {fi:"noin 2036", en:"around 2036", es:"~2036", pt:"~2036"},
+    detalle: {fi:"Muovituotteet noudattavat samaa kemianteollisuuden yleistä 10 vuoden poistoaikataulua kuin muut kemialliset tuotteet — tullit alenevat vuosittain sopimuksen voimaantulosta lähtien.", en:"Plastic products follow the same general 10-year elimination schedule as other chemical products — tariffs decrease annually from the agreement's entry into force.", es:"Los productos plásticos siguen el mismo cronograma general de eliminación de 10 años que otros productos químicos — los aranceles disminuyen anualmente desde la entrada en vigor del acuerdo.", pt:"Os produtos plásticos seguem o mesmo calendário geral de eliminação de 10 anos que outros produtos químicos — as tarifas diminuem anualmente desde a entrada em vigor do acordo."},
+    notas: {fi:"Kategoria kattaa sekä raaka-ainemuovit että valmiit muovituotteet, joiden aikataulut voivat poiketa toisistaan. Pakkausmuovit ja tekniset muoviosat kannattaa tarkistaa erikseen.", en:"The category covers both raw plastic materials and finished plastic products, whose schedules may differ. Packaging plastics and technical plastic parts are worth checking separately.", es:"La categoría abarca tanto materias primas plásticas como productos plásticos terminados, cuyos cronogramas pueden diferir. Vale la pena verificar por separado los plásticos de embalaje y las piezas técnicas.", pt:"A categoria abrange tanto matérias-primas plásticas como produtos plásticos acabados, cujos calendários podem diferir. Vale a pena verificar separadamente os plásticos de embalagem e as peças técnicas."},
+    terms: {fi:["muovi","muovit","muovituote"], en:["plastic","plastics"], es:["plásticos","plástico"], pt:["plásticos","plástico"]}
+  },
+
+  electronica: {
+    hs: "HS 84–85 (parcial)", purga: 10, riesgo: "bajo",
+    short: {fi:"Elektroniikka", en:"Electronics", es:"Electrónica", pt:"Eletrónica"},
+    nombre: {fi:"Elektroniikka- ja sähkölaitteet", en:"Electronic and electrical equipment", es:"Equipos electrónicos y eléctricos", pt:"Equipamentos eletrónicos e elétricos"},
+    arancelAntes: {fi:"noin 12–20 %", en:"around 12–20%", es:"aproximadamente 12–20%", pt:"aproximadamente 12–20%"},
+    arancelHoy: {fi:"Alennus alkanut 1.5.2026", en:"Reduction started 1 May 2026", es:"Reducción iniciada 1 may 2026", pt:"Redução iniciada em 1 mai 2026"},
+    inicio: {fi:"1.5.2026", en:"1 May 2026", es:"1 mayo 2026", pt:"1 de maio de 2026"},
+    finApprox: {fi:"noin 2036", en:"around 2036", es:"~2036", pt:"~2036"},
+    detalle: {fi:"Elektroniikka kuuluu EU:lle keskeisiin teollisuustuotteisiin, jotka Mercosur pyrkii vapauttamaan lähes kokonaan tullittomiksi 10 vuoden kuluessa. Telekommunikaatiolaitteille sopimus tuo lisäksi syrjimättömän pääsyn taajuuksien, kuten 5G:n, jakoon.", en:"Electronics fall within the industrial products of key interest to the EU that Mercosur aims to make almost entirely duty-free within 10 years. For telecoms equipment, the agreement also brings non-discriminatory access to spectrum allocation such as 5G.", es:"La electrónica se encuadra entre los productos industriales de interés clave para la UE que Mercosur pretende dejar casi totalmente libres de aranceles en 10 años. Para equipos de telecomunicaciones, el acuerdo también aporta acceso no discriminatorio a la asignación de espectro como el 5G.", pt:"A eletrónica enquadra-se entre os produtos industriais de interesse chave para a UE que o Mercosul pretende deixar quase totalmente livres de tarifas em 10 anos. Para equipamentos de telecomunicações, o acordo traz também acesso não discriminatório à atribuição de espetro como o 5G."},
+    notas: {fi:"Suotuisa ala EU:n neuvotteluagendalla, mutta laaja tuoteryhmä — kuluttajaelektroniikka, teollisuuselektroniikka ja telekomlaitteet voivat noudattaa eri nimikkeitä. Tarkista tuotekohtainen HS-koodi.", en:"A favourable sector on the EU's negotiating agenda, but a broad product group — consumer electronics, industrial electronics and telecom equipment may fall under different headings. Check the product-specific HS code.", es:"Sector favorable en la agenda negociadora de la UE, pero un grupo de productos amplio — la electrónica de consumo, la electrónica industrial y los equipos de telecomunicaciones pueden tener partidas distintas. Verifique el código HS específico del producto.", pt:"Setor favorável na agenda negocial da UE, mas um grupo de produtos amplo — a eletrónica de consumo, a eletrónica industrial e os equipamentos de telecomunicações podem ter posições distintas. Verifique o código SH específico do produto."},
+    terms: {fi:["elektroniikka","sähkölaite","sähkölaitteet","telekom"], en:["electronics","electrical","telecom","telecommunications"], es:["electrónica","eléctrico","telecomunicaciones"], pt:["eletrónica","elétrico","telecomunicações"]}
+  },
+
+  pesca: {
+    hs: "HS 03", purga: 0, riesgo: "alto",
+    short: {fi:"Kalastustuotteet", en:"Fisheries", es:"Pesca", pt:"Pesca"},
+    nombre: {fi:"Kala ja kalastustuotteet", en:"Fish and fishery products", es:"Pescado y productos de la pesca", pt:"Peixe e produtos da pesca"},
+    arancelAntes: {fi:"nykyinen taso", en:"current level", es:"nivel actual", pt:"nível atual"},
+    arancelHoy: {fi:"Ei alenna — herkkä tuote", en:"No reduction — sensitive product", es:"Sin reducción — producto sensible", pt:"Sem redução — produto sensível"},
+    inicio: {fi:"1.5.2026", en:"1 May 2026", es:"1 mayo 2026", pt:"1 de maio de 2026"},
+    finApprox: {fi:"ei sovellu", en:"not applicable", es:"no aplica", pt:"não aplicável"},
+    detalle: {fi:"Kala on merkitty sopimuksessa herkäksi tuotteeksi (merkintä 'E' tullitaulukossa) yhdessä mm. lampaanlihan, maidon ja vehnän kanssa — nykyinen tuontitulli EI alene sopimuksen myötä.", en:"Fish is designated a sensitive product in the agreement (marked 'E' in the tariff schedule), alongside items such as lamb, milk and wheat — the current import tariff does NOT decrease under the agreement.", es:"El pescado está designado como producto sensible en el acuerdo (marcado 'E' en el cronograma arancelario), junto con productos como cordero, leche y trigo — el arancel de importación actual NO se reduce con el acuerdo.", pt:"O peixe está designado como produto sensível no acordo (marcado 'E' no calendário pautal), juntamente com produtos como borrego, leite e trigo — a tarifa de importação atual NÃO é reduzida pelo acordo."},
+    notas: {fi:"Yksi harvoista aloista joka jää kokonaan sopimuksen ulkopuolelle. Pohjoismaiselle kalastusalalle tämä tarkoittaa, ettei Mercosur-sopimus tuo suoraa tullietua — muut markkinoillepääsystrategiat tarpeen.", en:"One of the few sectors left entirely outside the agreement. For the Nordic fishing industry, this means the Mercosur agreement brings no direct tariff advantage — other market-entry strategies are needed.", es:"Uno de los pocos sectores que queda totalmente fuera del acuerdo. Para la industria pesquera nórdica, esto significa que el acuerdo Mercosur no aporta ninguna ventaja arancelaria directa — se necesitan otras estrategias de entrada al mercado.", pt:"Um dos poucos setores que fica totalmente fora do acordo. Para a indústria pesqueira nórdica, isto significa que o acordo com o Mercosul não traz qualquer vantagem pautal direta — são necessárias outras estratégias de entrada no mercado."},
+    terms: {fi:["kala","kalastus","kalastustuote","meriruoka"], en:["fish","fishery","fisheries","seafood"], es:["pescado","pesca","mariscos"], pt:["peixe","pesca","marisco"]}
+  },
+
+  muebles: {
+    hs: "HS 94", purga: 10, riesgo: "bajo",
+    short: {fi:"Huonekalut", en:"Furniture", es:"Muebles", pt:"Móveis"},
+    nombre: {fi:"Huonekalut ja puutuotteet", en:"Furniture and wood products", es:"Muebles y productos de madera", pt:"Móveis e produtos de madeira"},
+    arancelAntes: {fi:"noin 14–20 %", en:"around 14–20%", es:"aproximadamente 14–20%", pt:"aproximadamente 14–20%"},
+    arancelHoy: {fi:"Alennus alkanut 1.5.2026", en:"Reduction started 1 May 2026", es:"Reducción iniciada 1 may 2026", pt:"Redução iniciada em 1 mai 2026"},
+    inicio: {fi:"1.5.2026", en:"1 May 2026", es:"1 mayo 2026", pt:"1 de maio de 2026"},
+    finApprox: {fi:"noin 2036", en:"around 2036", es:"~2036", pt:"~2036"},
+    detalle: {fi:"Huonekalut ja jalostetut puutuotteet kuuluvat yleiseen teollisuustuotekategoriaan, jonka Mercosur vapauttaa 10 vuoden kuluessa. Luonnollinen jatke Suomen sellu- ja paperivientiosaamiselle korkeamman jalostusarvon suuntaan.", en:"Furniture and finished wood products fall under the general industrial goods category, which Mercosur liberalises over 10 years. A natural extension for Finland's pulp and paper export expertise toward higher value-added products.", es:"Los muebles y productos de madera acabados se encuadran en la categoría general de bienes industriales, que Mercosur liberaliza en 10 años. Una extensión natural de la experiencia exportadora finlandesa en celulosa y papel hacia productos de mayor valor añadido.", pt:"Os móveis e produtos de madeira acabados enquadram-se na categoria geral de bens industriais, que o Mercosul liberaliza em 10 anos. Uma extensão natural da experiência exportadora finlandesa em celulose e papel para produtos de maior valor acrescentado."},
+    notas: {fi:"Suotuisa jatko metsäteollisuusosaamiselle — houkuttelevaa erityisesti jos yritys jo vie sellua/paperia ja haluaa laajentaa jalostetumpiin tuotteisiin.", en:"A favourable extension for forestry-sector expertise — particularly attractive if a company already exports pulp/paper and wants to expand into more processed products.", es:"Una extensión favorable para la experiencia del sector forestal — particularmente atractiva si una empresa ya exporta celulosa/papel y desea expandirse hacia productos más procesados.", pt:"Uma extensão favorável para a experiência do setor florestal — particularmente atrativa se uma empresa já exporta celulose/papel e deseja expandir-se para produtos mais processados."},
+    terms: {fi:["huonekalu","huonekalut","puutuote","puu"], en:["furniture","wood","wooden"], es:["muebles","madera"], pt:["móveis","madeira"]}
+  },
+
+  cosmetica: {
+    hs: "HS 33", purga: 10, riesgo: "bajo",
+    short: {fi:"Kosmetiikka", en:"Cosmetics", es:"Cosmética", pt:"Cosmética"},
+    nombre: {fi:"Kosmetiikka- ja hygieniatuotteet", en:"Cosmetics and personal care products", es:"Cosméticos y productos de higiene personal", pt:"Cosméticos e produtos de higiene pessoal"},
+    arancelAntes: {fi:"jopa 18 %", en:"up to 18%", es:"hasta 18%", pt:"até 18%"},
+    arancelHoy: {fi:"Alennus alkanut 1.5.2026", en:"Reduction started 1 May 2026", es:"Reducción iniciada 1 may 2026", pt:"Redução iniciada em 1 mai 2026"},
+    inicio: {fi:"1.5.2026", en:"1 May 2026", es:"1 mayo 2026", pt:"1 de maio de 2026"},
+    finApprox: {fi:"noin 2036", en:"around 2036", es:"~2036", pt:"~2036"},
+    detalle: {fi:"Kosmetiikka noudattaa kemianteollisuuden yleistä 10 vuoden poistoaikataulua. Kasvava vientiala pohjoismaisille luonnonkosmetiikka- ja hygieniatuotemerkeille.", en:"Cosmetics follow the general 10-year chemical-sector elimination schedule. A growing export category for Nordic natural cosmetics and personal-care brands.", es:"Los cosméticos siguen el cronograma general de eliminación de 10 años del sector químico. Una categoría de exportación en crecimiento para las marcas nórdicas de cosmética natural e higiene.", pt:"Os cosméticos seguem o calendário geral de eliminação de 10 anos do setor químico. Uma categoria de exportação em crescimento para as marcas nórdicas de cosmética natural e higiene."},
+    notas: {fi:"Tarkista tullin lisäksi kosmetiikan tuotehyväksyntävaatimukset kohdemaassa — ANVISA Brasiliassa on tunnetusti tiukka kosmetiikan rekisteröinnissä.", en:"Beyond the tariff, check product-approval requirements in the destination country — ANVISA in Brazil is known to be strict on cosmetics registration.", es:"Además del arancel, verifique los requisitos de aprobación de producto en el país de destino — ANVISA en Brasil es conocida por ser estricta en el registro de cosméticos.", pt:"Além da tarifa, verifique os requisitos de aprovação de produto no país de destino — a ANVISA no Brasil é conhecida por ser rigorosa no registo de cosméticos."},
+    terms: {fi:["kosmetiikka","hygieniatuote","ihonhoito"], en:["cosmetics","cosmetic","personal care","skincare"], es:["cosmética","cosméticos","higiene"], pt:["cosmética","cosméticos","higiene"]}
+  },
+
+  maritima: {
+    hs: "HS 89", purga: 12, riesgo: "medio",
+    short: {fi:"Meriteollisuus", en:"Maritime", es:"Sector marítimo", pt:"Setor marítimo"},
+    nombre: {fi:"Laivat, veneet ja meriteollisuuden laitteet", en:"Ships, boats and maritime equipment", es:"Buques, embarcaciones y equipos marítimos", pt:"Navios, embarcações e equipamentos marítimos"},
+    arancelAntes: {fi:"vaihteleva, osin korkea", en:"variable, partly high", es:"variable, en parte elevado", pt:"variável, em parte elevado"},
+    arancelHoy: {fi:"Alennus alkanut 1.5.2026", en:"Reduction started 1 May 2026", es:"Reducción iniciada 1 may 2026", pt:"Redução iniciada em 1 mai 2026"},
+    inicio: {fi:"1.5.2026", en:"1 May 2026", es:"1 mayo 2026", pt:"1 de maio de 2026"},
+    finApprox: {fi:"noin 2038", en:"around 2038", es:"~2038", pt:"~2038"},
+    detalle: {fi:"Meriteollisuuden tuotteet noudattavat pidempää, jopa 12 vuoden poistoaikataulua tuotetyypistä riippuen. Mercosur-maiden satamainfrastruktuurin kehitys luo kysyntää suomalaiselle meriteknologialle riippumatta tullitasosta.", en:"Maritime industry products follow a longer elimination schedule of up to 12 years depending on product type. Port infrastructure development in Mercosur countries creates demand for Finnish maritime technology regardless of tariff level.", es:"Los productos de la industria marítima siguen un cronograma de eliminación más largo, de hasta 12 años según el tipo de producto. El desarrollo de infraestructura portuaria en los países del Mercosur genera demanda de tecnología marítima finlandesa independientemente del nivel arancelario.", pt:"Os produtos da indústria marítima seguem um calendário de eliminação mais longo, até 12 anos consoante o tipo de produto. O desenvolvimento de infraestrutura portuária nos países do Mercosul gera procura de tecnologia marítima finlandesa independentemente do nível pautal."},
+    notas: {fi:"Pitkä aikajänne ja tuotekohtainen vaihtelu — vaatii tarkkaa nimikekohtaista selvitystä. Sopii yrityksille joilla on pitkän aikavälin markkinoillepääsystrategia.", en:"Long time horizon and product-specific variation — requires detailed line-by-line research. Suited to companies with a long-term market-entry strategy.", es:"Horizonte temporal largo y variación específica por producto — requiere una investigación detallada línea por línea. Adecuado para empresas con una estrategia de entrada al mercado a largo plazo.", pt:"Horizonte temporal longo e variação específica por produto — requer uma investigação detalhada linha a linha. Adequado para empresas com uma estratégia de entrada no mercado a longo prazo."},
+    terms: {fi:["laiva","laivat","vene","meriteollisuus","satama"], en:["maritime","ship","ships","boat","boats","shipbuilding"], es:["marítimo","buque","embarcación","naval"], pt:["marítimo","navio","embarcação","naval"]}
+  },
+
+  construccion: {
+    hs: "HS 68–70", purga: 10, riesgo: "bajo",
+    short: {fi:"Rakennusmateriaalit", en:"Construction materials", es:"Materiales de construcción", pt:"Materiais de construção"},
+    nombre: {fi:"Rakennusmateriaalit (lasi, keramiikka, kivi)", en:"Construction materials (glass, ceramics, stone)", es:"Materiales de construcción (vidrio, cerámica, piedra)", pt:"Materiais de construção (vidro, cerâmica, pedra)"},
+    arancelAntes: {fi:"noin 12–18 %", en:"around 12–18%", es:"aproximadamente 12–18%", pt:"aproximadamente 12–18%"},
+    arancelHoy: {fi:"Alennus alkanut 1.5.2026", en:"Reduction started 1 May 2026", es:"Reducción iniciada 1 may 2026", pt:"Redução iniciada em 1 mai 2026"},
+    inicio: {fi:"1.5.2026", en:"1 May 2026", es:"1 mayo 2026", pt:"1 de maio de 2026"},
+    finApprox: {fi:"noin 2036", en:"around 2036", es:"~2036", pt:"~2036"},
+    detalle: {fi:"Rakennusmateriaalit kuuluvat yleiseen teollisuustuotekategoriaan, 10 vuoden poistoaikataulu. Relevantti ala jos DR- tai Uruguay-verkostojasi voi hyödyntää myös rakennusalan kontakteihin.", en:"Construction materials fall under the general industrial goods category, with a 10-year elimination schedule. A relevant sector if your DR or Uruguay networks can also be leveraged for construction-sector contacts.", es:"Los materiales de construcción se encuadran en la categoría general de bienes industriales, con un cronograma de eliminación de 10 años. Un sector relevante si sus redes de RD o Uruguay también pueden aprovecharse para contactos del sector de la construcción.", pt:"Os materiais de construção enquadram-se na categoria geral de bens industriais, com um calendário de eliminação de 10 anos. Um setor relevante se as suas redes na RD ou no Uruguai também puderem ser aproveitadas para contactos do setor da construção."},
+    notas: {fi:"Laaja kategoria — lasi, keramiikka ja luonnonkivi voivat noudattaa eri aikatauluja. Suositellaan tarkkaa tuotekohtaista selvitystä.", en:"A broad category — glass, ceramics and natural stone may follow different schedules. Detailed product-specific research is recommended.", es:"Una categoría amplia — el vidrio, la cerámica y la piedra natural pueden seguir cronogramas distintos. Se recomienda una investigación detallada específica por producto.", pt:"Uma categoria ampla — o vidro, a cerâmica e a pedra natural podem seguir calendários distintos. Recomenda-se uma investigação detalhada específica por produto."},
+    terms: {fi:["rakennusmateriaali","rakentaminen","lasi","keramiikka"], en:["construction","building materials","glass","ceramics"], es:["construcción","materiales","vidrio","cerámica"], pt:["construção","materiais","vidro","cerâmica"]}
+  }
+};
+
+/* ═══════════════ STATE & RENDER ═══════════════ */
+let currentLang = 'pt';
+let lastKey = null;   // canonical DB key, 'EMPTY', or null
+let lastTerm = '';
+
+function applyStaticTexts(){
+  const t = I18N[currentLang];
+  document.getElementById('eyebrow').textContent = t.eyebrow;
+  document.getElementById('h1').innerHTML = t.h1_pre + '<em>' + t.h1_em + '</em>' + t.h1_post;
+  document.getElementById('sub').textContent = t.sub;
+  document.getElementById('searchLabel').textContent = t.searchLabel;
+  document.getElementById('buscar').placeholder = t.placeholder;
+  document.getElementById('searchBtnText').textContent = t.searchBtn;
+  document.getElementById('footNote').textContent = t.footNote;
+
+  document.getElementById('originQuestion').textContent = t.originQuestion;
+  document.querySelector('.origin-btn[data-origin="eu"]').textContent = t.originEU;
+  document.querySelector('.origin-btn[data-origin="usa"]').textContent = t.originUSA;
+  document.querySelector('.origin-btn[data-origin="canada"]').textContent = t.originCanada;
+  document.querySelector('.origin-btn[data-origin="other"]').textContent = t.originOther;
+
+  const chipsWrap = document.getElementById('chips');
+  chipsWrap.innerHTML = '';
+  Object.keys(DB).forEach(key=>{
+    const el = document.createElement('div');
+    el.className = 'chip';
+    el.textContent = DB[key].short[currentLang];
+    el.onclick = () => buscarChip(key);
+    chipsWrap.appendChild(el);
+  });
+}
+
+let currentOrigin = 'eu';
+
+function setOrigin(o){
+  currentOrigin = o;
+  document.querySelectorAll('.origin-btn').forEach(b => b.classList.toggle('active', b.dataset.origin === o));
+  renderOriginPanel();
+}
+
+function renderOriginPanel(){
+  const panel = document.getElementById('originPanel');
+  const t = I18N[currentLang];
+  if(currentOrigin === 'eu'){ panel.innerHTML = ''; return; }
+  let title, text;
+  if(currentOrigin === 'usa'){ title = t.originUsaTitle; text = t.originUsaText; }
+  else if(currentOrigin === 'canada'){ title = t.originCanadaTitle; text = t.originCanadaText; }
+  else { title = t.originOtherTitle; text = t.originOtherText; }
+  panel.innerHTML = `<div class="origin-panel-box"><div class="origin-panel-title">${title}</div><p class="origin-panel-text">${text}</p></div>`;
+}
+
+function setLang(lang){
+  currentLang = lang;
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
+  applyStaticTexts();
+  renderOriginPanel();
+
+  if(lastKey && lastKey !== 'EMPTY'){
+    renderMatch(lastKey);
+  } else if(lastKey === 'EMPTY'){
+    renderEmpty(lastTerm);
+  } else {
+    document.getElementById('resultado').innerHTML = `<div class="placeholder">${I18N[currentLang].placeholderResult}</div>`;
+  }
+}
+
+function normalizar(t){ return t.toLowerCase().trim(); }
+
+function buscarChip(key){
+  document.getElementById('buscar').value = DB[key].short[currentLang];
+  lastKey = key;
+  renderMatch(key);
+}
+
+function buscar(){
+  const raw = document.getElementById('buscar').value;
+  const q = normalizar(raw);
+  const cont = document.getElementById('resultado');
+
+  if(!q){
+    lastKey = null;
+    cont.innerHTML = `<div class="placeholder">${I18N[currentLang].placeholderResult}</div>`;
+    return;
+  }
+
+  let foundKey = null;
+  for(const k in DB){
+    const entry = DB[k];
+    const shortLabel = entry.short[currentLang].toLowerCase();
+    const nombreLabel = entry.nombre[currentLang].toLowerCase();
+    const terms = entry.terms[currentLang] || [];
+    if(shortLabel.includes(q) || q.includes(shortLabel) || nombreLabel.includes(q) ||
+       terms.some(term => term.includes(q) || q.includes(term))){
+      foundKey = k; break;
+    }
+  }
+
+  if(!foundKey){
+    lastKey = 'EMPTY'; lastTerm = raw;
+    renderEmpty(raw);
+    return;
+  }
+
+  lastKey = foundKey;
+  renderMatch(foundKey);
+}
+
+function renderEmpty(term){
+  const t = I18N[currentLang];
+  document.getElementById('resultado').innerHTML = `
+    <div>
+      <div class="empty-title">${t.emptyTitle(term)}</div>
+      <p class="empty-text">${t.emptyText}</p>
+      <div class="cta-box">
+        <div class="cta-text"><strong>${t.ctaEmptyText}</strong></div>
+        <a class="cta-btn" href="yhteystiedot.html">${t.ctaBtn}</a>
+      </div>
+    </div>`;
+}
+
+function renderMatch(key){
+  const t = I18N[currentLang];
+  const d = DB[key];
+  const L = currentLang;
+
+  document.getElementById('resultado').innerHTML = `
+    <div>
+      <div class="result-header">
+        <div>
+          <div class="result-eyebrow">${t.resultEyebrow}</div>
+          <div class="result-title">${d.nombre[L]}</div>
+        </div>
+        <div class="hs-badge">${d.hs}</div>
+      </div>
+
+      <div class="metric-row">
+        <div class="metric">
+          <div class="metric-label">${t.metricLabels[0]}</div>
+          <div class="metric-value">${d.arancelAntes[L]}</div>
+        </div>
+        <div class="metric">
+          <div class="metric-label">${t.metricLabels[1]}</div>
+          <div class="metric-value accent">${d.arancelHoy[L]}</div>
+        </div>
+        <div class="metric">
+          <div class="metric-label">${t.metricLabels[2]}</div>
+          <div class="metric-value">${d.purga} ${t.yearsWord}</div>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-label">${t.timelineLabel}</div>
+        <div class="timeline-bar"><div class="timeline-fill" style="width:8%"></div></div>
+        <div class="timeline-text">${d.inicio[L]}${t.timelineConnector}${d.finApprox[L]}</div>
+      </div>
+
+      <p class="notes">${d.detalle[L]}</p>
+
+      <div class="risk-block ${d.riesgo}">
+        <div class="risk-label">${t.riskLabels[d.riesgo]}</div>
+        <div class="risk-text">${d.notas[L]}</div>
+      </div>
+
+      <div class="cta-box">
+        <div class="cta-text">${t.ctaText}</div>
+        <a class="cta-btn" href="yhteystiedot.html">${t.ctaBtn}</a>
+      </div>
+    </div>`;
+}
+
+/* ═══════════════ INIT ═══════════════ */
+applyStaticTexts();
+document.getElementById('resultado').innerHTML = `<div class="placeholder">${I18N[currentLang].placeholderResult}</div>`;
+
+/* ═══════════════ BACKGROUND WATERMARK PARALLAX ═══════════════ */
+(function(){
+  const wm = document.getElementById('bgWatermark');
+  if(!wm) return;
+  let ticking = false;
+  window.addEventListener('scroll', function(){
+    if(!ticking){
+      window.requestAnimationFrame(function(){
+        const y = window.scrollY || window.pageYOffset;
+        wm.style.transform = `translateY(${y * 0.08}px) rotate(${y * 0.006}deg)`;
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }, { passive: true });
+})();
+
+/* ═══════════════ HAMBURGER MENU ═══════════════ */
+(function(){
+  const btn = document.getElementById('hamburgerBtn');
+  const menu = document.getElementById('mobileMenu');
+  if(!btn || !menu) return;
+  btn.addEventListener('click', function(){
+    const open = menu.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+  menu.querySelectorAll('a').forEach(function(link){
+    link.addEventListener('click', function(){
+      menu.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
