@@ -464,6 +464,18 @@
     font-family:'Lora',serif; font-weight:600; font-size: clamp(1.7rem, 3vw, 2.2rem);
     color: var(--ink); margin-bottom: 40px;
   }
+
+  .social-section { border-top: 1px solid var(--line); padding: 80px 48px 100px; }
+  .social-inner { max-width: 700px; margin: 0 auto; }
+  .social-title {
+    font-family:'Lora',serif; font-weight:600; font-size: clamp(1.7rem, 3vw, 2.2rem);
+    color: var(--ink); margin-bottom: 16px;
+  }
+  .social-sub { font-family:'Lora',serif; color: var(--gris); margin-bottom: 32px; }
+  .social-link { font-family:'Montserrat',sans-serif; font-weight:700; font-size:0.85rem; color:var(--ink); text-decoration:none; border-bottom:1px solid var(--ink); }
+  @media (max-width:720px) {
+    .social-section { padding: 60px 24px 80px; }
+  }
   .news-grid { display:grid; grid-template-columns: 1fr; max-width: 420px; gap: 1px; background: var(--line); border: 1px solid var(--line); }
   .news-card {
     background: var(--paper); padding: 32px 28px; text-decoration: none; display:block;
@@ -677,6 +689,16 @@
     </div>
 
     <a class="news-more" href="uutiset.html">Todas las noticias &rarr;</a>
+  </div>
+</section>
+
+<section class="social-section">
+  <div class="social-inner">
+    <h2 class="social-title">O mais recente do MERCOSUL</h2>
+    <p class="social-sub">Diretamente da conta oficial do MERCOSUL no X.</p>
+    <a class="twitter-timeline" data-tweet-limit="3" data-chrome="noheader nofooter noborders transparent" data-link-color="#0A0A0A" href="https://twitter.com/mercosur?ref_src=twsrc%5Etfw">Tweets by mercosur</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <p style="margin-top:20px;"><a class="social-link" href="https://x.com/mercosur" target="_blank" rel="noopener">Siga @mercosur no X &rarr;</a></p>
   </div>
 </section>
 
