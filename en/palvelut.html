@@ -413,6 +413,34 @@
     flex-wrap:wrap;
     gap:12px;
   }
+
+  /* ═══ COOKIE CONSENT BANNER ═══ */
+  .cookie-banner {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 999;
+    background: var(--ink); color: var(--paper);
+    padding: 22px 48px;
+    display: none;
+    align-items: center; justify-content: space-between;
+    flex-wrap: wrap; gap: 18px;
+    border-top: 1px solid #333333;
+  }
+  .cookie-banner.visible { display: flex; }
+  .cookie-banner p {
+    font-family:'Lora',serif; font-size: 0.9rem; color: #E8E5DE; margin: 0; max-width: 620px;
+  }
+  .cookie-banner a { color: var(--paper); text-decoration: underline; }
+  .cookie-banner-actions { display: flex; gap: 12px; flex-shrink: 0; }
+  .cookie-btn {
+    font-family:'Montserrat',sans-serif; font-weight: 700; font-size: 0.78rem;
+    letter-spacing: 0.4px; padding: 11px 22px; cursor: pointer; border: none;
+    transition: opacity .2s;
+  }
+  .cookie-btn:hover { opacity: 0.8; }
+  .cookie-btn-accept { background: var(--paper); color: var(--ink); }
+  .cookie-btn-decline { background: transparent; color: var(--paper); border: 1px solid #555555; }
+  @media (max-width: 720px) {
+    .cookie-banner { padding: 20px 24px; }
+  }
   footer .brand { font-size: 0.95rem; }
   #footNote {
     font-family:'Lora',serif; font-style:italic; color:var(--gris-light); font-size:0.85rem;
@@ -709,11 +737,11 @@
   <h1 class="eyebrow" style="margin-top:12px;">Services</h1>
 
   <div class="service-category">
-    <button class="category-toggle" onclick="toggleCategory(this)" aria-expanded="true">
+    <button class="category-toggle" onclick="toggleCategory(this)" aria-expanded="false">
       <h2>LatAm Markets</h2>
-      <span class="category-icon">&minus;</span>
+      <span class="category-icon">+</span>
     </button>
-    <div class="category-content open">
+    <div class="category-content">
   <div class="pkg-list" style="margin-top:12px;">
 
     <div class="pkg-card">
@@ -934,7 +962,7 @@
   <a href="index.html" aria-label="MERCONSULT" class="brand-logo-link"><img src="../favicon.svg" alt="MERCONSULT" class="brand-logo"></a>
   <a href="https://x.com/merconsultfi" target="_blank" rel="noopener" aria-label="MERCONSULT X:ss&auml;" style="margin-left:18px; display:flex; opacity:0.75;"><svg width="18" height="18" viewBox="0 0 24 24" fill="#0A0A0A"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
 </div>
-  <div style="font-family:'Lora',serif; font-style:italic; color:#9A9A9A; font-size:0.85rem;">© 2026 MERCONSULT · Industria Nordica Oy</div>
+  <div style="display:flex; align-items:center; gap:0;"><a href="../tietosuoja.html" class="footer-privacy-link" style="font-family:'Montserrat',sans-serif; font-size:0.78rem; color:var(--gris); text-decoration:none; margin-right:18px;">Privacy</a><div style="font-family:'Lora',serif; font-style:italic; color:#9A9A9A; font-size:0.85rem;">© 2026 MERCONSULT · Industria Nordica Oy</div></div>
 </footer>
 
 <script>
@@ -982,5 +1010,44 @@ function toggleCategory(btn) {
 })();
 </script>
 
+<div class="cookie-banner" id="cookieBanner">
+  <p>We use cookies for visitor analytics (Google Analytics) to help us improve the site. <a href="../tietosuoja.html">Read more in our privacy policy</a>.</p>
+  <div class="cookie-banner-actions">
+    <button class="cookie-btn cookie-btn-decline" onclick="handleCookieChoice(false)">Decline</button>
+    <button class="cookie-btn cookie-btn-accept" onclick="handleCookieChoice(true)">Accept</button>
+  </div>
+</div>
+<script>
+(function(){
+  var GA_ID = 'G-JWGE0MD422';
+
+  function loadGA(){
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', GA_ID, { anonymize_ip: true });
+  }
+
+  window.handleCookieChoice = function(accepted){
+    try { localStorage.setItem('mc_cookie_consent', accepted ? 'accepted' : 'declined'); } catch(e){}
+    document.getElementById('cookieBanner').classList.remove('visible');
+    if (accepted) loadGA();
+  };
+
+  var consent = null;
+  try { consent = localStorage.getItem('mc_cookie_consent'); } catch(e){}
+
+  if (consent === 'accepted') {
+    loadGA();
+  } else if (consent === null) {
+    document.getElementById('cookieBanner').classList.add('visible');
+  }
+})();
+</script>
 </body>
 </html>

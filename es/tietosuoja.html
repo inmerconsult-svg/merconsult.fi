@@ -6,25 +6,25 @@
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
 <link rel="icon" type="image/png" href="../images/favicon-32.png">
-<title>MERCONSULT – Noticias y análisis</title>
-<meta name="description" content="Análisis de actualidad sobre el comercio UE-Mercosur y su impacto en las empresas europeas.">
-<link rel="canonical" href="https://www.merconsult.fi/es/uutiset.html">
-<link rel="alternate" hreflang="fi" href="https://www.merconsult.fi/uutiset.html">
-<link rel="alternate" hreflang="en" href="https://www.merconsult.fi/en/uutiset.html">
-<link rel="alternate" hreflang="es" href="https://www.merconsult.fi/es/uutiset.html">
-<link rel="alternate" hreflang="pt" href="https://www.merconsult.fi/pt/uutiset.html">
-<link rel="alternate" hreflang="x-default" href="https://www.merconsult.fi/uutiset.html">
+<title>MERCONSULT – Política de Privacidad</title>
+<meta name="description" content="Política de privacidad de MERCONSULT: qué datos recopilamos, por qué, y qué derechos tiene como interesado.">
+<link rel="canonical" href="https://www.merconsult.fi/es/tietosuoja.html">
+<link rel="alternate" hreflang="fi" href="https://www.merconsult.fi/tietosuoja.html">
+<link rel="alternate" hreflang="en" href="https://www.merconsult.fi/en/tietosuoja.html">
+<link rel="alternate" hreflang="es" href="https://www.merconsult.fi/es/tietosuoja.html">
+<link rel="alternate" hreflang="pt" href="https://www.merconsult.fi/pt/tietosuoja.html">
+<link rel="alternate" hreflang="x-default" href="https://www.merconsult.fi/tietosuoja.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="MERCONSULT">
-<meta property="og:title" content="MERCONSULT – Noticias y análisis">
-<meta property="og:description" content="Análisis de actualidad sobre el comercio UE-Mercosur y su impacto en las empresas europeas.">
-<meta property="og:url" content="https://www.merconsult.fi/es/uutiset.html">
+<meta property="og:title" content="MERCONSULT – Política de Privacidad">
+<meta property="og:description" content="Política de privacidad de MERCONSULT: qué datos recopilamos, por qué, y qué derechos tiene como interesado.">
+<meta property="og:url" content="https://www.merconsult.fi/es/tietosuoja.html">
 <meta property="og:image" content="https://www.merconsult.fi/images/og-image.png">
 <meta property="og:locale" content="es_ES">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="MERCONSULT – Noticias y análisis">
+<meta name="twitter:title" content="MERCONSULT – Política de Privacidad">
 <meta name="twitter:image" content="https://www.merconsult.fi/images/og-image.png">
-<meta name="twitter:description" content="Análisis de actualidad sobre el comercio UE-Mercosur y su impacto en las empresas europeas.">
+<meta name="twitter:description" content="Política de privacidad de MERCONSULT: qué datos recopilamos, por qué, y qué derechos tiene como interesado.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -456,29 +456,43 @@
     .nav-tabs { display: none; }
   }
 
-  /* ═══ ARTICLE LIST ═══ */
-  .article-list { display:flex; flex-direction:column; }
-  .article-row {
-    display:flex; justify-content:space-between; align-items:flex-start;
-    gap:24px; border-top:1px solid var(--line); padding:32px 0;
-    text-decoration:none; flex-wrap:wrap;
+  /* ═══ ABOUT TEXT ═══ */
+  .about-text { max-width: 700px; }
+  .section-divider { margin: 44px 0; }
+  .about-text h2 {
+    font-family:'Lora',serif; font-weight:600; font-size:1.3rem;
+    color:var(--ink); margin:36px 0 14px;
   }
-  .article-list .article-row:last-child { border-bottom:1px solid var(--line); }
-  .article-row-left { max-width:660px; }
-  .article-row-tag {
-    font-family:'Montserrat',sans-serif; font-size:0.68rem; font-weight:700;
-    letter-spacing:1px; text-transform:uppercase; color:var(--gris-light); margin-bottom:10px;
+  .about-text p a { color:var(--ink); border-bottom:1px solid var(--gris-light); text-decoration:none; }
+  .about-text p a:hover { border-bottom-color:var(--ink); }
+
+  .about-text p {
+    font-family:'Lora',serif; font-size:1.05rem; color:var(--ink-soft);
+    line-height:1.85; margin-bottom:24px;
   }
-  .article-row h3 {
-    font-family:'Lora',serif; font-weight:600; font-size:1.3rem; color:var(--ink);
-    margin-bottom:8px; line-height:1.35;
+  .about-text p.about-lede { font-size:1.18rem; color:var(--ink); font-style:italic; }
+  .about-cta {
+    border-top: 1px solid var(--line); margin-top: 12px; padding-top: 32px;
   }
-  .article-row p { font-family:'Lora',serif; font-size:0.96rem; color:var(--gris); line-height:1.65; }
-  .article-row-meta {
-    font-family:'Lora',serif; font-style:italic; font-size:0.85rem; color:var(--gris-light);
-    white-space:nowrap; padding-top:2px;
+  .about-cta p {
+    font-family:'Lora',serif; font-size:1.05rem; color:var(--ink-soft); margin-bottom: 20px;
   }
-  .article-row:hover h3 { text-decoration:underline; text-underline-offset:4px; }
+  .about-cta p strong { color: var(--ink); }
+  .about-cta-btn {
+    display:inline-block; background: var(--ink); color:#fff; text-decoration:none;
+    font-family:'Montserrat',sans-serif; font-weight:700; font-size:0.85rem;
+    letter-spacing:0.5px; padding:15px 32px; transition: opacity .2s;
+  }
+  .about-cta-btn:hover { opacity: 0.78; }
+
+  .partner-logos { display:flex; gap:20px; flex-wrap:wrap; margin: 4px 0 40px; }
+  .partner-logo-item { text-align:center; }
+  .partner-logo-card {
+    background:#FFFFFF; border:1px solid var(--line);
+    padding:20px 24px; display:flex; align-items:center; justify-content:center;
+    width:320px; height:180px;
+  }
+  .partner-logo-card img { max-width:100%; max-height:100%; height:auto; display:block; }
   /* ═══ BACKGROUND WATERMARK ═══ */
   .bg-watermark {
     position: fixed;
@@ -540,10 +554,10 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  "name": "Noticias",
+  "@type": "WebPage",
+  "name": "Política de Privacidad",
   "inLanguage": "es",
-  "url": "https://www.merconsult.fi/es/uutiset.html",
+  "url": "https://www.merconsult.fi/es/tietosuoja.html",
   "isPartOf": {
     "@type": "WebSite",
     "name": "MERCONSULT",
@@ -567,10 +581,10 @@
 
 <div class="topbar" style="justify-content:flex-end;">
   <div class="lang-switch">
-    <a class="lang-btn" href="../uutiset.html"><svg width="16" height="12" viewBox="0 0 18 13" style="flex-shrink:0;"><rect width="18" height="13" fill="#FFFFFF"/><rect x="6" width="3" height="13" fill="#002F6C"/><rect y="5" width="18" height="3" fill="#002F6C"/></svg>FI</a>
-    <a class="lang-btn" href="../en/uutiset.html"><svg width="16" height="12" viewBox="0 0 18 13" style="flex-shrink:0;"><rect width="18" height="13" fill="#012169"/><path d="M0,0 L18,13 M18,0 L0,13" stroke="#FFF" stroke-width="2.6"/><path d="M0,0 L18,13 M18,0 L0,13" stroke="#C8102E" stroke-width="1.3"/><rect x="7.5" width="3" height="13" fill="#FFF"/><rect y="5" width="18" height="3" fill="#FFF"/><rect x="8" width="2" height="13" fill="#C8102E"/><rect y="5.5" width="18" height="2" fill="#C8102E"/></svg>EN</a>
-    <a class="lang-btn active" href="uutiset.html"><svg width="16" height="12" viewBox="0 0 18 13" style="flex-shrink:0;"><rect width="18" height="13" fill="#AA151B"/><rect y="3.25" width="18" height="6.5" fill="#F1BF00"/></svg>ES</a>
-      <a class="lang-btn" href="../pt/uutiset.html"><svg width="16" height="12" viewBox="0 0 18 13" style="flex-shrink:0;"><rect width="18" height="13" fill="#FF0000"/><rect width="7" height="13" fill="#046A38"/><circle cx="7" cy="6.5" r="2.3" fill="#FFCC00" stroke="#FFF" stroke-width="0.4"/></svg>PT</a>
+    <a class="lang-btn" href="../tietosuoja.html"><svg width="16" height="12" viewBox="0 0 18 13" style="flex-shrink:0;"><rect width="18" height="13" fill="#FFFFFF"/><rect x="6" width="3" height="13" fill="#002F6C"/><rect y="5" width="18" height="3" fill="#002F6C"/></svg>FI</a>
+    <a class="lang-btn" href="../en/tietosuoja.html"><svg width="16" height="12" viewBox="0 0 18 13" style="flex-shrink:0;"><rect width="18" height="13" fill="#012169"/><path d="M0,0 L18,13 M18,0 L0,13" stroke="#FFF" stroke-width="2.6"/><path d="M0,0 L18,13 M18,0 L0,13" stroke="#C8102E" stroke-width="1.3"/><rect x="7.5" width="3" height="13" fill="#FFF"/><rect y="5" width="18" height="3" fill="#FFF"/><rect x="8" width="2" height="13" fill="#C8102E"/><rect y="5.5" width="18" height="2" fill="#C8102E"/></svg>EN</a>
+    <a class="lang-btn active" href="tietosuoja.html"><svg width="16" height="12" viewBox="0 0 18 13" style="flex-shrink:0;"><rect width="18" height="13" fill="#AA151B"/><rect y="3.25" width="18" height="6.5" fill="#F1BF00"/></svg>ES</a>
+      <a class="lang-btn" href="../pt/tietosuoja.html"><svg width="16" height="12" viewBox="0 0 18 13" style="flex-shrink:0;"><rect width="18" height="13" fill="#FF0000"/><rect width="7" height="13" fill="#046A38"/><circle cx="7" cy="6.5" r="2.3" fill="#FFCC00" stroke="#FFF" stroke-width="0.4"/></svg>PT</a>
   </div>
 </div>
 
@@ -579,7 +593,7 @@
   <div class="nav-tabs">
     <a class="nav-tab" href="index.html">Inicio</a>
     <a class="nav-tab" href="palvelut.html">Servicios</a>
-    <a class="nav-tab active" href="uutiset.html">Noticias</a>
+    <a class="nav-tab" href="uutiset.html">Noticias</a>
     <a class="nav-tab" href="sanasto.html">Glosario</a>
     <a class="nav-tab" href="meista.html">Sobre nosotros</a>
     <a class="nav-tab" href="yhteystiedot.html">Contacto</a>
@@ -592,23 +606,85 @@
 <div class="mobile-menu" id="mobileMenu">
   <a class="mobile-menu-link" href="index.html">Inicio</a>
   <a class="mobile-menu-link" href="palvelut.html">Servicios</a>
-  <a class="mobile-menu-link active" href="uutiset.html">Noticias</a>
+  <a class="mobile-menu-link" href="uutiset.html">Noticias</a>
   <a class="mobile-menu-link" href="sanasto.html">Glosario</a>
   <a class="mobile-menu-link" href="meista.html">Sobre nosotros</a>
   <a class="mobile-menu-link" href="yhteystiedot.html">Contacto</a>
 </div>
 
 <main>
-  <h1 class="eyebrow" style="margin-top:12px;">Noticias</h1>
-  <div class="article-list">
-    <a class="article-row" href="uutinen-eu-mercosur-2026.html">
-      <div class="article-row-left">
-        <div class="article-row-tag">Pol&iacute;tica Comercial</div>
-        <h3>Acuerdo de Libre Comercio UE-Mercosur: Un Avance Hist&oacute;rico</h3>
-        <p>El acuerdo elimina aranceles en m&aacute;s del 90% de los productos de exportaci&oacute;n de la UE y abre un mercado de 700 millones de consumidores. &iquest;Qu&eacute; significa para los exportadores europeos?</p>
-      </div>
-      <div class="article-row-meta">Agosto 2026</div>
-    </a>
+  <h1 class="eyebrow" style="margin-top:12px;">Política de Privacidad</h1>
+  <div class="about-text" style="border-top:1px solid var(--line); padding-top:36px;">
+    <p class="about-lede">Este aviso explica qué datos recopila MERCONSULT de los visitantes de este sitio web, por qué, y qué derechos tiene como interesado. Última actualización: agosto de 2026.</p>
+
+    <h2>Responsable del tratamiento</h2>
+    <p>Industria Nordica Oy (MERCONSULT)<br>
+    N.º de identificación fiscal / IVA: FI34418333<br>
+    Correo electrónico: <a href="mailto:info@merconsult.fi">info@merconsult.fi</a><br>
+    Sitio web: www.merconsult.fi</p>
+
+    <h2>Qué datos recopilamos</h2>
+    <p>Utilizamos Google Analytics 4 en este sitio para estadísticas de visitantes, pero solo si usted da su consentimiento a través del banner de cookies. Si consiente, recopilamos datos como: qué páginas visita, cuánto tiempo permanece, su país/ciudad de origen de forma general (no la ubicación precisa), su dispositivo y navegador, y la fuente desde la que llegó (p. ej. motor de búsqueda, enlace directo). Su dirección IP se anonimiza antes de almacenarse.</p>
+    <p>No recopilamos su nombre, correo electrónico ni otros identificadores personales a través de Google Analytics. Si nos contacta mediante el formulario de contacto, procesamos la información que proporciona (nombre, correo, mensaje) únicamente para responder a su consulta.</p>
+
+    <h2>Cookies</h2>
+    <p>Este sitio solo utiliza cookies si usted da su consentimiento. Cookies actualmente en uso:</p>
+    <div style="overflow-x:auto; margin:20px 0;">
+    <table style="width:100%; border-collapse:collapse; font-family:'Montserrat',sans-serif; font-size:0.85rem;">
+      <thead>
+        <tr style="border-bottom:1px solid var(--line);">
+          <th style="text-align:left; padding:10px 12px 10px 0; color:var(--gris); font-weight:700;">Nombre</th>
+          <th style="text-align:left; padding:10px 12px; color:var(--gris); font-weight:700;">Finalidad</th>
+          <th style="text-align:left; padding:10px 12px; color:var(--gris); font-weight:700;">Duración</th>
+          <th style="text-align:left; padding:10px 0 10px 12px; color:var(--gris); font-weight:700;">Proveedor</th>
+        </tr>
+      </thead>
+      <tbody style="font-family:'Lora',serif; color:var(--ink-soft);">
+        <tr style="border-bottom:1px solid var(--line-soft);">
+          <td style="padding:10px 12px 10px 0;">_ga</td>
+          <td style="padding:10px 12px;">Distinguir visitantes para estadísticas</td>
+          <td style="padding:10px 12px;">2 años</td>
+          <td style="padding:10px 0 10px 12px;">Google</td>
+        </tr>
+        <tr style="border-bottom:1px solid var(--line-soft);">
+          <td style="padding:10px 12px 10px 0;">_ga_*</td>
+          <td style="padding:10px 12px;">Almacenamiento del estado de sesión</td>
+          <td style="padding:10px 12px;">2 años</td>
+          <td style="padding:10px 0 10px 12px;">Google</td>
+        </tr>
+        <tr>
+          <td style="padding:10px 12px 10px 0;">mc_cookie_consent</td>
+          <td style="padding:10px 12px;">Recordar su elección sobre cookies</td>
+          <td style="padding:10px 12px;">Persistente (hasta que borre los datos del navegador)</td>
+          <td style="padding:10px 0 10px 12px;">MERCONSULT (este sitio)</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <h2>Finalidad y base jurídica</h2>
+    <p>Procesamos estadísticas de visitantes para mejorar el contenido y la usabilidad del sitio. La base jurídica es su consentimiento (RGPD art. 6.1.a) — otorgado por separado en el banner de cookies, y revocable en cualquier momento borrando las cookies de este sitio. Los datos del formulario de contacto se procesan para preparar un contrato o en base a nuestro interés legítimo (RGPD art. 6.1.b/f) para responder a su consulta.</p>
+
+    <h2>Transferencias de datos</h2>
+    <p>Los datos de Google Analytics se procesan en servidores de Google, que pueden estar ubicados fuera de la UE, incluido Estados Unidos. Esta transferencia se basa en el Marco de Privacidad de Datos UE-EE. UU.</p>
+
+    <h2>Período de conservación</h2>
+    <p>Los datos de Google Analytics se conservan hasta 14 meses según la configuración predeterminada de Google. Los datos del formulario de contacto se conservan solo el tiempo necesario para atender su consulta, tras lo cual se eliminan.</p>
+
+    <h2>Sus derechos</h2>
+    <p>Conforme al RGPD, usted tiene derecho a:</p>
+    <ul style="font-family:'Lora',serif; padding-left:20px; margin:12px 0 20px; line-height:1.9;">
+      <li>saber qué datos tenemos sobre usted</li>
+      <li>solicitar la corrección de datos inexactos</li>
+      <li>solicitar la eliminación de sus datos</li>
+      <li>oponerse al tratamiento de sus datos</li>
+      <li>retirar su consentimiento en cualquier momento</li>
+      <li>recibir sus datos en un formato portable</li>
+    </ul>
+    <p>Para ejercer estos derechos, contáctenos en <a href="mailto:info@merconsult.fi">info@merconsult.fi</a>. También tiene derecho a presentar una reclamación ante una autoridad de protección de datos si considera que sus datos no se han gestionado correctamente.</p>
+
+    <h2>Cambios en este aviso</h2>
+    <p>Podemos actualizar este aviso periódicamente, por ejemplo cuando cambie la legislación o nuestras prácticas. Le recomendamos revisar esta página de vez en cuando.</p>
   </div>
 </main>
 

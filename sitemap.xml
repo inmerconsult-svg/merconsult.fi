@@ -310,4 +310,44 @@
     <priority>0.55</priority>
   </url>
 
+  <url>
+    <loc>https://www.merconsult.fi/tietosuoja.html</loc>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://www.merconsult.fi/tietosuoja.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.merconsult.fi/en/tietosuoja.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.merconsult.fi/es/tietosuoja.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.merconsult.fi/pt/tietosuoja.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.merconsult.fi/tietosuoja.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.merconsult.fi/en/tietosuoja.html</loc>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://www.merconsult.fi/tietosuoja.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.merconsult.fi/en/tietosuoja.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.merconsult.fi/es/tietosuoja.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.merconsult.fi/pt/tietosuoja.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.merconsult.fi/tietosuoja.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.merconsult.fi/es/tietosuoja.html</loc>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://www.merconsult.fi/tietosuoja.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.merconsult.fi/en/tietosuoja.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.merconsult.fi/es/tietosuoja.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.merconsult.fi/pt/tietosuoja.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.merconsult.fi/tietosuoja.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.merconsult.fi/pt/tietosuoja.html</loc>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://www.merconsult.fi/tietosuoja.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.merconsult.fi/en/tietosuoja.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.merconsult.fi/es/tietosuoja.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.merconsult.fi/pt/tietosuoja.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.merconsult.fi/tietosuoja.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
 </urlset>
