@@ -449,6 +449,27 @@
 
   /* ═══ SERVICE PACKAGES ═══ */
   .pkg-list { display:flex; flex-direction:column; gap:0; }
+
+  /* ═══ SERVICE CATEGORY ACCORDION ═══ */
+  .service-category { }
+  .category-toggle {
+    width:100%; display:flex; justify-content:space-between; align-items:center;
+    background:none; border:none; border-top:1px solid var(--line);
+    padding:26px 0; cursor:pointer; text-align:left; font-family:inherit;
+  }
+  .service-category:last-of-type .category-toggle { border-bottom:1px solid var(--line); }
+  .category-toggle h2 {
+    font-family:'Lora',serif; font-weight:600; font-size:1.4rem; color:var(--ink); margin:0;
+  }
+  .category-icon {
+    font-family:'Montserrat',sans-serif; font-size:1.2rem; font-weight:400; color:var(--gris);
+    width:24px; text-align:center; flex-shrink:0;
+  }
+  .category-content { display:none; }
+  .category-content.open { display:block; }
+  .category-placeholder {
+    font-family:'Lora',serif; font-style:italic; color:var(--gris); padding:8px 0 40px;
+  }
   .pkg-card { border-top:1px solid var(--line); padding:36px 0; }
   .pkg-card:last-child { border-bottom:1px solid var(--line); }
   .pkg-head {
@@ -686,6 +707,13 @@
 
 <main>
   <h1 class="eyebrow" style="margin-top:12px;">Services</h1>
+
+  <div class="service-category">
+    <button class="category-toggle" onclick="toggleCategory(this)" aria-expanded="true">
+      <h2>LatAm Markets</h2>
+      <span class="category-icon">&minus;</span>
+    </button>
+    <div class="category-content open">
   <div class="pkg-list" style="margin-top:12px;">
 
     <div class="pkg-card">
@@ -771,16 +799,127 @@
 
   </div>
 
-  <div class="pkg-extra">
+      </div>
+  </div>
+
+  <div class="service-category">
+    <button class="category-toggle" onclick="toggleCategory(this)" aria-expanded="false">
+      <h2>AI Tools &amp; Development</h2>
+      <span class="category-icon">+</span>
+    </button>
+    <div class="category-content">
+      <p>We map and implement customised AI solutions that streamline your company&rsquo;s operations and expert work. We put the technology into practice securely, precisely, and entirely on your business&rsquo;s terms.</p>
+      <p style="font-weight:600; color:var(--ink); font-family:'Montserrat',sans-serif; font-size:0.85rem; letter-spacing:0.3px; margin:24px 0 4px;">Examples of our services:</p>
+      <div class="pkg-list" style="margin-top:8px;">
+
+    <div class="pkg-card">
+      <div class="pkg-head">
+        <div>
+          <div class="pkg-num">01</div>
+          <h3>AI Opportunity Mapping and Deployment</h3>
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0A0A0A" stroke-width="1.4"><circle cx="10" cy="10" r="6.5"/><line x1="15" y1="15" x2="21" y2="21"/></svg>
+        </div>
+      </div>
+      <p class="pkg-desc">We identify the bottlenecks in your processes and build technological solutions that bring immediate added value to everyday work.</p>
+      <a class="pkg-btn" href="yhteystiedot.html?aihe=AI%20Opportunity%20Mapping%20and%20Deployment">Contact us &rarr;</a>
+    </div>
+
+    <div class="pkg-card">
+      <div class="pkg-head">
+        <div>
+          <div class="pkg-num">02</div>
+          <h3>Automating Repetitive Routines</h3>
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0A0A0A" stroke-width="1.4" stroke-linejoin="round"><path d="M12,3 l1.2,2.4 2.6,-0.6 0.6,2.6 2.4,1.2 -1.4,2.4 1.4,2.4 -2.4,1.2 -0.6,2.6 -2.6,-0.6 -1.2,2.4 -1.2,-2.4 -2.6,0.6 -0.6,-2.6 -2.4,-1.2 1.4,-2.4 -1.4,-2.4 2.4,-1.2 0.6,-2.6 2.6,0.6 z"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+      </div>
+      <p class="pkg-desc">We free up experts&rsquo; time for more productive work by automating manual and time-consuming tasks using AI agents.</p>
+      <a class="pkg-btn" href="yhteystiedot.html?aihe=Automating%20Repetitive%20Routines">Contact us &rarr;</a>
+    </div>
+
+    <div class="pkg-card">
+      <div class="pkg-head">
+        <div>
+          <div class="pkg-num">03</div>
+          <h3>Secure, Local AI Chat</h3>
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0A0A0A" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"><rect x="5" y="10.5" width="14" height="10" rx="1.5"/><path d="M8,10.5 L8,7.5 a4,4 0 1,1 8,0 l0,3"/><circle cx="12" cy="15" r="1.3" fill="#0A0A0A" stroke="none"/></svg>
+        </div>
+      </div>
+      <p class="pkg-desc">We build a fully protected AI environment on a private server. The solution uses only your company&rsquo;s own database, so sensitive data never leaves your control.</p>
+      <a class="pkg-btn" href="yhteystiedot.html?aihe=Secure%2C%20Local%20AI%20Chat">Contact us &rarr;</a>
+    </div>
+
+    <div class="pkg-card">
+      <div class="pkg-head">
+        <div>
+          <div class="pkg-num">04</div>
+          <h3>Fact-Based Information Retrieval and RAG Technology</h3>
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0A0A0A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6,3 L15,3 L19,7 L19,21 L6,21 Z"/><path d="M15,3 L15,7 L19,7"/><line x1="8.5" y1="11" x2="16" y2="11"/><line x1="8.5" y1="14" x2="16" y2="14"/><line x1="8.5" y1="17" x2="13" y2="17"/></svg>
+        </div>
+      </div>
+      <p class="pkg-desc">We enable accurate and reliable data mining from your company&rsquo;s own materials. Using RAG (Retrieval-Augmented Generation), the AI reads and processes even complex technical data sheets completely without hallucination &mdash; providing only fact-based answers.</p>
+      <a class="pkg-btn" href="yhteystiedot.html?aihe=Fact-Based%20Information%20Retrieval%20and%20RAG%20Technology">Contact us &rarr;</a>
+    </div>
+
+    <div class="pkg-card">
+      <div class="pkg-head">
+        <div>
+          <div class="pkg-num">05</div>
+          <h3>Customised Services</h3>
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0A0A0A" stroke-width="1.4" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><circle cx="14" cy="7" r="1.8" fill="#FCFAF6"/><line x1="4" y1="12" x2="20" y2="12"/><circle cx="9" cy="12" r="1.8" fill="#FCFAF6"/><line x1="4" y1="17" x2="20" y2="17"/><circle cx="16" cy="17" r="1.8" fill="#FCFAF6"/></svg>
+        </div>
+      </div>
+      <p class="pkg-desc">Special assignments and broader projects are tailored on a case-by-case basis.</p>
+      <a class="pkg-btn" href="yhteystiedot.html?aihe=Customised%20Services">Contact us &rarr;</a>
+    </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="service-category">
+    <button class="category-toggle" onclick="toggleCategory(this)" aria-expanded="false">
+      <h2>Sales &amp; Strategy</h2>
+      <span class="category-icon">+</span>
+    </button>
+    <div class="category-content">
+      <div class="pkg-list" style="margin-top:8px;">
+
+    <div class="pkg-card">
+      <div class="pkg-head">
+        <div>
+          <div class="pkg-num">01</div>
+          <h3>Sales Development</h3>
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0A0A0A" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"><path d="M3,4 L21,4 L14,13 L14,19 L10,21 L10,13 Z"/></svg>
+        </div>
+      </div>
+      <p class="pkg-desc">By treating sales like a production line, it can be built into a clear, measurable, and optimisable process. When the work is broken down into transparent stages, each area can be measured precisely and thereby developed systematically.</p>
+      <a class="pkg-btn" href="yhteystiedot.html?aihe=Sales%20Development">Contact us &rarr;</a>
+    </div>
+
+    <div class="pkg-card">
+      <div class="pkg-head">
+        <div>
+          <div class="pkg-num">02</div>
+          <h3>Strategy Work</h3>
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0A0A0A" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"><path d="M9,18 L15,18 M10,21 L14,21"/><path d="M12,3 a6,6 0 0,1 3.5,10.9 c-0.6,0.5 -0.9,1.1 -0.9,2.1 l-5.2,0 c0,-1 -0.3,-1.6 -0.9,-2.1 A6,6 0 0,1 12,3 Z"/></svg>
+        </div>
+      </div>
+      <p class="pkg-desc">AI offers unprecedented tools for analysing the competitive landscape and the current situation. However, if it is used to predict the future, one simply ends up level with one&rsquo;s competitors. A distinctive strategy and genuine competitive advantage still require creativity and the ability to think outside the box.</p>
+      <a class="pkg-btn" href="yhteystiedot.html?aihe=Strategy%20Work">Contact us &rarr;</a>
+    </div>
+
+      </div>
+    </div>
+  </div>
+
+<div class="pkg-extra">
     <h2>Our Broader Expertise</h2>
-    <p>In addition, our MERCONSULT expertise covers the following areas where we can support your company's operational activities:</p>
+    <p>Examples of our other services:</p>
     <ul>
-    <li>Mapping, selecting, and building customised AI systems to streamline operational activities</li>
-    <li>Automation of business processes, data management, and internal reporting</li>
-    <li>Acting as an Interim Manager during the transition or start-up phase of a new LATAM unit</li>
+    <li>Interim manager during a LATAM unit's transition or start-up phase</li>
     <li>Building a local organisation: staff recruitment, onboarding, and ramping up the operational team</li>
     <li>Setting up physical infrastructure: sourcing premises and warehouses, tendering local contracts, and on-site project management</li>
-    <li>Localisation and integration of the company's internal systems to seamlessly support regional business</li>
+    <li>Selecting, localising, and integrating the company's internal systems to seamlessly support regional business</li>
     <li>Practical coaching for management and key personnel on the LATAM region's negotiation culture and managing everyday local business operations</li>
     </ul>
     <div class="pkg-extra-cta">
@@ -791,11 +930,21 @@
 </main>
 
 <footer>
+  <div style="display:flex; align-items:center;">
   <a href="index.html" aria-label="MERCONSULT" class="brand-logo-link"><img src="../favicon.svg" alt="MERCONSULT" class="brand-logo"></a>
+  <a href="https://x.com/merconsultfi" target="_blank" rel="noopener" aria-label="MERCONSULT X:ss&auml;" style="margin-left:18px; display:flex; opacity:0.75;"><svg width="18" height="18" viewBox="0 0 24 24" fill="#0A0A0A"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+</div>
   <div style="font-family:'Lora',serif; font-style:italic; color:#9A9A9A; font-size:0.85rem;">© 2026 MERCONSULT · Industria Nordica Oy</div>
 </footer>
 
 <script>
+function toggleCategory(btn) {
+  var content = btn.nextElementSibling;
+  var icon = btn.querySelector('.category-icon');
+  var isOpen = content.classList.toggle('open');
+  icon.textContent = isOpen ? '\u2212' : '+';
+  btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+}
 /* ═══════════════ BACKGROUND WATERMARK PARALLAX ═══════════════ */
 (function(){
   const wm = document.getElementById('bgWatermark');
