@@ -1,30 +1,30 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="pt">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
 <link rel="icon" type="image/png" href="../images/favicon-32.png">
-<title>MERCONSULT – Herramienta de análisis arancelario UE-Mercosur</title>
-<meta name="description" content="Herramienta gratuita de análisis arancelario del acuerdo UE-Mercosur. Consulte el cronograma de reducción arancelaria de su categoría de producto.">
-<link rel="canonical" href="https://www.merconsult.fi/es/">
-<link rel="alternate" hreflang="fi" href="https://www.merconsult.fi/">
-<link rel="alternate" hreflang="en" href="https://www.merconsult.fi/en/">
-<link rel="alternate" hreflang="es" href="https://www.merconsult.fi/es/">
-<link rel="alternate" hreflang="pt" href="https://www.merconsult.fi/pt/">
-<link rel="alternate" hreflang="x-default" href="https://www.merconsult.fi/">
+<title>MERCONSULT – RAG em IA: Pesquisa Precisa sem Suposições</title>
+<meta name="description" content="A tecnologia RAG liga a IA aos dados próprios da sua organização. Como funciona, onde se adequa melhor, e porque é que um modelo de linguagem nunca deve calcular sozinho.">
+<link rel="canonical" href="https://www.merconsult.fi/pt/uutinen-rag-tarkka-tieto-2026.html">
+<link rel="alternate" hreflang="fi" href="https://www.merconsult.fi/uutinen-rag-tarkka-tieto-2026.html">
+<link rel="alternate" hreflang="en" href="https://www.merconsult.fi/en/uutinen-rag-tarkka-tieto-2026.html">
+<link rel="alternate" hreflang="es" href="https://www.merconsult.fi/es/uutinen-rag-tarkka-tieto-2026.html">
+<link rel="alternate" hreflang="pt" href="https://www.merconsult.fi/pt/uutinen-rag-tarkka-tieto-2026.html">
+<link rel="alternate" hreflang="x-default" href="https://www.merconsult.fi/uutinen-rag-tarkka-tieto-2026.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="MERCONSULT">
-<meta property="og:title" content="MERCONSULT – Herramienta de análisis arancelario UE-Mercosur">
-<meta property="og:description" content="Herramienta gratuita de análisis arancelario del acuerdo UE-Mercosur. Consulte el cronograma de reducción arancelaria de su categoría de producto.">
-<meta property="og:url" content="https://www.merconsult.fi/es/">
+<meta property="og:title" content="MERCONSULT – RAG em IA: Pesquisa Precisa sem Suposições">
+<meta property="og:description" content="A tecnologia RAG liga a IA aos dados próprios da sua organização. Como funciona, onde se adequa melhor, e porque é que um modelo de linguagem nunca deve calcular sozinho.">
+<meta property="og:url" content="https://www.merconsult.fi/pt/uutinen-rag-tarkka-tieto-2026.html">
 <meta property="og:image" content="https://www.merconsult.fi/images/og-image.png">
-<meta property="og:locale" content="es_ES">
+<meta property="og:locale" content="pt_PT">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="MERCONSULT – Herramienta de análisis arancelario UE-Mercosur">
+<meta name="twitter:title" content="MERCONSULT – RAG em IA: Pesquisa Precisa sem Suposições">
 <meta name="twitter:image" content="https://www.merconsult.fi/images/og-image.png">
-<meta name="twitter:description" content="Herramienta gratuita de análisis arancelario del acuerdo UE-Mercosur. Consulte el cronograma de reducción arancelaria de su categoría de producto.">
+<meta name="twitter:description" content="A tecnologia RAG liga a IA aos dados próprios da sua organização. Como funciona, onde se adequa melhor, e porque é que um modelo de linguagem nunca deve calcular sozinho.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -74,7 +74,6 @@
     color: var(--gris-light);
     background: transparent;
     border: none;
-    text-decoration: none;
     padding: 5px 8px;
     cursor: pointer;
     transition: color .15s;
@@ -140,6 +139,7 @@
     gap:12px;
   }
   .eyebrow::before { content:''; width:28px; height:1px; background:var(--ink); display:inline-block; }
+  h1.eyebrow { font-size:0.72rem; font-weight:700; line-height:1.4; letter-spacing:2px; max-width:none; margin-top:0; }
 
   h1 {
     font-family:'Lora',serif;
@@ -159,33 +159,6 @@
     max-width:600px;
     font-size:1.08rem;
     line-height:1.75;
-  }
-
-  .stat-bar {
-    display: flex;
-    gap: 48px;
-    flex-wrap: wrap;
-    margin-top: 36px;
-  }
-  .stat-item { min-width: 140px; }
-  .stat-value {
-    font-family:'Lora',serif; font-weight:600; font-size: 2.4rem;
-    color: var(--ink); line-height: 1;
-  }
-  .stat-label {
-    font-family:'Montserrat',sans-serif; font-size: 0.72rem; font-weight:600;
-    letter-spacing: 0.4px; color: var(--gris); margin-top: 8px; max-width: 160px;
-  }
-  @media (max-width:720px) {
-    .stat-bar { gap: 32px; }
-  }
-  .hero-pitch {
-    font-family:'Lora',serif;
-    color: var(--ink-soft);
-    max-width:680px;
-    font-size:1.05rem;
-    line-height:1.75;
-    margin-top:22px;
   }
 
   /* ═══ SEARCH ═══ */
@@ -294,57 +267,6 @@
   .origin-btn.active { color: var(--ink); text-decoration: underline; text-underline-offset: 4px; }
   .origin-btn:hover { color: var(--ink-soft); }
 
-  .direction-bar {
-    background: var(--ink);
-    padding: 18px 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 24px;
-    flex-wrap: wrap;
-  }
-  .direction-btn {
-    font-family:'Montserrat',sans-serif;
-    font-size: 0.82rem;
-    font-weight: 700;
-    letter-spacing: 0.3px;
-    color: rgba(255,255,255,0.55);
-    background: transparent;
-    border: 1px solid rgba(255,255,255,0.25);
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: all .15s;
-  }
-  .direction-btn.active {
-    color: var(--ink);
-    background: var(--paper);
-    border-color: var(--paper);
-  }
-  .direction-btn:hover:not(.active) { color: rgba(255,255,255,0.85); border-color: rgba(255,255,255,0.5); }
-
-  .import-notice {
-    display: none;
-    max-width: 640px;
-    margin: 0 auto;
-    padding: 80px 48px;
-    text-align: center;
-  }
-  .import-notice h2 {
-    font-family:'Lora',serif; font-weight:600; font-size:1.6rem; color:var(--ink); margin-bottom:16px;
-  }
-  .import-notice p {
-    font-family:'Lora',serif; color:var(--gris); line-height:1.7; margin-bottom:28px;
-  }
-  .import-notice-btn {
-    display:inline-block; background:var(--ink); color:var(--paper); text-decoration:none;
-    font-family:'Montserrat',sans-serif; font-weight:700; font-size:0.85rem; letter-spacing:0.5px;
-    padding:15px 32px;
-  }
-  @media (max-width:720px) {
-    .direction-bar { padding: 16px 24px; gap: 12px; }
-    .direction-btn { font-size: 0.75rem; padding: 9px 14px; }
-  }
-
   #originPanel { max-width: 1040px; margin: 0 auto; padding: 0 48px; }
   .origin-panel-box {
     border-left: 3px solid var(--ink);
@@ -445,16 +367,6 @@
   .risk-block.bajo { border-left: 2px solid var(--ink); }
   .risk-block.medio { border-left: 2px dashed var(--ink); }
   .risk-block.alto { border-left: 4px solid var(--ink); }
-  .country-note {
-    background: var(--off);
-    padding: 20px 24px;
-    margin-bottom: 36px;
-  }
-  .country-note-label {
-    font-family:'Montserrat',sans-serif; font-size:0.72rem; font-weight:700;
-    letter-spacing:0.8px; text-transform:uppercase; color:var(--gris); margin-bottom:8px;
-  }
-  .country-note-text { font-family:'Lora',serif; font-size:0.92rem; color:var(--ink-soft); line-height:1.6; }
   .risk-label {
     font-family:'Montserrat',sans-serif; font-size:0.72rem; font-weight:700;
     letter-spacing:1px; text-transform:uppercase; color:var(--ink); margin-bottom:8px;
@@ -475,8 +387,6 @@
     background: var(--ink);
     color:#fff;
     border:none;
-    display:inline-block;
-    text-decoration:none;
     padding:15px 32px;
     font-family:'Montserrat',sans-serif;
     font-weight:700;
@@ -546,42 +456,81 @@
     .nav-tabs { display: none; }
   }
 
-  /* ═══ NEWS SECTION (homepage) ═══ */
-  .news-section { border-top: 1px solid var(--line); padding: 80px 48px 100px; }
-  .news-inner { max-width: 1040px; margin: 0 auto; }
-  .news-title {
-    font-family:'Lora',serif; font-weight:600; font-size: clamp(1.7rem, 3vw, 2.2rem);
-    color: var(--ink); margin-bottom: 40px;
+  /* ═══ ABOUT TEXT ═══ */
+  .about-text { max-width: 700px; }
+  .about-text h2 {
+    font-family:'Lora',serif; font-weight:600; font-size:1.3rem;
+    color:var(--ink); margin:36px 0 14px;
   }
+  .about-text a { color:var(--ink); border-bottom:1px solid var(--gris-light); text-decoration:none; }
+  .about-text a:hover { border-bottom-color:var(--ink); }
 
-  @media (max-width:720px) {
+  .about-text p {
+    font-family:'Lora',serif; font-size:1.05rem; color:var(--ink-soft);
+    line-height:1.85; margin-bottom:24px;
   }
-  .news-grid { display:grid; grid-template-columns: 1fr; max-width: 420px; gap: 1px; background: var(--line); border: 1px solid var(--line); }
-  .news-card {
-    background: var(--paper); padding: 32px 28px; text-decoration: none; display:block;
-    transition: background .15s;
+  .about-text p.about-lede { font-size:1.18rem; color:var(--ink); font-style:italic; }
+  .about-cta {
+    border-top: 1px solid var(--line); margin-top: 12px; padding-top: 32px;
   }
-  .news-card:hover { background: var(--off); }
-  .news-card-tag {
-    font-family:'Montserrat',sans-serif; font-size: 0.68rem; font-weight:700;
-    letter-spacing: 1px; text-transform: uppercase; color: var(--gris-light); margin-bottom: 14px;
+  .about-cta p {
+    font-family:'Lora',serif; font-size:1.05rem; color:var(--ink-soft); margin-bottom: 20px;
   }
-  .news-card h3 {
-    font-family:'Lora',serif; font-weight:600; font-size: 1.15rem; color: var(--ink);
-    margin-bottom: 10px; line-height: 1.35;
+  .about-cta p strong { color: var(--ink); }
+  .about-cta-btn {
+    display:inline-block; background: var(--ink); color:#fff; text-decoration:none;
+    font-family:'Montserrat',sans-serif; font-weight:700; font-size:0.85rem;
+    letter-spacing:0.5px; padding:15px 32px; transition: opacity .2s;
   }
-  .news-card p { font-family:'Lora',serif; font-size: 0.9rem; color: var(--gris); line-height: 1.6; }
-  .news-more {
-    display:inline-block; margin-top: 36px;
-    font-family:'Montserrat',sans-serif; font-size: 0.82rem; font-weight:700;
-    letter-spacing: 0.4px; color: var(--ink); text-decoration: none;
-    border-bottom: 1.5px solid var(--ink); padding-bottom: 3px;
+  .about-cta-btn:hover { opacity: 0.78; }
+
+  /* ═══ ARTICLE ═══ */
+  .article-meta {
+    font-family:'Montserrat',sans-serif; font-size:0.72rem; font-weight:700;
+    letter-spacing:1px; text-transform:uppercase; color:var(--gris-light); margin-bottom:18px;
   }
-  .news-more:hover { opacity: 0.6; }
-  @media (max-width:720px) {
-    .news-section { padding: 60px 24px 80px; }
-    .news-grid { grid-template-columns: 1fr; }
+  .article-body h1 { max-width: 860px; margin-bottom: 28px; }
+  .article-body h2 {
+    font-family:'Lora',serif; font-weight:600; font-size:1.35rem; color:var(--ink); margin:40px 0 16px;
   }
+  .article-body p {
+    font-family:'Lora',serif; font-size:1.03rem; color:var(--ink-soft); line-height:1.8; max-width:760px; margin-bottom:20px;
+  }
+  .article-body p.lede { font-size:1.15rem; color:var(--ink); font-style:italic; max-width:760px; }
+  .article-body ol, .article-body ul { max-width:760px; padding-left:0; list-style:none; margin-bottom:24px; }
+  .article-body ol li, .article-body ul li {
+    font-family:'Lora',serif; font-size:1rem; color:var(--ink-soft); line-height:1.75;
+    padding:14px 0 14px 40px; border-top:1px solid var(--line-soft); position:relative;
+  }
+  .article-body ol { counter-reset: article-counter; }
+  .article-body ol li { counter-increment: article-counter; }
+  .article-body ol li::before {
+    content: counter(article-counter); position:absolute; left:0; top:14px;
+    font-family:'Montserrat',sans-serif; font-weight:700; color:var(--ink); font-size:0.9rem;
+  }
+  .article-body ul li::before { content:'—'; position:absolute; left:0; color:var(--gris-light); }
+  .article-body ol li:last-child, .article-body ul li:last-child { border-bottom:1px solid var(--line-soft); }
+  .article-body strong { color: var(--ink); }
+  .article-sources { border-top:1px solid var(--line); margin-top:44px; padding-top:28px; max-width:760px; }
+  .article-sources h3 {
+    font-family:'Montserrat',sans-serif; font-size:0.72rem; font-weight:700;
+    letter-spacing:1px; text-transform:uppercase; color:var(--gris); margin-bottom:14px;
+  }
+  .article-sources ul { list-style:none; padding:0; margin:0; }
+  .article-sources li { padding:6px 0; border:none; }
+  .article-sources a {
+    font-family:'Lora',serif; font-size:0.96rem; color:var(--ink-soft); text-decoration:none; border-bottom:1px solid var(--gris-light);
+  }
+  .article-sources a:hover { border-bottom-color:var(--ink); color:var(--ink); }
+
+  .partner-logos { display:flex; gap:20px; flex-wrap:wrap; margin: 4px 0 40px; }
+  .partner-logo-item { text-align:center; }
+  .partner-logo-card {
+    background:#FFFFFF; border:1px solid var(--line);
+    padding:22px 26px; display:flex; align-items:center; justify-content:center;
+    width:220px; height:120px;
+  }
+  .partner-logo-card img { max-width:100%; max-height:100%; height:auto; display:block; }
   /* ═══ BACKGROUND WATERMARK ═══ */
   .bg-watermark {
     position: fixed;
@@ -643,35 +592,26 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "MERCONSULT",
-  "alternateName": "Industria Nordica Oy",
-  "description": "Consultoría de internacionalización y entrada al mercado entre la UE y América Latina / la región del Mercosur.",
-  "url": "https://www.merconsult.fi/es/",
-  "areaServed": [
-    "Finland",
-    "European Union",
-    "Mercosur",
-    "Latin America"
-  ],
-  "knowsLanguage": ["fi", "en", "es", "pt"],
-  "makesOffer": [
-    {
-      "@type": "Offer",
-      "name": "Evaluación Rápida",
-      "description": "Análisis del impacto del acuerdo con Mercosur para una categoría de producto y mercado de destino."
-    },
-    {
-      "@type": "Offer",
-      "name": "Paquete de Entrada al Mercado",
-      "description": "Servicio integral de entrada al mercado para el comercio UE-Mercosur."
-    },
-    {
-      "@type": "Offer",
-      "name": "Rol de Asesoría Continua",
-      "description": "Consultoría con retainer mensual para el comercio con Mercosur y LATAM."
-    }
-  ]
+  "@type": "Article",
+  "headline": "RAG em IA: Pesquisa Precisa sem Suposições",
+  "description": "A tecnologia RAG liga a IA aos dados próprios da sua organização. Como funciona, onde se adequa melhor, e porque é que um modelo de linguagem nunca deve calcular sozinho.",
+  "datePublished": "2026-08-26",
+  "dateModified": "2026-08-26",
+  "inLanguage": "pt",
+  "author": {
+    "@type": "Organization",
+    "name": "MERCONSULT"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "MERCONSULT",
+    "legalName": "Industria Nordica Oy",
+    "url": "https://www.merconsult.fi/"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.merconsult.fi/pt/uutinen-rag-tarkka-tieto-2026.html"
+  }
 }
 </script>
 </head>
@@ -684,21 +624,21 @@
 
 <div class="topbar" style="justify-content:flex-end;">
   <div class="lang-switch">
-    <a class="lang-btn" href="../" onclick="try{localStorage.setItem('mc_lang_pref','fi')}catch(e){}"><svg width="16" height="12" viewBox="0 0 18 13" style="flex-shrink:0;"><rect width="18" height="13" fill="#FFFFFF"/><rect x="6" width="3" height="13" fill="#002F6C"/><rect y="5" width="18" height="3" fill="#002F6C"/></svg>FI</a>
-    <a class="lang-btn" href="../en/" onclick="try{localStorage.setItem('mc_lang_pref','en')}catch(e){}"><svg width="16" height="12" viewBox="0 0 18 13" style="flex-shrink:0;"><rect width="18" height="13" fill="#012169"/><path d="M0,0 L18,13 M18,0 L0,13" stroke="#FFF" stroke-width="2.6"/><path d="M0,0 L18,13 M18,0 L0,13" stroke="#C8102E" stroke-width="1.3"/><rect x="7.5" width="3" height="13" fill="#FFF"/><rect y="5" width="18" height="3" fill="#FFF"/><rect x="8" width="2" height="13" fill="#C8102E"/><rect y="5.5" width="18" height="2" fill="#C8102E"/></svg>EN</a>
-    <a class="lang-btn active" href="./" onclick="try{localStorage.setItem('mc_lang_pref','es')}catch(e){}"><svg width="16" height="12" viewBox="0 0 18 13" style="flex-shrink:0;"><rect width="18" height="13" fill="#AA151B"/><rect y="3.25" width="18" height="6.5" fill="#F1BF00"/></svg>ES</a>
-      <a class="lang-btn" href="../pt/" onclick="try{localStorage.setItem('mc_lang_pref','pt')}catch(e){}"><svg width="16" height="12" viewBox="0 0 18 13" style="flex-shrink:0;"><rect width="18" height="13" fill="#FF0000"/><rect width="7" height="13" fill="#046A38"/><circle cx="7" cy="6.5" r="2.3" fill="#FFCC00" stroke="#FFF" stroke-width="0.4"/></svg>PT</a>
+    <a class="lang-btn" href="../uutinen-rag-tarkka-tieto-2026.html" onclick="try{localStorage.setItem('mc_lang_pref','fi')}catch(e){}"><svg width="16" height="12" viewBox="0 0 18 13" style="flex-shrink:0;"><rect width="18" height="13" fill="#FFFFFF"/><rect x="6" width="3" height="13" fill="#002F6C"/><rect y="5" width="18" height="3" fill="#002F6C"/></svg>FI</a>
+    <a class="lang-btn" href="../en/uutinen-rag-tarkka-tieto-2026.html" onclick="try{localStorage.setItem('mc_lang_pref','en')}catch(e){}"><svg width="16" height="12" viewBox="0 0 18 13" style="flex-shrink:0;"><rect width="18" height="13" fill="#012169"/><path d="M0,0 L18,13 M18,0 L0,13" stroke="#FFF" stroke-width="2.6"/><path d="M0,0 L18,13 M18,0 L0,13" stroke="#C8102E" stroke-width="1.3"/><rect x="7.5" width="3" height="13" fill="#FFF"/><rect y="5" width="18" height="3" fill="#FFF"/><rect x="8" width="2" height="13" fill="#C8102E"/><rect y="5.5" width="18" height="2" fill="#C8102E"/></svg>EN</a>
+    <a class="lang-btn" href="../es/uutinen-rag-tarkka-tieto-2026.html" onclick="try{localStorage.setItem('mc_lang_pref','es')}catch(e){}"><svg width="16" height="12" viewBox="0 0 18 13" style="flex-shrink:0;"><rect width="18" height="13" fill="#AA151B"/><rect y="3.25" width="18" height="6.5" fill="#F1BF00"/></svg>ES</a>
+      <a class="lang-btn active" href="uutinen-rag-tarkka-tieto-2026.html" onclick="try{localStorage.setItem('mc_lang_pref','pt')}catch(e){}"><svg width="16" height="12" viewBox="0 0 18 13" style="flex-shrink:0;"><rect width="18" height="13" fill="#FF0000"/><rect width="7" height="13" fill="#046A38"/><circle cx="7" cy="6.5" r="2.3" fill="#FFCC00" stroke="#FFF" stroke-width="0.4"/></svg>PT</a>
   </div>
 </div>
 
 <div class="nav-row">
   <a href="index.html" aria-label="MERCONSULT" class="brand-logo-link"><img src="../images/logo.svg" alt="MERCONSULT" class="brand-logo"></a>
   <div class="nav-tabs">
-    <a class="nav-tab active" href="index.html">Inicio</a>
-    <a class="nav-tab" href="palvelut.html">Servicios</a>
-    <a class="nav-tab" href="uutiset.html">Noticias</a>
-    <a class="nav-tab" href="sanasto.html">Glosario</a>
-    <a class="nav-tab" href="meista.html">Sobre nosotros</a>
+    <a class="nav-tab" href="index.html">Início</a>
+    <a class="nav-tab" href="palvelut.html">Serviços</a>
+    <a class="nav-tab active" href="uutiset.html">Notícias</a>
+    <a class="nav-tab" href="sanasto.html">Glossário</a>
+    <a class="nav-tab" href="meista.html">Sobre nós</a>
     <a class="nav-tab" href="yhteystiedot.html">Contacto</a>
   </div>
   <button class="hamburger-btn" id="hamburgerBtn" aria-label="Menú" aria-expanded="false">
@@ -707,470 +647,82 @@
 </div>
 
 <div class="mobile-menu" id="mobileMenu">
-  <a class="mobile-menu-link active" href="index.html">Inicio</a>
-  <a class="mobile-menu-link" href="palvelut.html">Servicios</a>
-  <a class="mobile-menu-link" href="uutiset.html">Noticias</a>
-  <a class="mobile-menu-link" href="sanasto.html">Glosario</a>
-  <a class="mobile-menu-link" href="meista.html">Sobre nosotros</a>
+  <a class="mobile-menu-link" href="index.html">Início</a>
+  <a class="mobile-menu-link" href="palvelut.html">Serviços</a>
+  <a class="mobile-menu-link active" href="uutiset.html">Notícias</a>
+  <a class="mobile-menu-link" href="sanasto.html">Glossário</a>
+  <a class="mobile-menu-link" href="meista.html">Sobre nós</a>
   <a class="mobile-menu-link" href="yhteystiedot.html">Contacto</a>
 </div>
 
-<div class="direction-bar">
-  <button class="direction-btn active" data-direction="export" onclick="setDirection('export')" id="directionExportBtn"></button>
-  <button class="direction-btn" data-direction="import" onclick="setDirection('import')" id="directionImportBtn"></button>
-</div>
-
-<div id="toolExportView">
-<div class="hero">
-  <div class="eyebrow" id="eyebrow"></div>
-  <h1 id="h1"></h1>
-  <p class="sub" id="sub"></p>
-  <p class="hero-pitch">América Latina ofrece un mercado de más de 600 millones de consumidores, y el nuevo acuerdo UE-Mercosur abre un mejor acceso a él junto con una oportunidad excepcional para diversificar las exportaciones con seguridad. La reducción de la burocracia y la eliminación de aranceles abren un camino directo hacia el crecimiento escalable y rentable para las empresas europeas.</p>
-
-  <div class="stat-bar">
-    <div class="stat-item">
-      <div class="stat-value">600M+</div>
-      <div class="stat-label">CONSUMIDORES EN AMÉRICA LATINA</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-value">90%+</div>
-      <div class="stat-label">DE LOS ARANCELES DE EXPORTACIÓN DE LA UE ELIMINADOS</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-value">16</div>
-      <div class="stat-label">CATEGORÍAS DE PRODUCTO CUBIERTAS EN LA HERRAMIENTA</div>
-    </div>
-  </div>
-</div>
-
-<div class="search-section">
-  <div class="search-label" id="searchLabel"></div>
-  <div class="search-box">
-    <input type="text" id="buscar" onkeydown="if(event.key==='Enter')buscar()">
-    <button class="search-btn" onclick="buscar()"><span id="searchBtnText"></span></button>
-  </div>
-  <div class="chips" id="chips"></div>
-</div>
-
-<div class="origin-bar">
-  <span class="origin-question" id="originQuestion"></span>
-  <div class="origin-buttons">
-    <button class="origin-btn active" data-origin="eu" onclick="setOrigin('eu')"></button>
-    <button class="origin-btn" data-origin="usa" onclick="setOrigin('usa')"></button>
-    <button class="origin-btn" data-origin="canada" onclick="setOrigin('canada')"></button>
-    <button class="origin-btn" data-origin="other" onclick="setOrigin('other')"></button>
-  </div>
-</div>
-<div id="originPanel"></div>
-
 <main>
-  <div id="resultado"></div>
-</main>
+  <div class="article-body" style="border-top:1px solid var(--line); padding-top:36px;">
+    <div class="article-meta">IA &middot; Agosto 2026</div>
+    <h1>RAG em IA: Pesquisa Precisa sem Suposi&ccedil;&otilde;es</h1>
 
-</div>
+    <p class="lede">Os modelos de linguagem s&atilde;o excelentes a processar linguagem, contexto e inten&ccedil;&atilde;o. No entanto, n&atilde;o s&atilde;o reposit&oacute;rios de dados fi&aacute;veis nem calculadoras. Quando uma resposta tem de ser baseada nos padr&otilde;es, valores de medi&ccedil;&atilde;o, plantas ou f&oacute;rmulas espec&iacute;ficos de uma organiza&ccedil;&atilde;o, n&atilde;o se pode permitir que o modelo preencha as lacunas com suposi&ccedil;&otilde;es fluentes. A Gera&ccedil;&atilde;o Aumentada por Recupera&ccedil;&atilde;o (RAG) n&atilde;o elimina este problema por si s&oacute;, mas &eacute; uma forma de separar a recupera&ccedil;&atilde;o de informa&ccedil;&atilde;o da gera&ccedil;&atilde;o.</p>
 
-<div class="import-notice" id="importNotice">
-  <h2 id="importNoticeTitle"></h2>
-  <p id="importNoticeText"></p>
-  <a class="import-notice-btn" href="yhteystiedot.html" id="importNoticeBtn"></a>
-</div>
+    <h2>O que o RAG Faz &ndash; e o que N&atilde;o Faz</h2>
+    <p>A l&oacute;gica b&aacute;sica de uma cadeia RAG &eacute; simples: a pergunta do utilizador &eacute; interpretada como uma consulta de pesquisa, o sistema recupera segmentos relevantes da base de dados da organiza&ccedil;&atilde;o, e o modelo de linguagem compila uma resposta com base no material fornecido.</p>
+    <p>O benef&iacute;cio &eacute; claro: o modelo n&atilde;o tem de depender de uma mem&oacute;ria de treino com meses de idade, e a fonte pode sempre ser mostrada ao utilizador. A desvantagem &eacute; igualmente clara: a pesquisa pode devolver informa&ccedil;&otilde;es incorretas, desatualizadas ou incompletas. O RAG reduz significativamente as alucina&ccedil;&otilde;es, mas n&atilde;o as reduz a zero.</p>
+    <p>A conclus&atilde;o mais importante em rela&ccedil;&atilde;o a dados precisos &eacute; esta: <strong>o RAG &eacute; adequado para localizar factos, n&atilde;o para garanti-los.</strong> A fiabilidade adv&eacute;m da qualidade do pipeline &ndash; indexa&ccedil;&atilde;o, direitos de acesso, valida&ccedil;&atilde;o e o que &eacute; permitido ao modelo fazer com os dados recuperados.</p>
 
-<section class="news-section">
-  <div class="news-inner">
-    <h2 class="news-title">Novedades</h2>
+    <h2>Onde o RAG se Adequa a Dados Precisos?</h2>
+    <p>O RAG funciona melhor quando a tarefa envolve recupera&ccedil;&atilde;o de informa&ccedil;&atilde;o em vez de racioc&iacute;nio aberto. Bons casos de uso incluem:</p>
+    <ul>
+      <li>Recuperar par&acirc;metros de um dispositivo ou componente espec&iacute;fico a partir da documenta&ccedil;&atilde;o</li>
+      <li>Verificar uma cl&aacute;usula num padr&atilde;o ou regulamento atualmente v&aacute;lido</li>
+      <li>Obter valores atuais e em tempo real de um ERP ou sistema de produ&ccedil;&atilde;o</li>
+      <li>Encontrar a descri&ccedil;&atilde;o de um processo patenteado num manual interno</li>
+      <li>Responder a perguntas do tipo &ldquo;de onde vem este n&uacute;mero?&rdquo;</li>
+    </ul>
+    <p>Quanto mais precisa for a fonte, menos interpreta&ccedil;&atilde;o o modelo ter&aacute; de fazer. O RAG enfraquece quando uma pergunta exige uma longa cadeia de racioc&iacute;nio, a reconcilia&ccedil;&atilde;o de fontes conflituosas ou c&aacute;lculos complexos que n&atilde;o foram dissociados do modelo. Nesses cen&aacute;rios, a linguagem fluente mascara facilmente os erros.</p>
 
-    <div class="news-grid">
-      <a class="news-card" href="uutinen-rag-tarkka-tieto-2026.html">
-        <div class="news-card-tag">IA</div>
-        <h3>RAG en IA: Búsqueda Precisa sin Conjeturas</h3>
-        <p>Cómo el RAG conecta la IA con los datos propios de su organización – y por qué un modelo nunca debe calcular por sí mismo.</p>
-      </a>
+    <h2>Obtenha Valores, N&atilde;o os Calcule com um LLM</h2>
+    <p>Os modelos de linguagem s&atilde;o fracos em aritm&eacute;tica precisa, convers&otilde;es de unidades e f&oacute;rmulas de v&aacute;rios passos. Um modelo pode produzir um n&uacute;mero de aspeto plaus&iacute;vel que est&aacute; totalmente errado. Portanto, num sistema de dados precisos, o modelo nunca deve atuar como uma calculadora. Uma divis&atilde;o eficaz do trabalho &eacute;:</p>
+    <ol>
+      <li><strong>Interpreta&ccedil;&atilde;o:</strong> O modelo de linguagem interpreta a pergunta, localiza os par&acirc;metros necess&aacute;rios e seleciona uma ferramenta conhecida.</li>
+      <li><strong>Recupera&ccedil;&atilde;o:</strong> A pesquisa devolve os valores de entrada a partir de fontes especificadas (documento, campo de base de dados, API).</li>
+      <li><strong>C&aacute;lculo:</strong> Uma calculadora determin&iacute;stica executa a f&oacute;rmula &ndash; uma fun&ccedil;&atilde;o pr&eacute;-escrita e testada, n&atilde;o um script gerado na hora pelo modelo.</li>
+      <li><strong>Sa&iacute;da:</strong> O modelo de linguagem devolve o resultado da calculadora num formato compreens&iacute;vel, acompanhado pela fonte.</li>
+    </ol>
+    <p>Existe aqui uma condi&ccedil;&atilde;o limite rigorosa: uma calculadora s&oacute; &eacute; determin&iacute;stica se a entrada estiver correta. Se o modelo escolher o dispositivo, a linha ou a f&oacute;rmula errada, o c&aacute;lculo preciso produzir&aacute; um n&uacute;mero precisamente errado. Um valor em falta nunca deve tornar-se uma suposi&ccedil;&atilde;o.</p>
+
+    <h2>Um Ambiente Fechado Controla os Dados, N&atilde;o Elimina o Risco</h2>
+    <p>Material cr&iacute;tico &ndash; plantas, dados de ERP, padr&otilde;es, diretrizes de processos &ndash; n&atilde;o pertence a um modelo de linguagem p&uacute;blico. Se o &iacute;ndice, a pesquisa e a execu&ccedil;&atilde;o do modelo forem mantidos num servidor privado, os dados n&atilde;o vazar&atilde;o para conjuntos de dados de treino externos. Esta &eacute; uma forte justifica&ccedil;&atilde;o para construir uma arquitetura RAG privada.</p>
+    <p>No entanto, isto n&atilde;o &eacute; o mesmo que seguran&ccedil;a perfeita. A execu&ccedil;&atilde;o local elimina uma amea&ccedil;a: enviar dados para uma API externa. O que resta s&atilde;o direitos de acesso, inje&ccedil;&otilde;es de prompts, documentos envenenados e amea&ccedil;as internas. Num sistema de dados precisos, a seguran&ccedil;a &eacute; um componente da qualidade dos dados: a pessoa, vers&atilde;o ou documento errado &eacute; um erro t&atilde;o grave como o n&uacute;mero errado.</p>
+
+    <h2>Do que Necessita um Pipeline RAG de Dados Precisos?</h2>
+    <p>Simplesmente &ldquo;colocar documentos numa base de dados vetorial e adicionar um LLM por cima&rdquo; n&atilde;o &eacute; suficiente. &Eacute; necess&aacute;rio um pipeline estritamente gerido:</p>
+    <ul>
+      <li><strong>Qualidade da Fonte:</strong> Tabelas, unidades e vers&otilde;es devem ser preservadas durante a indexa&ccedil;&atilde;o &ndash; se um PDF for achatado em texto e uma linha for quebrada, o &ldquo;valor preciso&rdquo; recuperado j&aacute; est&aacute; corrompido.</li>
+      <li><strong>Pesquisa Adequada:</strong> Uma combina&ccedil;&atilde;o de pesquisa por palavras-chave e vetorial, reordena&ccedil;&atilde;o e, se necess&aacute;rio, consultas estruturadas a bases de dados.</li>
+      <li><strong>Separar Dados em Tempo Real de Diretrizes Est&aacute;ticas:</strong> A press&atilde;o em tempo real, os n&iacute;veis de invent&aacute;rio ou os ciclos de produ&ccedil;&atilde;o devem ser obtidos diretamente atrav&eacute;s de APIs &ndash; o RAG n&atilde;o torna os dados recentes, a integra&ccedil;&atilde;o sim.</li>
+      <li><strong>Absten&ccedil;&atilde;o:</strong> Se n&atilde;o houver correspond&ecirc;ncia ou as fontes entrarem em conflito, o sistema deve diz&ecirc;-lo. A absten&ccedil;&atilde;o tem de ser planeada com anteced&ecirc;ncia.</li>
+      <li><strong>Rastreabilidade:</strong> O utilizador deve poder ver exatamente de que documento ou campo veio o valor e qual a vers&atilde;o que era v&aacute;lida.</li>
+      <li><strong>Humano no Circuito:</strong> Quando as consequ&ecirc;ncias s&atilde;o dispendiosas, o RAG pode acelerar o fluxo de trabalho de um especialista, mas n&atilde;o substitui uma decis&atilde;o respons&aacute;vel.</li>
+    </ul>
+
+    <h2>O que Isto Significa na Pr&aacute;tica?</h2>
+    <p>O RAG &eacute; excelentemente adequado para recuperar dados precisos quando &eacute; compreendido como uma camada de pesquisa e n&atilde;o como um motor de verdade absoluta. Esta tecnologia n&atilde;o se alinha com as alega&ccedil;&otilde;es de marketing de &ldquo;zero alucina&ccedil;&otilde;es&rdquo; ou &ldquo;100% de confian&ccedil;a&rdquo; apenas no que diz respeito ao modelo. Um objetivo realista e altamente &uacute;til &eacute; mais restrito: responder apenas quando a fonte e os par&acirc;metros forem suficientes; calcular apenas utilizando fun&ccedil;&otilde;es previamente testadas; mostrar sempre de onde veio o n&uacute;mero; interromper a cadeia imediatamente quando faltar informa&ccedil;&atilde;o.</p>
+    <p>Quando utilizado desta forma, o RAG n&atilde;o &eacute; um substituto para suposi&ccedil;&otilde;es. &Eacute; um m&eacute;todo eficaz para desbloquear dados internos e precisos sem obrigar um modelo de linguagem a invent&aacute;-los.</p>
+
+    <div class="about-cta">
+      <p><strong>Estar a pensar como a tecnologia RAG poderia otimizar a pesquisa de informa&ccedil;&atilde;o da sua organiza&ccedil;&atilde;o?</strong> &mdash; a reuni&atilde;o de avalia&ccedil;&atilde;o inicial &eacute; sempre gratuita.</p>
+      <a class="about-cta-btn" href="yhteystiedot.html">Marcar reuni&atilde;o de avalia&ccedil;&atilde;o &rarr;</a>
     </div>
-
-    <a class="news-more" href="uutiset.html">Todas las noticias &rarr;</a>
   </div>
-</section>
+</main>
 
 <footer>
   <div style="display:flex; align-items:center;">
   <a href="index.html" aria-label="MERCONSULT" class="brand-logo-link"><img src="../favicon.svg" alt="MERCONSULT" class="brand-logo"></a>
   <a href="https://x.com/merconsultfi" target="_blank" rel="noopener" aria-label="MERCONSULT X:ss&auml;" style="margin-left:18px; display:flex; opacity:0.75;"><svg width="18" height="18" viewBox="0 0 24 24" fill="#0A0A0A"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
 </div>
-  <div style="display:flex; align-items:center; gap:0;"><a href="../tietosuoja.html" class="footer-privacy-link" style="font-family:'Montserrat',sans-serif; font-size:0.78rem; color:var(--gris); text-decoration:none; margin-right:18px;">Privacidad</a><div id="footNote"></div></div>
+  <div style="display:flex; align-items:center; gap:0;"><a href="../tietosuoja.html" class="footer-privacy-link" style="font-family:'Montserrat',sans-serif; font-size:0.78rem; color:var(--gris); text-decoration:none; margin-right:18px;">Privacidade</a><div style="font-family:'Lora',serif; font-style:italic; color:#9A9A9A; font-size:0.85rem;">© 2026 MERCONSULT · Industria Nordica Oy</div></div>
 </footer>
 
 <script>
-/* ═══════════════ TRANSLATIONS (UI) ═══════════════ */
-const I18N = {
-  fi: {
-    eyebrow: "Tullianalyysityökalu",
-    h1_pre: "Miten ", h1_em: "Mercosur–EU-sopimus", h1_post: " vaikuttaa tuoteryhmääsi?",
-    sub: "Hae tuoteryhmäsi ja näe todellinen tullinalennusaikataulu — perustuu virallisen EU–Mercosur-sopimuksen liitteeseen 2-A.",
-    searchLabel: "Hae tuoteryhmää",
-    placeholder: "esim. autot, koneet, viini, liha, lääkkeet...",
-    searchBtn: "Hae",
-    resultEyebrow: "Tuoteryhmäanalyysi",
-    metricLabels: ["Tulli ennen sopimusta","Tilanne nyt (2026)","Poistoaika"],
-    yearsWord: "vuotta",
-    timelineLabel: "Vapautumisaikataulu",
-    timelineConnector: " — tulli noin 0 % vuoteen ",
-    riskLabels: {bajo:"Matala sääntelyriski", medio:"Kohtalainen sääntelyriski", alto:"Korkea sääntelyriski — vaatii asiantuntemusta"},
-    ctaText: "Tarvitsetko tuotteesi tarkan tullinimikkeen ja markkinoillepääsysuunnitelman? Räätälöity analyysimme kattaa juuri sinun nimikkeesi.",
-    ctaBtn: "Pyydä analyysi",
-    emptyTitle: t => `"${t}" ei vielä löydy julkisesta tietokannastamme.`,
-    emptyText: "Täysi tietokantamme kattaa yli 200 tuoteryhmää tarkalla tullinimikkeellä (8-numeroinen HS-koodi). Pyydä räätälöity analyysi omalle tuotteellesi.",
-    ctaEmptyText: "Räätälöity analyysi. Yksityiskohtainen raportti tullinimikkeestäsi 5–10 arkipäivässä.",
-    placeholderResult: "Kirjoita tuoteryhmä yllä, tai valitse jokin ehdotuksista, nähdäksesi täyden analyysin.",
-    footNote: "Analyysi perustuu Euroopan unionin virallisiin lähteisiin · Päivitetty 2026",
-    originQuestion: "Etkö ole EU:ssa? Valitse sijaintisi:",
-    originEU: "EU",
-    originUSA: "USA",
-    originCanada: "Kanada",
-    originOther: "Muut LATAM-maat",
-    originUsaTitle: "USA:n kilpailuasema",
-    originUsaText: "Yhdysvalloilla ei ole vapaakauppasopimusta Mercosurin kanssa. Kun eurooppalainen kilpailijasi maksaa alenevaa tai poistuvaa tullia tässä tuoteryhmässä, sinä maksat edelleen täyden MFN-tullin. Voimme selvittää tarkan kilpailuhaittasi ja mahdolliset strategiat, kuten toimimisen EU-kumppanuuden kautta.",
-    originCanadaTitle: "Kanadan tilanne",
-    originCanadaText: "Kanada neuvottelee parhaillaan omaa Mercosur-sopimustaan tavoitteenaan solmia se vuoden 2026 loppuun mennessä. Ehdot eivät ole vielä julkisia, mutta yritykset jotka rakentavat suhteita alueelle jo nyt ovat valmiimpia kun sopimus astuu voimaan.",
-    originOtherTitle: "Muut Latinalaisen Amerikan maat",
-    originOtherText: "Jokaisella Mercosurin ulkopuolisella LATAM-maalla on oma kauppasuhteensa alueeseen. Ota yhteyttä, niin käymme läpi juuri sinun tilanteesi."
-  },
-  en: {
-    eyebrow: "Tariff analysis tool",
-    h1_pre: "How does the ", h1_em: "EU–Mercosur Agreement", h1_post: " affect your product category?",
-    sub: "Search your product category to see the real tariff reduction schedule — based on Annex 2-A of the official EU–Mercosur agreement.",
-    searchLabel: "Search product category",
-    placeholder: "e.g. cars, machinery, wine, textiles, pharmaceuticals...",
-    searchBtn: "Search",
-    resultEyebrow: "Category analysis",
-    metricLabels: ["Tariff before the agreement","Current situation (2026)","Elimination period"],
-    yearsWord: "years",
-    timelineLabel: "Liberalisation timeline",
-    timelineConnector: " — tariff reaches approx. 0% by ",
-    riskLabels: {bajo:"Low regulatory risk", medio:"Moderate regulatory risk", alto:"High regulatory risk — requires expert advice"},
-    ctaText: "Need the exact tariff code for your product and a market-entry plan? Our tailored analysis covers your specific line.",
-    ctaBtn: "Request analysis",
-    emptyTitle: t => `"${t}" is not yet in our public database.`,
-    emptyText: "Our full database covers over 200 product categories with specific tariff codes (8-digit HS code). Request a tailored analysis for your exact product.",
-    ctaEmptyText: "Tailored analysis. A detailed report on your tariff line, in 5–10 business days.",
-    placeholderResult: "Type a product category above, or select one of the suggestions, to see the full analysis.",
-    footNote: "Analysis based on official European Union sources · Updated 2026",
-    originQuestion: "Not in the EU? Select your location:",
-    originEU: "EU",
-    originUSA: "USA",
-    originCanada: "Canada",
-    originOther: "Other LATAM countries",
-    originUsaTitle: "US competitive position",
-    originUsaText: "The United States has no free trade agreement with Mercosur. While your European competitor pays a declining or eliminated tariff on this product category, you continue to pay the full MFN tariff. We can map your exact competitive gap and possible strategies, such as operating through an EU partnership.",
-    originCanadaTitle: "Canada's situation",
-    originCanadaText: "Canada is currently negotiating its own Mercosur agreement, aiming to conclude it by the end of 2026. Terms are not yet public, but companies building relationships in the region now will be better positioned once the agreement takes effect.",
-    originOtherTitle: "Other Latin American countries",
-    originOtherText: "Every non-Mercosur LATAM country has its own trade relationship with the bloc. Get in touch and we'll walk through your specific situation."
-  },
-  es: {
-    hsNotFoundTitle: t => `El código HS "${t}" no está entre nuestras 16 categorías cubiertas.`,
-    hsNotFoundText: "Las subpartidas difieren a nuestro nivel de detalle. Envíenos el código y determinaremos la línea arancelaria exacta.",
-    hsChapterLabel: "Capítulo HS",
-    countryNoteLabel: "Nota específica por país",
-    directionExport: "Exportamos de la UE a Mercosur",
-    directionImport: "Importamos de Mercosur a la UE",
-    importNoticeTitle: "Análisis preciso bajo petición",
-    importNoticeText: "La estructura arancelaria para las importaciones de Mercosur a la UE (Apéndice 2-A-2) es un marco independiente con su propio calendario de desgravación. No publicamos cifras estimadas para esta dirección sin una verificación específica del producto — solicite un análisis personalizado y determinaremos los aranceles exactos para su categoría de producto.",
-    importNoticeBtn: "Solicitar análisis →",
-    eyebrow: "Herramienta de análisis arancelario",
-    h1_pre: "¿Cómo afecta el ", h1_em: "Acuerdo Mercosur–UE", h1_post: " a tu categoría de producto?",
-    sub: "Consulte el cronograma de reducción arancelaria por categoría, basado en el Anexo 2-A del acuerdo oficial entre la Unión Europea y el Mercosur.",
-    searchLabel: "Buscar categoría de producto",
-    placeholder: "ej. automóviles, maquinaria, vino, textiles, farmacéuticos...",
-    searchBtn: "Buscar",
-    resultEyebrow: "Análisis de categoría",
-    metricLabels: ["Arancel antes del acuerdo","Situación actual (2026)","Período de eliminación"],
-    yearsWord: "años",
-    timelineLabel: "Cronograma de liberalización",
-    timelineConnector: " — arancel 0% aproximadamente en ",
-    riskLabels: {bajo:"Riesgo regulatorio bajo", medio:"Riesgo regulatorio medio", alto:"Riesgo regulatorio alto — requiere asesoría"},
-    ctaText: "¿Necesita el código arancelario exacto de su producto y un plan de entrada al mercado? Nuestro análisis personalizado cubre su partida específica.",
-    ctaBtn: "Solicitar análisis",
-    emptyTitle: t => `"${t}" no figura aún en nuestra base pública.`,
-    emptyText: "Nuestra base de datos completa cubre más de 200 categorías con código arancelario específico (HS de 8 dígitos). Solicite un análisis personalizado para su producto exacto.",
-    ctaEmptyText: "Análisis a medida. Un informe detallado sobre su partida arancelaria, en 5–10 días hábiles.",
-    placeholderResult: "Escriba una categoría de producto arriba, o seleccione una de las sugerencias, para ver el análisis completo.",
-    footNote: "Análisis basado en fuentes oficiales de la Unión Europea · Actualizado 2026",
-    originQuestion: "¿No está en la UE? Seleccione su ubicación:",
-    originEU: "UE",
-    originUSA: "EE. UU.",
-    originCanada: "Canadá",
-    originOther: "Otros países de LATAM",
-    originUsaTitle: "Posición competitiva de EE. UU.",
-    originUsaText: "Estados Unidos no tiene acuerdo de libre comercio con Mercosur. Mientras su competidor europeo paga un arancel decreciente o eliminado en esta categoría, usted sigue pagando el arancel NMF completo. Podemos analizar su brecha competitiva exacta y posibles estrategias, como operar a través de una asociación con la UE.",
-    originCanadaTitle: "Situación de Canadá",
-    originCanadaText: "Canadá está negociando actualmente su propio acuerdo con Mercosur, con el objetivo de concluirlo antes de finales de 2026. Los términos aún no son públicos, pero las empresas que ya construyen relaciones en la región estarán mejor posicionadas cuando el acuerdo entre en vigor.",
-    originOtherTitle: "Otros países de América Latina",
-    originOtherText: "Cada país de LATAM fuera del Mercosur tiene su propia relación comercial con el bloque. Contáctenos y revisaremos su situación específica."
-  },
-};
-
-/* ═══════════════ PRODUCT DATABASE (multilingual) ═══════════════ */
-let DB = {};
-let dbLoaded = false;
-fetch('../data/tariffs.json')
-  .then(r => r.json())
-  .then(data => { DB = data.categories; dbLoaded = true; })
-  .catch(err => console.error('Data load failed:', err));
-
-/* ═══════════════ STATE & RENDER ═══════════════ */
-let currentLang = 'es';
-let lastKey = null;   // canonical DB key, 'EMPTY', or null
-let lastTerm = '';
-
-function applyStaticTexts(){
-  const t = I18N[currentLang];
-  document.getElementById('eyebrow').textContent = t.eyebrow;
-  document.getElementById('h1').innerHTML = t.h1_pre + '<em>' + t.h1_em + '</em>' + t.h1_post;
-  document.getElementById('sub').textContent = t.sub;
-  document.getElementById('searchLabel').textContent = t.searchLabel;
-  document.getElementById('buscar').placeholder = t.placeholder;
-  document.getElementById('searchBtnText').textContent = t.searchBtn;
-  document.getElementById('footNote').textContent = t.footNote;
-
-  document.getElementById('directionExportBtn').textContent = t.directionExport;
-  document.getElementById('directionImportBtn').textContent = t.directionImport;
-  document.getElementById('importNoticeTitle').textContent = t.importNoticeTitle;
-  document.getElementById('importNoticeText').textContent = t.importNoticeText;
-  document.getElementById('importNoticeBtn').textContent = t.importNoticeBtn;
-
-  document.getElementById('originQuestion').textContent = t.originQuestion;
-  document.querySelector('.origin-btn[data-origin="eu"]').textContent = t.originEU;
-  document.querySelector('.origin-btn[data-origin="usa"]').textContent = t.originUSA;
-  document.querySelector('.origin-btn[data-origin="canada"]').textContent = t.originCanada;
-  document.querySelector('.origin-btn[data-origin="other"]').textContent = t.originOther;
-
-  const chipsWrap = document.getElementById('chips');
-  chipsWrap.innerHTML = '';
-  Object.keys(DB).forEach(key=>{
-    const el = document.createElement('div');
-    el.className = 'chip';
-    el.textContent = DB[key].short[currentLang];
-    el.onclick = () => buscarChip(key);
-    chipsWrap.appendChild(el);
-  });
-}
-
-let currentOrigin = 'eu';
-let currentDirection = 'export';
-
-function setDirection(d){
-  currentDirection = d;
-  document.querySelectorAll('.direction-btn').forEach(b => b.classList.toggle('active', b.dataset.direction === d));
-  document.getElementById('toolExportView').style.display = (d === 'export') ? '' : 'none';
-  document.getElementById('importNotice').style.display = (d === 'import') ? 'block' : 'none';
-}
-
-function setOrigin(o){
-  currentOrigin = o;
-  document.querySelectorAll('.origin-btn').forEach(b => b.classList.toggle('active', b.dataset.origin === o));
-  renderOriginPanel();
-}
-
-function renderOriginPanel(){
-  const panel = document.getElementById('originPanel');
-  const t = I18N[currentLang];
-  if(currentOrigin === 'eu'){ panel.innerHTML = ''; return; }
-  let title, text;
-  if(currentOrigin === 'usa'){ title = t.originUsaTitle; text = t.originUsaText; }
-  else if(currentOrigin === 'canada'){ title = t.originCanadaTitle; text = t.originCanadaText; }
-  else { title = t.originOtherTitle; text = t.originOtherText; }
-  panel.innerHTML = `<div class="origin-panel-box"><div class="origin-panel-title">${title}</div><p class="origin-panel-text">${text}</p></div>`;
-}
-
-function setLang(lang){
-  currentLang = lang;
-  document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
-  applyStaticTexts();
-  renderOriginPanel();
-
-  if(lastKey && lastKey !== 'EMPTY'){
-    renderMatch(lastKey);
-  } else if(lastKey === 'EMPTY'){
-    renderEmpty(lastTerm);
-  } else {
-    document.getElementById('resultado').innerHTML = `<div class="placeholder">${I18N[currentLang].placeholderResult}</div>`;
-  }
-}
-
-function normalizar(t){ return t.toLowerCase().trim(); }
-
-/* ═══ HS CODE DETECTION AND MATCHING ═══ */
-function parseHSQuery(raw){
-  const cleaned = raw.replace(/[.\s]/g, '');
-  if(!/^\d{2,10}$/.test(cleaned)) return null;
-  return { digits: cleaned, chapter: parseInt(cleaned.substring(0,2), 10), length: cleaned.length };
-}
-
-function parseHSRange(hsStr){
-  const clean = hsStr.replace('HS ', '').replace(/\s/g, '');
-  const nums = clean.match(/\d+/g);
-  if(!nums) return null;
-  if(nums.length === 1){
-    const n = nums[0];
-    const chapter = parseInt(n.length >= 2 ? n.substring(0,2) : n, 10);
-    return { min: chapter, max: chapter };
-  }
-  return { min: parseInt(nums[0],10), max: parseInt(nums[1],10) };
-}
-
-function matchHSChapter(chapter){
-  const matches = [];
-  for(const k in DB){
-    const entry = DB[k];
-    const range = parseHSRange(entry.hs);
-    if(!range) continue;
-    if(chapter >= range.min && chapter <= range.max){
-      if(entry.hsExclude && entry.hsExclude.includes(chapter)) continue;
-      matches.push(k);
-    }
-  }
-  return matches;
-}
-
-function buscarChip(key){
-  document.getElementById('buscar').value = DB[key].short[currentLang];
-  lastKey = key;
-  renderMatch(key);
-}
-
-function buscar(){
-  if (!dbLoaded) return;
-  const raw = document.getElementById('buscar').value;
-  const q = normalizar(raw);
-  const cont = document.getElementById('resultado');
-
-  if(!q){
-    lastKey = null;
-    cont.innerHTML = `<div class="placeholder">${I18N[currentLang].placeholderResult}</div>`;
-    return;
-  }
-
-  const hsQuery = parseHSQuery(raw);
-  if(hsQuery){
-    const matches = matchHSChapter(hsQuery.chapter);
-    if(matches.length > 0){
-      lastKey = matches[0];
-      renderMatch(matches[0]);
-      return;
-    }
-    lastKey = 'HS_NOT_FOUND'; lastTerm = raw;
-    renderHSNotFound(raw, hsQuery);
-    return;
-  }
-
-  let foundKey = null;
-  for(const k in DB){
-    const entry = DB[k];
-    const shortLabel = entry.short[currentLang].toLowerCase();
-    const nombreLabel = entry.nombre[currentLang].toLowerCase();
-    const terms = entry.terms[currentLang] || [];
-    if(shortLabel.includes(q) || q.includes(shortLabel) || nombreLabel.includes(q) ||
-       terms.some(term => term.includes(q) || q.includes(term))){
-      foundKey = k; break;
-    }
-  }
-
-  if(!foundKey){
-    lastKey = 'EMPTY'; lastTerm = raw;
-    renderEmpty(raw);
-    return;
-  }
-
-  lastKey = foundKey;
-  renderMatch(foundKey);
-}
-
-function renderHSNotFound(term, hsQuery){
-  const t = I18N[currentLang];
-  const cont = document.getElementById('resultado');
-  cont.innerHTML = `
-    <div>
-      <div class="empty-title">${t.hsNotFoundTitle(term)}</div>
-      <p class="empty-text">${t.hsChapterLabel} ${hsQuery.chapter} &middot; ${t.hsNotFoundText}</p>
-      <div class="cta-box">
-        <div class="cta-text"><strong>${t.ctaEmptyText}</strong></div>
-        <a class="cta-btn" href="yhteystiedot.html?aihe=${encodeURIComponent(term)}">${t.ctaBtn}</a>
-      </div>
-    </div>`;
-}
-
-function renderEmpty(term){
-  const t = I18N[currentLang];
-  document.getElementById('resultado').innerHTML = `
-    <div>
-      <div class="empty-title">${t.emptyTitle(term)}</div>
-      <p class="empty-text">${t.emptyText}</p>
-      <div class="cta-box">
-        <div class="cta-text"><strong>${t.ctaEmptyText}</strong></div>
-        <a class="cta-btn" href="yhteystiedot.html">${t.ctaBtn}</a>
-      </div>
-    </div>`;
-}
-
-function renderMatch(key){
-  const t = I18N[currentLang];
-  const d = DB[key];
-  const L = currentLang;
-
-  document.getElementById('resultado').innerHTML = `
-    <div>
-      <div class="result-header">
-        <div>
-          <div class="result-eyebrow">${t.resultEyebrow}</div>
-          <div class="result-title">${d.nombre[L]}</div>
-        </div>
-        <div class="hs-badge">${d.hs}</div>
-      </div>
-
-      <div class="metric-row">
-        <div class="metric">
-          <div class="metric-label">${t.metricLabels[0]}</div>
-          <div class="metric-value">${d.arancelAntes[L]}</div>
-        </div>
-        <div class="metric">
-          <div class="metric-label">${t.metricLabels[1]}</div>
-          <div class="metric-value accent">${d.arancelHoy[L]}</div>
-        </div>
-        <div class="metric">
-          <div class="metric-label">${t.metricLabels[2]}</div>
-          <div class="metric-value">${d.purga} ${t.yearsWord}</div>
-        </div>
-      </div>
-
-      <div class="timeline">
-        <div class="timeline-label">${t.timelineLabel}</div>
-        <div class="timeline-bar"><div class="timeline-fill" style="width:8%"></div></div>
-        <div class="timeline-text">${d.inicio[L]}${t.timelineConnector}${d.finApprox[L]}</div>
-      </div>
-
-      <p class="notes">${d.detalle[L]}</p>
-
-      ${d.paisNota ? `<div class="country-note">
-        <div class="country-note-label">${t.countryNoteLabel}</div>
-        <div class="country-note-text">${d.paisNota[L]}</div>
-      </div>` : ''}
-
-      <div class="risk-block ${d.riesgo}">
-        <div class="risk-label">${t.riskLabels[d.riesgo]}</div>
-        <div class="risk-text">${d.notas[L]}</div>
-      </div>
-
-      <div class="cta-box">
-        <div class="cta-text">${t.ctaText}</div>
-        <a class="cta-btn" href="yhteystiedot.html">${t.ctaBtn}</a>
-      </div>
-    </div>`;
-}
-
-/* ═══════════════ INIT ═══════════════ */
-applyStaticTexts();
-document.getElementById('resultado').innerHTML = `<div class="placeholder">${I18N[currentLang].placeholderResult}</div>`;
-
 /* ═══════════════ BACKGROUND WATERMARK PARALLAX ═══════════════ */
 (function(){
   const wm = document.getElementById('bgWatermark');
@@ -1209,10 +761,10 @@ document.getElementById('resultado').innerHTML = `<div class="placeholder">${I18
 </script>
 
 <div class="cookie-banner" id="cookieBanner">
-  <p>Utilizamos cookies para estad&iacute;sticas de visitantes (Google Analytics) para poder mejorar el sitio. <a href="../tietosuoja.html">M&aacute;s informaci&oacute;n en nuestra pol&iacute;tica de privacidad</a>.</p>
+  <p>Utilizamos cookies para estat&iacute;sticas de visitantes (Google Analytics) para nos ajudar a melhorar o site. <a href="../tietosuoja.html">Saiba mais na nossa pol&iacute;tica de privacidade</a>.</p>
   <div class="cookie-banner-actions">
-    <button class="cookie-btn cookie-btn-decline" onclick="handleCookieChoice(false)">Rechazar</button>
-    <button class="cookie-btn cookie-btn-accept" onclick="handleCookieChoice(true)">Aceptar</button>
+    <button class="cookie-btn cookie-btn-decline" onclick="handleCookieChoice(false)">Recusar</button>
+    <button class="cookie-btn cookie-btn-accept" onclick="handleCookieChoice(true)">Aceitar</button>
   </div>
 </div>
 <script>

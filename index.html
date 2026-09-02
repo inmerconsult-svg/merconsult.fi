@@ -308,6 +308,57 @@
   .origin-btn.active { color: var(--ink); text-decoration: underline; text-underline-offset: 4px; }
   .origin-btn:hover { color: var(--ink-soft); }
 
+  .direction-bar {
+    background: var(--ink);
+    padding: 18px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .direction-btn {
+    font-family:'Montserrat',sans-serif;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    color: rgba(255,255,255,0.55);
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.25);
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all .15s;
+  }
+  .direction-btn.active {
+    color: var(--ink);
+    background: var(--paper);
+    border-color: var(--paper);
+  }
+  .direction-btn:hover:not(.active) { color: rgba(255,255,255,0.85); border-color: rgba(255,255,255,0.5); }
+
+  .import-notice {
+    display: none;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 80px 48px;
+    text-align: center;
+  }
+  .import-notice h2 {
+    font-family:'Lora',serif; font-weight:600; font-size:1.6rem; color:var(--ink); margin-bottom:16px;
+  }
+  .import-notice p {
+    font-family:'Lora',serif; color:var(--gris); line-height:1.7; margin-bottom:28px;
+  }
+  .import-notice-btn {
+    display:inline-block; background:var(--ink); color:var(--paper); text-decoration:none;
+    font-family:'Montserrat',sans-serif; font-weight:700; font-size:0.85rem; letter-spacing:0.5px;
+    padding:15px 32px;
+  }
+  @media (max-width:720px) {
+    .direction-bar { padding: 16px 24px; gap: 12px; }
+    .direction-btn { font-size: 0.75rem; padding: 9px 14px; }
+  }
+
   #originPanel { max-width: 1040px; margin: 0 auto; padding: 0 48px; }
   .origin-panel-box {
     border-left: 3px solid var(--ink);
@@ -408,6 +459,16 @@
   .risk-block.bajo { border-left: 2px solid var(--ink); }
   .risk-block.medio { border-left: 2px dashed var(--ink); }
   .risk-block.alto { border-left: 4px solid var(--ink); }
+  .country-note {
+    background: var(--off);
+    padding: 20px 24px;
+    margin-bottom: 36px;
+  }
+  .country-note-label {
+    font-family:'Montserrat',sans-serif; font-size:0.72rem; font-weight:700;
+    letter-spacing:0.8px; text-transform:uppercase; color:var(--gris); margin-bottom:8px;
+  }
+  .country-note-text { font-family:'Lora',serif; font-size:0.92rem; color:var(--ink-soft); line-height:1.6; }
   .risk-label {
     font-family:'Montserrat',sans-serif; font-size:0.72rem; font-weight:700;
     letter-spacing:1px; text-transform:uppercase; color:var(--ink); margin-bottom:8px;
@@ -663,11 +724,17 @@
   <a class="mobile-menu-link" href="yhteystiedot.html">Ota yhteytt&auml;</a>
 </div>
 
+<div class="direction-bar">
+  <button class="direction-btn active" data-direction="export" onclick="setDirection('export')" id="directionExportBtn"></button>
+  <button class="direction-btn" data-direction="import" onclick="setDirection('import')" id="directionImportBtn"></button>
+</div>
+
+<div id="toolExportView">
 <div class="hero">
   <div class="eyebrow" id="eyebrow"></div>
   <h1 id="h1"></h1>
   <p class="sub" id="sub"></p>
-  <p class="hero-pitch">Latinalainen Amerikka ja uusi EU–Mercosur-sopimus tarjoavat yli 600 miljoonan kuluttajan markkinan sekä poikkeuksellisen tilaisuuden hajauttaa vientiä turvallisesti. Keventynyt byrokratia ja poistuvat tullit avaavat eurooppalaisille yrityksille suoran väylän skaalautuvaan ja kannattavaan kasvuun.</p>
+  <p class="hero-pitch">Latinalainen Amerikka tarjoaa yli 600 miljoonan kuluttajan markkinan, ja uusi EU–Mercosur-sopimus avaa siihen entistä paremman pääsyn sekä poikkeuksellisen tilaisuuden hajauttaa vientiä turvallisesti. Keventynyt byrokratia ja poistuvat tullit avaavat eurooppalaisille yrityksille suoran väylän skaalautuvaan ja kannattavaan kasvuun.</p>
 
   <div class="stat-bar">
     <div class="stat-item">
@@ -709,15 +776,23 @@
   <div id="resultado"></div>
 </main>
 
+</div>
+
+<div class="import-notice" id="importNotice">
+  <h2 id="importNoticeTitle"></h2>
+  <p id="importNoticeText"></p>
+  <a class="import-notice-btn" href="yhteystiedot.html" id="importNoticeBtn"></a>
+</div>
+
 <section class="news-section">
   <div class="news-inner">
     <h2 class="news-title">Ajankohtaista</h2>
 
     <div class="news-grid">
-      <a class="news-card" href="uutinen-eu-mercosur-2026.html">
-        <div class="news-card-tag">Kauppapolitiikka</div>
-        <h3>EU&ndash;Mercosur-sopimus: Historiallinen l&auml;pimurto</h3>
-        <p>Tullit poistuvat yli 90 %:lta vientituotteista. Mit&auml; se tarkoittaa yrityksellesi?</p>
+      <a class="news-card" href="uutinen-rag-tarkka-tieto-2026.html">
+        <div class="news-card-tag">Teko&auml;ly</div>
+        <h3>RAG teko&auml;lyll&auml;: tarkka tiedonhaku ilman arvailua</h3>
+        <p>Miten RAG-teknologia yhdist&auml;&auml; teko&auml;lyn organisaation omaan dataan &ndash; ja miksi kielimalli ei saa koskaan laskea itse?</p>
       </a>
     </div>
 
@@ -737,6 +812,15 @@
 /* ═══════════════ TRANSLATIONS (UI) ═══════════════ */
 const I18N = {
   fi: {
+    hsNotFoundTitle: t => `HS-koodi "${t}" ei osu 16 katetun kategoriamme sisään.`,
+    hsNotFoundText: "Alanimikkeet poikkeavat tarkkuustasollamme. Lähetä koodi, niin selvitämme tarkan tullirivin puolestasi.",
+    hsChapterLabel: "HS-kappale",
+    countryNoteLabel: "Maakohtainen huomio",
+    directionExport: "Viemme EU:sta Mercosuriin",
+    directionImport: "Tuomme Mercosurista EU:hun",
+    importNoticeTitle: "Tarkka analyysi pyynnöstä",
+    importNoticeText: "Mercosurista EU:hun suuntautuvan tuonnin tullirakenne (Appendix 2-A-2) on erillinen kokonaisuus omalla porrastuksellaan. Emme julkaise arvioituja lukuja tälle suunnalle ilman tuotekohtaista tarkistusta — pyydä räätälöity analyysi, niin selvitämme tarkat tullit juuri teidän tuoteryhmällenne.",
+    importNoticeBtn: "Pyydä analyysi →",
     eyebrow: "Tullianalyysityökalu",
     h1_pre: "Miten ", h1_em: "Mercosur–EU-sopimus", h1_post: " vaikuttaa tuoteryhmääsi?",
     sub: "Hae tuoteryhmäsi ja näe todellinen tullinalennusaikataulu — perustuu virallisen EU–Mercosur-sopimuksen liitteeseen 2-A.",
@@ -835,215 +919,12 @@ const I18N = {
 };
 
 /* ═══════════════ PRODUCT DATABASE (multilingual) ═══════════════ */
-const DB = {
-  automoviles: {
-    hs: "HS 8703", purga: 15, riesgo: "medio",
-    short: {fi:"Autot", en:"Cars", es:"Automóviles"},
-    nombre: {fi:"Moottoriajoneuvot (henkilöautot)", en:"Motor vehicles (passenger cars)", es:"Vehículos de motor (automóviles de pasajeros)"},
-    arancelAntes: {fi:"35 %", en:"35%", es:"35%"},
-    arancelHoy: {fi:"17,5–25 % tuotteen mukaan", en:"17.5–25% depending on type", es:"17,5–25% según tipo"},
-    inicio: {fi:"1.5.2026", en:"1 May 2026", es:"1 mayo 2026"},
-    finApprox: {fi:"noin 2041", en:"around 2041", es:"~2041"},
-    detalle: {fi:"Sähkö- ja hybridiajoneuvojen tulli laski välittömästi 35 %:sta 25 %:iin 1.5.2026, ja se laskee vuosittain 18 vuoden siirtymäkauden aikana. Polttomoottoriautoilla on siirtymäkiintiö 50 000 yksikköä/vuosi puolella perustullista (17,5 %) ensimmäiset 7 vuotta, minkä jälkeen poisto nopeutuu.", en:"Tariffs on electric and hybrid vehicles dropped immediately from 35% to 25% on 1 May 2026, with annual reductions over an 18-year transition. Combustion-engine vehicles have a transitional quota of 50,000 units/year at half the base tariff (17.5%) for the first 7 years, after which elimination accelerates.", es:"Los vehículos eléctricos e híbridos bajaron inmediatamente del 35% al 25% el 1 de mayo de 2026, con reducciones anuales durante un período de transición de 18 años. Los vehículos de combustión interna tienen una cuota transitoria de 50.000 unidades/año a la mitad de la tarifa base (17,5%) durante los primeros 7 años; después la eliminación se acelera."},
-    notas: {fi:"Alan sääntely on monimutkaista — kiintiöt ja kaksoisaikataulu moottorityypin mukaan. Vaatii tarkkaa mallikohtaista/tullikoodikohtaista analyysiä.", en:"Highly complex regulatory sector — quotas and dual schedules by engine type. Requires model- and tariff-code-specific analysis.", es:"Sector con mayor complejidad regulatoria — cuotas y calendario dual según tipo de motor. Requiere análisis específico por modelo/código arancelario."},
-    terms: {fi:["auto","autot","ajoneuvo","ajoneuvot","henkilöauto"], en:["car","cars","automobile","automobiles","vehicle","vehicles"], es:["automóviles","autos","vehículos","coches"]}
-  },
-
-  maquinaria: {
-    hs: "HS 84–85", purga: 10, riesgo: "bajo",
-    short: {fi:"Koneet", en:"Machinery", es:"Maquinaria"},
-    nombre: {fi:"Teollisuuskoneet ja -laitteet", en:"Industrial machinery and equipment", es:"Maquinaria y equipos industriales"},
-    arancelAntes: {fi:"14–20 %", en:"14–20%", es:"14–20%"},
-    arancelHoy: {fi:"Alennus alkanut 1.5.2026", en:"Reduction started 1 May 2026", es:"Reducción iniciada 1 may 2026"},
-    inicio: {fi:"1.5.2026", en:"1 May 2026", es:"1 mayo 2026"},
-    finApprox: {fi:"noin 2036", en:"around 2036", es:"~2036"},
-    detalle: {fi:"Mercosurin EU-koneille asettamat tullit, jotka olivat historiallisesti 14–20 %, alkoivat alentua 1.5.2026. Suurin osa teollisuuskoneiden tullinimikkeistä noudattaa 10 vuoden poistoaikataulua.", en:"Mercosur's tariffs on EU machinery, historically ranging from 14% to 20%, began reducing on 1 May 2026. Most industrial machinery tariff lines follow a 10-year elimination schedule.", es:"Los aranceles de Mercosur sobre maquinaria industrial de la UE, que históricamente oscilaban entre 14% y 20%, comenzaron su reducción el 1 de mayo de 2026. La mayoría de líneas arancelarias de maquinaria industrial siguen un cronograma de eliminación de 10 años."},
-    notas: {fi:"Yksi suotuisimmista kategorioista — suhteellisen lyhyt (10 v) aikataulu ilman monimutkaisia kiintiöitä. Hyvä ehdokas varhaiseen markkinoilletuloon.", en:"One of the most favourable categories — a relatively short (10-year) schedule without complex quotas. A good candidate for early market entry.", es:"Una de las categorías más favorables — cronograma relativamente corto (10 años) sin cuotas complejas. Buen candidato para entrada temprana al mercado."},
-    terms: {fi:["kone","koneet","laite","laitteet","teollisuuskone"], en:["machinery","machine","machines","equipment","industrial"], es:["maquinaria","máquinas","equipos"]}
-  },
-
-  farmaceuticos: {
-    hs: "HS 30", purga: 10, riesgo: "bajo",
-    short: {fi:"Lääkkeet", en:"Pharmaceuticals", es:"Farmacéuticos"},
-    nombre: {fi:"Lääkevalmisteet", en:"Pharmaceutical products", es:"Productos farmacéuticos"},
-    arancelAntes: {fi:"jopa 14 %", en:"up to 14%", es:"hasta 14%"},
-    arancelHoy: {fi:"Alennus alkanut 1.5.2026", en:"Reduction started 1 May 2026", es:"Reducción iniciada 1 may 2026"},
-    inicio: {fi:"1.5.2026", en:"1 May 2026", es:"1 mayo 2026"},
-    finApprox: {fi:"noin 2036", en:"around 2036", es:"~2036"},
-    detalle: {fi:"Mercosurin EU-lääkkeille asettamat tullit, jotka olivat joissain luokissa jopa 18 %, alkoivat alentua vaiheittain 1.5.2026 alkaen.", en:"Mercosur's tariffs on EU pharmaceuticals, which reached up to 18% in some categories, began their phased reduction from 1 May 2026.", es:"Los aranceles de Mercosur sobre productos farmacéuticos de la UE, que alcanzaban hasta 18% en algunas categorías, comenzaron su reducción escalonada desde el 1 de mayo de 2026."},
-    notas: {fi:"EU:lle strategisesti tärkeä ala sopimuksessa. Tarkista tullin lisäksi paikalliset viranomaisvaatimukset (ANVISA Brasiliassa, ANMAT Argentiinassa) — ei-tariffiesteet ovat usein tullia merkittävämpiä.", en:"A strategically important sector for the EU in the agreement. Beyond the tariff, check local regulatory requirements (ANVISA in Brazil, ANMAT in Argentina) — non-tariff barriers are often more significant than the tariff itself.", es:"Sector estratégico para la UE en el acuerdo. Verificar requisitos regulatorios locales (ANVISA en Brasil, ANMAT en Argentina) además del arancel — la barrera no arancelaria suele ser mayor que la arancelaria."},
-    terms: {fi:["lääke","lääkkeet","farmasia","lääkevalmiste"], en:["pharma","pharmaceutical","pharmaceuticals","medicine","medicines","drugs"], es:["farmacéuticos","farmacia","medicamentos"]}
-  },
-
-  vino: {
-    hs: "HS 2204", purga: 8, riesgo: "bajo",
-    short: {fi:"Viinit", en:"Wine", es:"Vino"},
-    nombre: {fi:"Viini, väkevät juomat ja olut", en:"Wine, spirits and beer", es:"Vino, bebidas espirituosas y cerveza"},
-    arancelAntes: {fi:"jopa 35 %", en:"up to 35%", es:"hasta 35%"},
-    arancelHoy: {fi:"Ensimmäinen alennus 1.5.2026", en:"First cut applied 1 May 2026", es:"Primer corte aplicado 1 may 2026"},
-    inicio: {fi:"1.5.2026", en:"1 May 2026", es:"1 mayo 2026"},
-    finApprox: {fi:"noin 2034", en:"around 2034", es:"~2034"},
-    detalle: {fi:"Sopimus tuo välittömän ensimmäisen tullinalennuksen useimmille maataloustuotteille kuten viinille, väkeville juomille ja oliiviöljylle, mikä avaa uusia vientimahdollisuuksia heti.", en:"The agreement provides an immediate first tariff cut for most agri-food products such as wine, spirits and olive oil, opening new export opportunities from day one.", es:"El acuerdo prevé un primer recorte arancelario inmediato para la mayoría de productos agroalimentarios como vino, bebidas espirituosas y aceite de oliva, con nuevas oportunidades de exportación desde el día uno."},
-    notas: {fi:"Selkeä kilpailuetu eurooppalaisille tuottajille — välitön alennus ensimmäisestä päivästä, ei vain tulevaisuuden lupaus.", en:"A clear competitive advantage for European producers — an immediate reduction from day one, not merely a future promise.", es:"Categoría con ventaja competitiva clara para productores europeos — reducción inmediata desde el primer día, no solo anuncio de cronograma futuro."},
-    terms: {fi:["viini","viinit","alkoholi","juomat"], en:["wine","spirits","beer","alcohol","beverages"], es:["vino","bebidas","cerveza"]}
-  },
-
-  lacteos: {
-    hs: "HS 04", purga: 11, riesgo: "medio",
-    short: {fi:"Maitotuotteet", en:"Dairy", es:"Lácteos"},
-    nombre: {fi:"Maitotuotteet (juustot, maitojauhe)", en:"Dairy products (cheese, milk powder)", es:"Productos lácteos (quesos, leche en polvo)"},
-    arancelAntes: {fi:"28 %", en:"28%", es:"28%"},
-    arancelHoy: {fi:"Alkuvaihe", en:"Initial phase", es:"Fase inicial"},
-    inicio: {fi:"1.5.2026", en:"1 May 2026", es:"1 mayo 2026"},
-    finApprox: {fi:"noin 2037", en:"around 2037", es:"~2037"},
-    detalle: {fi:"Suurin osa EU:n teollisuustuotteista ja maitotuotteista saavuttaa 0 % tullin vuonna 10/11 (noin 2036). EU:n juustokiintiö (30 000 t) on tällöin täysin toiminnassa.", en:"Most EU industrial goods and dairy products reach 0% tariff in Year 10/11 (around 2036). An EU cheese quota (30,000 t) will be fully operational by then.", es:"La mayoría de bienes industriales y lácteos de la UE alcanzan 0% en el Año 10/11 (~2036). Se establece una cuota TRQ de queso de la UE (30.000 t) que estará plenamente operativa para esa fecha."},
-    notas: {fi:"Yhdistää asteittaisen tullinalennuksen juustojen erityiskiintiöön. Pitkän aikavälin horisontti — merkityksellinen strategiselle suunnittelulle, ei välittömälle hyödylle.", en:"Combines a progressive tariff reduction with a specific cheese quota. A long-term horizon — relevant for strategic planning, not immediate gain.", es:"Combina reducción arancelaria progresiva con cuota específica para quesos. Horizonte de largo plazo — relevante para planificación estratégica, no ganancia inmediata."},
-    terms: {fi:["maito","maitotuote","juusto","maitojauhe"], en:["dairy","cheese","milk"], es:["lácteos","queso","leche"]}
-  },
-
-  quimicos: {
-    hs: "HS 28–39", purga: 10, riesgo: "bajo",
-    short: {fi:"Kemikaalit", en:"Chemicals", es:"Químicos"},
-    nombre: {fi:"Kemialliset tuotteet", en:"Chemical products", es:"Productos químicos"},
-    arancelAntes: {fi:"jopa 18 %", en:"up to 18%", es:"hasta 18%"},
-    arancelHoy: {fi:"Alennus alkanut 1.5.2026", en:"Reduction started 1 May 2026", es:"Reducción iniciada 1 may 2026"},
-    inicio: {fi:"1.5.2026", en:"1 May 2026", es:"1 mayo 2026"},
-    finApprox: {fi:"noin 2036", en:"around 2036", es:"~2036"},
-    detalle: {fi:"Mercosurin EU-kemikaaleille asettamat tullit, jotka olivat joissain luokissa jopa 18 %, aloittivat vaiheittaisen alenemisensa 1.5.2026 alkaen.", en:"Mercosur's tariffs on EU chemicals, up to 18% in some categories, began their phased reduction schedule from 1 May 2026.", es:"Los aranceles de Mercosur sobre productos químicos de la UE, de hasta 18% en algunas categorías, iniciaron su cronograma de reducción escalonada desde el 1 de mayo de 2026."},
-    notas: {fi:"Laaja kategoria jonka alaryhmät poikkeavat suuresti toisistaan — suositellaan tarkan tullinimikkeen (8-numeroinen HS-koodi) tunnistamista ennen vientisuunnittelua.", en:"A broad category with very diverse subcategories — identifying the exact tariff line (8-digit HS code) is recommended before planning exports.", es:"Categoría amplia con subcategorías muy distintas entre sí — recomendable identificar la partida arancelaria exacta (HS de 8 dígitos) antes de planificar exportación."},
-    terms: {fi:["kemikaali","kemikaalit","kemia"], en:["chemical","chemicals"], es:["químicos","química"]}
-  },
-
-  papel: {
-    hs: "HS 47–48", purga: 15, riesgo: "medio",
-    short: {fi:"Paperi ja sellu", en:"Paper & pulp", es:"Papel y celulosa"},
-    nombre: {fi:"Sellu, paperi ja kartonki", en:"Pulp, paper and paperboard", es:"Celulosa, papel y cartón"},
-    arancelAntes: {fi:"vaihteleva, useissa luokissa suojattu", en:"variable, protected in several categories", es:"variable, protegido en varias categorías"},
-    arancelHoy: {fi:"Ei alenna heti — asteittainen poisto alkanut", en:"No immediate cut — phased elimination begun", es:"Sin reducción inmediata — eliminación gradual iniciada"},
-    inicio: {fi:"1.5.2026", en:"1 May 2026", es:"1 mayo 2026"},
-    finApprox: {fi:"noin 2041, osa tuotteista pysyvästi rajattuna", en:"around 2041, some products permanently excluded", es:"~2041, algunos productos excluidos permanentemente"},
-    detalle: {fi:"Sellun ja paperin tullit eivät poistu sopimuksen voimaantullessa — suurin osa alennuksista toteutuu vaiheittain 4–15 vuoden aikana. Kauden lopussa noin 85 % EU:n sellunviennistä ja 90 % paperinviennistä (volyymissä) hyötyy tullittomuudesta. Jalostetut paperi- ja kartonkituotteet pysyvät vahvasti suojattuina — vain 54 % EU:n viennistä (arvossa) vapautuu. Painotuotteet vapautuvat eniten: 93 % arvosta.", en:"Tariffs on pulp and paper will not be removed at entry into force — most reductions are phased in over 4 to 15 years. By the end of the period, around 85% of EU pulp exports and 90% of paper exports (by volume) will benefit from tariff elimination. Converted paper and board products remain heavily protected — only 54% of EU exports (by value) will be liberalised. Printed products see the highest liberalisation: 93% by value.", es:"Los aranceles de celulosa y papel no se eliminan al entrar en vigor el acuerdo — la mayoría de las reducciones se aplican gradualmente durante 4 a 15 años. Al final del período, cerca del 85% de las exportaciones de celulosa de la UE y el 90% de papel (en volumen) se benefician de la eliminación arancelaria. Los productos de papel y cartón convertidos siguen muy protegidos — solo el 54% de las exportaciones de la UE (en valor) se liberaliza. Los productos impresos son los más liberalizados: 93% en valor."},
-    notas: {fi:"Suomelle strategisesti tärkeä ala. Huomaa ero: raakasellu ja perinteinen paperi vapautuvat hyvin, mutta jalostetut kartonki-/pakkaustuotteet pysyvät suojattuina — tuotelinja ratkaisee lopputuloksen merkittävästi.", en:"A strategically important sector for Finland. Note the distinction: raw pulp and standard paper liberalise well, but converted board/packaging products remain protected — the specific product line significantly determines the outcome.", es:"Sector estratégicamente importante para Finlandia. Nótese la distinción: la celulosa cruda y el papel estándar se liberalizan bien, pero los productos de cartón/embalaje convertidos siguen protegidos — la línea de producto específica determina el resultado de forma significativa."},
-    terms: {fi:["paperi","sellu","kartonki","pakkaus","metsäteollisuus"], en:["paper","pulp","paperboard","packaging","forestry"], es:["papel","celulosa","cartón","embalaje"]}
-  },
-
-  textiles: {
-    hs: "HS 50–63", purga: 8, riesgo: "bajo",
-    short: {fi:"Tekstiilit", en:"Textiles", es:"Textiles"},
-    nombre: {fi:"Tekstiilit ja vaatteet", en:"Textiles and apparel", es:"Textiles y prendas de vestir"},
-    arancelAntes: {fi:"35 %", en:"35%", es:"35%"},
-    arancelHoy: {fi:"Ensimmäinen 3,9 %-yksikön alennus heti", en:"First 3.9 percentage-point cut on day one", es:"Primer recorte de 3,9 puntos porcentuales de inmediato"},
-    inicio: {fi:"1.5.2026", en:"1 May 2026", es:"1 mayo 2026"},
-    finApprox: {fi:"noin 2034", en:"around 2034", es:"~2034"},
-    detalle: {fi:"Tekstiilien 35 %:n tulli aloittaa kahdeksan vuoden siirtymän kohti nollaa kaikessa EU:n Mercosur-viennissä, ensimmäisenä päivänä 3,9 prosenttiyksikön alennuksella.", en:"Duties on textiles of 35% begin their eight-year transition to 0% for all EU exports to Mercosur, with a first tariff cut of 3.9 percentage points on day one.", es:"Los aranceles del 35% sobre textiles inician su transición de ocho años hacia el 0% para todas las exportaciones de la UE a Mercosur, con un primer recorte de 3,9 puntos porcentuales el primer día."},
-    notas: {fi:"Yksi selkeimmistä ja nopeimmista poistoaikatauluista koko sopimuksessa — houkutteleva ala varhaiseen markkinoilletuloon, koska alennus alkaa välittömästi eikä vasta vuosien päästä.", en:"One of the clearest and fastest elimination schedules in the entire agreement — an attractive sector for early market entry since the reduction begins immediately, not years down the line.", es:"Uno de los cronogramas de eliminación más claros y rápidos de todo el acuerdo — sector atractivo para entrada temprana al mercado, ya que la reducción comienza de inmediato, no años después."},
-    terms: {fi:["tekstiili","tekstiilit","vaatteet","vaatetus"], en:["textile","textiles","apparel","clothing","garments"], es:["textiles","prendas","ropa","vestir"]}
-  },
-
-  acero: {
-    hs: "HS 72–73", purga: 10, riesgo: "medio",
-    short: {fi:"Teräs ja metallit", en:"Steel & metals", es:"Hierro y acero"},
-    nombre: {fi:"Rauta, teräs ja metallituotteet", en:"Iron, steel and metal products", es:"Hierro, acero y productos metálicos"},
-    arancelAntes: {fi:"noin 12–18 %", en:"around 12–18%", es:"aproximadamente 12–18%"},
-    arancelHoy: {fi:"Alennus alkanut 1.5.2026", en:"Reduction started 1 May 2026", es:"Reducción iniciada 1 may 2026"},
-    inicio: {fi:"1.5.2026", en:"1 May 2026", es:"1 mayo 2026"},
-    finApprox: {fi:"noin 2036", en:"around 2036", es:"~2036"},
-    detalle: {fi:"Teräs ja metallituotteet kuuluvat teollisuustuotteisiin, joita Mercosur vapauttaa suurelta osin 10 vuoden kuluessa — sopimuksen tavoitteena on poistaa tullit lähes kokonaan EU:n keskeisimmiltä teollisuudenaloilta.", en:"Steel and metal products fall under industrial goods that Mercosur will largely liberalise within 10 years — the agreement aims to eliminate tariffs almost entirely on the EU's most important industrial sectors.", es:"El acero y los productos metálicos se encuadran en los bienes industriales que Mercosur liberalizará en gran medida en 10 años — el acuerdo pretende eliminar casi por completo los aranceles en los sectores industriales clave de la UE."},
-    notas: {fi:"Yleisluontoinen kategoria jossa on paljon alanimikkeitä — erikoisteräkset, rakenneteräkset ja jalostetut metallituotteet voivat noudattaa eri aikatauluja. Suositellaan tarkkaa HS-koodin tunnistamista.", en:"A broad category with many sub-headings — specialty steels, structural steel and finished metal products may follow different schedules. Identifying the exact HS code is recommended.", es:"Categoría amplia con numerosas subpartidas — los aceros especiales, el acero estructural y los productos metálicos acabados pueden seguir cronogramas distintos. Se recomienda identificar el código HS exacto."},
-    terms: {fi:["teräs","rauta","metalli","metallit"], en:["steel","iron","metal","metals"], es:["hierro","acero","metal","metales"]}
-  },
-
-  plasticos: {
-    hs: "HS 39", purga: 10, riesgo: "bajo",
-    short: {fi:"Muovit", en:"Plastics", es:"Plásticos"},
-    nombre: {fi:"Muovit ja muovituotteet", en:"Plastics and plastic products", es:"Plásticos y sus manufacturas"},
-    arancelAntes: {fi:"jopa 18 %", en:"up to 18%", es:"hasta 18%"},
-    arancelHoy: {fi:"Alennus alkanut 1.5.2026", en:"Reduction started 1 May 2026", es:"Reducción iniciada 1 may 2026"},
-    inicio: {fi:"1.5.2026", en:"1 May 2026", es:"1 mayo 2026"},
-    finApprox: {fi:"noin 2036", en:"around 2036", es:"~2036"},
-    detalle: {fi:"Muovituotteet noudattavat samaa kemianteollisuuden yleistä 10 vuoden poistoaikataulua kuin muut kemialliset tuotteet — tullit alenevat vuosittain sopimuksen voimaantulosta lähtien.", en:"Plastic products follow the same general 10-year elimination schedule as other chemical products — tariffs decrease annually from the agreement's entry into force.", es:"Los productos plásticos siguen el mismo cronograma general de eliminación de 10 años que otros productos químicos — los aranceles disminuyen anualmente desde la entrada en vigor del acuerdo."},
-    notas: {fi:"Kategoria kattaa sekä raaka-ainemuovit että valmiit muovituotteet, joiden aikataulut voivat poiketa toisistaan. Pakkausmuovit ja tekniset muoviosat kannattaa tarkistaa erikseen.", en:"The category covers both raw plastic materials and finished plastic products, whose schedules may differ. Packaging plastics and technical plastic parts are worth checking separately.", es:"La categoría abarca tanto materias primas plásticas como productos plásticos terminados, cuyos cronogramas pueden diferir. Vale la pena verificar por separado los plásticos de embalaje y las piezas técnicas."},
-    terms: {fi:["muovi","muovit","muovituote"], en:["plastic","plastics"], es:["plásticos","plástico"]}
-  },
-
-  electronica: {
-    hs: "HS 84–85 (parcial)", purga: 10, riesgo: "bajo",
-    short: {fi:"Elektroniikka", en:"Electronics", es:"Electrónica"},
-    nombre: {fi:"Elektroniikka- ja sähkölaitteet", en:"Electronic and electrical equipment", es:"Equipos electrónicos y eléctricos"},
-    arancelAntes: {fi:"noin 12–20 %", en:"around 12–20%", es:"aproximadamente 12–20%"},
-    arancelHoy: {fi:"Alennus alkanut 1.5.2026", en:"Reduction started 1 May 2026", es:"Reducción iniciada 1 may 2026"},
-    inicio: {fi:"1.5.2026", en:"1 May 2026", es:"1 mayo 2026"},
-    finApprox: {fi:"noin 2036", en:"around 2036", es:"~2036"},
-    detalle: {fi:"Elektroniikka kuuluu EU:lle keskeisiin teollisuustuotteisiin, jotka Mercosur pyrkii vapauttamaan lähes kokonaan tullittomiksi 10 vuoden kuluessa. Telekommunikaatiolaitteille sopimus tuo lisäksi syrjimättömän pääsyn taajuuksien, kuten 5G:n, jakoon.", en:"Electronics fall within the industrial products of key interest to the EU that Mercosur aims to make almost entirely duty-free within 10 years. For telecoms equipment, the agreement also brings non-discriminatory access to spectrum allocation such as 5G.", es:"La electrónica se encuadra entre los productos industriales de interés clave para la UE que Mercosur pretende dejar casi totalmente libres de aranceles en 10 años. Para equipos de telecomunicaciones, el acuerdo también aporta acceso no discriminatorio a la asignación de espectro como el 5G."},
-    notas: {fi:"Suotuisa ala EU:n neuvotteluagendalla, mutta laaja tuoteryhmä — kuluttajaelektroniikka, teollisuuselektroniikka ja telekomlaitteet voivat noudattaa eri nimikkeitä. Tarkista tuotekohtainen HS-koodi.", en:"A favourable sector on the EU's negotiating agenda, but a broad product group — consumer electronics, industrial electronics and telecom equipment may fall under different headings. Check the product-specific HS code.", es:"Sector favorable en la agenda negociadora de la UE, pero un grupo de productos amplio — la electrónica de consumo, la electrónica industrial y los equipos de telecomunicaciones pueden tener partidas distintas. Verifique el código HS específico del producto."},
-    terms: {fi:["elektroniikka","sähkölaite","sähkölaitteet","telekom"], en:["electronics","electrical","telecom","telecommunications"], es:["electrónica","eléctrico","telecomunicaciones"]}
-  },
-
-  pesca: {
-    hs: "HS 03", purga: 0, riesgo: "alto",
-    short: {fi:"Kalastustuotteet", en:"Fisheries", es:"Pesca"},
-    nombre: {fi:"Kala ja kalastustuotteet", en:"Fish and fishery products", es:"Pescado y productos de la pesca"},
-    arancelAntes: {fi:"nykyinen taso", en:"current level", es:"nivel actual"},
-    arancelHoy: {fi:"Ei alenna — herkkä tuote", en:"No reduction — sensitive product", es:"Sin reducción — producto sensible"},
-    inicio: {fi:"1.5.2026", en:"1 May 2026", es:"1 mayo 2026"},
-    finApprox: {fi:"ei sovellu", en:"not applicable", es:"no aplica"},
-    detalle: {fi:"Kala on merkitty sopimuksessa herkäksi tuotteeksi (merkintä 'E' tullitaulukossa) yhdessä mm. lampaanlihan, maidon ja vehnän kanssa — nykyinen tuontitulli EI alene sopimuksen myötä.", en:"Fish is designated a sensitive product in the agreement (marked 'E' in the tariff schedule), alongside items such as lamb, milk and wheat — the current import tariff does NOT decrease under the agreement.", es:"El pescado está designado como producto sensible en el acuerdo (marcado 'E' en el cronograma arancelario), junto con productos como cordero, leche y trigo — el arancel de importación actual NO se reduce con el acuerdo."},
-    notas: {fi:"Yksi harvoista aloista joka jää kokonaan sopimuksen ulkopuolelle. Pohjoismaiselle kalastusalalle tämä tarkoittaa, ettei Mercosur-sopimus tuo suoraa tullietua — muut markkinoillepääsystrategiat tarpeen.", en:"One of the few sectors left entirely outside the agreement. For the Nordic fishing industry, this means the Mercosur agreement brings no direct tariff advantage — other market-entry strategies are needed.", es:"Uno de los pocos sectores que queda totalmente fuera del acuerdo. Para la industria pesquera nórdica, esto significa que el acuerdo Mercosur no aporta ninguna ventaja arancelaria directa — se necesitan otras estrategias de entrada al mercado."},
-    terms: {fi:["kala","kalastus","kalastustuote","meriruoka"], en:["fish","fishery","fisheries","seafood"], es:["pescado","pesca","mariscos"]}
-  },
-
-  muebles: {
-    hs: "HS 94", purga: 10, riesgo: "bajo",
-    short: {fi:"Huonekalut", en:"Furniture", es:"Muebles"},
-    nombre: {fi:"Huonekalut ja puutuotteet", en:"Furniture and wood products", es:"Muebles y productos de madera"},
-    arancelAntes: {fi:"noin 14–20 %", en:"around 14–20%", es:"aproximadamente 14–20%"},
-    arancelHoy: {fi:"Alennus alkanut 1.5.2026", en:"Reduction started 1 May 2026", es:"Reducción iniciada 1 may 2026"},
-    inicio: {fi:"1.5.2026", en:"1 May 2026", es:"1 mayo 2026"},
-    finApprox: {fi:"noin 2036", en:"around 2036", es:"~2036"},
-    detalle: {fi:"Huonekalut ja jalostetut puutuotteet kuuluvat yleiseen teollisuustuotekategoriaan, jonka Mercosur vapauttaa 10 vuoden kuluessa. Luonnollinen jatke Suomen sellu- ja paperivientiosaamiselle korkeamman jalostusarvon suuntaan.", en:"Furniture and finished wood products fall under the general industrial goods category, which Mercosur liberalises over 10 years. A natural extension for Finland's pulp and paper export expertise toward higher value-added products.", es:"Los muebles y productos de madera acabados se encuadran en la categoría general de bienes industriales, que Mercosur liberaliza en 10 años. Una extensión natural de la experiencia exportadora finlandesa en celulosa y papel hacia productos de mayor valor añadido."},
-    notas: {fi:"Suotuisa jatko metsäteollisuusosaamiselle — houkuttelevaa erityisesti jos yritys jo vie sellua/paperia ja haluaa laajentaa jalostetumpiin tuotteisiin.", en:"A favourable extension for forestry-sector expertise — particularly attractive if a company already exports pulp/paper and wants to expand into more processed products.", es:"Una extensión favorable para la experiencia del sector forestal — particularmente atractiva si una empresa ya exporta celulosa/papel y desea expandirse hacia productos más procesados."},
-    terms: {fi:["huonekalu","huonekalut","puutuote","puu"], en:["furniture","wood","wooden"], es:["muebles","madera"]}
-  },
-
-  cosmetica: {
-    hs: "HS 33", purga: 10, riesgo: "bajo",
-    short: {fi:"Kosmetiikka", en:"Cosmetics", es:"Cosmética"},
-    nombre: {fi:"Kosmetiikka- ja hygieniatuotteet", en:"Cosmetics and personal care products", es:"Cosméticos y productos de higiene personal"},
-    arancelAntes: {fi:"jopa 18 %", en:"up to 18%", es:"hasta 18%"},
-    arancelHoy: {fi:"Alennus alkanut 1.5.2026", en:"Reduction started 1 May 2026", es:"Reducción iniciada 1 may 2026"},
-    inicio: {fi:"1.5.2026", en:"1 May 2026", es:"1 mayo 2026"},
-    finApprox: {fi:"noin 2036", en:"around 2036", es:"~2036"},
-    detalle: {fi:"Kosmetiikka noudattaa kemianteollisuuden yleistä 10 vuoden poistoaikataulua. Kasvava vientiala pohjoismaisille luonnonkosmetiikka- ja hygieniatuotemerkeille.", en:"Cosmetics follow the general 10-year chemical-sector elimination schedule. A growing export category for Nordic natural cosmetics and personal-care brands.", es:"Los cosméticos siguen el cronograma general de eliminación de 10 años del sector químico. Una categoría de exportación en crecimiento para las marcas nórdicas de cosmética natural e higiene."},
-    notas: {fi:"Tarkista tullin lisäksi kosmetiikan tuotehyväksyntävaatimukset kohdemaassa — ANVISA Brasiliassa on tunnetusti tiukka kosmetiikan rekisteröinnissä.", en:"Beyond the tariff, check product-approval requirements in the destination country — ANVISA in Brazil is known to be strict on cosmetics registration.", es:"Además del arancel, verifique los requisitos de aprobación de producto en el país de destino — ANVISA en Brasil es conocida por ser estricta en el registro de cosméticos."},
-    terms: {fi:["kosmetiikka","hygieniatuote","ihonhoito"], en:["cosmetics","cosmetic","personal care","skincare"], es:["cosmética","cosméticos","higiene"]}
-  },
-
-  maritima: {
-    hs: "HS 89", purga: 12, riesgo: "medio",
-    short: {fi:"Meriteollisuus", en:"Maritime", es:"Sector marítimo"},
-    nombre: {fi:"Laivat, veneet ja meriteollisuuden laitteet", en:"Ships, boats and maritime equipment", es:"Buques, embarcaciones y equipos marítimos"},
-    arancelAntes: {fi:"vaihteleva, osin korkea", en:"variable, partly high", es:"variable, en parte elevado"},
-    arancelHoy: {fi:"Alennus alkanut 1.5.2026", en:"Reduction started 1 May 2026", es:"Reducción iniciada 1 may 2026"},
-    inicio: {fi:"1.5.2026", en:"1 May 2026", es:"1 mayo 2026"},
-    finApprox: {fi:"noin 2038", en:"around 2038", es:"~2038"},
-    detalle: {fi:"Meriteollisuuden tuotteet noudattavat pidempää, jopa 12 vuoden poistoaikataulua tuotetyypistä riippuen. Mercosur-maiden satamainfrastruktuurin kehitys luo kysyntää suomalaiselle meriteknologialle riippumatta tullitasosta.", en:"Maritime industry products follow a longer elimination schedule of up to 12 years depending on product type. Port infrastructure development in Mercosur countries creates demand for Finnish maritime technology regardless of tariff level.", es:"Los productos de la industria marítima siguen un cronograma de eliminación más largo, de hasta 12 años según el tipo de producto. El desarrollo de infraestructura portuaria en los países del Mercosur genera demanda de tecnología marítima finlandesa independientemente del nivel arancelario."},
-    notas: {fi:"Pitkä aikajänne ja tuotekohtainen vaihtelu — vaatii tarkkaa nimikekohtaista selvitystä. Sopii yrityksille joilla on pitkän aikavälin markkinoillepääsystrategia.", en:"Long time horizon and product-specific variation — requires detailed line-by-line research. Suited to companies with a long-term market-entry strategy.", es:"Horizonte temporal largo y variación específica por producto — requiere una investigación detallada línea por línea. Adecuado para empresas con una estrategia de entrada al mercado a largo plazo."},
-    terms: {fi:["laiva","laivat","vene","meriteollisuus","satama"], en:["maritime","ship","ships","boat","boats","shipbuilding"], es:["marítimo","buque","embarcación","naval"]}
-  },
-
-  construccion: {
-    hs: "HS 68–70", purga: 10, riesgo: "bajo",
-    short: {fi:"Rakennusmateriaalit", en:"Construction materials", es:"Materiales de construcción"},
-    nombre: {fi:"Rakennusmateriaalit (lasi, keramiikka, kivi)", en:"Construction materials (glass, ceramics, stone)", es:"Materiales de construcción (vidrio, cerámica, piedra)"},
-    arancelAntes: {fi:"noin 12–18 %", en:"around 12–18%", es:"aproximadamente 12–18%"},
-    arancelHoy: {fi:"Alennus alkanut 1.5.2026", en:"Reduction started 1 May 2026", es:"Reducción iniciada 1 may 2026"},
-    inicio: {fi:"1.5.2026", en:"1 May 2026", es:"1 mayo 2026"},
-    finApprox: {fi:"noin 2036", en:"around 2036", es:"~2036"},
-    detalle: {fi:"Rakennusmateriaalit kuuluvat yleiseen teollisuustuotekategoriaan, 10 vuoden poistoaikataulu. Relevantti ala jos DR- tai Uruguay-verkostojasi voi hyödyntää myös rakennusalan kontakteihin.", en:"Construction materials fall under the general industrial goods category, with a 10-year elimination schedule. A relevant sector if your DR or Uruguay networks can also be leveraged for construction-sector contacts.", es:"Los materiales de construcción se encuadran en la categoría general de bienes industriales, con un cronograma de eliminación de 10 años. Un sector relevante si sus redes de RD o Uruguay también pueden aprovecharse para contactos del sector de la construcción."},
-    notas: {fi:"Laaja kategoria — lasi, keramiikka ja luonnonkivi voivat noudattaa eri aikatauluja. Suositellaan tarkkaa tuotekohtaista selvitystä.", en:"A broad category — glass, ceramics and natural stone may follow different schedules. Detailed product-specific research is recommended.", es:"Una categoría amplia — el vidrio, la cerámica y la piedra natural pueden seguir cronogramas distintos. Se recomienda una investigación detallada específica por producto."},
-    terms: {fi:["rakennusmateriaali","rakentaminen","lasi","keramiikka"], en:["construction","building materials","glass","ceramics"], es:["construcción","materiales","vidrio","cerámica"]}
-  }
-};
+let DB = {};
+let dbLoaded = false;
+fetch('data/tariffs.json')
+  .then(r => r.json())
+  .then(data => { DB = data.categories; dbLoaded = true; })
+  .catch(err => console.error('Tariffidatan lataus epäonnistui:', err));
 
 /* ═══════════════ STATE & RENDER ═══════════════ */
 let currentLang = 'fi';
@@ -1059,6 +940,12 @@ function applyStaticTexts(){
   document.getElementById('buscar').placeholder = t.placeholder;
   document.getElementById('searchBtnText').textContent = t.searchBtn;
   document.getElementById('footNote').textContent = t.footNote;
+
+  document.getElementById('directionExportBtn').textContent = t.directionExport;
+  document.getElementById('directionImportBtn').textContent = t.directionImport;
+  document.getElementById('importNoticeTitle').textContent = t.importNoticeTitle;
+  document.getElementById('importNoticeText').textContent = t.importNoticeText;
+  document.getElementById('importNoticeBtn').textContent = t.importNoticeBtn;
 
   document.getElementById('originQuestion').textContent = t.originQuestion;
   document.querySelector('.origin-btn[data-origin="eu"]').textContent = t.originEU;
@@ -1078,6 +965,14 @@ function applyStaticTexts(){
 }
 
 let currentOrigin = 'eu';
+let currentDirection = 'export';
+
+function setDirection(d){
+  currentDirection = d;
+  document.querySelectorAll('.direction-btn').forEach(b => b.classList.toggle('active', b.dataset.direction === d));
+  document.getElementById('toolExportView').style.display = (d === 'export') ? '' : 'none';
+  document.getElementById('importNotice').style.display = (d === 'import') ? 'block' : 'none';
+}
 
 function setOrigin(o){
   currentOrigin = o;
@@ -1113,6 +1008,40 @@ function setLang(lang){
 
 function normalizar(t){ return t.toLowerCase().trim(); }
 
+/* ═══ HS-KOODIN TUNNISTUS JA TÄSMÄYTYS ═══ */
+function parseHSQuery(raw){
+  const cleaned = raw.replace(/[.\s]/g, '');
+  if(!/^\d{2,10}$/.test(cleaned)) return null;
+  return { digits: cleaned, chapter: parseInt(cleaned.substring(0,2), 10), length: cleaned.length };
+}
+
+function parseHSRange(hsStr){
+  const clean = hsStr.replace('HS ', '').replace(/\s/g, '');
+  const nums = clean.match(/\d+/g);
+  if(!nums) return null;
+  if(nums.length === 1){
+    const n = nums[0];
+    const chapter = parseInt(n.length >= 2 ? n.substring(0,2) : n, 10);
+    return { min: chapter, max: chapter };
+  }
+  return { min: parseInt(nums[0],10), max: parseInt(nums[1],10) };
+}
+
+function matchHSChapter(chapter){
+  const matches = [];
+  for(const k in DB){
+    const entry = DB[k];
+    const range = parseHSRange(entry.hs);
+    if(!range) continue;
+    if(chapter >= range.min && chapter <= range.max){
+      if(entry.hsExclude && entry.hsExclude.includes(chapter)) continue;
+      matches.push(k);
+    }
+  }
+  return matches;
+}
+
+
 function buscarChip(key){
   document.getElementById('buscar').value = DB[key].short[currentLang];
   lastKey = key;
@@ -1120,6 +1049,7 @@ function buscarChip(key){
 }
 
 function buscar(){
+  if (!dbLoaded) return;
   const raw = document.getElementById('buscar').value;
   const q = normalizar(raw);
   const cont = document.getElementById('resultado');
@@ -1130,6 +1060,21 @@ function buscar(){
     return;
   }
 
+  /* 1) Yritä ensin HS-koodina */
+  const hsQuery = parseHSQuery(raw);
+  if(hsQuery){
+    const matches = matchHSChapter(hsQuery.chapter);
+    if(matches.length > 0){
+      lastKey = matches[0];
+      renderMatch(matches[0]);
+      return;
+    }
+    lastKey = 'HS_NOT_FOUND'; lastTerm = raw;
+    renderHSNotFound(raw, hsQuery);
+    return;
+  }
+
+  /* 2) Tekstihaku (synonyymit, kategorianimet) */
   let foundKey = null;
   for(const k in DB){
     const entry = DB[k];
@@ -1150,6 +1095,20 @@ function buscar(){
 
   lastKey = foundKey;
   renderMatch(foundKey);
+}
+
+function renderHSNotFound(term, hsQuery){
+  const t = I18N[currentLang];
+  const cont = document.getElementById('resultado');
+  cont.innerHTML = `
+    <div>
+      <div class="empty-title">${t.hsNotFoundTitle(term)}</div>
+      <p class="empty-text">${t.hsChapterLabel} ${hsQuery.chapter} &middot; ${t.hsNotFoundText}</p>
+      <div class="cta-box">
+        <div class="cta-text"><strong>${t.ctaEmptyText}</strong></div>
+        <a class="cta-btn" href="yhteystiedot.html?aihe=${encodeURIComponent(term)}">${t.ctaBtn}</a>
+      </div>
+    </div>`;
 }
 
 function renderEmpty(term){
@@ -1202,6 +1161,11 @@ function renderMatch(key){
       </div>
 
       <p class="notes">${d.detalle[L]}</p>
+
+      ${d.paisNota ? `<div class="country-note">
+        <div class="country-note-label">${t.countryNoteLabel}</div>
+        <div class="country-note-text">${d.paisNota[L]}</div>
+      </div>` : ''}
 
       <div class="risk-block ${d.riesgo}">
         <div class="risk-label">${t.riskLabels[d.riesgo]}</div>

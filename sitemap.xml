@@ -311,6 +311,50 @@
   </url>
 
   <url>
+    <loc>https://www.merconsult.fi/uutinen-rag-tarkka-tieto-2026.html</loc>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://www.merconsult.fi/uutinen-rag-tarkka-tieto-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.merconsult.fi/en/uutinen-rag-tarkka-tieto-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.merconsult.fi/es/uutinen-rag-tarkka-tieto-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.merconsult.fi/pt/uutinen-rag-tarkka-tieto-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.merconsult.fi/uutinen-rag-tarkka-tieto-2026.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.merconsult.fi/en/uutinen-rag-tarkka-tieto-2026.html</loc>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://www.merconsult.fi/uutinen-rag-tarkka-tieto-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.merconsult.fi/en/uutinen-rag-tarkka-tieto-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.merconsult.fi/es/uutinen-rag-tarkka-tieto-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.merconsult.fi/pt/uutinen-rag-tarkka-tieto-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.merconsult.fi/uutinen-rag-tarkka-tieto-2026.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://www.merconsult.fi/es/uutinen-rag-tarkka-tieto-2026.html</loc>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://www.merconsult.fi/uutinen-rag-tarkka-tieto-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.merconsult.fi/en/uutinen-rag-tarkka-tieto-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.merconsult.fi/es/uutinen-rag-tarkka-tieto-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.merconsult.fi/pt/uutinen-rag-tarkka-tieto-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.merconsult.fi/uutinen-rag-tarkka-tieto-2026.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://www.merconsult.fi/pt/uutinen-rag-tarkka-tieto-2026.html</loc>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://www.merconsult.fi/uutinen-rag-tarkka-tieto-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.merconsult.fi/en/uutinen-rag-tarkka-tieto-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.merconsult.fi/es/uutinen-rag-tarkka-tieto-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.merconsult.fi/pt/uutinen-rag-tarkka-tieto-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.merconsult.fi/uutinen-rag-tarkka-tieto-2026.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
     <loc>https://www.merconsult.fi/tietosuoja.html</loc>
     <xhtml:link rel="alternate" hreflang="fi" href="https://www.merconsult.fi/tietosuoja.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.merconsult.fi/en/tietosuoja.html"/>
