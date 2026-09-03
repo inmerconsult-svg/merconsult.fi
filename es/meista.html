@@ -471,6 +471,25 @@
     line-height:1.85; margin-bottom:24px;
   }
   .about-text p.about-lede { font-size:1.18rem; color:var(--ink); font-style:italic; }
+  .founder-bio {
+    display: flex; gap: 32px; align-items: flex-start;
+    margin: 40px 0 32px; padding-top: 40px; border-top: 1px solid var(--line);
+    flex-wrap: wrap;
+  }
+  .founder-photo {
+    width: 180px; height: 242px; object-fit: cover; flex-shrink: 0;
+  }
+  .founder-bio-text { flex: 1; min-width: 260px; }
+  .founder-bio-text h3 {
+    font-family:'Lora',serif; font-weight:600; font-size: 1.25rem; color: var(--ink); margin-bottom: 4px;
+  }
+  .founder-title {
+    font-family:'Montserrat',sans-serif; font-size: 0.78rem; font-weight:700; letter-spacing:0.5px;
+    text-transform: uppercase; color: var(--gris); margin-bottom: 16px;
+  }
+  .founder-bio-text p.founder-desc {
+    font-family:'Lora',serif; font-size: 0.95rem; color: var(--ink-soft); line-height: 1.7;
+  }
   .about-cta {
     border-top: 1px solid var(--line); margin-top: 12px; padding-top: 32px;
   }
@@ -615,9 +634,9 @@
 <main>
   <h1 class="eyebrow" style="margin-top:12px;">Sobre nosotros</h1>
   <div class="about-text" style="border-top:1px solid var(--line); padding-top:36px;">
-    <p class="about-lede">A lo largo de los años, hemos construido negocios exitosos y llevado a cabo proyectos exigentes en América Latina, operando tanto desde Europa como desde Estados Unidos. Nuestra experiencia abarca ampliamente todo el mercado, desde Centroamérica y el Caribe hasta Sudamérica continental, con un enfoque principal firmemente centrado en la región del Mercosur, en pleno crecimiento.</p>
-    <h2>Experiencia y Servicios</h2>
-    <p>El núcleo de nuestra experiencia radica en un sólido y amplio bagaje en la creación de estrategias de expansión internacional, desarrollo de negocio y gestión orientada a resultados. Ayudamos a las empresas a tender un puente hacia nuevos mercados de forma totalmente escalable: <a href="palvelut.html">nuestros servicios</a> abarcan desde la consultoría estratégica ligera hasta la creación de filiales nacionales completas y unidades operativas desde cero, bajo el principio de llave en mano y físicamente sobre el terreno.</p>
+    <p class="about-lede">Merconsult actúa como socio consultor y facilitador de cooperación comercial entre Europa, Estados Unidos y América Latina. <a href="palvelut.html">Nuestros servicios</a> cubren el desarrollo de negocios en ambas direcciones: apoyamos a empresas europeas y norteamericanas a establecer su presencia en América Latina, y a empresas de la región del Mercosur a expandirse y abrir canales de exportación hacia los mercados europeos. El foco principal está en el comercio entre el Mercosur y Europa, respaldado por una experiencia que también abarca proyectos en América Central y el Caribe.</p>
+    <h2>Servicios y rol</h2>
+    <p>Merconsult actúa como asesor especializado en la planificación de entrada al mercado, relevamientos de viabilidad y coordinación de proyectos. En proyectos de mayor alcance, recurrimos a una red consolidada de especialistas y subcontratistas locales en áreas como marco legal, normativas, fiscalidad y logística.</p>
     <div class="section-divider">
       <svg width="120" height="16" viewBox="0 0 120 16">
         <line x1="0" y1="8" x2="120" y2="8" stroke="var(--line)" stroke-width="1"/>
@@ -626,8 +645,8 @@
         <circle cx="100" cy="8" r="2.5" fill="none" stroke="var(--gris)" stroke-width="1"/>
       </svg>
     </div>
-    <h2>Idioma y Comprensión Local</h2>
-    <p>El éxito en el mercado LATAM requiere una comprensión profunda de la cultura empresarial local, las redes de contacto y las formas de trabajar. Nuestro equipo trabaja y negocia con fluidez al menos en finlandés, inglés y español. Esto nos permite eliminar eficazmente las barreras culturales y lingüísticas, y garantizar que los proyectos se desarrollen sin contratiempos.</p>
+    <h2>Idioma y conocimiento del entorno operativo</h2>
+    <p>El comercio internacional entre la UE y el Mercosur exige comprender las culturas contractuales, los marcos regulatorios y las prácticas comerciales de ambas regiones. La gestión y el soporte en negociaciones se realizan con fluidez en español, inglés y finés. Esto elimina barreras idiomáticas, reduce intermediarios innecesarios y previene malentendidos ante autoridades, compradores y socios locales.</p>
     <div class="section-divider">
       <svg width="120" height="16" viewBox="0 0 120 16">
         <line x1="0" y1="8" x2="120" y2="8" stroke="var(--line)" stroke-width="1"/>
@@ -636,10 +655,17 @@
         <circle cx="100" cy="8" r="2.5" fill="none" stroke="var(--gris)" stroke-width="1"/>
       </svg>
     </div>
-    <h2>Nuestro Enfoque Pragmático</h2>
-    <p>Nuestro trabajo se rige por un pragmatismo inquebrantable. Ofrecemos siempre a nuestros clientes una imagen realista y totalmente sin adornos de los retos reales del mercado de destino, pero, sobre todo, de las oportunidades únicas y rentables que este ofrece. MERCONSULT es su socio de confianza cuando desea minimizar los riesgos de entrada al mercado y construir un crecimiento sostenible en América Latina.</p>
+    <h2>Metodología de trabajo</h2>
+    <p>Nuestro enfoque es directo y pragmático. El punto de partida consiste en brindar al cliente un panorama preciso y realista sobre costos operativos, plazos, exigencias regulatorias y potencial comercial. La prioridad se centra en soluciones prácticas y fundamentadas, permitiendo avanzar sin errores de cálculo costosos, ya sea un proyecto con destino a Europa o a América Latina.</p>
 
-<p style="font-family:'Lora',serif; font-style:italic; color:var(--gris); font-size:0.9rem; margin: 32px 0 20px;">&mdash; Jessica Barman</p>
+    <div class="founder-bio">
+      <img src="../images/jessica-barman.jpg" alt="Jessica Barman" class="founder-photo">
+      <div class="founder-bio-text">
+        <h3>Jessica Barman</h3>
+        <p class="founder-title">Fundadora y Consultora Principal</p>
+        <p class="founder-desc">Pasé mi infancia entre Finlandia y la República Dominicana. Antes de asumir mi rol actual, trabajé durante años en el sector bancario y financiero en Finlandia. Actualmente resido en Uruguay, pero visito Finlandia con regularidad.</p>
+      </div>
+    </div>
 
         <div class="partner-logos">
       <div class="partner-logo-item">

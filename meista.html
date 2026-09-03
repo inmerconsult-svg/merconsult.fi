@@ -471,6 +471,25 @@
     line-height:1.85; margin-bottom:24px;
   }
   .about-text p.about-lede { font-size:1.18rem; color:var(--ink); font-style:italic; }
+  .founder-bio {
+    display: flex; gap: 32px; align-items: flex-start;
+    margin: 40px 0 32px; padding-top: 40px; border-top: 1px solid var(--line);
+    flex-wrap: wrap;
+  }
+  .founder-photo {
+    width: 180px; height: 242px; object-fit: cover; flex-shrink: 0;
+  }
+  .founder-bio-text { flex: 1; min-width: 260px; }
+  .founder-bio-text h3 {
+    font-family:'Lora',serif; font-weight:600; font-size: 1.25rem; color: var(--ink); margin-bottom: 4px;
+  }
+  .founder-title {
+    font-family:'Montserrat',sans-serif; font-size: 0.78rem; font-weight:700; letter-spacing:0.5px;
+    text-transform: uppercase; color: var(--gris); margin-bottom: 16px;
+  }
+  .founder-bio-text p.founder-desc {
+    font-family:'Lora',serif; font-size: 0.95rem; color: var(--ink-soft); line-height: 1.7;
+  }
   .about-cta {
     border-top: 1px solid var(--line); margin-top: 12px; padding-top: 32px;
   }
@@ -615,9 +634,9 @@
 <main>
   <h1 class="eyebrow" style="margin-top:12px;">Meistä</h1>
   <div class="about-text" style="border-top:1px solid var(--line); padding-top:36px;">
-    <p class="about-lede">Olemme vuosien aikana rakentaneet menestyksekästä liiketoimintaa ja toteuttaneet vaativia projekteja Latinalaisessa Amerikassa niin Euroopasta kuin Yhdysvalloistakin käsin. Kokemuksemme kattaa laajasti koko markkinan Väli-Amerikasta ja Karibialta aina manner-Etelä-Amerikkaan, ydinfokuksemme ollessa vahvasti kasvavalla Mercosur-alueella.</p>
-    <h2>Osaaminen ja palvelut</h2>
-    <p>Osaamisemme ydin muodostuu vankasta ja laaja-alaisesta kokemuksesta kansainvälisten laajentumisstrategioiden luomisessa, liiketoiminnan kehittämisessä sekä tuloshakuisessa johtamisessa. Autamme yrityksiä rakentamaan sillan uusille markkinoille täysin skaalautuvasti: <a href="palvelut.html">palvelumme</a> kattavat kaiken kevyestä strategisesta markkinakonsultaatiosta aina kokonaisten maayhtiöiden ja operatiivisten yksiköiden pystyttämiseen alusta alkaen, avaimet käteen -periaatteella ja fyysisesti paikan päällä.</p>
+    <p class="about-lede">Merconsult toimii asiantuntijakumppanina ja kaupallisen yhteisty&ouml;n rakentajana Euroopan, Yhdysvaltojen ja Latinalaisen Amerikan v&auml;lill&auml;. <a href="palvelut.html">Palvelut</a> kattavat liiketoiminnan avaamisen molempiin suuntiin: autamme eurooppalaisia ja pohjoisamerikkalaisia yrityksi&auml; vakiinnuttamaan asemaansa Latinalaisessa Amerikassa, sek&auml; paikallisia Mercosur-alueen yrityksi&auml; laajentumaan ja avaamaan vientikanavia Euroopan markkinoille. P&auml;&auml;paino on Mercosur-alueen ja Euroopan v&auml;lisess&auml; kaupassa, mutta kokemus kattaa hankkeita my&ouml;s V&auml;li-Amerikassa ja Karibialla.</p>
+    <h2>Palvelut ja rooli</h2>
+    <p>Merconsult toimii asiantuntijana markkinoilletulon suunnittelussa, kartoituksissa ja hankkeiden koordinoinnissa. Laajemmissa kokonaisuuksissa hy&ouml;dynnet&auml;&auml;n kohdemarkkinan asiantuntija- ja alihankkijaverkostoa esimerkiksi juridiikan, s&auml;&auml;ntelyn, verotuksen ja logistiikan osalta.</p>
     <div class="section-divider">
       <svg width="120" height="16" viewBox="0 0 120 16">
         <line x1="0" y1="8" x2="120" y2="8" stroke="var(--line)" stroke-width="1"/>
@@ -626,8 +645,8 @@
         <circle cx="100" cy="8" r="2.5" fill="none" stroke="var(--gris)" stroke-width="1"/>
       </svg>
     </div>
-    <h2>Kieli ja paikallinen ymmärrys</h2>
-    <p>Menestys LATAM-markkinoilla edellyttää paikallisen yrityskulttuurin, verkostojen ja toimintatapojen syvällistä ymmärrystä. Tiimimme työskentelee ja neuvottelee sujuvasti vähintään suomeksi, englanniksi ja espanjaksi. Tämän ansiosta pystymme poistamaan kulttuuriset ja kielelliset esteet tehokkaasti ja varmistamaan hankkeiden sujuvan läpiviennin.</p>
+    <h2>Kieli ja toimintaymp&auml;rist&ouml;n tuntemus</h2>
+    <p>Kansainv&auml;linen kauppa EU:n ja Mercosurin v&auml;lill&auml; vaatii kummankin alueen sopimuskulttuurin, s&auml;&auml;ntelyn ja toimintatapojen ymm&auml;rt&auml;mist&auml;. Asiointi ja neuvottelutuki hoituvat sujuvasti espanjaksi, englanniksi ja suomeksi. T&auml;m&auml; poistaa kielelliset esteet, karsii turhia v&auml;lik&auml;si&auml; ja ehk&auml;isee v&auml;&auml;rinymm&auml;rryksi&auml; yhteydenpidoss&auml; paikallisiin viranomaisiin, ostajiin ja kumppaneihin.</p>
     <div class="section-divider">
       <svg width="120" height="16" viewBox="0 0 120 16">
         <line x1="0" y1="8" x2="120" y2="8" stroke="var(--line)" stroke-width="1"/>
@@ -636,10 +655,17 @@
         <circle cx="100" cy="8" r="2.5" fill="none" stroke="var(--gris)" stroke-width="1"/>
       </svg>
     </div>
-    <h2>Pragmaattinen lähestymistapamme</h2>
-    <p>Toimintaamme ohjaa tinkimätön pragmaattisuus. Tarjoamme asiakkaillemme aina realistisen ja täysin kaunistelemattoman kuvan kohdemarkkinan todellisista haasteista, mutta ennen kaikkea sen tarjoamista ainutlaatuisista ja tuottoisista mahdollisuuksista. MERCONSULT on luotettava kumppanisi, kun haluat minimoida markkinoilletulon riskit ja rakentaa kestävää kasvua Latinalaisessa Amerikassa.</p>
+    <h2>Toimintatapa</h2>
+    <p>L&auml;hestymistapa on suora ja realistinen. L&auml;ht&ouml;kohtana on antaa asiakkaalle tarkka ja kaunistelematon kuva kohdemarkkinan todellisista kuluista, aikatauluista, viranomaisvaatimuksista ja kaupallisesta potentiaalista. Painopiste on toimivissa ja perustelluissa ratkaisuissa, jotta asiakas voi edet&auml; ilman kalliita virhearvioita &ndash; suuntautuipa hanke Eurooppaan tai Latinalaiseen Amerikkaan.</p>
 
-    <p style="font-family:'Lora',serif; font-style:italic; color:var(--gris); font-size:0.9rem; margin: 32px 0 20px;">&mdash; Jessica Barman</p>
+    <div class="founder-bio">
+      <img src="images/jessica-barman.jpg" alt="Jessica Barman" class="founder-photo">
+      <div class="founder-bio-text">
+        <h3>Jessica Barman</h3>
+        <p class="founder-title">Perustaja ja johtava konsultti</p>
+        <p class="founder-desc">Vietin lapsuuteni Suomen ja Dominikaanisen tasavallan v&auml;lill&auml;. Ennen nykyist&auml; rooliani ty&ouml;skentelin vuosia Suomen pankki- ja rahoitusalalla. T&auml;ll&auml; hetkell&auml; asun Uruguayssa, mutta k&auml;yn Suomessa s&auml;&auml;nn&ouml;llisesti.</p>
+      </div>
+    </div>
 
     <div class="partner-logos">
       <div class="partner-logo-item">
