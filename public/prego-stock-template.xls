@@ -1,0 +1,1777 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <LastAuthor>Logius Report</LastAuthor>
+  <Created>2026-08-21T09:51:55Z</Created>
+  <LastSaved>2026-08-21T09:51:55Z</LastSaved>
+  <Version>11.9999</Version>
+ </DocumentProperties>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>12465</WindowHeight>
+  <WindowWidth>15900</WindowWidth>
+  <WindowTopX>480</WindowTopX>
+  <WindowTopY>315</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook> 
+ <Styles> 
+  <Style ss:ID="Default" ss:Name="Normal"> 
+   <Alignment ss:Vertical="Top"/> 
+   <Borders/> 
+   <Font/> 
+   <Interior/> 
+   <NumberFormat/> 
+   <Protection/> 
+  </Style> 
+  <Style ss:ID="s21"> 
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top"/> 
+   <NumberFormat ss:Format="Short Date"/> 
+  </Style> 
+  <Style ss:ID="s22"> 
+   <NumberFormat ss:Format="Short Time"/> 
+  </Style> 
+  <Style ss:ID="s23"> 
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/> 
+   <NumberFormat ss:Format="@"/> 
+  </Style> 
+  <Style ss:ID="s24"> 
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/> 
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/> 
+   <NumberFormat ss:Format="@"/> 
+  </Style> 
+  <Style ss:ID="s25"> 
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/> 
+   <NumberFormat ss:Format="Short Date"/> 
+  </Style> 
+  <Style ss:ID="s26"> 
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/> 
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/> 
+   <NumberFormat ss:Format="Short Date"/> 
+  </Style> 
+  <Style ss:ID="s27"> 
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top"/> 
+   <NumberFormat ss:Format="0"/> 
+  </Style> 
+  <Style ss:ID="s28"> 
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top"/> 
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/> 
+   <NumberFormat ss:Format="0"/> 
+  </Style> 
+  <Style ss:ID="s29"> 
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top"/> 
+   <NumberFormat ss:Format="Fixed"/> 
+  </Style> 
+  <Style ss:ID="s30"> 
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top"/> 
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/> 
+   <NumberFormat ss:Format="Fixed"/> 
+  </Style> 
+  <Style ss:ID="s31"> 
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top"/> 
+   <NumberFormat ss:Format="0.000"/> 
+  </Style> 
+  <Style ss:ID="s32"> 
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top"/> 
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/> 
+   <NumberFormat ss:Format="0.000"/> 
+  </Style> 
+  <Style ss:ID="s33"> 
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/> 
+   <NumberFormat ss:Format="@"/> 
+  </Style> 
+  <Style ss:ID="s34"> 
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/> 
+   <Font x:Family="Swiss" ss:Bold="1"/> 
+   <Interior ss:Color="#3366FF" ss:Pattern="Solid"/> 
+   <NumberFormat ss:Format="@"/> 
+  </Style> 
+  <Style ss:ID="s35"> 
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/> 
+   <Font x:Family="Swiss" ss:Bold="1"/> 
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/> 
+   <NumberFormat ss:Format="@"/> 
+  </Style> 
+  <Style ss:ID="s36"> 
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/> 
+   <Interior ss:Color="#CCFFCC" ss:Pattern="Solid"/> 
+   <NumberFormat ss:Format="@"/> 
+  </Style> 
+  <Style ss:ID="s37"> 
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top"/> 
+   <Interior ss:Color="#CCFFCC" ss:Pattern="Solid"/> 
+   <NumberFormat ss:Format="Fixed"/> 
+  </Style> 
+  <Style ss:ID="s38"> 
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top"/> 
+   <Interior ss:Color="#CCFFCC" ss:Pattern="Solid"/> 
+   <NumberFormat ss:Format="0.0"/> 
+  </Style> 
+  <Style ss:ID="s39"> 
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top"/> 
+   <Font x:Family="Swiss" ss:Bold="1"/> 
+   <NumberFormat ss:Format="Fixed"/> 
+  </Style> 
+  <Style ss:ID="s40"> 
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top"/> 
+   <Font x:Family="Swiss" ss:Bold="1"/> 
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/> 
+   <NumberFormat ss:Format="Fixed"/> 
+  </Style> 
+  <Style ss:ID="s41"> 
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top"/> 
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/> 
+   <NumberFormat ss:Format="Short Date"/> 
+  </Style> 
+  <Style ss:ID="s42"> 
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top"/> 
+   <NumberFormat ss:Format="0.0"/> 
+  </Style> 
+  <Style ss:ID="s43"> 
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/> 
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/> 
+   <NumberFormat ss:Format="@"/> 
+  </Style> 
+  <Style ss:ID="s44"> 
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/> 
+   <Font x:Family="Swiss" ss:Bold="1"/> 
+   <NumberFormat ss:Format="@"/> 
+  </Style> 
+  <Style ss:ID="s45"> 
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/> 
+   <Font x:Family="Swiss" ss:Bold="1"/> 
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/> 
+   <NumberFormat ss:Format="@"/> 
+  </Style> 
+  <Style ss:ID="s46"> 
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top"/> 
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/> 
+   <NumberFormat ss:Format="0.0"/> 
+  </Style> 
+  <Style ss:ID="s47"> 
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top"/> 
+   <NumberFormat ss:Format="0.0000"/> 
+  </Style> 
+  <Style ss:ID="s48"> 
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top"/> 
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/> 
+   <NumberFormat ss:Format="0.0000"/> 
+  </Style> 
+  <Style ss:ID="s49"> 
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top"/> 
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/> 
+   <NumberFormat ss:Format="0.0"/> 
+  </Style> 
+  <Style ss:ID="s50"> 
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top"/> 
+   <NumberFormat ss:Format="0.0\ %"/> 
+  </Style> 
+  <Style ss:ID="s51"> 
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top"/> 
+   <Interior ss:Color="#CCFFCC" ss:Pattern="Solid"/> 
+   <NumberFormat ss:Format="0.0\ %"/> 
+  </Style> 
+  <Style ss:ID="s52"> 
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top"/> 
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/> 
+   <NumberFormat ss:Format="0.0\ %"/> 
+  </Style> 
+  <Style ss:ID="s55"> 
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top" ss:WrapText="1"/> 
+   <Font x:Family="Swiss" ss:Bold="1"/> 
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/> 
+   <NumberFormat ss:Format="@"/> 
+  </Style> 
+  <Style ss:ID="s56"> 
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top"/> 
+   <Interior ss:Color="#CCFFCC" ss:Pattern="Solid"/> 
+   <NumberFormat ss:Format="0"/> 
+  </Style> 
+  <Style ss:ID="s57"> 
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top"/> 
+   <NumberFormat ss:Format="0.000000"/> 
+  </Style> 
+  <Style ss:ID="s58"> 
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top"/> 
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/> 
+   <NumberFormat ss:Format="0.000000"/> 
+  </Style> 
+  <Style ss:ID="s59"> 
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top"/> 
+   <Font x:Family="Swiss" ss:Bold="1"/> 
+   <NumberFormat ss:Format="0"/> 
+  </Style> 
+  <Style ss:ID="s60"> 
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/> 
+   <Font x:Family="Swiss" ss:Bold="1"/> 
+   <Interior ss:Color="#FF0000" ss:Pattern="Solid"/> 
+   <NumberFormat ss:Format="@"/> 
+  </Style> 
+  <Style ss:ID="s61"> 
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/> 
+   <Font x:Family="Swiss" ss:Bold="1"/> 
+   <Interior ss:Color="#CCFFCC" ss:Pattern="Solid"/> 
+   <NumberFormat ss:Format="@"/> 
+  </Style> 
+  <Style ss:ID="s62"> 
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/> 
+   <Font x:Family="Swiss" ss:Bold="1"/> 
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/> 
+   <NumberFormat ss:Format="@"/> 
+  </Style> 
+  <Style ss:ID="s63"> 
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top"/> 
+   <Interior ss:Color="#FF0000" ss:Pattern="Solid"/> 
+   <NumberFormat ss:Format="Fixed"/> 
+  </Style> 
+  <Style ss:ID="s64"> 
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top"/> 
+   <Interior ss:Color="#CCFFCC" ss:Pattern="Solid"/> 
+   <NumberFormat ss:Format="Fixed"/> 
+  </Style> 
+  <Style ss:ID="s65"> 
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top"/> 
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/> 
+   <NumberFormat ss:Format="Fixed"/> 
+  </Style> 
+  <Style ss:ID="s66"> 
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top"/> 
+   <Interior ss:Color="#FF0000" ss:Pattern="Solid"/> 
+   <NumberFormat ss:Format="0"/> 
+  </Style> 
+  <Style ss:ID="s67"> 
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top"/> 
+   <Interior ss:Color="#CCFFCC" ss:Pattern="Solid"/> 
+   <NumberFormat ss:Format="0"/> 
+  </Style> 
+  <Style ss:ID="s68"> 
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top"/> 
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/> 
+   <NumberFormat ss:Format="0"/> 
+  </Style> 
+  <Style ss:ID="s69"> 
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top"/> 
+   <Interior ss:Color="#FF0000" ss:Pattern="Solid"/> 
+   <NumberFormat ss:Format="Short Date"/> 
+  </Style> 
+  <Style ss:ID="s70"> 
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top"/> 
+   <Interior ss:Color="#CCFFCC" ss:Pattern="Solid"/> 
+   <NumberFormat ss:Format="Short Date"/> 
+  </Style> 
+  <Style ss:ID="s71"> 
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top"/> 
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/> 
+   <NumberFormat ss:Format="Short Date"/> 
+  </Style> 
+ </Styles> 
+ <Worksheet ss:Name="Taulukko"> 
+  <Table ss:ExpandedColumnCount="100" ss:ExpandedRowCount="10000" x:FullColumns="1" 
+   x:FullRows="1"> 
+    <Column ss:Width="75"/>
+    <Column ss:Width="140"/>
+    <Column ss:Width="50"/>
+    <Column ss:Width="75"/>
+    <Column ss:Width="120"/>
+    <Column ss:Width="50"/>
+    <Column ss:Width="35"/>
+    <Column ss:Width="35"/>
+    <Column ss:Width="35"/>
+    <Column ss:Width="35"/>
+    <Column ss:Width="35"/>
+    <Row>
+     <Cell ss:MergeAcross="1" ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">Inbound Finland Oy</ss:Data></Cell>
+     <Cell ss:MergeAcross="1" ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">TUOTERAPORTTI</ss:Data></Cell>
+    </Row>
+    <Row>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+    </Row>
+    <Row>
+     <Cell ss:StyleID="s35"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">Tuote</ss:Data></Cell>
+     <Cell ss:StyleID="s35"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">Kuvaus</ss:Data></Cell>
+     <Cell ss:StyleID="s35"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s35"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">EAN</ss:Data></Cell>
+     <Cell ss:StyleID="s35"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">Alaryhmä</ss:Data></Cell>
+     <Cell ss:StyleID="s35"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">MyyntihintaVeroton</ss:Data></Cell>
+     <Cell ss:StyleID="s35"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">MyyntiYksKoko</ss:Data></Cell>
+     <Cell ss:StyleID="s35"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">VapaaSaldo</ss:Data></Cell>
+     <Cell ss:StyleID="s35"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">Tilattuna</ss:Data></Cell>
+     <Cell ss:StyleID="s35"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">Varaukset</ss:Data></Cell>
+     <Cell ss:StyleID="s35"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">Jälkitoim</ss:Data></Cell>
+    </Row>
+
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P932</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">KAHVINKEITIN AJASTIMELLA 1000W</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037751028</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">100 - KAHVINKEITTIMET</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">24.9</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">4</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">45</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">4</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P938</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">KAHVINKEITIN 9L</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037752742</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">100 - KAHVINKEITTIMET</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">78</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">4</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">12</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P943</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">KAHVINKEITIN DIGI 1000W</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037756528</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">100 - KAHVINKEITTIMET</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">35</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">2</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">97</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P945</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">KAHVINKEITIN 1,25L MUSTA</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">8.9</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037757082</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">100 - KAHVINKEITTIMET</ss:Data></Cell>
+     <Cell ss:StyleID="s30"><Data ss:Type="Number">16.5</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">6</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">1122</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">16</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P948</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">PERKOLAATTORI 1.8L</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037758072</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">100 - KAHVINKEITTIMET</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">35</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">4</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">346</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P951</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">KAHVINKEITIN 0,75L 650W</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">8.9</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037758201</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">100 - KAHVINKEITTIMET</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">12.95</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">6</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">720</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">6</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P1196</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">VEDENKEITIN MUSTA 1,0L 2000W</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037755767</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">101 - VEDENKEITTIMET</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">14.5</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">6</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">949</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">6</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P1201</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">VEDENKEITIN LASI 1,2L 1500W</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">30.9</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037758195</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">101 - VEDENKEITTIMET</ss:Data></Cell>
+     <Cell ss:StyleID="s30"><Data ss:Type="Number">12.5</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">6</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">1002</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">54</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P238</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">VEDENKEITIN 1,3L 2000W PREGO</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037750908</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">101 - VEDENKEITTIMET</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">10.95</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">12</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">101</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P215</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">LEIVÄNPAAHDIN VALKOINEN</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037757396</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">102 - LEIVÄNPAAHTIMET</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">12.9</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">6</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">696</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P216</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">LEIVÄNPAAHDIN TERÄS</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037756634</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">102 - LEIVÄNPAAHTIMET</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">19.95</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">6</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">276</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P219B</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">LEIVÄNPAAHDIN MUSTA 700W</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037751493</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">102 - LEIVÄNPAAHTIMET</ss:Data></Cell>
+     <Cell ss:StyleID="s30"><Data ss:Type="Number">11.9</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">6</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">988</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P220B</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">LEIVÄNPAAHDIN VALKOINEN 700W</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037751387</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">102 - LEIVÄNPAAHTIMET</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">11.9</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">6</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">1</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">6</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P86</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">VOILEIPÄGRILLI TERÄS/MUSTA</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037757471</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">102 - LEIVÄNPAAHTIMET</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">9.9</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">6</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">338</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">6</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P114B</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">LIHAMYLLY 1500W</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037754111</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">103 - SEKOITTIMET</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">32</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">6</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">104</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P119B</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">SIIVUTUSKONE</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037753527</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">103 - SEKOITTIMET</ss:Data></Cell>
+     <Cell ss:StyleID="s30"><Data ss:Type="Number">27.9</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">4</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">580</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P124</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">LIHAMYLLY 3000W</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">25.8</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037757426</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">103 - SEKOITTIMET</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">52</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">4</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">100</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">62</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P126</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">SIIVUTUSKONE METALLI</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037757716</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">103 - SEKOITTIMET</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">49.9</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">2</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">202</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P328</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">TEHOSEKOITIN 1L 400W</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037757488</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">103 - SEKOITTIMET</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">19.5</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">6</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">154</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P504B</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">VATKAIN 300W</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037751516</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">103 - SEKOITTIMET</ss:Data></Cell>
+     <Cell ss:StyleID="s30"><Data ss:Type="Number">13.9</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">12</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">968</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">12</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P511</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">SAUVASEKOITIN + VISPILÄ 400W</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037757419</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">103 - SEKOITTIMET</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">11.5</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">10</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">268</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P1109</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">HEDELMÄ/SIENIKUIVURI DIGITAALINEN</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037757495</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">104 - MUUT KODINKONEET</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">25.9</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">4</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">490</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P351B</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">HAUDUTUSKATTILA 3.5L 200W</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037752339</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">104 - MUUT KODINKONEET</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">19.9</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">4</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">350</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P356</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">RIISIKEITIN 1,8L 700W</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">17.10</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037758171</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">104 - MUUT KODINKONEET</ss:Data></Cell>
+     <Cell ss:StyleID="s30"><Data ss:Type="Number">16.9</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">4</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P369</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">SAVUSTIN KUUMA/KYLMÄ GOURMET</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037756771</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">104 - MUUT KODINKONEET</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">49</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">2</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">11</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P372L2</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">ILMAFRITEERAUSKEITIN 5,0L 2 LUOKKA</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037757501</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">104 - MUUT KODINKONEET</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">9.9</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">2</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">22</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P373</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">ILMAFRITEERAUSKEITIN 4,5L IKKUNALLA</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037757624</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">104 - MUUT KODINKONEET</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">34.5</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">2</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">526</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P377</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">ILMAFRITEERAUSKEITIN TUPLA 4L+4L</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">30.9</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037757853</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">104 - MUUT KODINKONEET</ss:Data></Cell>
+     <Cell ss:StyleID="s30"><Data ss:Type="Number">44</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">2</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P1045C</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">KEITTOLEVY 1500W</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037750496</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">106 - KEITTOLEVYT</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">11.9</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">8</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P1047</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">INDUKTIO KEITTOLEVY 1800W</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037754418</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">106 - KEITTOLEVYT</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">23</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">6</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">10</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P1048C</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">KEITTOLEVY 1500W + 1000W</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037750489</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">106 - KEITTOLEVYT</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">19.9</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">5</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P1049</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">INDUKTIO KEITTOLEVYT 3500W</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037756283</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">106 - KEITTOLEVYT</ss:Data></Cell>
+     <Cell ss:StyleID="s30"><Data ss:Type="Number">59</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">2</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">113</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P1051</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">KEITTOLEVY KERAAMINEN 1200W</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037752315</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">106 - KEITTOLEVYT</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">16.9</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">6</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">77</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P1053</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">KEITTOLEVY KERAAMINEN 1500W</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037757808</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">106 - KEITTOLEVYT</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">16.9</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">8</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P1054</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">KEITTOLEVY KERAAMINEN 1500W + 1000W</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037757815</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">106 - KEITTOLEVYT</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">28.9</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">5</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">112</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P226</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">HÖYRYSILITYSRAUTA KERAAMINEN 2200W</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037756825</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">110 - SILITYSRAUDAT</ss:Data></Cell>
+     <Cell ss:StyleID="s30"><Data ss:Type="Number">17.5</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">10</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">19</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P227</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">VAATEHÖYRISTIN 1500W</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037757273</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">110 - SILITYSRAUDAT</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">18.5</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">10</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">58</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P228</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">HÖYRYSILITYSRAUTA 2000W</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037757372</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">110 - SILITYSRAUDAT</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">11.5</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">10</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">229</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">10</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P1014</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">RIKKAIMURI LADATTAVA</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037751882</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">111 - PÖLYNIMURIT</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">19.9</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">6</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">294</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P1018</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">RIKKAIMURI LADATTAVA WET/DRY</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037757334</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">111 - PÖLYNIMURIT</ss:Data></Cell>
+     <Cell ss:StyleID="s30"><Data ss:Type="Number">22.9</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">4</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">55</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P1118</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">VARSI-IMURI BLDC LADATTAVA 22,2V</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037757846</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">111 - PÖLYNIMURIT</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">59</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">4</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">4</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P96</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">TUHKAIMURI 1200W 20L KANGASSUODATIN</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037756436</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">111 - PÖLYNIMURIT</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">24.9</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">1</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">212</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P51</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">KENGÄNKUIVAAJA 2 PARIN</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037756160</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">115 - LÄMMITTIMET</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">23.9</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">4</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">710</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">12</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P1091C</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">PAISTOMITTARI LANGATON</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037757075</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">118 - LÄMPÖMITTARIT</ss:Data></Cell>
+     <Cell ss:StyleID="s30"><Data ss:Type="Number">12.95</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">10</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">1725</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P8426D</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">LÄMPÖ/SAUNAMITARI 2 LÄHETINTÄ</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037751035</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">118 - LÄMPÖMITTARIT</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">16.9</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">10</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">916</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P8434</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">LÄMPÖMITTARI LANGATON</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037753060</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">118 - LÄMPÖMITTARIT</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">8.95</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">10</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">538</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P8437</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">LÄMPÖMITTARI SIS/ULKO</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037753282</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">118 - LÄMPÖMITTARIT</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">4.8</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">10</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">1946</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P8450</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">LÄMPÖMITTARI ULKO/KOSTEUS</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037757181</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">118 - LÄMPÖMITTARIT</ss:Data></Cell>
+     <Cell ss:StyleID="s30"><Data ss:Type="Number">5.95</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">10</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">1936</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P8451</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">LÄMPÖMITTARI ULKO/KOSTEUS</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037756627</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">118 - LÄMPÖMITTARIT</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">8.95</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">10</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">724</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P8460</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">LÄMPÖMITTARI INFRAPUNA</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037756979</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">118 - LÄMPÖMITTARIT</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">8.9</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">10</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">653</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">PE410</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">TARKASTUSKAMERA</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037751714</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">120 - KAMERAT</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">39</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">5</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">83</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">PE411C</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">TARKASTUSKAMERA WIFI</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037754920</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">120 - KAMERAT</ss:Data></Cell>
+     <Cell ss:StyleID="s30"><Data ss:Type="Number">29</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">45</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">151</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">PE1000B</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">VERKKOLAITE 1000MA 3-12V</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037751448</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">122 - SÄHKÖTARV</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">8.5</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">10</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">145</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">LA4</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">LAMINOINTILAITE LA4Q</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">8717448053940</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">124 - TOIMISTO</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">15.9</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">6</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">145</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">LA4KALVO</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">LAMINOINTIKALVO A4 100KPL 125 MICRO</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">8717448005710</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">124 - TOIMISTO</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">11.5</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">10</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">247</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">S056D</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">PAPERISILPPURI CANCUN</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">8717448029310</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">124 - TOIMISTO</ss:Data></Cell>
+     <Cell ss:StyleID="s30"><Data ss:Type="Number">19.9</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">4</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">38</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P309B</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">KEITTIÖVAAKA KULHOLLA 5KG/1G</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037750045</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">140 - VAA'AT</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">8.9</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">10</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">634</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P8029B</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">KEITTIÖVAAKA VALKOINEN LASI</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037751240</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">140 - VAA'AT</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">7.9</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">10</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">229</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P804</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">HENKILÖVAAKA LASI PREGO P-804</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037750380</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">140 - VAA'AT</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">7.5</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">8</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">429</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P805B</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">HENKILÖVAAKA LASI MUSTA</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037750731</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">140 - VAA'AT</ss:Data></Cell>
+     <Cell ss:StyleID="s30"><Data ss:Type="Number">7.9</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">6</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">29</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P811C</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">HENKILÖVAAKA TERÄKSINEN</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037753893</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">140 - VAA'AT</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">9.9</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">6</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">42</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P811C2L</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">HENKILÖVAAKA TERÄKSINEN 2 LUOKKA</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037753893</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">140 - VAA'AT</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">4.9</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">6</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">218</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P819</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">TAVARAVAAKA MAKS 40KG  5G</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037755989</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">140 - VAA'AT</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">29.9</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">6</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">379</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">PM007</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">NISKAHIERONTALAITE</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037757990</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">150 - HIERONTA</ss:Data></Cell>
+     <Cell ss:StyleID="s30"><Data ss:Type="Number">20.9</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">8</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">154</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">PM038</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">ILMAKOMPRESSORILAITE JALALLE</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037757570</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">150 - HIERONTA</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">29</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">4</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">638</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">PM706</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">LIHASHUOLTOVASARA PIENI</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037757303</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">150 - HIERONTA</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">14.9</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">5</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">620</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">20</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P6208</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">KUUMEMITTARI DIGI.</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">30.8</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037750281</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">151 - TERVEYS</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">2.4</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">12</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">1816</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">3168</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">24</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">PM016</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">KIVUNLIEVITTÄJÄ</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037754715</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">151 - TERVEYS</ss:Data></Cell>
+     <Cell ss:StyleID="s30"><Data ss:Type="Number">16.8</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">10</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">PM016E</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">KAKSI VARA ELEKTRODIPARIA PM016</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037754937</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">151 - TERVEYS</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">6.5</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">5</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">630</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">PM021E</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">VARA ELEKTRODIPARI X 2 PM021</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037756849</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">151 - TERVEYS</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">6.5</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">20</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">515</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">PM023</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">KIVUNLIEVITTÄJÄ</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">10.9</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037757556</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">151 - TERVEYS</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">22.5</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">6</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">1002</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">54</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">PM023E</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">VARAELEKTRODIPARI  X 2 PM023 KIVUNL</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037757945</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">151 - TERVEYS</ss:Data></Cell>
+     <Cell ss:StyleID="s30"><Data ss:Type="Number">6.5</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">10</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">430</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">PM848C</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">VERENPAINEMITTARI KÄSIVARSIMALLI</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037752957</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">151 - TERVEYS</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">14.9</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">10</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">PS42</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">HAMMASHARJA LADATTAVA PULS</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037757068</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">152 - SUUN TERVEYS</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">11.95</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">5</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">85</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">PS44</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">VARAHARJAT 4 KPL HAMMASHARJAAN</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037753497</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">152 - SUUN TERVEYS</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">2.95</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">20</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">4940</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">PS45</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">VARAHARJAT ERIKOIS 4 KPL HAMMASHARJ</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037753503</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">152 - SUUN TERVEYS</ss:Data></Cell>
+     <Cell ss:StyleID="s30"><Data ss:Type="Number">1.95</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">20</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">2974</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">PS46</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">VARAHARJAT 4 KPL LASTEN</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037754555</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">152 - SUUN TERVEYS</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">2.95</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">20</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">3780</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">PB7061C</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">HIUSTENKUIVAAJA 2000W IONIC</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037752827</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">200 - HIUSTENKUIVAIM</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">11.9</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">10</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">1046</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">6</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">PB7071</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">HIUSTENKUIVAAJA IONIC BLDC</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037757365</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">200 - HIUSTENKUIVAIM</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">39</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">4</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">98</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">PB7072</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">HIUSTENKUIVAAJA 2300W IONIC</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037757778</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">200 - HIUSTENKUIVAIM</ss:Data></Cell>
+     <Cell ss:StyleID="s30"><Data ss:Type="Number">13.5</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">6</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">1473</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">PB7073</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">ILMAKIHARRIN/KUIVAIN BLDC 5 IN 1</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">10.9</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037757938</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">200 - HIUSTENKUIVAIM</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">39</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">4</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">200</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">58</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">PB7048</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">KIHARRIN / SUORISTUSRAUTA</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037756092</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">201 - SUORISTAJAT</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">13.5</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">6</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">366</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">PB7049</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">KIHARRIN / SUORISTIN</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037755699</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">201 - SUORISTAJAT</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">9.9</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">6</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">1022</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">PB7055</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">SUORISTUSRAUTA</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037757051</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">201 - SUORISTAJAT</ss:Data></Cell>
+     <Cell ss:StyleID="s30"><Data ss:Type="Number">10.9</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">5</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">171</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">PB7059</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">HIUSTENSUORISTAJA LADATTAVA</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">30.9</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037757143</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">201 - SUORISTAJAT</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">15.9</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">10</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">1020</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">50</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">PB2695C</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">KIHARRIN 19MM 2 IN 1</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037750809</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">202 - KIHARTIMET</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">7.9</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">12</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">1088</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">12</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">PB2696B</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">KIHARRIN 32MM KERAAMINEN</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037752858</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">202 - KIHARTIMET</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">9.5</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">6</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">28</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">PB2698</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">HIUSTEN LAINERAUTA SÄÄDETTÄVÄ</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037756542</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">202 - KIHARTIMET</ss:Data></Cell>
+     <Cell ss:StyleID="s30"><Data ss:Type="Number">16.9</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">4</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">1044</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">24</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">PB7058</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">ILMAKIHARRIN KOLMELLA HARJAPÄÄLLÄ</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037757136</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">203 - ILMAKIHARTIMET</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">15.9</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">6</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">1625</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P280D</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">LEMMIKKIELÄINTRIMMERI</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">30.11</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037750595</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">205 - HIUSTENLEIKKUU</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">13.5</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">12</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">102</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">2004</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">18</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P293</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">HIUSTENLEIKKUUKONE LADATTAVA</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037757242</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">205 - HIUSTENLEIKKUU</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">13.9</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">6</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">546</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P295</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">HIUSTENLEIKKUUKONE</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037757723</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">205 - HIUSTENLEIKKUU</ss:Data></Cell>
+     <Cell ss:StyleID="s30"><Data ss:Type="Number">7.9</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">6</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">348</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">12</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">P298</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">LEMMIKKIELÄINTRIMMERI 4 IN 1</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037757266</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">205 - HIUSTENLEIKKUU</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">16.5</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">12</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">1819</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">PB4916</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">HYGIENIATRIMMERI</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037756221</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">205 - HIUSTENLEIKKUU</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">3.5</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">20</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">98</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">PB4918</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">HYGIENIATRIMMERI 2 IN 1</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037757020</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">205 - HIUSTENLEIKKUU</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">7.95</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">6</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">631</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">6</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">PB713</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">PARRANAJOKONE LADATTAVA</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037756474</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">206 - PARTAKONEET</ss:Data></Cell>
+     <Cell ss:StyleID="s30"><Data ss:Type="Number">15.9</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">6</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">472</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">PB715</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">PARRANAJOKONE PB715</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037757174</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">206 - PARTAKONEET</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">11.9</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">6</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">437</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">6</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">PB716</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">PARRANAJOKONE PB716</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037758089</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">206 - PARTAKONEET</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">17.9</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">5</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">1553</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">5</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">PB761</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">PARTA- / SÄNKITRIMMERI LADATTAVA</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037757358</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">206 - PARTAKONEET</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">9.5</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">6</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">434</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">PA205</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">RADIO FM BLUETOOTH</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037756740</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">500 - RADIOT</ss:Data></Cell>
+     <Cell ss:StyleID="s30"><Data ss:Type="Number">15.9</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">6</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">1712</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">PA114</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">KELLORADIO PROJEKTORILLA</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037757457</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">505 - KELLORADIOT</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">14.9</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">10</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">469</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">PA442B</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">ULKOANTENNI UHF 38 ELEMENTTIÄ</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">20.10</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037756566</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">530 - ANTENNIT</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">26.9</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">4</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">820</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">8</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">PA705</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">SISÄ/ULKOANTENNI VAHVISTIMELLA</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">20.10</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037751530</ss:Data></Cell>
+     <Cell ss:StyleID="s23"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">530 - ANTENNIT</ss:Data></Cell>
+     <Cell ss:StyleID="s29"><Data ss:Type="Number">22.9</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">5</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">350</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s23"><Data ss:Type="Number">18</Data></Cell>
+
+    </Row>
+    <Row ss:Height="12.75">
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">PA708</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">SISÄANTENNI VAHVISTIMELLA</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40"> </ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">6430037754234</ss:Data></Cell>
+     <Cell ss:StyleID="s24"><ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">530 - ANTENNIT</ss:Data></Cell>
+     <Cell ss:StyleID="s30"><Data ss:Type="Number">13.9</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">10</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">1280</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+     <Cell ss:StyleID="s24"><Data ss:Type="Number">0</Data></Cell>
+
+    </Row>
+  </Table> 
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel"> 
+   <Selected/> 
+   <Panes> 
+    <Pane> 
+     <Number>3</Number> 
+     <ActiveRow>10000</ActiveRow> 
+     <ActiveCol>100</ActiveCol> 
+    </Pane> 
+   </Panes> 
+   <ProtectObjects>False</ProtectObjects> 
+   <ProtectScenarios>False</ProtectScenarios> 
+  </WorksheetOptions> 
+ </Worksheet> 
+</Workbook> 

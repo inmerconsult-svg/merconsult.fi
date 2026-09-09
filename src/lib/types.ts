@@ -1,0 +1,87 @@
+export type Product = {
+  sku: string;
+  ean: string | null;
+  nameFi: string;
+  nameEn: string;
+  nameSv: string;
+  nameNo: string;
+  nameEt: string;
+  categoryCode: string;
+  categoryFi: string;
+  categoryEn: string;
+  categorySv: string;
+  categoryNo: string;
+  categoryEt: string;
+  group: string;
+  netPrice: number;
+  cartonQty: number;
+  stock: number;
+  incoming: number;
+  reserved: number;
+  backorder: number;
+  eta: string | null;
+  active: boolean;
+  imageUrl: string | null;
+  datasheetUrl: string | null;
+  featuresFi: string[];
+  featuresEn: string[];
+  featuresSv: string[];
+  featuresNo: string[];
+  featuresEt: string[];
+};
+
+export type Profile = {
+  userId: string;
+  email: string;
+  displayName: string;
+  role: "pending" | "customer" | "admin";
+  companyName: string;
+  vatNumber: string;
+  phone: string;
+  addressLine: string;
+  postalCode: string;
+  city: string;
+  country: string;
+  language: string;
+  createdAt: string;
+  approvedAt: string | null;
+};
+
+export type OrderItem = {
+  id: number;
+  sku: string;
+  name: string;
+  ean: string | null;
+  qty: number;
+  cartonQty: number;
+  unitPrice: number;
+  lineTotal: number;
+  preorder: boolean;
+};
+
+export type Order = {
+  id: number;
+  orderNo: string;
+  userId: string;
+  status: string;
+  companyName: string;
+  vatNumber: string;
+  email: string;
+  phone: string;
+  poNumber: string;
+  notes: string;
+  deliveryName: string;
+  deliveryAddress: string;
+  deliveryPostal: string;
+  deliveryCity: string;
+  deliveryCountry: string;
+  reverseCharge: boolean;
+  netTotal: number;
+  vatRate: number;
+  vatTotal: number;
+  grandTotal: number;
+  createdAt: string;
+  items: OrderItem[];
+};
+
+export type CartLine = { sku: string; qty: number };

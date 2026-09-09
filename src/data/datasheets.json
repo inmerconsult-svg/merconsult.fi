@@ -1,0 +1,4582 @@
+[
+  {
+    "sku": "P041",
+    "imageUrl": "/images/products/P041.jpg",
+    "datasheetUrl": "/datasheets/P041.pdf",
+    "featuresFi": [
+      "Höyrypaine 3,0 - 3,5 Bar",
+      "Lämpötila 102°C",
+      "Teho 1200W",
+      "8 lisäosaa",
+      "Vesisäiliö, 400ml",
+      "Käyttöaika 11min. kerralla"
+    ],
+    "featuresEn": [
+      "Steam pressure 3.0–3.5 bar",
+      "Temperature 102°C",
+      "Power 1200W",
+      "8 accessories",
+      "Water tank 400 ml",
+      "Runtime 11 min per fill"
+    ],
+    "featuresSv": [
+      "Ångtryck 3,0–3,5 bar",
+      "Temperatur 102°C",
+      "Effekt 1200W",
+      "8 tillbehör",
+      "Vattentank 400 ml",
+      "11 min per fyllning"
+    ],
+    "featuresNo": [
+      "Damptrykk 3,0–3,5 bar",
+      "Temperatur 102°C",
+      "Effekt 1200W",
+      "8 tilbehør",
+      "Vanntank 400 ml",
+      "11 min per fylling"
+    ],
+    "featuresEt": [
+      "Aururõhk 3,0–3,5 bar",
+      "Temperatuur 102°C",
+      "Võimsus 1200W",
+      "8 lisaseadet",
+      "Veepaak 400 ml",
+      "Tööaeg 11 min täite kohta"
+    ]
+  },
+  {
+    "sku": "P1014",
+    "imageUrl": "/images/products/P1014.jpg",
+    "datasheetUrl": "/datasheets/P1014.pdf",
+    "featuresFi": [
+      "Ladattava rikkaimuri",
+      "Toimintaaika jopa 15 minuuttia yhdellä latauksella",
+      "7,2V / 45W",
+      "Paketti sisältää verkkolaturin, 12V autokaapelin, harjan sekä kapea imusuulakkeen"
+    ],
+    "featuresEn": [
+      "Rechargeable handheld vacuum",
+      "Up to 15 minutes per charge",
+      "7,2V / 45W",
+      "Includes mains charger, 12 V car cable, brush and crevice nozzle"
+    ],
+    "featuresSv": [
+      "Uppladdningsbar handdammsugare",
+      "Upp till 15 minuter per laddning",
+      "7,2V / 45W",
+      "Inkl. nätladdare, 12 V-bilkabel, borste och springmunstycke"
+    ],
+    "featuresNo": [
+      "Oppladbar håndstøvsuger",
+      "Inntil 15 minutter per lading",
+      "7,2V / 45W",
+      "Inkl. nettlader, 12 V-bilkabel, børste og smalt munnstykke"
+    ],
+    "featuresEt": [
+      "Laetav käsitsi tolmuimeja",
+      "Kuni 15 minutit ühe laadimisega",
+      "7,2V / 45W",
+      "Komplektis vooluvõrgu laadija, 12 V autokaabel, hari ja piluotsik"
+    ]
+  },
+  {
+    "sku": "P1018",
+    "imageUrl": "/images/products/P1018.jpg",
+    "datasheetUrl": "/datasheets/P1018.pdf",
+    "featuresFi": [
+      "Ladattava rikkaimuri sekä märkä että kuiva imurointiin",
+      "Toimintaaika 18 -20 minuuttia yhdellä latauksella",
+      "Litiumioniakku 2 x 3,7V 2000mAh",
+      "Moottori: 7,4V / 40W, imuteho 2,8Kpa",
+      "Pölysäiliö 500ml",
+      "Punainen latausvalo, vihreä valo kun ladattu valmiiksi",
+      "Paketti sisältää verkkolaturin, latausalusta, vesi- sekä kapea imusuulakkeen",
+      "Latausalustan voi myös asentaa kätevästi seinälle",
+      "Suulakkeet saa kätevästi varastoitua imurin kahvaosaan"
+    ],
+    "featuresEn": [
+      "Rechargeable wet & dry handheld vacuum",
+      "18–20 minutes per charge",
+      "Li-ion 2 × 3.7 V 2000 mAh",
+      "Motor 7.4 V / 40 W, suction 2.8 kPa",
+      "Dust bin 500 ml",
+      "Red while charging, green when full",
+      "Includes mains charger, charging dock, wet and crevice nozzles",
+      "Dock can also be wall-mounted",
+      "Nozzles store in the handle"
+    ],
+    "featuresSv": [
+      "Uppladdningsbar våt & torr handdammsugare",
+      "18–20 minuter per laddning",
+      "Li-ion 2 × 3,7 V 2000 mAh",
+      "Motor 7,4 V / 40 W, sug 2,8 kPa",
+      "Dammtank 500 ml",
+      "Rött under laddning, grönt när full",
+      "Inkl. nätladdare, laddställ, vatten- och springmunstycke",
+      "Laddstället kan även väggmonteras",
+      "Munstycken förvaras i handtaget"
+    ],
+    "featuresNo": [
+      "Oppladbar våt & tørr håndstøvsuger",
+      "18–20 minutter per lading",
+      "Li-ion 2 × 3,7 V 2000 mAh",
+      "Motor 7,4 V / 40 W, sug 2,8 kPa",
+      "Støvbeholder 500 ml",
+      "Rødt under lading, grønt når full",
+      "Inkl. nettlader, ladestativ, vann- og smalt munnstykke",
+      "Ladestativet kan også veggmonteres",
+      "Munnstykker oppbevares i håndtaket"
+    ],
+    "featuresEt": [
+      "Laetav märg ja kuiv käsitsi tolmuimeja",
+      "18–20 minutit ühe laadimisega",
+      "Li-ion 2 × 3,7 V 2000 mAh",
+      "Mootor 7,4 V / 40 W, imemine 2,8 kPa",
+      "Tolmukoguja 500 ml",
+      "Punane laadimisel, roheline kui täis",
+      "Komplektis vooluvõrgu laadija, laadimisalus, vee- ja piluotsik",
+      "Laadimisaluse saab ka seinale panna",
+      "Otsikud mahuvad käepidemesse"
+    ]
+  },
+  {
+    "sku": "P1045C",
+    "imageUrl": "/images/products/P1045C.jpg",
+    "datasheetUrl": "/datasheets/P1045C.pdf",
+    "featuresFi": [
+      "1500W",
+      "Keittolevyn halkaisija 190mm",
+      "Merkkivalo",
+      "Lämpösulake"
+    ],
+    "featuresEn": [
+      "1500W",
+      "Hot-plate diameter 190 mm",
+      "Indicator light",
+      "Thermal fuse"
+    ],
+    "featuresSv": [
+      "1500W",
+      "Plattans diameter 190 mm",
+      "Indikatorlampa",
+      "Termosäkring"
+    ],
+    "featuresNo": [
+      "1500W",
+      "Platens diameter 190 mm",
+      "Indikatorlampe",
+      "Termosikring"
+    ],
+    "featuresEt": [
+      "1500W",
+      "Plaadi läbimõõt 190 mm",
+      "Märgutuli",
+      "Termokaitse"
+    ]
+  },
+  {
+    "sku": "P1047",
+    "imageUrl": "/images/products/P1047.jpg",
+    "datasheetUrl": "/datasheets/P1047.pdf",
+    "featuresFi": [
+      "Teho 1800W",
+      "Keittolevyn halkaisija 190mm",
+      "7 eri keitto/paisto ohjelmaa",
+      "Säädettävä teho ja lämpötila"
+    ],
+    "featuresEn": [
+      "Power 1800W",
+      "Hot-plate diameter 190 mm",
+      "7 cooking/frying programmes",
+      "Adjustable power and temperature"
+    ],
+    "featuresSv": [
+      "Effekt 1800W",
+      "Plattans diameter 190 mm",
+      "7 kok-/stekprogram",
+      "Ställbar effekt och temperatur"
+    ],
+    "featuresNo": [
+      "Effekt 1800W",
+      "Platens diameter 190 mm",
+      "7 koke-/stekkeprogrammer",
+      "Justerbar effekt og temperatur"
+    ],
+    "featuresEt": [
+      "Võimsus 1800W",
+      "Plaadi läbimõõt 190 mm",
+      "7 keedu-/praeprogrammi",
+      "Reguleeritav võimsus ja temperatuur"
+    ]
+  },
+  {
+    "sku": "P1048C",
+    "imageUrl": "/images/products/P1048C.jpg",
+    "datasheetUrl": "/datasheets/P1048C.pdf",
+    "featuresFi": [
+      "1500W + 1000W",
+      "Keittolevyjen halkaisijat 188mm + 156mm",
+      "Merkkivalo",
+      "Lämpösulake"
+    ],
+    "featuresEn": [
+      "1500W + 1000W",
+      "Plate diameters 188 + 156 mm",
+      "Indicator light",
+      "Thermal fuse"
+    ],
+    "featuresSv": [
+      "1500W + 1000W",
+      "Diametrar 188 + 156 mm",
+      "Indikatorlampa",
+      "Termosäkring"
+    ],
+    "featuresNo": [
+      "1500W + 1000W",
+      "Diametre 188 + 156 mm",
+      "Indikatorlampe",
+      "Termosikring"
+    ],
+    "featuresEt": [
+      "1500W + 1000W",
+      "Läbimõõdud 188 + 156 mm",
+      "Märgutuli",
+      "Termokaitse"
+    ]
+  },
+  {
+    "sku": "P1049",
+    "imageUrl": "/images/products/P1049.jpg",
+    "datasheetUrl": "/datasheets/P1049.pdf",
+    "featuresFi": [
+      "Teho 2000W + 1500W",
+      "Keittolevyjen koot 200mm + 200mm",
+      "Laitteen koko 580 x 360mm",
+      "Säädettävä teho ja lämpötila",
+      "Ajastin"
+    ],
+    "featuresEn": [
+      "Power 2000W + 1500W",
+      "Plate sizes 200 + 200 mm",
+      "Unit size 580 × 360 mm",
+      "Adjustable power and temperature",
+      "Timer"
+    ],
+    "featuresSv": [
+      "Effekt 2000W + 1500W",
+      "Storlekar 200 + 200 mm",
+      "Storlek 580 × 360 mm",
+      "Ställbar effekt och temperatur",
+      "Timer"
+    ],
+    "featuresNo": [
+      "Effekt 2000W + 1500W",
+      "Størrelser 200 + 200 mm",
+      "Størrelse 580 × 360 mm",
+      "Justerbar effekt og temperatur",
+      "Timer"
+    ],
+    "featuresEt": [
+      "Võimsus 2000W + 1500W",
+      "Suurused 200 + 200 mm",
+      "Seadme suurus 580 × 360 mm",
+      "Reguleeritav võimsus ja temperatuur",
+      "Taimer"
+    ]
+  },
+  {
+    "sku": "P1051",
+    "imageUrl": "/images/products/P1051.jpg",
+    "datasheetUrl": "/datasheets/P1051.pdf",
+    "featuresFi": [
+      "1200W",
+      "Lasisen keittolevyn halkaisija 165mm",
+      "Pinta ruostumatonta terästä",
+      "Merkkivalo",
+      "Lämpösulake"
+    ],
+    "featuresEn": [
+      "1200W",
+      "Glass plate diameter 165 mm",
+      "Stainless-steel surface",
+      "Indicator light",
+      "Thermal fuse"
+    ],
+    "featuresSv": [
+      "1200W",
+      "Glasplatta diameter 165 mm",
+      "Yta i rostfritt stål",
+      "Indikatorlampa",
+      "Termosäkring"
+    ],
+    "featuresNo": [
+      "1200W",
+      "Glassplate diameter 165 mm",
+      "Overflate i rustfritt stål",
+      "Indikatorlampe",
+      "Termosikring"
+    ],
+    "featuresEt": [
+      "1200W",
+      "Klaasplaadi läbimõõt 165 mm",
+      "Roostevaba terasest pind",
+      "Märgutuli",
+      "Termokaitse"
+    ]
+  },
+  {
+    "sku": "P1053",
+    "imageUrl": "/images/products/P1053.jpg",
+    "datasheetUrl": "/datasheets/P1053.pdf",
+    "featuresFi": [
+      "Teho 1500W",
+      "Lasisen keittolevyn halkaisija 190mm",
+      "Merkkivalo",
+      "Lämpösulake"
+    ],
+    "featuresEn": [
+      "Power 1500W",
+      "Glass plate diameter 190 mm",
+      "Indicator light",
+      "Thermal fuse"
+    ],
+    "featuresSv": [
+      "Effekt 1500W",
+      "Glasplatta diameter 190 mm",
+      "Indikatorlampa",
+      "Termosäkring"
+    ],
+    "featuresNo": [
+      "Effekt 1500W",
+      "Glassplate diameter 190 mm",
+      "Indikatorlampe",
+      "Termosikring"
+    ],
+    "featuresEt": [
+      "Võimsus 1500W",
+      "Klaasplaadi läbimõõt 190 mm",
+      "Märgutuli",
+      "Termokaitse"
+    ]
+  },
+  {
+    "sku": "P1054",
+    "imageUrl": "/images/products/P1054.jpg",
+    "datasheetUrl": "/datasheets/P1054.pdf",
+    "featuresFi": [
+      "1500W + 1000W",
+      "Lasisten keittolevyjen halkaisija 190mm + 163mm",
+      "Merkkivalo",
+      "Lämpösulake"
+    ],
+    "featuresEn": [
+      "1500W + 1000W",
+      "Glass plates 190 + 163 mm",
+      "Indicator light",
+      "Thermal fuse"
+    ],
+    "featuresSv": [
+      "1500W + 1000W",
+      "Glasplattor 190 + 163 mm",
+      "Indikatorlampa",
+      "Termosäkring"
+    ],
+    "featuresNo": [
+      "1500W + 1000W",
+      "Glassplater 190 + 163 mm",
+      "Indikatorlampe",
+      "Termosikring"
+    ],
+    "featuresEt": [
+      "1500W + 1000W",
+      "Klaasplaadid 190 + 163 mm",
+      "Märgutuli",
+      "Termokaitse"
+    ]
+  },
+  {
+    "sku": "P1090B",
+    "imageUrl": "/images/products/P1090B.jpg",
+    "datasheetUrl": "/datasheets/P1090B.pdf",
+    "featuresFi": [
+      "Sopii paistin, joulukinkun, riistan ym. paistamiseen",
+      "Ajastin",
+      "Hälytys",
+      "Magneettikiinnitys ja pöytätuki",
+      "Selkeä LCD näyttö",
+      "Helppo käyttää",
+      "Koko: 7,8 x 7,8 x 1,8cm"
+    ],
+    "featuresEn": [
+      "For roasts, Christmas ham, game and similar",
+      "Timer",
+      "Alarm",
+      "Magnetic mount and table stand",
+      "Clear LCD display",
+      "Easy to use",
+      "Koko: 7,8 x 7,8 x 1,8cm"
+    ],
+    "featuresSv": [
+      "För stek, julskinka, vilt m.m.",
+      "Timer",
+      "Larm",
+      "Magnetfäste och bordstöd",
+      "Tydlig LCD-display",
+      "Lättanvänd",
+      "Koko: 7,8 x 7,8 x 1,8cm"
+    ],
+    "featuresNo": [
+      "For stek, juleskinke, vilt m.m.",
+      "Timer",
+      "Alarm",
+      "Magnetfeste og bordstativ",
+      "Tydelig LCD-display",
+      "Enkel å bruke",
+      "Koko: 7,8 x 7,8 x 1,8cm"
+    ],
+    "featuresEt": [
+      "Praele, jõulusinkile, ulukilihale jm",
+      "Taimer",
+      "Alarm",
+      "Magnetkinnitus ja lauatoe",
+      "Selge LCD-näidik",
+      "Lihtne kasutada",
+      "Koko: 7,8 x 7,8 x 1,8cm"
+    ]
+  },
+  {
+    "sku": "P1091C",
+    "imageUrl": "/images/products/P1091C.jpg",
+    "datasheetUrl": "/datasheets/P1091C.pdf",
+    "featuresFi": [
+      "Sopii paistin, joulukinkun, riistan ym. paistamiseen",
+      "Mittausalue 0-250°C",
+      "Ajastin",
+      "Hälytys",
+      "Selkeä LCD näyttö",
+      "Helppo käyttää",
+      "Blisterpakkaus"
+    ],
+    "featuresEn": [
+      "For roasts, Christmas ham, game and similar",
+      "Range 0–250°C",
+      "Timer",
+      "Alarm",
+      "Clear LCD display",
+      "Easy to use",
+      "Blister pack"
+    ],
+    "featuresSv": [
+      "För stek, julskinka, vilt m.m.",
+      "Område 0–250°C",
+      "Timer",
+      "Larm",
+      "Tydlig LCD-display",
+      "Lättanvänd",
+      "Blisterförpackning"
+    ],
+    "featuresNo": [
+      "For stek, juleskinke, vilt m.m.",
+      "Område 0–250°C",
+      "Timer",
+      "Alarm",
+      "Tydelig LCD-display",
+      "Enkel å bruke",
+      "Blisterpakning"
+    ],
+    "featuresEt": [
+      "Praele, jõulusinkile, ulukilihale jm",
+      "Vahemik 0–250°C",
+      "Taimer",
+      "Alarm",
+      "Selge LCD-näidik",
+      "Lihtne kasutada",
+      "Blisterpakend"
+    ]
+  },
+  {
+    "sku": "P1109",
+    "imageUrl": "/images/products/P1109.jpg",
+    "datasheetUrl": "/datasheets/P1109.pdf",
+    "featuresFi": [
+      "Säädettävä termostaatti 35°C - 70°C",
+      "Säädettävä aika 10min. - 48t",
+      "Viisi tasoa, halkaisija 32cm",
+      "Voidaan kuivattaa myös lihaa ja kalaa",
+      "Teho 245W"
+    ],
+    "featuresEn": [
+      "Adjustable thermostat 35–70°C",
+      "Timer 10 min–48 h",
+      "Five trays, 32 cm diameter",
+      "Also suitable for meat and fish",
+      "Power 245W"
+    ],
+    "featuresSv": [
+      "Ställbar termostat 35–70°C",
+      "Timer 10 min–48 t",
+      "Fem brickor, diameter 32 cm",
+      "Även för kött och fisk",
+      "Effekt 245W"
+    ],
+    "featuresNo": [
+      "Justerbar termostat 35–70°C",
+      "Timer 10 min–48 t",
+      "Fem brett, diameter 32 cm",
+      "Også for kjøtt og fisk",
+      "Effekt 245W"
+    ],
+    "featuresEt": [
+      "Reguleeritav termostaat 35–70°C",
+      "Taimer 10 min–48 t",
+      "Viis riiulit, läbimõõt 32 cm",
+      "Sobib ka liha ja kala kuivatamiseks",
+      "Võimsus 245W"
+    ]
+  },
+  {
+    "sku": "P1118",
+    "imageUrl": "/images/products/P1118.jpg",
+    "datasheetUrl": "/datasheets/P1118.pdf",
+    "featuresFi": [
+      "22,2V 6 x 2000mAh litiumioni akku, latausaika 4-5t",
+      "Käyttöaika 12.5min, 21min, 35min riippuen millä teholla imuria käyttää",
+      "Imuteho 22 - 8kpa riippuen millä teholla imuria käyttää",
+      "Teho 250W",
+      "Pölysäiliö 1,0l",
+      "Hepa suodatin",
+      "Seinäteline + laturi",
+      "Lattia/mattosuulake valolla",
+      "Pitkä rakosuulake",
+      "2/1 tekstiilisuulake"
+    ],
+    "featuresEn": [
+      "22.2 V 6 × 2000 mAh Li-ion, 4–5 h charge",
+      "Runtime 12.5 / 21 / 35 min depending on power level",
+      "Suction 22–8 kPa depending on mode",
+      "Power 250W",
+      "Dust bin 1.0 L",
+      "HEPA filter",
+      "Wall mount + charger",
+      "Floor/carpet nozzle with light",
+      "Long crevice nozzle",
+      "2-in-1 upholstery nozzle"
+    ],
+    "featuresSv": [
+      "22,2 V 6 × 2000 mAh Li-ion, 4–5 tim laddning",
+      "Drifttid 12,5 / 21 / 35 min beroende på effekt",
+      "Sugeffekt 22–8 kPa beroende på läge",
+      "Effekt 250W",
+      "Dammtank 1,0 L",
+      "HEPA-filter",
+      "Väggfäste + laddare",
+      "Golv-/mattmunstycke med ljus",
+      "Långt springmunstycke",
+      "2-i-1 textilmunstycke"
+    ],
+    "featuresNo": [
+      "22,2 V 6 × 2000 mAh Li-ion, 4–5 t lading",
+      "Driftstid 12,5 / 21 / 35 min avhengig av effekt",
+      "Sugeeffekt 22–8 kPa avhengig av modus",
+      "Effekt 250W",
+      "Støvbeholder 1,0 L",
+      "HEPA-filter",
+      "Veggfeste + lader",
+      "Gulv-/teppe munnstykke med lys",
+      "Langt smalt munnstykke",
+      "2-i-1 tekstilmunnstykke"
+    ],
+    "featuresEt": [
+      "22,2 V 6 × 2000 mAh Li-ion, 4–5 t laadimine",
+      "Tööaeg 12,5 / 21 / 35 min sõltuvalt võimsusest",
+      "Imemisvõimsus 22–8 kPa sõltuvalt režiimist",
+      "Võimsus 250W",
+      "Tolmukoguja 1,0 L",
+      "HEPA-filter",
+      "Seinakinnitus + laadija",
+      "Põranda-/vaibaotsik valgustusega",
+      "Pikk piluotsik",
+      "2-ühes tekstiiliotsik"
+    ]
+  },
+  {
+    "sku": "P114B",
+    "imageUrl": "/images/products/P114B.jpg",
+    "datasheetUrl": "/datasheets/P114B.pdf",
+    "featuresFi": [
+      "Teho 1500W",
+      "2 reikälevyä + makkarasuutin + kebbesuutin",
+      "Peruutustoiminto"
+    ],
+    "featuresEn": [
+      "Power 1500W",
+      "2 grinding plates + sausage and kebbe nozzles",
+      "Reverse function"
+    ],
+    "featuresSv": [
+      "Effekt 1500W",
+      "2 malplåtar + korv- och kebbemunstycke",
+      "Backfunktion"
+    ],
+    "featuresNo": [
+      "Effekt 1500W",
+      "2 maleplater + pølse- og kebbemunnstykke",
+      "Reversfunksjon"
+    ],
+    "featuresEt": [
+      "Võimsus 1500W",
+      "2 restplaati + vorsti- ja kebbeotsik",
+      "Tagasikäik"
+    ]
+  },
+  {
+    "sku": "P1191",
+    "imageUrl": "/images/products/P1191.jpg",
+    "datasheetUrl": "/datasheets/P1191.pdf",
+    "featuresFi": [
+      "0,8L",
+      "800W",
+      "Johdoton",
+      "Harjattu ruostumatonta terästä/musta"
+    ],
+    "featuresEn": [
+      "0,8L",
+      "800W",
+      "Cordless",
+      "Brushed stainless steel / black"
+    ],
+    "featuresSv": [
+      "0,8L",
+      "800W",
+      "Sladdlös",
+      "Borstat rostfritt stål / svart"
+    ],
+    "featuresNo": [
+      "0,8L",
+      "800W",
+      "Trådløs",
+      "Børstet rustfritt stål / svart"
+    ],
+    "featuresEt": [
+      "0,8L",
+      "800W",
+      "Juhtmeta",
+      "Harjatud roostevaba teras / must"
+    ]
+  },
+  {
+    "sku": "P1196",
+    "imageUrl": "/images/products/P1196.jpg",
+    "datasheetUrl": "/datasheets/P1196.pdf",
+    "featuresFi": [
+      "1,0L",
+      "2000W",
+      "Johdoton",
+      "Ruostumatonta terästä"
+    ],
+    "featuresEn": [
+      "1,0L",
+      "2000W",
+      "Cordless",
+      "Stainless steel"
+    ],
+    "featuresSv": [
+      "1,0L",
+      "2000W",
+      "Sladdlös",
+      "Rostfritt stål"
+    ],
+    "featuresNo": [
+      "1,0L",
+      "2000W",
+      "Trådløs",
+      "Rustfritt stål"
+    ],
+    "featuresEt": [
+      "1,0L",
+      "2000W",
+      "Juhtmeta",
+      "Roostevaba teras"
+    ]
+  },
+  {
+    "sku": "P119B",
+    "imageUrl": "/images/products/P119B.jpg",
+    "datasheetUrl": "/datasheets/P119B.pdf",
+    "featuresFi": [
+      "Säädettävä paksuus, maksimipaksuus 15mm",
+      "Terä 170mm ruostumatonta terästä",
+      "Kokoontaitettava, mahtuu pieneen tilaan"
+    ],
+    "featuresEn": [
+      "Adjustable thickness, max 15 mm",
+      "170 mm stainless-steel blade",
+      "Folds away to save space"
+    ],
+    "featuresSv": [
+      "Ställbar tjocklek, max 15 mm",
+      "170 mm kniv i rostfritt stål",
+      "Hopfällbar, tar liten plats"
+    ],
+    "featuresNo": [
+      "Justerbar tykkelse, maks 15 mm",
+      "170 mm blad i rustfritt stål",
+      "Sammenleggbar, tar liten plass"
+    ],
+    "featuresEt": [
+      "Reguleeritav paksus, maks 15 mm",
+      "170 mm roostevaba tera",
+      "Kokkupandav, võtab vähe ruumi"
+    ]
+  },
+  {
+    "sku": "P126",
+    "imageUrl": "/images/products/P126.jpg",
+    "datasheetUrl": "/datasheets/P126.pdf",
+    "featuresFi": [
+      "Säädettävä paksuus, maksimipaksuus 15mm",
+      "Terä 190mm ruostumatonta terästä",
+      "Runko alumiinia",
+      "Tehokas 200W",
+      "Jaloissa tehokkaat imukupit",
+      "Koko: 36 x 28 x 28cm"
+    ],
+    "featuresEn": [
+      "Adjustable thickness, max 15 mm",
+      "190 mm stainless-steel blade",
+      "Aluminium body",
+      "Powerful 200W",
+      "Strong suction-cup feet",
+      "Koko: 36 x 28 x 28cm"
+    ],
+    "featuresSv": [
+      "Ställbar tjocklek, max 15 mm",
+      "190 mm kniv i rostfritt stål",
+      "Stomme i aluminium",
+      "Kraftfull 200W",
+      "Kraftiga sugkoppsben",
+      "Koko: 36 x 28 x 28cm"
+    ],
+    "featuresNo": [
+      "Justerbar tykkelse, maks 15 mm",
+      "190 mm blad i rustfritt stål",
+      "Kropp i aluminium",
+      "Kraftig 200W",
+      "Kraftige sugekoppføtter",
+      "Koko: 36 x 28 x 28cm"
+    ],
+    "featuresEt": [
+      "Reguleeritav paksus, maks 15 mm",
+      "190 mm roostevaba tera",
+      "Alumiiniumist kere",
+      "Võimas 200W",
+      "Tugevad iminappjalad",
+      "Koko: 36 x 28 x 28cm"
+    ]
+  },
+  {
+    "sku": "P214",
+    "imageUrl": "/images/products/P214.jpg",
+    "datasheetUrl": "/datasheets/P214.pdf",
+    "featuresFi": [
+      "2-leivän paahdin",
+      "Pysäytyspainike",
+      "Säädettävä paahdinaste",
+      "Murukotelo",
+      "Teho 700W"
+    ],
+    "featuresEn": [
+      "2-slice toaster",
+      "Stop button",
+      "Adjustable browning",
+      "Crumb tray",
+      "Power 700W"
+    ],
+    "featuresSv": [
+      "2-skivors brödrost",
+      "Stoppknapp",
+      "Ställbar bryningsgrad",
+      "Smulbricka",
+      "Effekt 700W"
+    ],
+    "featuresNo": [
+      "2-skivers brødrister",
+      "Stoppknapp",
+      "Justerbar ristegrad",
+      "Smulebrett",
+      "Effekt 700W"
+    ],
+    "featuresEt": [
+      "2-viiluline röster",
+      "Stoppnupp",
+      "Reguleeritav pruunistus",
+      "Purualus",
+      "Võimsus 700W"
+    ]
+  },
+  {
+    "sku": "P215",
+    "imageUrl": "/images/products/P215.jpg",
+    "datasheetUrl": "/datasheets/P215.pdf",
+    "featuresFi": [
+      "2-leivän paahdin",
+      "Pysäytyspainike",
+      "Sulatuspainike",
+      "Säädettävä paahdinaste",
+      "Murukotelo",
+      "Teho 700W"
+    ],
+    "featuresEn": [
+      "2-slice toaster",
+      "Stop button",
+      "Defrost button",
+      "Adjustable browning",
+      "Crumb tray",
+      "Power 700W"
+    ],
+    "featuresSv": [
+      "2-skivors brödrost",
+      "Stoppknapp",
+      "Upptiningsknapp",
+      "Ställbar bryningsgrad",
+      "Smulbricka",
+      "Effekt 700W"
+    ],
+    "featuresNo": [
+      "2-skivers brødrister",
+      "Stoppknapp",
+      "Opptinningsknapp",
+      "Justerbar ristegrad",
+      "Smulebrett",
+      "Effekt 700W"
+    ],
+    "featuresEt": [
+      "2-viiluline röster",
+      "Stoppnupp",
+      "Sulatamisnupp",
+      "Reguleeritav pruunistus",
+      "Purualus",
+      "Võimsus 700W"
+    ]
+  },
+  {
+    "sku": "P216",
+    "imageUrl": "/images/products/P216.jpg",
+    "datasheetUrl": "/datasheets/P216.pdf",
+    "featuresFi": [
+      "2-leivän paahdin",
+      "Pysäytyspainike",
+      "Sulatuspainike",
+      "Uudelleen paahtamispainike",
+      "Säädettävä paahdinaste",
+      "Murukotelo",
+      "Teho 700W"
+    ],
+    "featuresEn": [
+      "2-slice toaster",
+      "Stop button",
+      "Defrost button",
+      "Reheat button",
+      "Adjustable browning",
+      "Crumb tray",
+      "Power 700W"
+    ],
+    "featuresSv": [
+      "2-skivors brödrost",
+      "Stoppknapp",
+      "Upptiningsknapp",
+      "Uppvärmningsknapp",
+      "Ställbar bryningsgrad",
+      "Smulbricka",
+      "Effekt 700W"
+    ],
+    "featuresNo": [
+      "2-skivers brødrister",
+      "Stoppknapp",
+      "Opptinningsknapp",
+      "Oppvarmingsknapp",
+      "Justerbar ristegrad",
+      "Smulebrett",
+      "Effekt 700W"
+    ],
+    "featuresEt": [
+      "2-viiluline röster",
+      "Stoppnupp",
+      "Sulatamisnupp",
+      "Soojendusnupp",
+      "Reguleeritav pruunistus",
+      "Purualus",
+      "Võimsus 700W"
+    ]
+  },
+  {
+    "sku": "P219B",
+    "imageUrl": "/images/products/P219B.jpg",
+    "datasheetUrl": "/datasheets/P219B.pdf",
+    "featuresFi": [
+      "2-leivän paahdin",
+      "Pysäytyspainike",
+      "Säädettävä paahdinaste",
+      "Murukotelo",
+      "Teho 700W"
+    ],
+    "featuresEn": [
+      "2-slice toaster",
+      "Stop button",
+      "Adjustable browning",
+      "Crumb tray",
+      "Power 700W"
+    ],
+    "featuresSv": [
+      "2-skivors brödrost",
+      "Stoppknapp",
+      "Ställbar bryningsgrad",
+      "Smulbricka",
+      "Effekt 700W"
+    ],
+    "featuresNo": [
+      "2-skivers brødrister",
+      "Stoppknapp",
+      "Justerbar ristegrad",
+      "Smulebrett",
+      "Effekt 700W"
+    ],
+    "featuresEt": [
+      "2-viiluline röster",
+      "Stoppnupp",
+      "Reguleeritav pruunistus",
+      "Purualus",
+      "Võimsus 700W"
+    ]
+  },
+  {
+    "sku": "P220B",
+    "imageUrl": "/images/products/P220B.jpg",
+    "datasheetUrl": "/datasheets/P220B.pdf",
+    "featuresFi": [
+      "2-leivän paahdin",
+      "Pysäytyspainike",
+      "Säädettävä paahdinaste",
+      "Murukotelo",
+      "Teho 700W"
+    ],
+    "featuresEn": [
+      "2-slice toaster",
+      "Stop button",
+      "Adjustable browning",
+      "Crumb tray",
+      "Power 700W"
+    ],
+    "featuresSv": [
+      "2-skivors brödrost",
+      "Stoppknapp",
+      "Ställbar bryningsgrad",
+      "Smulbricka",
+      "Effekt 700W"
+    ],
+    "featuresNo": [
+      "2-skivers brødrister",
+      "Stoppknapp",
+      "Justerbar ristegrad",
+      "Smulebrett",
+      "Effekt 700W"
+    ],
+    "featuresEt": [
+      "2-viiluline röster",
+      "Stoppnupp",
+      "Reguleeritav pruunistus",
+      "Purualus",
+      "Võimsus 700W"
+    ]
+  },
+  {
+    "sku": "P226",
+    "imageUrl": "/images/products/P226.jpg",
+    "datasheetUrl": "/datasheets/P226.pdf",
+    "featuresFi": [
+      "Automaattinen virrankatkaisu",
+      "Keraaminen pohja",
+      "Integroitu kalkinpoistojärjestelmä sekä tippalukko",
+      "Itsepuhdistava",
+      "Säädettävä lämpötila sekä höyrytoiminto",
+      "Spray sekä lisähöyrytoiminto",
+      "Johto 1,7m",
+      "Iso vesisäiliö, 280ml"
+    ],
+    "featuresEn": [
+      "automatic power-off",
+      "Ceramic soleplate",
+      "integrated descaling system and anti-drip",
+      "Self-cleaning",
+      "adjustable temperature and steam",
+      "spray and extra steam",
+      "1.7 m cord",
+      "Large 280 ml water tank"
+    ],
+    "featuresSv": [
+      "automatisk avstängning",
+      "Keramisk sula",
+      "integrerat avkalkningssystem och droppstopp",
+      "Självrengörande",
+      "ställbar temperatur och ånga",
+      "spray och extra ånga",
+      "1,7 m sladd",
+      "Stor 280 ml vattentank"
+    ],
+    "featuresNo": [
+      "automatisk avslutning",
+      "Keramisk såle",
+      "integrert avkalkingssystem og dryppstopp",
+      "Selvrensende",
+      "justerbar temperatur og damp",
+      "spray og ekstradamp",
+      "1,7 m ledning",
+      "Stor 280 ml vanntank"
+    ],
+    "featuresEt": [
+      "automaatne väljalülitus",
+      "Keraamiline tald",
+      "integreeritud katlakivieemaldus ja tilgalukk",
+      "Isepuhastuv",
+      "reguleeritav temperatuur ja aur",
+      "sprei ja lisaaur",
+      "1,7 m juhe",
+      "Suur 280 ml veepaak"
+    ]
+  },
+  {
+    "sku": "P228",
+    "imageUrl": "/images/products/P228.jpg",
+    "datasheetUrl": "/datasheets/P228.pdf",
+    "featuresFi": [
+      "Itsepuhdistava",
+      "Pohja tefloninen",
+      "Säädettävä lämpötila sekä höyrytoiminto",
+      "Spray sekä lisähöyrytoiminto",
+      "Johto 1,7m",
+      "Vesisäiliö 300ml"
+    ],
+    "featuresEn": [
+      "Self-cleaning",
+      "Teflon soleplate",
+      "adjustable temperature and steam",
+      "spray and extra steam",
+      "1.7 m cord",
+      "Water tank 300 ml"
+    ],
+    "featuresSv": [
+      "Självrengörande",
+      "Teflonsula",
+      "ställbar temperatur och ånga",
+      "spray och extra ånga",
+      "1,7 m sladd",
+      "Vattentank 300 ml"
+    ],
+    "featuresNo": [
+      "Selvrensende",
+      "Teflonsåle",
+      "justerbar temperatur og damp",
+      "spray og ekstradamp",
+      "1,7 m ledning",
+      "Vanntank 300 ml"
+    ],
+    "featuresEt": [
+      "Isepuhastuv",
+      "Teflonist tald",
+      "reguleeritav temperatuur ja aur",
+      "sprei ja lisaaur",
+      "1,7 m juhe",
+      "Veepaak 300 ml"
+    ]
+  },
+  {
+    "sku": "P238",
+    "imageUrl": "/images/products/P238.jpg",
+    "datasheetUrl": "/datasheets/P238.pdf",
+    "featuresFi": [
+      "1,3L",
+      "2000W",
+      "Johdoton",
+      "Valkoinen",
+      "Selkeä vesirajan merkkiasteikko"
+    ],
+    "featuresEn": [
+      "1,3L",
+      "2000W",
+      "Cordless",
+      "White",
+      "Clear water-level markings"
+    ],
+    "featuresSv": [
+      "1,3L",
+      "2000W",
+      "Sladdlös",
+      "Vit",
+      "Tydlig vattennivåskala"
+    ],
+    "featuresNo": [
+      "1,3L",
+      "2000W",
+      "Trådløs",
+      "Hvit",
+      "Tydelig vannivåskala"
+    ],
+    "featuresEt": [
+      "1,3L",
+      "2000W",
+      "Juhtmeta",
+      "Valge",
+      "Selge veetaseme märgistus"
+    ]
+  },
+  {
+    "sku": "P280D",
+    "imageUrl": "/images/products/P280D.jpg",
+    "datasheetUrl": "/datasheets/P280D.pdf",
+    "featuresFi": [
+      "Leikkuukorkeus säädettävissä 3, 6, 9 ja 12mm",
+      "Tarkkuussäätö 0,8 - 2,0mm",
+      "Keraaminen leikkuuterä optimoitu koirankarvoille",
+      "Irrotettava leikkauskampa",
+      "Leikkuuaika jopa 45minuuttia",
+      "Pakkaus sisältää 4 leikkuukampaa,öljy,puhdistusharja, sekä laturin"
+    ],
+    "featuresEn": [
+      "Cutting height 3, 6, 9 and 12 mm",
+      "Fine adjustment 0.8–2.0 mm",
+      "Ceramic blade optimised for dog hair",
+      "Detachable comb",
+      "Runtime up to 45 minutes",
+      "Includes 4 cutting combs, oil, cleaning brush and charger"
+    ],
+    "featuresSv": [
+      "Klipphöjd 3, 6, 9 och 12 mm",
+      "Finjustering 0,8–2,0 mm",
+      "Keramisk kniv för hundpäls",
+      "Löstagbar kam",
+      "Upp till 45 min körtid",
+      "Innehåller 4 klippkammar, olja, rengöringsborste och laddare"
+    ],
+    "featuresNo": [
+      "Klippehøyde 3, 6, 9 og 12 mm",
+      "Finjustering 0,8–2,0 mm",
+      "Keramisk blad for hundepels",
+      "Avtakbar kam",
+      "Inntil 45 min driftstid",
+      "Inkluderer 4 klippekammer, olje, rensebørste og lader"
+    ],
+    "featuresEt": [
+      "Lõikekõrgus 3, 6, 9 ja 12 mm",
+      "Peenhäälestus 0,8–2,0 mm",
+      "Keraamiline tera koerakarvadele",
+      "Eemaldatav kamm",
+      "Tööaeg kuni 45 minutit",
+      "Sisaldab 4 lõikekammi, õli, puhastusharja ja laadijat"
+    ]
+  },
+  {
+    "sku": "P291",
+    "imageUrl": "/images/products/P291.jpg",
+    "datasheetUrl": "/datasheets/P291.pdf",
+    "featuresFi": [
+      "Leikkuukorkeus säädettävissä A kampa 1,0,1,5, 2,0 – 15mm B kampa 16, 16,5, 17mm –30 mm",
+      "2 eri leikkuukampaa",
+      "Leikkuukorkeuden hienosäätö",
+      "Vesipestävä IPX6",
+      "2 × Ni-MH akku 600mAh, latausaika 8h",
+      "Leikkuuaika 45min",
+      "Latauslaite sisältyy",
+      "Pakkaus sisältää latauslaitteen, öljyn, puhdistusharjan sekä kaksi leikkuukampaa"
+    ],
+    "featuresEn": [
+      "Cutting height adjustable, comb A 1,0,1,5, 2,0 – 15mm B kampa 16, 16,5, 17mm –30 mm",
+      "2 cutting combs",
+      "Fine cutting-height adjustment",
+      "Washable IPX6",
+      "2 × Ni-MH 600 mAh, 8 h charge",
+      "Runtime 45 min",
+      "Charger included",
+      "Includes charger, oil, cleaning brush and two combs"
+    ],
+    "featuresSv": [
+      "Klipphöjd ställbar, kam A 1,0,1,5, 2,0 – 15mm B kampa 16, 16,5, 17mm –30 mm",
+      "2 klippkammar",
+      "Finjustering av klipphöjd",
+      "Tvättbar IPX6",
+      "2 × Ni-MH 600 mAh, 8 tim laddning",
+      "Körtid 45 min",
+      "Laddare medföljer",
+      "Inkl. laddare, olja, rengöringsborste och två kammar"
+    ],
+    "featuresNo": [
+      "Klippehøyde justerbar, kam A 1,0,1,5, 2,0 – 15mm B kampa 16, 16,5, 17mm –30 mm",
+      "2 klippekammer",
+      "Finjustering av klippehøyde",
+      "Vaskbar IPX6",
+      "2 × Ni-MH 600 mAh, 8 t lading",
+      "Driftstid 45 min",
+      "Lader medfølger",
+      "Inkl. lader, olje, rensebørste og to kammer"
+    ],
+    "featuresEt": [
+      "Lõikekõrgus reguleeritav, kamm A 1,0,1,5, 2,0 – 15mm B kampa 16, 16,5, 17mm –30 mm",
+      "2 lõikekammi",
+      "Lõikekõrguse peenhäälestus",
+      "Pestav IPX6",
+      "2 × Ni-MH 600 mAh, 8 t laadimine",
+      "Tööaeg 45 min",
+      "Laadija kuulub",
+      "Komplektis laadija, õli, puhastushari ja kaks kammi"
+    ]
+  },
+  {
+    "sku": "P293",
+    "imageUrl": "/images/products/P293.jpg",
+    "datasheetUrl": "/datasheets/P293.pdf",
+    "featuresFi": [
+      "Leikkuukorkeus säädettävissä 3mm, 4mm …...11mm ja 17mm, 18, …..25mm",
+      "Keraaminen sekä teräksinen terä",
+      "Kaksi leikkausnopeutta, vesipestävä IPX7",
+      "Lithium akku 1200mAh, latausaika noin 2t",
+      "Leikkuuaika noin 90min",
+      "Digitaalinäyttö (akkuvarauksen näyttö)",
+      "USB verkkovirtalaturi sisältyy",
+      "Pakkaus sisältää öljyn, puhdistusharjan sekä kaksi leikkuukampaa"
+    ],
+    "featuresEn": [
+      "Cutting height adjustable 3–11 mm and 17–25 mm",
+      "Ceramic and steel blade",
+      "Two cutting speeds, washable IPX7",
+      "Lithium 1200 mAh, ~2 h charge",
+      "Runtime about 90 min",
+      "Digital display (battery level)",
+      "USB mains charger included",
+      "Includes oil, cleaning brush and two combs"
+    ],
+    "featuresSv": [
+      "Klipp höjd ställbar 3–11 mm och 17–25 mm",
+      "Keramisk och stålklinga",
+      "Två klipphastigheter, tvättbar IPX7",
+      "Litium 1200 mAh, ca 2 tim laddning",
+      "Körtid ca 90 min",
+      "Digital display (batterinivå)",
+      "USB-nätladdare ingår",
+      "Inkl. olja, rengöringsborste och två kammar"
+    ],
+    "featuresNo": [
+      "Klippehøyde justerbar 3–11 mm og 17–25 mm",
+      "Keramisk og stålblad",
+      "To klippehastigheter, vaskbar IPX7",
+      "Litium 1200 mAh, ca 2 t lading",
+      "Driftstid ca 90 min",
+      "Digitalt display (batterinivå)",
+      "USB-nettlader medfølger",
+      "Inkl. olje, rensebørste og to kammer"
+    ],
+    "featuresEt": [
+      "Lõikekõrgus reguleeritav 3–11 mm ja 17–25 mm",
+      "Keraamiline ja terasest tera",
+      "Kaks lõikekiirust, pestav IPX7",
+      "Liitium 1200 mAh, u 2 t laadimine",
+      "Tööaeg u 90 min",
+      "Digitaalne näidik (aku tase)",
+      "USB-vooluvõrgu laadija kuulub",
+      "Komplektis õli, puhastushari ja kaks kammi"
+    ]
+  },
+  {
+    "sku": "P295",
+    "imageUrl": "/images/products/P295.jpg",
+    "datasheetUrl": "/datasheets/P295.pdf",
+    "featuresFi": [
+      "Leikkuukorkeus säädettävissä 3, 6, 9, 12mm leikkuukammoilla",
+      "Leikkuukorkeus 0,4-1,2mm ilman leikkuukampoja",
+      "Voimakas moottori",
+      "Ergonominen muotoilu",
+      "Pakkaus sisältää kamman, sakset, puhdistusharjan sekä 4 leikkuukampaa",
+      "Verkkokäyttöinen 230V"
+    ],
+    "featuresEn": [
+      "Cutting height 3, 6, 9, 12 mm with combs",
+      "0.4–1.2 mm without combs",
+      "Powerful motor",
+      "Ergonomic design",
+      "Includes comb, scissors, cleaning brush and 4 attachment combs",
+      "Mains powered 230 V"
+    ],
+    "featuresSv": [
+      "Klipphöjd 3, 6, 9, 12 mm med kammar",
+      "0,4–1,2 mm utan kammar",
+      "Kraftig motor",
+      "Ergonomisk design",
+      "Inkl. kam, sax, rengöringsborste och 4 kammar",
+      "Nätdriven 230 V"
+    ],
+    "featuresNo": [
+      "Klippehøyde 3, 6, 9, 12 mm med kammer",
+      "0,4–1,2 mm uten kammer",
+      "Kraftig motor",
+      "Ergonomisk design",
+      "Inkl. kam, saks, rensebørste og 4 kammer",
+      "Nettdrevet 230 V"
+    ],
+    "featuresEt": [
+      "Lõikekõrgus 3, 6, 9, 12 mm kammidega",
+      "0,4–1,2 mm ilma kammideta",
+      "Võimas mootor",
+      "Ergonoomiline disain",
+      "Komplektis kamm, käärid, puhastushari ja 4 kinnitust",
+      "Võrgutoide 230 V"
+    ]
+  },
+  {
+    "sku": "P298",
+    "imageUrl": "/images/products/P298.jpg",
+    "datasheetUrl": "/datasheets/P298.pdf",
+    "featuresFi": [
+      "Neljä eri tarkkuus leikkuupäätä sisältäen kynsitrimmerin",
+      "Kaksi eri nopeutta",
+      "UV/woods lamppu paljastaa bakteeri-infektiot, sieni-infektiot, ulkoloiset, ihon värimuutokset",
+      "Punainen laservalo vaikkapa Kissan leikkeihin",
+      "Hiljainen käyntiääni",
+      "Pakkaus sisältää leikkurin, 4 leikkuupäätä, 2 leikkuukampaa,öljyn, puhdistusharjan,",
+      "USB-lataus, johto sisältyy, latausaika 2h,latauksen merkkivalo"
+    ],
+    "featuresEn": [
+      "Four precision heads including a nail trimmer",
+      "Two speeds",
+      "UV/Wood's lamp reveals bacterial, fungal, parasite and skin-colour issues",
+      "Red laser light — e.g. for cat play.",
+      "Quiet operation",
+      "Includes clipper, 4 heads, 2 combs, oil, cleaning brush",
+      "USB charging, cable included, 2 h charge, charge indicator"
+    ],
+    "featuresSv": [
+      "Fyra precisionshuvuden inkl. nageltrimmer",
+      "Två hastigheter",
+      "UV/Woods-lampa visar bakterie-, svamp-, parasit- och hudförändringar",
+      "Rött laserljus — t.ex. till kattlek.",
+      "Tyst gång",
+      "Inkl. klippare, 4 huvuden, 2 kammar, olja, rengöringsborste",
+      "USB-laddning, johto sisältyy, latausaika 2h,latauksen Indikatorlampa"
+    ],
+    "featuresNo": [
+      "Fire presisjonshoder inkl. negletrimmer",
+      "To hastigheter",
+      "UV/Woods-lampe avdekker bakterie-, sopp-, parasitt- og hudendringer",
+      "Rødt laserlys — f.eks. til kattelek.",
+      "Stille gang",
+      "Inkl. klipper, 4 hoder, 2 kammer, olje, rensebørste",
+      "USB-lading, johto sisältyy, latausaika 2h,latauksen Indikatorlampe"
+    ],
+    "featuresEt": [
+      "Neli täppuspead sh künnetrimmer",
+      "Kaks kiirust",
+      "UV/Woodsi lamp paljastab baktereid, seeni, parasiite ja naha värvimuutusi",
+      "Punane laser — nt kassimänguks.",
+      "Vaikne töö",
+      "Komplektis lõikur, 4 pead, 2 kammi, õli, puhastushari",
+      "USB-laadimine, johto sisältyy, latausaika 2h,latauksen Märgutuli"
+    ]
+  },
+  {
+    "sku": "P309B",
+    "imageUrl": "/images/products/P309B.jpg",
+    "datasheetUrl": "/datasheets/P309B.pdf",
+    "featuresFi": [
+      "Maksimi mittauspaino 5kg, tarkkuus 1g",
+      "Taara toiminto",
+      "Mittayksiköt: g, lb, oz, ml vesi, ml maito",
+      "Automaattinen virrankatkaisu",
+      "Paristo 3 x AAA (eivät sisälly)"
+    ],
+    "featuresEn": [
+      "Max 5 kg, 1 g accuracy",
+      "Tare function",
+      "Units: g, lb, oz, ml water, ml milk",
+      "automatic power-off",
+      "3 × AAA batteries (not included)"
+    ],
+    "featuresSv": [
+      "Max 5 kg, 1 g noggrannhet",
+      "Tareringsfunktion",
+      "Enheter: g, lb, oz, ml vatten, ml mjölk",
+      "automatisk avstängning",
+      "3 × AAA (ingår ej)"
+    ],
+    "featuresNo": [
+      "Maks 5 kg, 1 g nøyaktighet",
+      "Tarerfunksjon",
+      "Enheter: g, lb, oz, ml vann, ml melk",
+      "automatisk avslutning",
+      "3 × AAA (følger ikke med)"
+    ],
+    "featuresEt": [
+      "Maks 5 kg, täpsus 1 g",
+      "Tara funktsioon",
+      "Ühikud: g, lb, oz, ml vesi, ml piim",
+      "automaatne väljalülitus",
+      "3 × AAA (ei kuulu)"
+    ]
+  },
+  {
+    "sku": "P328",
+    "imageUrl": "/images/products/P328.jpg",
+    "datasheetUrl": "/datasheets/P328.pdf",
+    "featuresFi": [
+      "1l",
+      "Teho 400W",
+      "Lasikannu",
+      "Tyylikäs kompakti muotoilu",
+      "Helppo puhdistaa",
+      "2-nopeutta + pulse toiminto",
+      "Jäiden murskaustoiminto"
+    ],
+    "featuresEn": [
+      "1l",
+      "Power 400W",
+      "Glass jug",
+      "Stylish compact design",
+      "Easy to clean",
+      "2 speeds + pulse",
+      "Ice-crush function"
+    ],
+    "featuresSv": [
+      "1l",
+      "Effekt 400W",
+      "Glaskanna",
+      "Stilren kompakt design",
+      "Lätt att rengöra",
+      "2 hastigheter + puls",
+      "Is-krossfunktion"
+    ],
+    "featuresNo": [
+      "1l",
+      "Effekt 400W",
+      "Glasskanne",
+      "Stilren kompakt design",
+      "Lett å rengjøre",
+      "2 hastigheter + puls",
+      "Is-knusefunksjon"
+    ],
+    "featuresEt": [
+      "1l",
+      "Võimsus 400W",
+      "Klaaskann",
+      "Stiilne kompaktne disain",
+      "Lihtne puhastada",
+      "2 kiirust + impulss",
+      "Jääpurustus"
+    ]
+  },
+  {
+    "sku": "P369",
+    "imageUrl": "/images/products/P369.jpg",
+    "datasheetUrl": "/datasheets/P369.pdf",
+    "featuresFi": [
+      "Teho 500W",
+      "Voi kylmäsavustaa, kuumasavustaa sekä molempia yhdessä",
+      "Ajastin",
+      "Pinta ruostumatonta terästä",
+      "Lasi kansi",
+      "Digitaalinen näyttö koko 45,7x29,9x29,2 cm"
+    ],
+    "featuresEn": [
+      "Power 500W",
+      "Cold smoke, hot smoke, or both together",
+      "Timer",
+      "Stainless-steel surface",
+      "Glass lid",
+      "Digital display koko 45,7x29,9x29,2 cm"
+    ],
+    "featuresSv": [
+      "Effekt 500W",
+      "Kallrök, varmrök eller båda",
+      "Timer",
+      "Yta i rostfritt stål",
+      "Glaslock",
+      "Digital display koko 45,7x29,9x29,2 cm"
+    ],
+    "featuresNo": [
+      "Effekt 500W",
+      "Kaldrøyk, varmrøyk eller begge",
+      "Timer",
+      "Overflate i rustfritt stål",
+      "Glasslokk",
+      "Digitalt display koko 45,7x29,9x29,2 cm"
+    ],
+    "featuresEt": [
+      "Võimsus 500W",
+      "Külmsuits, kuumsuits või mõlemad",
+      "Taimer",
+      "Roostevaba terasest pind",
+      "Klaaskaas",
+      "Digitaalne näidik koko 45,7x29,9x29,2 cm"
+    ]
+  },
+  {
+    "sku": "P372L2",
+    "imageUrl": "/images/products/P372L2.jpg",
+    "datasheetUrl": "/datasheets/P372L2.pdf",
+    "featuresFi": [
+      "Friteerauskeitin, jonka nopeasti kiertävä kuuma ilma kypsyttää ruokaa yksinkertaisesti ja terveellisesti. Ruoka kuumentuu joka puolelta useimmiten ilman rasvaa.",
+      "Säädettävä lämpötila 80-200°C termostaatilla",
+      "60 min ajastin",
+      "Tarttumaton pinta",
+      "Teho 1450W",
+      "Kurkistusikkuna sekä taustavalo",
+      "Ylikuumenemissuoja",
+      "Koko: 35,0 x 26,7 x 31,0cm"
+    ],
+    "featuresEn": [
+      "Air fryer with rapid hot-air circulation for simple, healthier cooking — food is heated from all sides, usually without added fat.",
+      "Adjustable 80–200°C thermostat.",
+      "60 min timer",
+      "Non-stick surface",
+      "Power 1450W",
+      "Viewing window and interior light",
+      "Overheat protection",
+      "Koko: 35,0 x 26,7 x 31,0cm"
+    ],
+    "featuresSv": [
+      "Airfryer med snabbt cirkulerande hetluft för enklare, nyttigare matlagning. Maten värms från alla håll, oftast utan fett.",
+      "Ställbar termostat 80–200°C.",
+      "60 min timer",
+      "Non-stick-yta",
+      "Effekt 1450W",
+      "Titthål och innerbelysning",
+      "Överhettningsskydd",
+      "Koko: 35,0 x 26,7 x 31,0cm"
+    ],
+    "featuresNo": [
+      "Airfryer med raskt sirkulerende varmluft for enklere, sunnere matlaging. Maten varmes fra alle sider, som regel uten fett.",
+      "Justerbar termostat 80–200°C.",
+      "60 min timer",
+      "Non-stick-overflate",
+      "Effekt 1450W",
+      "Tittervindu og innerbelysning",
+      "Overopphetingsvern",
+      "Koko: 35,0 x 26,7 x 31,0cm"
+    ],
+    "featuresEt": [
+      "Õhufritüür kiiresti ringleva kuuma õhuga — toit küpseb igast küljest, tavaliselt ilma rasvata.",
+      "Reguleeritav termostaat 80–200°C.",
+      "60 min taimer",
+      "Nakkevaba pind",
+      "Võimsus 1450W",
+      "Vaateaken ja sisevalgustus",
+      "Ülekuumenemiskaitse",
+      "Koko: 35,0 x 26,7 x 31,0cm"
+    ]
+  },
+  {
+    "sku": "P373",
+    "imageUrl": "/images/products/P373.jpg",
+    "datasheetUrl": "/datasheets/P373.pdf",
+    "featuresFi": [
+      "Friteerauskeitin, jonka nopeasti kiertävä kuuma ilma kypsyttää ruokaa yksinkertaisesti ja terveellisesti. Ruoka kuumentuu joka puolelta useimmiten ilman rasvaa",
+      "Säädettävä lämpötila 80-200°C termostaatilla",
+      "60 min ajastin",
+      "Tarttumaton pinta",
+      "Teho 1450W",
+      "Kurkistusikkuna sekä taustavalo",
+      "Ylikuumenemissuoja",
+      "Koko: 35,0 x 26,7 x 31,0cm"
+    ],
+    "featuresEn": [
+      "Air fryer with rapid hot-air circulation for simple, healthier cooking — food is heated from all sides, usually without added fat.",
+      "Adjustable 80–200°C thermostat.",
+      "60 min timer",
+      "Non-stick surface",
+      "Power 1450W",
+      "Viewing window and interior light",
+      "Overheat protection",
+      "Koko: 35,0 x 26,7 x 31,0cm"
+    ],
+    "featuresSv": [
+      "Airfryer med snabbt cirkulerande hetluft för enklare, nyttigare matlagning. Maten värms från alla håll, oftast utan fett.",
+      "Ställbar termostat 80–200°C.",
+      "60 min timer",
+      "Non-stick-yta",
+      "Effekt 1450W",
+      "Titthål och innerbelysning",
+      "Överhettningsskydd",
+      "Koko: 35,0 x 26,7 x 31,0cm"
+    ],
+    "featuresNo": [
+      "Airfryer med raskt sirkulerende varmluft for enklere, sunnere matlaging. Maten varmes fra alle sider, som regel uten fett.",
+      "Justerbar termostat 80–200°C.",
+      "60 min timer",
+      "Non-stick-overflate",
+      "Effekt 1450W",
+      "Tittervindu og innerbelysning",
+      "Overopphetingsvern",
+      "Koko: 35,0 x 26,7 x 31,0cm"
+    ],
+    "featuresEt": [
+      "Õhufritüür kiiresti ringleva kuuma õhuga — toit küpseb igast küljest, tavaliselt ilma rasvata.",
+      "Reguleeritav termostaat 80–200°C.",
+      "60 min taimer",
+      "Nakkevaba pind",
+      "Võimsus 1450W",
+      "Vaateaken ja sisevalgustus",
+      "Ülekuumenemiskaitse",
+      "Koko: 35,0 x 26,7 x 31,0cm"
+    ]
+  },
+  {
+    "sku": "P504B",
+    "imageUrl": "/images/products/P504B.jpg",
+    "datasheetUrl": "/datasheets/P504B.pdf",
+    "featuresFi": [
+      "Teho 300W",
+      "Turbokytkin",
+      "Säädettävä nopeus",
+      "Sisältää taikinakoukut"
+    ],
+    "featuresEn": [
+      "Power 300W",
+      "Turbo switch",
+      "Adjustable speed",
+      "Dough hooks included"
+    ],
+    "featuresSv": [
+      "Effekt 300W",
+      "Turboknapp",
+      "Ställbar hastighet",
+      "Degkrokar ingår"
+    ],
+    "featuresNo": [
+      "Effekt 300W",
+      "Turboknapp",
+      "Justerbar hastighet",
+      "Deigkroker medfølger"
+    ],
+    "featuresEt": [
+      "Võimsus 300W",
+      "Turbolüliti",
+      "Reguleeritav kiirus",
+      "Tainakonksud kuuluvad"
+    ]
+  },
+  {
+    "sku": "P51",
+    "imageUrl": "/images/products/P51.jpg",
+    "datasheetUrl": "/datasheets/P51.pdf",
+    "featuresFi": [
+      "Teho 350W",
+      "120 min ajastin",
+      "Ylikuumenemissuoja"
+    ],
+    "featuresEn": [
+      "Power 350W",
+      "120 min timer",
+      "Overheat protection"
+    ],
+    "featuresSv": [
+      "Effekt 350W",
+      "120 min timer",
+      "Överhettningsskydd"
+    ],
+    "featuresNo": [
+      "Effekt 350W",
+      "120 min timer",
+      "Overopphetingsvern"
+    ],
+    "featuresEt": [
+      "Võimsus 350W",
+      "120 min taimer",
+      "Ülekuumenemiskaitse"
+    ]
+  },
+  {
+    "sku": "P511",
+    "imageUrl": "/images/products/P511.jpg",
+    "datasheetUrl": "/datasheets/P511.pdf",
+    "featuresFi": [
+      "Teho 400W",
+      "Kaksi nopeutta",
+      "Hiljainen sauvasekoitin"
+    ],
+    "featuresEn": [
+      "Power 400W",
+      "Two speeds",
+      "Quiet hand blender"
+    ],
+    "featuresSv": [
+      "Effekt 400W",
+      "Två hastigheter",
+      "Tyst stavmixer"
+    ],
+    "featuresNo": [
+      "Effekt 400W",
+      "To hastigheter",
+      "Stille stavmikser"
+    ],
+    "featuresEt": [
+      "Võimsus 400W",
+      "Kaks kiirust",
+      "Vaikne saumikser"
+    ]
+  },
+  {
+    "sku": "P75",
+    "imageUrl": "/images/products/P75.jpg",
+    "datasheetUrl": "/datasheets/P75.pdf",
+    "featuresFi": [
+      "Teho 700W",
+      "Viisi tehoaluetta",
+      "Valkoinen",
+      "Pyörivä lasialusta"
+    ],
+    "featuresEn": [
+      "Power 700W",
+      "Five power levels",
+      "White",
+      "Rotating glass turntable"
+    ],
+    "featuresSv": [
+      "Effekt 700W",
+      "Fem effektnivåer",
+      "Vit",
+      "Roterande glasplatta"
+    ],
+    "featuresNo": [
+      "Effekt 700W",
+      "Fem effektnivåer",
+      "Hvit",
+      "Roterende glassplate"
+    ],
+    "featuresEt": [
+      "Võimsus 700W",
+      "Viis võimsustaset",
+      "Valge",
+      "Pöörlev klaasalus"
+    ]
+  },
+  {
+    "sku": "P8029B",
+    "imageUrl": "/images/products/P8029B.jpg",
+    "datasheetUrl": "/datasheets/P8029B.pdf",
+    "featuresFi": [
+      "~ 5,0kg",
+      "1g tarkkuus",
+      "Taara toiminto",
+      "Koko: 152 x 215mm",
+      "Automaattinen virrankatkaisu",
+      "Väri valkoinen",
+      "Paristokäyttöinen 1 x CR2032 (sisältyy)"
+    ],
+    "featuresEn": [
+      "Approx. 5.0 kg",
+      "1 g accuracy",
+      "Tare function",
+      "Koko: 152 x 215mm",
+      "automatic power-off",
+      "Colour: white",
+      "Battery powered, 1 × CR2032 (included)"
+    ],
+    "featuresSv": [
+      "Ca 5,0 kg",
+      "1 g noggrannhet",
+      "Tareringsfunktion",
+      "Koko: 152 x 215mm",
+      "automatisk avstängning",
+      "Färg: vit",
+      "Batteridriven, 1 × CR2032 (ingår)"
+    ],
+    "featuresNo": [
+      "Ca 5,0 kg",
+      "1 g nøyaktighet",
+      "Tarerfunksjon",
+      "Koko: 152 x 215mm",
+      "automatisk avslutning",
+      "Farge: hvit",
+      "Batteridrevet, 1 × CR2032 (medfølger)"
+    ],
+    "featuresEt": [
+      "Umbes 5,0 kg",
+      "1 g täpsus",
+      "Tara funktsioon",
+      "Koko: 152 x 215mm",
+      "automaatne väljalülitus",
+      "Värv: valge",
+      "Patareitoide, 1 × CR2032 (kuulub)"
+    ]
+  },
+  {
+    "sku": "P804",
+    "imageUrl": "/images/products/P804.jpg",
+    "datasheetUrl": "/datasheets/P804.pdf",
+    "featuresFi": [
+      "LCD näyttö",
+      "Kapasiteetti 180kg",
+      "Tarkkuus 100gr",
+      "Käyttää 2 x AAA paristoja (eivät sisälly)"
+    ],
+    "featuresEn": [
+      "LCD display",
+      "Capacity 180 kg",
+      "Accuracy 100 g",
+      "Uses 2 × AAA batteries (not included)"
+    ],
+    "featuresSv": [
+      "LCD-display",
+      "Kapacitet 180 kg",
+      "Noggrannhet 100 g",
+      "2 × AAA-batterier (ingår ej)"
+    ],
+    "featuresNo": [
+      "LCD-display",
+      "Kapasitet 180 kg",
+      "Nøyaktighet 100 g",
+      "2 × AAA-batterier (følger ikke med)"
+    ],
+    "featuresEt": [
+      "LCD-näidik",
+      "Kandevõime 180 kg",
+      "Täpsus 100 g",
+      "2 × AAA patareid (ei kuulu)"
+    ]
+  },
+  {
+    "sku": "P805B",
+    "imageUrl": "/images/products/P805B.jpg",
+    "datasheetUrl": "/datasheets/P805B.pdf",
+    "featuresFi": [
+      "LCD näyttö",
+      "Kapasiteetti 180kg",
+      "Tarkkuus 100gr",
+      "Paristo 1 x CR2032 (sisältyy)"
+    ],
+    "featuresEn": [
+      "LCD display",
+      "Capacity 180 kg",
+      "Accuracy 100 g",
+      "1 × CR2032 battery (included)"
+    ],
+    "featuresSv": [
+      "LCD-display",
+      "Kapacitet 180 kg",
+      "Noggrannhet 100 g",
+      "1 × CR2032 (ingår)"
+    ],
+    "featuresNo": [
+      "LCD-display",
+      "Kapasitet 180 kg",
+      "Nøyaktighet 100 g",
+      "1 × CR2032 (medfølger)"
+    ],
+    "featuresEt": [
+      "LCD-näidik",
+      "Kandevõime 180 kg",
+      "Täpsus 100 g",
+      "1 × CR2032 (kuulub)"
+    ]
+  },
+  {
+    "sku": "P811C",
+    "imageUrl": "/images/products/P811C.jpg",
+    "datasheetUrl": "/datasheets/P811C.pdf",
+    "featuresFi": [
+      "180kg maksimi",
+      "100g tarkkuus",
+      "Automaattinen virrankatkaisu",
+      "Toimii CR2032 paristolla (sisältyy)"
+    ],
+    "featuresEn": [
+      "180 kg maximum",
+      "100 g accuracy",
+      "automatic power-off",
+      "Powered by CR2032 (included)"
+    ],
+    "featuresSv": [
+      "180 kg max",
+      "100 g noggrannhet",
+      "automatisk avstängning",
+      "Drivs med CR2032 (ingår)"
+    ],
+    "featuresNo": [
+      "180 kg maks",
+      "100 g nøyaktighet",
+      "automatisk avslutning",
+      "Drevet av CR2032 (medfølger)"
+    ],
+    "featuresEt": [
+      "180 kg maksimum",
+      "100 g täpsus",
+      "automaatne väljalülitus",
+      "Toiteallikas CR2032 (kuulub)"
+    ]
+  },
+  {
+    "sku": "P811C2L",
+    "imageUrl": "/images/products/P811C2L.jpg",
+    "datasheetUrl": "/datasheets/P811C2L.pdf",
+    "featuresFi": [
+      "180kg maksimi",
+      "100g tarkkuus",
+      "Automaattinen virrankatkaisu",
+      "Toimii CR2032 paristolla (sisältyy)"
+    ],
+    "featuresEn": [
+      "180 kg maximum",
+      "100 g accuracy",
+      "automatic power-off",
+      "Powered by CR2032 (included)"
+    ],
+    "featuresSv": [
+      "180 kg max",
+      "100 g noggrannhet",
+      "automatisk avstängning",
+      "Drivs med CR2032 (ingår)"
+    ],
+    "featuresNo": [
+      "180 kg maks",
+      "100 g nøyaktighet",
+      "automatisk avslutning",
+      "Drevet av CR2032 (medfølger)"
+    ],
+    "featuresEt": [
+      "180 kg maksimum",
+      "100 g täpsus",
+      "automaatne väljalülitus",
+      "Toiteallikas CR2032 (kuulub)"
+    ]
+  },
+  {
+    "sku": "P819",
+    "imageUrl": "/images/products/P819.jpg",
+    "datasheetUrl": "/datasheets/P819.pdf",
+    "featuresFi": [
+      "Helppo käyttää",
+      "40kg maksimi, 0,1kg minimi paino, tarkkuus 5g",
+      "Näyttö molemmin puolin",
+      "7 muistipaikkaa",
+      "Helppo laskea kokonaishinta"
+    ],
+    "featuresEn": [
+      "Easy to use",
+      "Max 40 kg, min 0.1 kg, accuracy 5 g",
+      "Display on both sides",
+      "7 memory slots",
+      "Easy total-price calculation"
+    ],
+    "featuresSv": [
+      "Lättanvänd",
+      "Max 40 kg, min 0,1 kg, 5 g",
+      "Display på båda sidor",
+      "7 minnesplatser",
+      "Enkel totalsumma"
+    ],
+    "featuresNo": [
+      "Enkel å bruke",
+      "Maks 40 kg, min 0,1 kg, 5 g",
+      "Display på begge sider",
+      "7 minneplasser",
+      "Enkel totalsum"
+    ],
+    "featuresEt": [
+      "Lihtne kasutada",
+      "Maks 40 kg, min 0,1 kg, täpsus 5 g",
+      "Näidik mõlemal küljel",
+      "7 mälukohta",
+      "Lihtne koguhinna arvutus"
+    ]
+  },
+  {
+    "sku": "P8434",
+    "imageUrl": "/images/products/P8434.jpg",
+    "datasheetUrl": "/datasheets/P8434.pdf",
+    "featuresFi": [
+      "Näyttää sekä sisä- että ulkolämpötilan",
+      "Langaton lähetin",
+      "Min/max toiminto",
+      "Lämpötila-alue: -40C - +60C",
+      "Koko 10,6 x 3,8 x 7,6cm",
+      "Paristot: 4 x AAA, eivät sisälly"
+    ],
+    "featuresEn": [
+      "Shows indoor and outdoor temperature",
+      "Wireless transmitter",
+      "Min/max function",
+      "Range −40°C to +60°C",
+      "Koko 10,6 x 3,8 x 7,6cm",
+      "4 × AAA batteries, not included"
+    ],
+    "featuresSv": [
+      "Visar inne- och utetemperatur",
+      "Trådlös sändare",
+      "Min/max-funktion",
+      "Område −40°C till +60°C",
+      "Koko 10,6 x 3,8 x 7,6cm",
+      "4 × AAA, ingår ej"
+    ],
+    "featuresNo": [
+      "Viser inne- og utetemperatur",
+      "Trådløs sender",
+      "Min/maks-funksjon",
+      "Område −40°C til +60°C",
+      "Koko 10,6 x 3,8 x 7,6cm",
+      "4 × AAA, følger ikke med"
+    ],
+    "featuresEt": [
+      "Näitab sise- ja välistemperatuuri",
+      "Juhtmeta saatja",
+      "Min/maks funktsioon",
+      "Vahemik −40°C kuni +60°C",
+      "Koko 10,6 x 3,8 x 7,6cm",
+      "4 × AAA, ei kuulu"
+    ]
+  },
+  {
+    "sku": "P8437",
+    "imageUrl": "/images/products/P8437.jpg",
+    "datasheetUrl": "/datasheets/P8437.pdf",
+    "featuresFi": [
+      "Näyttää sekä sisä että ulkolämpötilan"
+    ],
+    "featuresEn": [
+      "Shows indoor and outdoor temperature"
+    ],
+    "featuresSv": [
+      "Visar inne- och utetemperatur"
+    ],
+    "featuresNo": [
+      "Viser inne- og utetemperatur"
+    ],
+    "featuresEt": [
+      "Näitab sise- ja välistemperatuuri"
+    ]
+  },
+  {
+    "sku": "P8450",
+    "imageUrl": "/images/products/P8450.jpg",
+    "datasheetUrl": "/datasheets/P8450.pdf",
+    "featuresFi": [
+      "Näyttää ulkolämpötilan sekä sisätilan kosteuden",
+      "Min/max toiminto",
+      "Lämpötila-alue: -50C - +70C",
+      "Kello, päivämäärä, herätys",
+      "Koko 13,0 x 7,0 x 2,0cm",
+      "Paristo: 1 x AAA, eivät sisälly"
+    ],
+    "featuresEn": [
+      "Shows outdoor temperature and indoor humidity",
+      "Min/max function",
+      "Range −50°C to +70°C",
+      "Clock, date, alarm",
+      "Koko 13,0 x 7,0 x 2,0cm",
+      "1 × AAA battery, not included"
+    ],
+    "featuresSv": [
+      "Visar utetemperatur och innefukt",
+      "Min/max-funktion",
+      "Område −50°C till +70°C",
+      "Klocka, datum, alarm",
+      "Koko 13,0 x 7,0 x 2,0cm",
+      "1 × AAA, ingår ej"
+    ],
+    "featuresNo": [
+      "Viser utetemperatur og innefukt",
+      "Min/maks-funksjon",
+      "Område −50°C til +70°C",
+      "Klokke, dato, alarm",
+      "Koko 13,0 x 7,0 x 2,0cm",
+      "1 × AAA, følger ikke med"
+    ],
+    "featuresEt": [
+      "Näitab välistemperatuuri ja siseõhuniiskust",
+      "Min/maks funktsioon",
+      "Vahemik −50°C kuni +70°C",
+      "Kell, kuupäev, äratus",
+      "Koko 13,0 x 7,0 x 2,0cm",
+      "1 × AAA, ei kuulu"
+    ]
+  },
+  {
+    "sku": "P8451",
+    "imageUrl": "/images/products/P8451.jpg",
+    "datasheetUrl": "/datasheets/P8451.pdf",
+    "featuresFi": [
+      "Näyttää ulkolämpötilan sekä sisätilan kosteuden",
+      "Lämpötila-alue: -40C - +60C",
+      "Langaton lähetin",
+      "Kello ja herätys",
+      "Koko 90 x 86 x 24mm",
+      "Paristo: 4 x AAA, eivät sisälly"
+    ],
+    "featuresEn": [
+      "Shows outdoor temperature and indoor humidity",
+      "Range −40°C to +60°C",
+      "Wireless transmitter",
+      "Clock and alarm",
+      "Koko 90 x 86 x 24mm",
+      "4 × AAA batteries, not included"
+    ],
+    "featuresSv": [
+      "Visar utetemperatur och innefukt",
+      "Område −40°C till +60°C",
+      "Trådlös sändare",
+      "Klocka och alarm",
+      "Koko 90 x 86 x 24mm",
+      "4 × AAA, ingår ej"
+    ],
+    "featuresNo": [
+      "Viser utetemperatur og innefukt",
+      "Område −40°C til +60°C",
+      "Trådløs sender",
+      "Klokke og alarm",
+      "Koko 90 x 86 x 24mm",
+      "4 × AAA, følger ikke med"
+    ],
+    "featuresEt": [
+      "Näitab välistemperatuuri ja siseõhuniiskust",
+      "Vahemik −40°C kuni +60°C",
+      "Juhtmeta saatja",
+      "Kell ja äratus",
+      "Koko 90 x 86 x 24mm",
+      "4 × AAA, ei kuulu"
+    ]
+  },
+  {
+    "sku": "P8460",
+    "imageUrl": "/images/products/P8460.jpg",
+    "datasheetUrl": "/datasheets/P8460.pdf",
+    "featuresFi": [
+      "Lämpötila-alue: -50C -- +380°C",
+      "Tarkkuus: +/- 2%",
+      "Laser osoitin",
+      "Automaattinen sammutus",
+      "Blisterpakkaus",
+      "Käyttää 1 x 9V paristo",
+      "Pariston virran ilmaisin"
+    ],
+    "featuresEn": [
+      "Range −50°C to +380°C",
+      "Accuracy ±2%",
+      "Laser pointer",
+      "automatic shut-off",
+      "Blister pack",
+      "Uses 1 × 9V battery",
+      "Battery-level indicator"
+    ],
+    "featuresSv": [
+      "Område −50°C till +380°C",
+      "Noggrannhet ±2%",
+      "Laserpekare",
+      "automatisk avstängning",
+      "Blisterförpackning",
+      "1 × 9V-batteri",
+      "Batteriindikator"
+    ],
+    "featuresNo": [
+      "Område −50°C til +380°C",
+      "Nøyaktighet ±2%",
+      "Laserpeker",
+      "automatisk avstenging",
+      "Blisterpakning",
+      "1 × 9V-batteri",
+      "Batteriindikator"
+    ],
+    "featuresEt": [
+      "Vahemik −50°C kuni +380°C",
+      "Täpsus ±2%",
+      "Laserosuti",
+      "automaatne väljalülitus",
+      "Blisterpakend",
+      "1 × 9V patarei",
+      "Aku taseme indikaator"
+    ]
+  },
+  {
+    "sku": "P86",
+    "imageUrl": "/images/products/P86.jpg",
+    "datasheetUrl": "/datasheets/P86.pdf",
+    "featuresFi": [
+      "Teho 750W",
+      "Tarttumaton pinnoite helpottaa puhdistusta",
+      "Merkkivalot"
+    ],
+    "featuresEn": [
+      "Power 750W",
+      "Non-stick coating for easy cleaning",
+      "Indicator lights"
+    ],
+    "featuresSv": [
+      "Effekt 750W",
+      "Non-stickbeläggning underlättar rengöring",
+      "Indikatorlampor"
+    ],
+    "featuresNo": [
+      "Effekt 750W",
+      "Non-stickbelegg gjør rengjøring enklere",
+      "Indikatorlamper"
+    ],
+    "featuresEt": [
+      "Võimsus 750W",
+      "Nakkevaba kate hõlbustab puhastamist",
+      "Märgutuled"
+    ]
+  },
+  {
+    "sku": "P932",
+    "imageUrl": "/images/products/P932.jpg",
+    "datasheetUrl": "/datasheets/P932.pdf",
+    "featuresFi": [
+      "1000W ajastintoiminnolla",
+      "Automaattinen virrankatkaisu",
+      "14 kupin keitin (1,8L)",
+      "Tippalukko",
+      "Merkkivalo"
+    ],
+    "featuresEn": [
+      "1000W with timer",
+      "automatic power-off",
+      "14-cup maker (1.8 L)",
+      "Anti-drip",
+      "Indicator light"
+    ],
+    "featuresSv": [
+      "1000W med timer",
+      "automatisk avstängning",
+      "14-koppsbryggare (1,8 L)",
+      "Droppstopp",
+      "Indikatorlampa"
+    ],
+    "featuresNo": [
+      "1000W med timer",
+      "automatisk avslutning",
+      "14-kopps trakter (1,8 L)",
+      "Dryppstopp",
+      "Indikatorlampe"
+    ],
+    "featuresEt": [
+      "1000W taimeriga",
+      "automaatne väljalülitus",
+      "14-tassiline (1,8 L)",
+      "Tilgalukk",
+      "Märgutuli"
+    ]
+  },
+  {
+    "sku": "P938",
+    "imageUrl": "/images/products/P938.jpg",
+    "datasheetUrl": "/datasheets/P938.pdf",
+    "featuresFi": [
+      "1500W",
+      "9 l",
+      "Kaksoisseinä (SS304/201)",
+      "Hana",
+      "Merkkivalo"
+    ],
+    "featuresEn": [
+      "1500W",
+      "9 l",
+      "Double wall (SS304/201)",
+      "Tap",
+      "Indicator light"
+    ],
+    "featuresSv": [
+      "1500W",
+      "9 l",
+      "Dubbelvägg (SS304/201)",
+      "Kran",
+      "Indikatorlampa"
+    ],
+    "featuresNo": [
+      "1500W",
+      "9 l",
+      "Dobbelvegg (SS304/201)",
+      "Kran",
+      "Indikatorlampe"
+    ],
+    "featuresEt": [
+      "1500W",
+      "9 l",
+      "Topeltsein (SS304/201)",
+      "Kraan",
+      "Märgutuli"
+    ]
+  },
+  {
+    "sku": "P943",
+    "imageUrl": "/images/products/P943.jpg",
+    "datasheetUrl": "/datasheets/P943.pdf",
+    "featuresFi": [
+      "1000W ajastintoiminnolla",
+      "14 kupin keitin (1,8L)",
+      "Aroma säätö",
+      "Kosketusnäyttö (80x60mm)",
+      "Äänisignaali kahvin valmistuttua",
+      "Näyttää miten kauan kahvi on ollut valmiina pannussa",
+      "Lämpölevyn kuumuuden säätömahdollisuus",
+      "Automaattinen virrankatkaisu, säädettävissä",
+      "Ruostumatonta terästä / muovi",
+      "Itse/auto-puhdistustoiminto",
+      "Tippalukko"
+    ],
+    "featuresEn": [
+      "1000W with timer",
+      "14-cup maker (1.8 L)",
+      "Aroma control",
+      "Touch display (80 × 60 mm)",
+      "Ready signal when brewing is done",
+      "Shows how long coffee has been keeping warm",
+      "Adjustable hot-plate temperature",
+      "adjustable automatic power-off",
+      "Stainless steel / plastic",
+      "self/auto-clean function",
+      "Anti-drip"
+    ],
+    "featuresSv": [
+      "1000W med timer",
+      "14-koppsbryggare (1,8 L)",
+      "Aromakontroll",
+      "Pekskärm (80 × 60 mm)",
+      "Ljudsignal när kaffet är klart",
+      "Visar hur länge kaffet stått klart",
+      "Ställbar värmeplatta",
+      "ställbar automatisk avstängning",
+      "Rostfritt stål / plast",
+      "själv-/autorengöring",
+      "Droppstopp"
+    ],
+    "featuresNo": [
+      "1000W med timer",
+      "14-kopps trakter (1,8 L)",
+      "Aromakontroll",
+      "Berøringsskjerm (80 × 60 mm)",
+      "Lydsignal når kaffen er ferdig",
+      "Viser hvor lenge kaffen har stått ferdig",
+      "Justerbar varmeplate",
+      "justerbar automatisk avslutning",
+      "Rustfritt stål / plast",
+      "selv-/autorengjøring",
+      "Dryppstopp"
+    ],
+    "featuresEt": [
+      "1000W taimeriga",
+      "14-tassiline (1,8 L)",
+      "Aroomiregulaator",
+      "Puuteekraan (80 × 60 mm)",
+      "Helisignaal, kui kohv on valmis",
+      "Näitab, kui kaua kohv on kannus olnud",
+      "Reguleeritav soojendusplaat",
+      "reguleeritav automaatne väljalülitus",
+      "Roostevaba teras / plast",
+      "ise-/autopuhastus",
+      "Tilgalukk"
+    ]
+  },
+  {
+    "sku": "P945",
+    "imageUrl": "/images/products/P945.jpg",
+    "datasheetUrl": "/datasheets/P945.pdf",
+    "featuresFi": [
+      "800W",
+      "Automaattinen virrankatkaisu",
+      "10 kupin keitin (1,25L)",
+      "Kestosuodatin",
+      "Tippalukko",
+      "Merkkivalo"
+    ],
+    "featuresEn": [
+      "800W",
+      "automatic power-off",
+      "10-cup maker (1.25 L)",
+      "Permanent filter",
+      "Anti-drip",
+      "Indicator light"
+    ],
+    "featuresSv": [
+      "800W",
+      "automatisk avstängning",
+      "10-koppsbryggare (1,25 L)",
+      "Permanentfilter",
+      "Droppstopp",
+      "Indikatorlampa"
+    ],
+    "featuresNo": [
+      "800W",
+      "automatisk avslutning",
+      "10-kopps trakter (1,25 L)",
+      "Permanentfilter",
+      "Dryppstopp",
+      "Indikatorlampe"
+    ],
+    "featuresEt": [
+      "800W",
+      "automaatne väljalülitus",
+      "10-tassiline (1,25 L)",
+      "Püsifilter",
+      "Tilgalukk",
+      "Märgutuli"
+    ]
+  },
+  {
+    "sku": "P946",
+    "imageUrl": "/images/products/P946.jpg",
+    "datasheetUrl": "/datasheets/P946.pdf",
+    "featuresFi": [
+      "600W",
+      "600ml",
+      "Kestosuodatin",
+      "Automaattinen virrankatkaisu"
+    ],
+    "featuresEn": [
+      "600W",
+      "600ml",
+      "Permanent filter",
+      "automatic power-off"
+    ],
+    "featuresSv": [
+      "600W",
+      "600ml",
+      "Permanentfilter",
+      "automatisk avstängning"
+    ],
+    "featuresNo": [
+      "600W",
+      "600ml",
+      "Permanentfilter",
+      "automatisk avslutning"
+    ],
+    "featuresEt": [
+      "600W",
+      "600ml",
+      "Püsifilter",
+      "automaatne väljalülitus"
+    ]
+  },
+  {
+    "sku": "P948",
+    "imageUrl": "/images/products/P948.jpg",
+    "datasheetUrl": "/datasheets/P948.pdf",
+    "featuresFi": [
+      "1000W",
+      "1,8l",
+      "Lämpösulake",
+      "Automaattinen sammutus",
+      "Virtakytkin valolla"
+    ],
+    "featuresEn": [
+      "1000W",
+      "1,8l",
+      "Thermal fuse",
+      "automatic shut-off",
+      "Illuminated power switch"
+    ],
+    "featuresSv": [
+      "1000W",
+      "1,8l",
+      "Termosäkring",
+      "automatisk avstängning",
+      "Strömbrytare med ljus"
+    ],
+    "featuresNo": [
+      "1000W",
+      "1,8l",
+      "Termosikring",
+      "automatisk avstenging",
+      "Strømbryter med lys"
+    ],
+    "featuresEt": [
+      "1000W",
+      "1,8l",
+      "Termokaitse",
+      "automaatne väljalülitus",
+      "Valgustusega toitelüliti"
+    ]
+  },
+  {
+    "sku": "P96",
+    "imageUrl": "/images/products/P96.jpg",
+    "datasheetUrl": "/datasheets/P96.pdf",
+    "featuresFi": [
+      "Teho 1200W",
+      "Kapasiteetti: 20l",
+      "Kangassuodatin",
+      "Mukana autosuutin"
+    ],
+    "featuresEn": [
+      "Power 1200W",
+      "Capacity 20 L",
+      "Cloth filter",
+      "Car nozzle included"
+    ],
+    "featuresSv": [
+      "Effekt 1200W",
+      "Kapacitet 20 L",
+      "Tygfilter",
+      "Bilmunstycke medföljer"
+    ],
+    "featuresNo": [
+      "Effekt 1200W",
+      "Kapasitet 20 L",
+      "Tøyfilter",
+      "Bilmunnstykke medfølger"
+    ],
+    "featuresEt": [
+      "Võimsus 1200W",
+      "Maht 20 L",
+      "Riidefilter",
+      "Autootsik kuulub"
+    ]
+  },
+  {
+    "sku": "PA113",
+    "imageUrl": "/images/products/PA113.jpg",
+    "datasheetUrl": "/datasheets/PA113.pdf",
+    "featuresFi": [
+      "Erittäin hyvä FM radio",
+      "Automaattihaku",
+      "10 muistipaikkaa",
+      "Kaksi herätysaikaa",
+      "Torkkutoiminto",
+      "Himmennin",
+      "Valkoinen LED näyttö",
+      "Paristovarmennus"
+    ],
+    "featuresEn": [
+      "Excellent FM radio",
+      "Auto scan",
+      "10 presets",
+      "Two alarm times",
+      "Snooze",
+      "Dimmer",
+      "White LED display",
+      "Battery backup"
+    ],
+    "featuresSv": [
+      "Mycket bra FM-radio",
+      "Autosökning",
+      "10 minnesplatser",
+      "Två alarmtider",
+      "Snooze",
+      "Dimmer",
+      "Vit LED-display",
+      "Batteribackup"
+    ],
+    "featuresNo": [
+      "Svært god FM-radio",
+      "Autosøk",
+      "10 minneplasser",
+      "To alarmtider",
+      "Slumring",
+      "Dimmer",
+      "Hvit LED-display",
+      "Batteribackup"
+    ],
+    "featuresEt": [
+      "Väga hea FM-raadio",
+      "Automaatotsing",
+      "10 mälukohta",
+      "Kaks äratusaega",
+      "Tukkumine",
+      "Hämardi",
+      "Valge LED-näidik",
+      "Patareivaru"
+    ]
+  },
+  {
+    "sku": "PA114",
+    "imageUrl": "/images/products/PA114.jpg",
+    "datasheetUrl": "/datasheets/PA114.pdf",
+    "featuresFi": [
+      "Erittäin hyvä FM radio",
+      "1,2\" näyttö",
+      "10 muistipaikkaa",
+      "Kaksi herätysaikaa",
+      "Torkkutoiminto",
+      "Projektori näyttää kellonajan katossa",
+      "Säädettävä kirkkaus",
+      "Punainen LED näyttö",
+      "Paristovarmennus",
+      "Koko: 165 x 85mm"
+    ],
+    "featuresEn": [
+      "Excellent FM radio",
+      "1.2\" display",
+      "10 presets",
+      "Two alarm times",
+      "Snooze",
+      "Projects the time onto the ceiling",
+      "Adjustable brightness",
+      "Red LED display",
+      "Battery backup",
+      "Koko: 165 x 85mm"
+    ],
+    "featuresSv": [
+      "Mycket bra FM-radio",
+      "1,2\"-display",
+      "10 minnesplatser",
+      "Två alarmtider",
+      "Snooze",
+      "Projicerar tiden i taket",
+      "Ställbar ljusstyrka",
+      "Röd LED-display",
+      "Batteribackup",
+      "Koko: 165 x 85mm"
+    ],
+    "featuresNo": [
+      "Svært god FM-radio",
+      "1,2\"-display",
+      "10 minneplasser",
+      "To alarmtider",
+      "Slumring",
+      "Projiserer tiden i taket",
+      "Justerbar lysstyrke",
+      "Rød LED-display",
+      "Batteribackup",
+      "Koko: 165 x 85mm"
+    ],
+    "featuresEt": [
+      "Väga hea FM-raadio",
+      "1,2\" näidik",
+      "10 mälukohta",
+      "Kaks äratusaega",
+      "Tukkumine",
+      "Projitseerib kellaaja lakke",
+      "Reguleeritav heledus",
+      "Punane LED-näidik",
+      "Patareivaru",
+      "Koko: 165 x 85mm"
+    ]
+  },
+  {
+    "sku": "PA205",
+    "imageUrl": "/images/products/PA205.jpg",
+    "datasheetUrl": "/datasheets/PA205.pdf",
+    "featuresFi": [
+      "FM-radio teleskooppiantennilla",
+      "Bluetooth yhteys",
+      "Verkkokäyttöinen 230V tai paristoilla: 2 x 1,5V D/R20 (eivät sisälly)"
+    ],
+    "featuresEn": [
+      "FM radio with telescopic aerial",
+      "Bluetooth connection",
+      "Mains 230 V or 2 × 1.5 V D/R20 batteries (not included)"
+    ],
+    "featuresSv": [
+      "FM-radio med teleskopantenn",
+      "Bluetooth-anslutning",
+      "Nät 230 V eller 2 × 1,5 V D/R20 (ingår ej)"
+    ],
+    "featuresNo": [
+      "FM-radio med teleskopantenne",
+      "Bluetooth-tilkobling",
+      "Nett 230 V eller 2 × 1,5 V D/R20 (følger ikke med)"
+    ],
+    "featuresEt": [
+      "FM-raadio teleskoopantenniga",
+      "Bluetooth-ühendus",
+      "Võrk 230 V või 2 × 1,5 V D/R20 (ei kuulu)"
+    ]
+  },
+  {
+    "sku": "PA220",
+    "imageUrl": "/images/products/PA220.jpg",
+    "datasheetUrl": "/datasheets/PA220.pdf",
+    "featuresFi": [
+      "FM lähetin jolla välitetään musiikki autoradioon",
+      "Bluetoothin avulla voi puhua kädet vapaana (hands free), anti kaiku toiminto",
+      "Tukee USB/TF korttia ja MP3 formaattia",
+      "Bluetooth 5.0, Lcd näyttö",
+      "Tunnistaa automaattisesti onko virta 12V / 24V",
+      "USB C PD25W lataus",
+      "USB:n kautta lataat nopeasti kaksikin laitetta 3.1A + 1.0A",
+      "Muistaa automaattisesti FM taajuuden",
+      "Seitsemän erivärisiä valoja"
+    ],
+    "featuresEn": [
+      "FM transmitter for car radio",
+      "Hands-free Bluetooth calling with echo cancellation",
+      "Supports USB/TF card and MP3",
+      "Bluetooth 5.0, LCD display",
+      "Auto-detects 12V / 24V power",
+      "USB-C PD 25W charging",
+      "Fast-charge two devices via USB 3.1A + 1.0A",
+      "Remembers the last FM frequency",
+      "Seven colour lights"
+    ],
+    "featuresSv": [
+      "FM-sändare till bilradion",
+      "Handsfree Bluetooth-samtal med eko-dämpning",
+      "Stöd för USB/TF-kort och MP3",
+      "Bluetooth 5.0, LCD-display",
+      "Känner av 12V / 24V automatiskt",
+      "USB-C PD 25W-laddning",
+      "Snabbladda två enheter via USB 3,1A + 1,0A",
+      "Kommer ihåg senaste FM-frekvensen",
+      "Sju färgljus"
+    ],
+    "featuresNo": [
+      "FM-sender til bilradioen",
+      "Handsfree Bluetooth-samtale med ekkodemping",
+      "Støtte for USB/TF-kort og MP3",
+      "Bluetooth 5.0, LCD-display",
+      "Oppdager 12V / 24V automatisk",
+      "USB-C PD 25W-lading",
+      "Hurtiglad to enheter via USB 3,1A + 1,0A",
+      "Husker siste FM-frekvens",
+      "Syv fargelys"
+    ],
+    "featuresEt": [
+      "FM-saatja autoradiole",
+      "Bluetooth handsfree-kõne kajatõrjega",
+      "Toetab USB/TF-kaarti ja MP3",
+      "Bluetooth 5.0, LCD-näidik",
+      "Tuvastab automaatselt 12V / 24V",
+      "USB-C PD 25W laadimine",
+      "Lae kaks seadet USB kaudu 3,1A + 1,0A",
+      "Jätab FM-sageduse meelde",
+      "Seitse värvivalgust"
+    ]
+  },
+  {
+    "sku": "PA442B",
+    "imageUrl": "/images/products/PA442B.jpg",
+    "datasheetUrl": "/datasheets/PA442B.pdf",
+    "featuresFi": [
+      "38 elementtiä",
+      "UHF-vastaanotto",
+      "Myös HD-kanaville",
+      "DVB-T2",
+      "UHF-kanavat 21-60, 470-790Mhz",
+      "UHF Vahvistus 12 - 17 dB",
+      "4G LTE-suodatin",
+      "Mukana tulee mastokiinnike",
+      "Helppo puhdistaa"
+    ],
+    "featuresEn": [
+      "38 elements",
+      "UHF reception",
+      "Also for HD channels",
+      "DVB-T2",
+      "UHF channels 21–60, 470–790 MHz",
+      "UHF gain 12–17 dB",
+      "4G LTE filter",
+      "Mast bracket included",
+      "Easy to clean"
+    ],
+    "featuresSv": [
+      "38 element",
+      "UHF-mottagning",
+      "Även HD-kanaler",
+      "DVB-T2",
+      "UHF-kanaler 21–60, 470–790 MHz",
+      "UHF-förstärkning 12–17 dB",
+      "4G LTE-filter",
+      "Mastfäste medföljer",
+      "Lätt att rengöra"
+    ],
+    "featuresNo": [
+      "38 element",
+      "UHF-mottak",
+      "Også HD-kanaler",
+      "DVB-T2",
+      "UHF-kanaler 21–60, 470–790 MHz",
+      "UHF-forsterkning 12–17 dB",
+      "4G LTE-filter",
+      "Mastfeste medfølger",
+      "Lett å rengjøre"
+    ],
+    "featuresEt": [
+      "38 elementi",
+      "UHF-vastuvõtt",
+      "Sobib ka HD-kanalitele",
+      "DVB-T2",
+      "UHF-kanalid 21–60, 470–790 MHz",
+      "UHF võimendus 12–17 dB",
+      "4G LTE-filter",
+      "Mastikinnitus kuulub",
+      "Lihtne puhastada"
+    ]
+  },
+  {
+    "sku": "PA705",
+    "imageUrl": "/images/products/PA705.jpg",
+    "datasheetUrl": "/datasheets/PA705.pdf",
+    "featuresFi": [
+      "Vesitiivis, horisontaali sekä vertikaalivastaanotto",
+      "SMT piiri soveltuu erityisesti DVBT SEKÄ HDTV vastaanottoon",
+      "Myös caravan käyttöön",
+      "Magneetti pohja",
+      "12v käyttö sisältää tupakansytytinliittimen",
+      "Taajuus 470-860 MHz",
+      "UHF/VHF Vahvistus 20dB",
+      "Koko 33,3 x 14 x 21cm",
+      "Sisältää 6m koaksiaalijohto",
+      "Verkkolaite AC/DC 9VDC 100mA",
+      "Täydellinen antenni paketti"
+    ],
+    "featuresEn": [
+      "Waterproof, horizontal and vertical reception",
+      "SMT circuit suited to DVB-T and HDTV",
+      "Also for caravan use",
+      "Magnetic base",
+      "12 V use, cigarette-lighter plug included",
+      "Frequency 470–860 MHz",
+      "UHF/VHF gain 20 dB",
+      "Koko 33,3 x 14 x 21cm",
+      "Includes 6 m coaxial cable",
+      "AC/DC adaptor 9 V DC 100 mA",
+      "Complete antenna kit"
+    ],
+    "featuresSv": [
+      "Vattentät, horisontell och vertikal mottagning",
+      "SMT-krets särskilt för DVB-T och HDTV",
+      "Även för husvagn",
+      "Magnetfot",
+      "12 V, cigarruttag medföljer",
+      "Frekvens 470–860 MHz",
+      "UHF/VHF-förstärkning 20 dB",
+      "Koko 33,3 x 14 x 21cm",
+      "6 m koaxialkabel ingår",
+      "Nätadapter AC/DC 9 V DC 100 mA",
+      "Komplett antennpaket"
+    ],
+    "featuresNo": [
+      "Vanntett, horisontal og vertikal mottak",
+      "SMT-krets særlig for DVB-T og HDTV",
+      "Også for campingvogn",
+      "Magnetfot",
+      "12 V, sigarettennerplugg medfølger",
+      "Frekvens 470–860 MHz",
+      "UHF/VHF-forsterkning 20 dB",
+      "Koko 33,3 x 14 x 21cm",
+      "6 m koaksialkabel medfølger",
+      "Nettadapter AC/DC 9 V DC 100 mA",
+      "Komplett antennepakke"
+    ],
+    "featuresEt": [
+      "Veekindel, horisontaalne ja vertikaalne vastuvõtt",
+      "SMT-skeem eriti DVB-T ja HDTV vastuvõtuks",
+      "Sobib ka haagisele",
+      "Magnetiline jalg",
+      "12 V, sigaretisüütaja pistik kuulub",
+      "Sagedus 470–860 MHz",
+      "UHF/VHF võimendus 20 dB",
+      "Koko 33,3 x 14 x 21cm",
+      "6 m koaksiaalkaabel kuulub",
+      "Toiteadapter AC/DC 9 V DC 100 mA",
+      "Täielik antennikomplekt"
+    ]
+  },
+  {
+    "sku": "PA708",
+    "imageUrl": "/images/products/PA708.jpg",
+    "datasheetUrl": "/datasheets/PA708.pdf",
+    "featuresFi": [
+      "Pöydälle tai seinälle, koko 330x250x1mm",
+      "Taajuus VHF 174-230 Mhz",
+      "Taajuus UHF 470-694 Mhz",
+      "VHF vahvistus 30db",
+      "UHF vahvistus 30db",
+      "Max ulostulo 100dBu",
+      "DVB-T2, LTE suodatin"
+    ],
+    "featuresEn": [
+      "Table or wall, 330 × 250 × 1 mm",
+      "VHF 174–230 MHz",
+      "UHF 470–694 MHz",
+      "VHF gain 30 dB",
+      "UHF gain 30 dB",
+      "Max output 100 dBµ",
+      "DVB-T2, LTE filter"
+    ],
+    "featuresSv": [
+      "Bord eller vägg, 330 × 250 × 1 mm",
+      "VHF 174–230 MHz",
+      "UHF 470–694 MHz",
+      "VHF-förstärkning 30 dB",
+      "UHF-förstärkning 30 dB",
+      "Max ut 100 dBµ",
+      "DVB-T2, LTE-filter"
+    ],
+    "featuresNo": [
+      "Bord eller vegg, 330 × 250 × 1 mm",
+      "VHF 174–230 MHz",
+      "UHF 470–694 MHz",
+      "VHF-forsterkning 30 dB",
+      "UHF-forsterkning 30 dB",
+      "Maks ut 100 dBµ",
+      "DVB-T2, LTE-filter"
+    ],
+    "featuresEt": [
+      "Lauale või seinale, 330 × 250 × 1 mm",
+      "VHF 174–230 MHz",
+      "UHF 470–694 MHz",
+      "VHF võimendus 30 dB",
+      "UHF võimendus 30 dB",
+      "Maks väljund 100 dBµ",
+      "DVB-T2, LTE-filter"
+    ]
+  },
+  {
+    "sku": "PB2695C",
+    "imageUrl": "/images/products/PB2695C.jpg",
+    "datasheetUrl": "/datasheets/PB2695C.pdf",
+    "featuresFi": [
+      "2 in 1",
+      "Lämpötila 180°C",
+      "Keraaminen pinta",
+      "1,7m johdolla",
+      "Merkkivalo",
+      "Kihartimen halkaisija 19mm, harjaosan 32mm"
+    ],
+    "featuresEn": [
+      "2-in-1",
+      "Temperature 180°C",
+      "Ceramic surface",
+      "1.7 m cord",
+      "Indicator light",
+      "Curler 19 mm, brush section 32 mm"
+    ],
+    "featuresSv": [
+      "2-i-1",
+      "Temperatur 180°C",
+      "Keramisk yta",
+      "1,7 m sladd",
+      "Indikatorlampa",
+      "Locktång 19 mm, borste 32 mm"
+    ],
+    "featuresNo": [
+      "2-i-1",
+      "Temperatur 180°C",
+      "Keramisk overflate",
+      "1,7 m ledning",
+      "Indikatorlampe",
+      "Krølltang 19 mm, børste 32 mm"
+    ],
+    "featuresEt": [
+      "2-ühes",
+      "Temperatuur 180°C",
+      "Keraamiline pind",
+      "1,7 m juhe",
+      "Märgutuli",
+      "Lokitaja 19 mm, hari 32 mm"
+    ]
+  },
+  {
+    "sku": "PB2696B",
+    "imageUrl": "/images/products/PB2696B.jpg",
+    "datasheetUrl": "/datasheets/PB2696B.pdf",
+    "featuresFi": [
+      "Ei motorisoitu harja, pyörii molempiin suuntiin, voi lukita",
+      "Kaksi lämpötilaa: 160°C ja 180°C",
+      "1,7m johdolla, ripustuskoukku, merkkivalo",
+      "Harjakihartimen halkaisija 32mm"
+    ],
+    "featuresEn": [
+      "Non-motorised brush, rotates both ways, lockable",
+      "Two temperatures: 160°C and 180°C",
+      "1.7 m cord, hang loop, indicator",
+      "Brush-curler diameter 32 mm"
+    ],
+    "featuresSv": [
+      "Icke-motordriven borste, vrids åt båda håll, kan låsas",
+      "Två temperaturer: 160°C och 180°C",
+      "1,7 m sladd, upphängningskrok, indikator",
+      "Borstlocktång diameter 32 mm"
+    ],
+    "featuresNo": [
+      "Ikke-motordrevet børste, dreies begge veier, kan låses",
+      "To temperaturer: 160°C og 180°C",
+      "1,7 m ledning, opphengkrok, indikator",
+      "Børstekrølltang diameter 32 mm"
+    ],
+    "featuresEt": [
+      "Mootorita hari, pöörleb mõlemat pidi, lukustatav",
+      "Kaks temperatuuri: 160°C ja 180°C",
+      "1,7 m juhe, riputuskonks, märgutuli",
+      "Harjalokitaja läbimõõt 32 mm"
+    ]
+  },
+  {
+    "sku": "PB2698",
+    "imageUrl": "/images/products/PB2698.jpg",
+    "datasheetUrl": "/datasheets/PB2698.pdf",
+    "featuresFi": [
+      "Digitaali näyttö",
+      "Säädettävä 100-230°C",
+      "Kolme putkia",
+      "1,8m johdolla",
+      "Merkkivalo"
+    ],
+    "featuresEn": [
+      "Digital display",
+      "Adjustable 100–230°C",
+      "Three barrels",
+      "1.8 m cord",
+      "Indicator light"
+    ],
+    "featuresSv": [
+      "Digital display",
+      "Ställbar 100–230°C",
+      "Tre rör",
+      "1,8 m sladd",
+      "Indikatorlampa"
+    ],
+    "featuresNo": [
+      "Digitalt display",
+      "Justerbar 100–230°C",
+      "Tre rør",
+      "1,8 m ledning",
+      "Indikatorlampe"
+    ],
+    "featuresEt": [
+      "Digitaalne näidik",
+      "Reguleeritav 100–230°C",
+      "Kolm toru",
+      "1,8 m juhe",
+      "Märgutuli"
+    ]
+  },
+  {
+    "sku": "PB4916",
+    "imageUrl": "/images/products/PB4916.jpg",
+    "datasheetUrl": "/datasheets/PB4916.pdf",
+    "featuresFi": [
+      "Nenä- / korvatrimmeri",
+      "Pahvipakkaus",
+      "Paristokäyttöinen, 1 x AA paristo"
+    ],
+    "featuresEn": [
+      "Nose / ear trimmer",
+      "Cardboard pack",
+      "Battery powered, 1 × AA"
+    ],
+    "featuresSv": [
+      "Näsa-/örontrimmer",
+      "Kartongförpackning",
+      "Batteridriven, 1 × AA"
+    ],
+    "featuresNo": [
+      "Nese-/øretrimmer",
+      "Pappemballasje",
+      "Batteridrevet, 1 × AA"
+    ],
+    "featuresEt": [
+      "Nina-/kõrvatrimmer",
+      "Papkpakkend",
+      "Patareitoide, 1 × AA"
+    ]
+  },
+  {
+    "sku": "PB4918",
+    "imageUrl": "/images/products/PB4918.jpg",
+    "datasheetUrl": "/datasheets/PB4918.pdf",
+    "featuresFi": [
+      "Normaali sekä suorakaiteenmuotoinen terä",
+      "Tehokas",
+      "Käyttöaika jopa 150min., latausaika 60min",
+      "Litiumioni akku 500mAh",
+      "USB-C latausportti, latauskaapeli sisältyy, laturi ei sisälly",
+      "Puhdistusharja, suojakupu sekä terän suoja sisältyvät"
+    ],
+    "featuresEn": [
+      "Standard and rectangular blade",
+      "Powerful",
+      "Runtime up to 150 min, charge 60 min",
+      "Li-ion 500 mAh battery",
+      "USB-C port, cable included, charger not included",
+      "Cleaning brush, cap and blade guard included"
+    ],
+    "featuresSv": [
+      "Standard- och rektangulär kniv",
+      "Kraftfull",
+      "Upp till 150 min drift, 60 min laddning",
+      "Li-ion 500 mAh",
+      "USB-C, kabel ingår, laddare ingår ej",
+      "Rengöringsborste, hölje och knivskydd ingår"
+    ],
+    "featuresNo": [
+      "Standard- og rektangulært blad",
+      "Kraftig",
+      "Inntil 150 min drift, 60 min lading",
+      "Li-ion 500 mAh",
+      "USB-C, kabel medfølger, lader følger ikke med",
+      "Rensebørste, hette og bladbeskyttelse medfølger"
+    ],
+    "featuresEt": [
+      "Tavaline ja ristkülikukujuline tera",
+      "Võimas",
+      "Tööaeg kuni 150 min, laadimine 60 min",
+      "Li-ion 500 mAh",
+      "USB-C, kaabel kuulub, laadija ei kuulu",
+      "Puhastushari, kate ja tera kaitse kuuluvad"
+    ]
+  },
+  {
+    "sku": "PB7048",
+    "imageUrl": "/images/products/PB7048.jpg",
+    "datasheetUrl": "/datasheets/PB7048.pdf",
+    "featuresFi": [
+      "Muotoilulevyjen koko 100x30mm",
+      "Keraaminen pinnoite",
+      "Säädettävä lämpötila",
+      "Lämpötila 150-170-190-210-230°C",
+      "Päälle/pois katkaisija",
+      "Lukittava kahva",
+      "360° pyörivä johto",
+      "1,8m johto"
+    ],
+    "featuresEn": [
+      "Plate size 100 × 30 mm",
+      "Ceramic coating",
+      "Adjustable temperature",
+      "Temperature 150–170–190–210–230°C",
+      "On/off switch",
+      "Locking handle",
+      "360° swivel cord",
+      "1.8 m cord"
+    ],
+    "featuresSv": [
+      "Plattstorlek 100 × 30 mm",
+      "Keramisk beläggning",
+      "Ställbar temperatur",
+      "Temperatur 150–170–190–210–230°C",
+      "På/av-knapp",
+      "Låsbart handtag",
+      "360° vridbar sladd",
+      "1,8 m sladd"
+    ],
+    "featuresNo": [
+      "Platestørrelse 100 × 30 mm",
+      "Keramisk belegg",
+      "Justerbar temperatur",
+      "Temperatur 150–170–190–210–230°C",
+      "På/av-bryter",
+      "Låsbart håndtak",
+      "360° dreibar ledning",
+      "1,8 m ledning"
+    ],
+    "featuresEt": [
+      "Plaadi suurus 100 × 30 mm",
+      "Keraamiline kate",
+      "Reguleeritav temperatuur",
+      "Temperatuur 150–170–190–210–230°C",
+      "Sisse/välja lüliti",
+      "Lukustatav käepide",
+      "360° pöörlev juhe",
+      "1,8 m juhe"
+    ]
+  },
+  {
+    "sku": "PB7049",
+    "imageUrl": "/images/products/PB7049.jpg",
+    "datasheetUrl": "/datasheets/PB7049.pdf",
+    "featuresFi": [
+      "Kiharrin 30mm",
+      "Muotoilulevyjen koko 90x30mm",
+      "Keraaminen pinnoite",
+      "Lämpötila 200°C",
+      "Kätevän kokoinen",
+      "Myös märille hiuksille",
+      "360° pyörivä johto",
+      "Väri: musta"
+    ],
+    "featuresEn": [
+      "30 mm curler",
+      "Plate size 90 × 30 mm",
+      "Ceramic coating",
+      "Temperature 200°C",
+      "Compact size",
+      "Also for wet hair",
+      "360° swivel cord",
+      "Colour: black"
+    ],
+    "featuresSv": [
+      "30 mm locktång",
+      "Plattstorlek 90 × 30 mm",
+      "Keramisk beläggning",
+      "Temperatur 200°C",
+      "Smiddig storlek",
+      "Även för vått hår",
+      "360° vridbar sladd",
+      "Färg: svart"
+    ],
+    "featuresNo": [
+      "30 mm krølltang",
+      "Platestørrelse 90 × 30 mm",
+      "Keramisk belegg",
+      "Temperatur 200°C",
+      "Kompakt størrelse",
+      "Også for vått hår",
+      "360° dreibar ledning",
+      "Farge: svart"
+    ],
+    "featuresEt": [
+      "30 mm lokitaja",
+      "Plaadi suurus 90 × 30 mm",
+      "Keraamiline kate",
+      "Temperatuur 200°C",
+      "Mugav suurus",
+      "Sobib ka märgadele juustele",
+      "360° pöörlev juhe",
+      "Värv: must"
+    ]
+  },
+  {
+    "sku": "PB7055",
+    "imageUrl": "/images/products/PB7055.jpg",
+    "datasheetUrl": "/datasheets/PB7055.pdf",
+    "featuresFi": [
+      "Elektroninen lämpötilansäätö 150, 170, 190, 210, 230°C",
+      "Kelluvat muotoilulevyt takaavat parhaan lopputuloksen",
+      "Muotoilulevyjen koko 125mm x 25mm",
+      "Keraaminen pinnoite",
+      "Pyörivä 1,75cm johto",
+      "Teho 55W"
+    ],
+    "featuresEn": [
+      "Electronic temperature 150/170/190/210/230°C",
+      "Floating plates for an even result",
+      "Plate size 125 × 25 mm",
+      "Ceramic coating",
+      "Swivel 1.75 m cord",
+      "Power 55W"
+    ],
+    "featuresSv": [
+      "Elektronisk temperatur 150/170/190/210/230°C",
+      "Flytande plattor för jämnt resultat",
+      "Plattstorlek 125 × 25 mm",
+      "Keramisk beläggning",
+      "Vridbar 1,75 m sladd",
+      "Effekt 55W"
+    ],
+    "featuresNo": [
+      "Elektronisk temperatur 150/170/190/210/230°C",
+      "Flytende plater for jevnt resultat",
+      "Platestørrelse 125 × 25 mm",
+      "Keramisk belegg",
+      "Dreibar 1,75 m ledning",
+      "Effekt 55W"
+    ],
+    "featuresEt": [
+      "Elektrooniline temperatuur 150/170/190/210/230°C",
+      "Ujuvad plaadid ühtlase tulemuse jaoks",
+      "Plaadi suurus 125 × 25 mm",
+      "Keraamiline kate",
+      "Pöörlev 1,75 m juhe",
+      "Võimsus 55W"
+    ]
+  },
+  {
+    "sku": "PB7058",
+    "imageUrl": "/images/products/PB7058.jpg",
+    "datasheetUrl": "/datasheets/PB7058.pdf",
+    "featuresFi": [
+      "Vaihdettavat päät, 72mm, 38mm, paddle harja",
+      "Kaksi lämpöpuhallus vaihtoehtoa",
+      "Kylmäpuhallus",
+      "Teho: 1200W",
+      "1,8m johto, ripustuskoukku"
+    ],
+    "featuresEn": [
+      "Interchangeable heads: 72 mm, 38 mm, paddle brush",
+      "Two heat settings",
+      "Cool shot",
+      "Power 1200W",
+      "1.8 m cord, hang loop"
+    ],
+    "featuresSv": [
+      "Utbytbar: 72 mm, 38 mm, paddelborste",
+      "Två värmelägen",
+      "Kalluft",
+      "Effekt 1200W",
+      "1,8 m sladd, upphängningskrok"
+    ],
+    "featuresNo": [
+      "Utbyttbare: 72 mm, 38 mm, paddlebørste",
+      "To varmetrinn",
+      "Kaldluft",
+      "Effekt 1200W",
+      "1,8 m ledning, opphengkrok"
+    ],
+    "featuresEt": [
+      "Vahetatavad: 72 mm, 38 mm, labahari",
+      "Kaks soojusrežiimi",
+      "Jahe õhk",
+      "Võimsus 1200W",
+      "1,8 m juhe, riputuskonks"
+    ]
+  },
+  {
+    "sku": "PB7061C",
+    "imageUrl": "/images/products/PB7061C.jpg",
+    "datasheetUrl": "/datasheets/PB7061C.pdf",
+    "featuresFi": [
+      "2 nopeutta, 3 lämpötilaa, viileäpuhallus",
+      "Ilmankeskitin",
+      "Kätevän kokoinen",
+      "1,65m johdolla",
+      "Ripustuskoukku"
+    ],
+    "featuresEn": [
+      "2 speeds, 3 heat settings, cool shot",
+      "Concentrator nozzle",
+      "Compact size",
+      "1.65 m cord",
+      "Hang loop"
+    ],
+    "featuresSv": [
+      "2 hastigheter, 3 värmelägen, kalluft",
+      "Luftdyse",
+      "Smiddig storlek",
+      "1,65 m sladd",
+      "Upphängningskrok"
+    ],
+    "featuresNo": [
+      "2 hastigheter, 3 varmetrinn, kaldluft",
+      "Luftdyse",
+      "Kompakt størrelse",
+      "1,65 m ledning",
+      "Opphengkrok"
+    ],
+    "featuresEt": [
+      "2 kiirust, 3 temperatuuri, jahe õhk",
+      "Õhuotsik",
+      "Mugav suurus",
+      "1,65 m juhe",
+      "Riputuskonks"
+    ]
+  },
+  {
+    "sku": "PB7071",
+    "imageUrl": "/images/products/PB7071.jpg",
+    "datasheetUrl": "/datasheets/PB7071.pdf",
+    "featuresFi": [
+      "Hiiliharjaton DC Moottori, erittäin kevyt",
+      "Hipaisunäppäimet, automaattinen puhdistustoiminto",
+      "Ionic-toiminto",
+      "Tehokas 110.000 kierrosta minuutissa, 7 kertainen normaali kuivaimeen verrattuna",
+      "3 nopeutta, 3 lämpötilaa, viileäpuhallus",
+      "Kaksi erikokoista ilmankeskitintä + Diffuusori",
+      "Digitaalinen valitsin ja viimeisen toiminnon muisti",
+      "Automaattinen puhdistustoiminto",
+      "Magneettinen keskitin ja takasuodatin",
+      "Kätevän kokoinen",
+      "2,8m erikoispitkällä johdolla",
+      "High tech tuote",
+      "Erivärinen merkkivalo eri lämpötiloille"
+    ],
+    "featuresEn": [
+      "Brushless DC motor, extra light",
+      "Touch controls, automatic cleaning",
+      "Ionic function",
+      "110,000 rpm — 7× a typical dryer",
+      "3 speeds, 3 heat settings, cool shot",
+      "Two concentrators + diffuser",
+      "Digital selector with last-setting memory",
+      "automatic cleaning function",
+      "Magnetic concentrator and rear filter",
+      "Compact size",
+      "Extra-long 2.8 m cord",
+      "High-tech product",
+      "Colour indicator per heat setting"
+    ],
+    "featuresSv": [
+      "Borstlös DC-motor, extra lätt",
+      "Pekknappar, automatisk rengöring",
+      "Jonfunktion",
+      "110 000 varv/min — 7× en vanlig fön",
+      "3 hastigheter, 3 värmelägen, kalluft",
+      "Två munstycken + diffuser",
+      "Digital väljare med minne",
+      "automatisk rengöringsfunktion",
+      "Magnetiskt munstycke och bakfilter",
+      "Smiddig storlek",
+      "Extra lång 2,8 m sladd",
+      "Hightech-produkt",
+      "Färgindikator per värmeläge"
+    ],
+    "featuresNo": [
+      "Børsteløs DC-motor, ekstra lett",
+      "Berøringsknapper, automatisk rengjøring",
+      "Ionfunksjon",
+      "110 000 o/min — 7× en vanlig føner",
+      "3 hastigheter, 3 varmetrinn, kaldluft",
+      "To konsentratorer + diffuser",
+      "Digital velger med minne",
+      "automatisk rengjøringsfunksjon",
+      "Magnetisk konsentrator og bakfilter",
+      "Kompakt størrelse",
+      "Ekstra lang 2,8 m ledning",
+      "Hightech-produkt",
+      "Fargeindikator per varmetrinn"
+    ],
+    "featuresEt": [
+      "Harjadeta alalisvoolumootor, eriti kerge",
+      "Puutenupud, automaatne puhastus",
+      "Ioonfunktsioon",
+      "110 000 p/min — 7× tavaline föön",
+      "3 kiirust, 3 temperatuuri, jahe õhk",
+      "Kaks otsikut + difuusor",
+      "Digitaalne valija viimase seade mäluga",
+      "automaatne puhastusfunktsioon",
+      "Magnetiline otsik ja tagumine filter",
+      "Mugav suurus",
+      "Eriti pikk 2,8 m juhe",
+      "Kõrgtehnoloogiline toode",
+      "Värvimärgutuli igale temperatuurile"
+    ]
+  },
+  {
+    "sku": "PB7073",
+    "imageUrl": "/images/products/PB7073.jpg",
+    "datasheetUrl": "/datasheets/PB7073.pdf",
+    "featuresFi": [
+      "Hiiliharjaton DC Moottori, erittäin kevyt",
+      "Ionic-toiminto",
+      "Tehokas 110.000 kierrosta minuutissa, 7 x kertainen normaali kuivaimeen verrattuna",
+      "2 nopeutta, 3 lämpötilaa, viileäpuhallus",
+      "Oikea ja vasen kiharrin, 54mm harja, ilmanjakaja ja ilmankeskitin",
+      "Suodatin saa irti puhdistusta varten",
+      "Kätevän kokoinen",
+      "1,8m johto",
+      "High tech tuote",
+      "Erivärinen merkkivalo kylmälle ja kuumalle ilmalle"
+    ],
+    "featuresEn": [
+      "Brushless DC motor, extra light",
+      "Ionic function",
+      "110,000 rpm — 7× a typical dryer",
+      "2 speeds, 3 heat settings, cool shot",
+      "Left and right curlers, 54 mm brush, diffuser and concentrator",
+      "Removable filter for cleaning",
+      "Compact size",
+      "1.8 m cord",
+      "High-tech product",
+      "Colour indicator for cool and hot air"
+    ],
+    "featuresSv": [
+      "Borstlös DC-motor, extra lätt",
+      "Jonfunktion",
+      "110 000 varv/min — 7× en vanlig fön",
+      "2 hastigheter, 3 värmelägen, kalluft",
+      "Vänster- och högerlocktång, 54 mm borste, diffuser och munstycke",
+      "Filteret kan tas av för rengöring",
+      "Smiddig storlek",
+      "1,8 m sladd",
+      "Hightech-produkt",
+      "Färgindikator för kall och varm luft"
+    ],
+    "featuresNo": [
+      "Børsteløs DC-motor, ekstra lett",
+      "Ionfunksjon",
+      "110 000 o/min — 7× en vanlig føner",
+      "2 hastigheter, 3 varmetrinn, kaldluft",
+      "Venstre- og høyrekrølltang, 54 mm børste, diffuser og konsentrator",
+      "Filteret kan tas av for rengjøring",
+      "Kompakt størrelse",
+      "1,8 m ledning",
+      "Hightech-produkt",
+      "Fargeindikator for kald og varm luft"
+    ],
+    "featuresEt": [
+      "Harjadeta alalisvoolumootor, eriti kerge",
+      "Ioonfunktsioon",
+      "110 000 p/min — 7× tavaline föön",
+      "2 kiirust, 3 temperatuuri, jahe õhk",
+      "Vasak ja parem lokitaja, 54 mm hari, difuusor ja otsik",
+      "Filter on puhastamiseks eemaldatav",
+      "Mugav suurus",
+      "1,8 m juhe",
+      "Kõrgtehnoloogiline toode",
+      "Värvimärgutuli jahedale ja kuumale õhule"
+    ]
+  },
+  {
+    "sku": "PB713",
+    "imageUrl": "/images/products/PB713.jpg",
+    "datasheetUrl": "/datasheets/PB713.pdf",
+    "featuresFi": [
+      "Erittäin tarkaa ajotulos",
+      "Vesipestävä IPX6",
+      "Digitaalinäyttö",
+      "Erillinen trimmausosa kammalla",
+      "Erittäin korkealuokkaiset terät ruostumattomasta teräksestä",
+      "Latausaika 2t, lithium-ioni akku",
+      "Ajoaika noin 60 minuuttia,",
+      "USB lataus, sisältää USB-latausjohdon sekä puhdistusharjan"
+    ],
+    "featuresEn": [
+      "Very precise shave",
+      "Washable IPX6",
+      "Digital display",
+      "Separate trimmer with comb",
+      "High-grade stainless-steel blades",
+      "2 h charge, lithium-ion battery",
+      "Shave time about 60 minutes",
+      "USB charging, includes USB cable and cleaning brush"
+    ],
+    "featuresSv": [
+      "Mycket precis rakning",
+      "Tvättbar IPX6",
+      "Digital display",
+      "Separat trimmer med kam",
+      "Högklassiga knivar i rostfritt stål",
+      "2 tim laddning, litiumjonbatteri",
+      "Rakningstid ca 60 minuter",
+      "USB-laddning, USB-kabel och rengöringsborste ingår"
+    ],
+    "featuresNo": [
+      "Svært presis barbering",
+      "Vaskbar IPX6",
+      "Digitalt display",
+      "Separat trimmer med kam",
+      "Høykvalitets blader i rustfritt stål",
+      "2 t lading, litiumionbatteri",
+      "Barberingstid ca 60 minutter",
+      "USB-lading, USB-kabel og rensebørste medfølger"
+    ],
+    "featuresEt": [
+      "Väga täpne raseerimistulemus",
+      "Pestav IPX6",
+      "Digitaalne näidik",
+      "Eraldi trimmer kammiga",
+      "Kõrgekvaliteediline roostevaba tera",
+      "2 t laadimine, liitiumioonaku",
+      "Raseerimisaeg u 60 minutit",
+      "USB-laadimine, USB-kaabel ja puhastushari kuuluvad"
+    ]
+  },
+  {
+    "sku": "PB715",
+    "imageUrl": "/images/products/PB715.jpg",
+    "datasheetUrl": "/datasheets/PB715.pdf",
+    "featuresFi": [
+      "Kelluvat ajopäät mukailevat kasvojen ja kaulan muotoja miellyttävästi sekä tehokkaasti",
+      "Vesipestävä IPX7",
+      "Märkäajo myös mahdollinen",
+      "Pop up trimmeri",
+      "Korkealuokkaiset terät ruostumattomasta teräksestä",
+      "Ajoaika 45 minuuttia",
+      "Sisältää harjan ja verkkolaturin"
+    ],
+    "featuresEn": [
+      "Floating heads follow face and neck contours",
+      "Washable IPX7",
+      "Wet shaving also possible",
+      "Pop-up trimmer",
+      "High-grade stainless-steel blades",
+      "Runtime 45 minutes",
+      "Includes brush and mains charger"
+    ],
+    "featuresSv": [
+      "Flytande huvuden följer ansiktets och halsens former",
+      "Tvättbar IPX7",
+      "Även våtrakning",
+      "Pop-up-trimmer",
+      "Högklassiga knivar i rostfritt stål",
+      "Körtid 45 minuter",
+      "Borste och nätladdare ingår"
+    ],
+    "featuresNo": [
+      "Flytende hoder følger ansiktets og halsens former",
+      "Vaskbar IPX7",
+      "Også våtbarbering",
+      "Pop-up-trimmer",
+      "Høykvalitets blader i rustfritt stål",
+      "Driftstid 45 minutter",
+      "Børste og nettlader medfølger"
+    ],
+    "featuresEt": [
+      "Ujuvad pead järgivad näo ja kaela kujusid",
+      "Pestav IPX7",
+      "Sobib ka märjalt raseerimiseks",
+      "Pop-up-trimmer",
+      "Kõrgekvaliteediline roostevaba tera",
+      "Tööaeg 45 minutit",
+      "Hari ja vooluvõrgu laadija kuuluvad"
+    ]
+  },
+  {
+    "sku": "PB716",
+    "imageUrl": "/images/products/PB716.jpg",
+    "datasheetUrl": "/datasheets/PB716.pdf",
+    "featuresFi": [
+      "Erittäin korkealaatuiset erikois 3d kelluvat päät",
+      "High speed moottori",
+      "Led näyttö näyttää akun kesto, miten kauan partaa on ajettu",
+      "Muistuttaa pesusta",
+      "Litium akku 600mAh, 90min. latausaika, 50min. ajoaika",
+      "Vesipestävä IPX6 luokka",
+      "Rajaaja/pop up trimmeri",
+      "Matkatoiminto",
+      "Sisältää USB laturijohdon sekä harjan"
+    ],
+    "featuresEn": [
+      "High-quality 3D floating heads",
+      "High-speed motor",
+      "LED shows battery life and shave time",
+      "Cleaning reminder",
+      "Lithium 600 mAh, 90 min charge, 50 min runtime",
+      "Washable, IPX6 rating",
+      "Pop-up trimmer",
+      "Travel lock",
+      "USB charge cable and brush included"
+    ],
+    "featuresSv": [
+      "Högkvalitativa 3D-flytande huvuden",
+      "Höghastighetsmotor",
+      "LED visar batteri och rakningstid",
+      "Påminnelse om rengöring",
+      "Litium 600 mAh, 90 min laddning, 50 min drift",
+      "Tvättbar, IPX6",
+      "Pop-up-trimmer",
+      "Reselås",
+      "USB-laddkabel och borste ingår"
+    ],
+    "featuresNo": [
+      "Høykvalitets 3D-flytende hoder",
+      "Høyhastighetsmotor",
+      "LED viser batteri og barberingstid",
+      "Påminnelse om rengjøring",
+      "Litium 600 mAh, 90 min lading, 50 min drift",
+      "Vaskbar, IPX6",
+      "Pop-up-trimmer",
+      "Reiselås",
+      "USB-ladekabel og børste medfølger"
+    ],
+    "featuresEt": [
+      "Kõrgekvaliteetsed 3D ujuvad pead",
+      "Suure kiirusega mootor",
+      "LED näitab akutaset ja raseerimisaega",
+      "Puhastuse meeldetuletus",
+      "Liitium 600 mAh, 90 min laadimine, 50 min tööaeg",
+      "Pestav, IPX6",
+      "Pop-up-trimmer",
+      "Reisi lukustus",
+      "USB-laadimiskaabel ja hari kuuluvad"
+    ]
+  },
+  {
+    "sku": "PB761",
+    "imageUrl": "/images/products/PB761.jpg",
+    "datasheetUrl": "/datasheets/PB761.pdf",
+    "featuresFi": [
+      "Erittäin tarkka ajotulos",
+      "20 säädettävää leikkuukorkeutta, 0,5 - 10mm",
+      "Erittäin korkealuokkaiset terät ruostumattomasta teräksestä",
+      "Vesipestävä IPX6",
+      "Latausvalo",
+      "Latausaika 1.5t., Li-ion 600mAH akku",
+      "Ajoaika noin 60 minuuttia",
+      "Sisältää USB-latausjohdon, harjan sekä öljyn"
+    ],
+    "featuresEn": [
+      "Very precise shave",
+      "20 cutting heights, 0.5–10 mm",
+      "High-grade stainless-steel blades",
+      "Washable IPX6",
+      "Charge indicator",
+      "1.5 h charge, Li-ion 600 mAh",
+      "Shave time about 60 minutes",
+      "USB cable, brush and oil included"
+    ],
+    "featuresSv": [
+      "Mycket precis rakning",
+      "20 klippnivåer, 0,5–10 mm",
+      "Högklassiga knivar i rostfritt stål",
+      "Tvättbar IPX6",
+      "Laddindikator",
+      "1,5 tim laddning, Li-ion 600 mAh",
+      "Rakningstid ca 60 minuter",
+      "USB-kabel, borste och olja ingår"
+    ],
+    "featuresNo": [
+      "Svært presis barbering",
+      "20 klippehøyder, 0,5–10 mm",
+      "Høykvalitets blader i rustfritt stål",
+      "Vaskbar IPX6",
+      "Ladeindikator",
+      "1,5 t lading, Li-ion 600 mAh",
+      "Barberingstid ca 60 minutter",
+      "USB-kabel, børste og olje medfølger"
+    ],
+    "featuresEt": [
+      "Väga täpne raseerimistulemus",
+      "20 lõikekõrgust, 0,5–10 mm",
+      "Kõrgekvaliteediline roostevaba tera",
+      "Pestav IPX6",
+      "Laadimise märgutuli",
+      "1,5 t laadimine, Li-ion 600 mAh",
+      "Raseerimisaeg u 60 minutit",
+      "USB-kaabel, hari ja õli kuuluvad"
+    ]
+  },
+  {
+    "sku": "PE1000B",
+    "imageUrl": "/images/products/PE1000B.jpg",
+    "datasheetUrl": "/datasheets/PE1000B.pdf",
+    "featuresFi": [
+      "1000mA (maksimi)",
+      "3,0 / 4,5 / 5,0 / 6,0 / 7,5 / 9,0 / 12V",
+      "7 eri päätä + USB liitin",
+      "3.5/2.5x0.7/3.5x1.35/4.0x1.7/5.0x2.1/5.5x2.5/6.3x3.0",
+      "Napaisuus vaihdettavissa",
+      "Merkkivalo",
+      "ErP standardin mukainen",
+      "Blisterpakkaus"
+    ],
+    "featuresEn": [
+      "1000mA (maksimi)",
+      "3,0 / 4,5 / 5,0 / 6,0 / 7,5 / 9,0 / 12V",
+      "7 tips + USB connector",
+      "3.5/2.5x0.7/3.5x1.35/4.0x1.7/5.0x2.1/5.5x2.5/6.3x3.0",
+      "Reversible polarity",
+      "Indicator light",
+      "ErP compliant",
+      "Blister pack"
+    ],
+    "featuresSv": [
+      "1000mA (maksimi)",
+      "3,0 / 4,5 / 5,0 / 6,0 / 7,5 / 9,0 / 12V",
+      "7 spetsar + USB-kontakt",
+      "3.5/2.5x0.7/3.5x1.35/4.0x1.7/5.0x2.1/5.5x2.5/6.3x3.0",
+      "Omvändbar polaritet",
+      "Indikatorlampa",
+      "ErP-kompatibel",
+      "Blisterförpackning"
+    ],
+    "featuresNo": [
+      "1000mA (maksimi)",
+      "3,0 / 4,5 / 5,0 / 6,0 / 7,5 / 9,0 / 12V",
+      "7 spisser + USB-kontakt",
+      "3.5/2.5x0.7/3.5x1.35/4.0x1.7/5.0x2.1/5.5x2.5/6.3x3.0",
+      "Vendbar polaritet",
+      "Indikatorlampe",
+      "ErP-kompatibel",
+      "Blisterpakning"
+    ],
+    "featuresEt": [
+      "1000mA (maksimi)",
+      "3,0 / 4,5 / 5,0 / 6,0 / 7,5 / 9,0 / 12V",
+      "7 otsikut + USB-liitmik",
+      "3.5/2.5x0.7/3.5x1.35/4.0x1.7/5.0x2.1/5.5x2.5/6.3x3.0",
+      "Pööratav polaarsus",
+      "Märgutuli",
+      "ErP-nõuetele vastav",
+      "Blisterpakend"
+    ]
+  },
+  {
+    "sku": "PE410",
+    "imageUrl": "/images/products/PE410.jpg",
+    "datasheetUrl": "/datasheets/PE410.pdf",
+    "featuresFi": [
+      "Kameran avulla voidaan nähdä ahtaisiin paikkoihin ja vastaanottaa reaaliaikaista videokuvaa kohteesta näytölle",
+      "Kameraa voidaan käyttää ajoneuvojen, putkien ja monien muiden kohteiden tarkistamiseen",
+      "Näyttö 2,4\" LCD",
+      "Kameran pään halkaisija 8mm",
+      "Kameran kaapelin pituus 95cm",
+      "Video ulostulo",
+      "Toimii 4 x AA paristolla (ei sisälly)",
+      "Lisätarvikkeet: koukku, magneetti, peili, kätevä kantolaukku"
+    ],
+    "featuresEn": [
+      "See into tight spaces and receive live video on the display.",
+      "Use on vehicles, pipes and many other inspection targets.",
+      "2.4\" LCD display",
+      "Camera head diameter 8 mm",
+      "Camera cable 95 cm",
+      "Video output",
+      "Uses 4 × AA batteries (not included)",
+      "Accessories: hook, magnet, mirror, carry case"
+    ],
+    "featuresSv": [
+      "Se in i trånga utrymmen och ta emot livevideo på skärmen.",
+      "Används för fordon, rör och många andra inspektionsobjekt.",
+      "2,4\" LCD-display",
+      "Kamerahuvud 8 mm",
+      "Kamerakabel 95 cm",
+      "Videoutgång",
+      "4 × AA (ingår ej)",
+      "Tillbehör: krok, magnet, spegel, väska"
+    ],
+    "featuresNo": [
+      "Se inn i trange steder og motta livevideo på skjermen.",
+      "Brukes på kjøretøy, rør og mange andre inspeksjonsobjekter.",
+      "2,4\" LCD-display",
+      "Kamerahode 8 mm",
+      "Kamerakabel 95 cm",
+      "Videoutgang",
+      "4 × AA (følger ikke med)",
+      "Tilbehør: krok, magnet, speil, veske"
+    ],
+    "featuresEt": [
+      "Vaata kitsastesse kohtadesse ja saa reaalajas videot ekraanile.",
+      "Kasutatav sõidukitel, torudel ja paljudel muudel objektidel.",
+      "2,4\" LCD-näidik",
+      "Kaamerapea läbimõõt 8 mm",
+      "Kaamerakaabel 95 cm",
+      "Video väljund",
+      "4 × AA (ei kuulu)",
+      "Lisad: konks, magnet, peegel, kott"
+    ]
+  },
+  {
+    "sku": "PE411C",
+    "imageUrl": "/images/products/PE411C.jpg",
+    "datasheetUrl": "/datasheets/PE411C.pdf",
+    "featuresFi": [
+      "Kameran avulla voidaan nähdä ahtaisiin paikkoihin ja vastaanottaa reaaliaikaista videokuvaa kohteesta näytölle",
+      "Kameraa voidaan käyttää ajoneuvojen, putkien ja monien muiden kohteiden tarkistamiseen",
+      "70 asteen kuvauskulma, 6 led valoa",
+      "Kameran pään halkaisija 8mm, IP68",
+      "Kameran kaapelin pituus 5m",
+      "Tukee 1600 x 1200P näytön resoluutiota",
+      "Toimii iOS/Applen sekä Android älykännykässä ja tabletissa",
+      "Helppokäyttöinen sovellus",
+      "Langaton yhteys peräti 10m",
+      "Ladattava 1700mAh litiumakku",
+      "Lisätarvikkeet: koukku, magneetti, peili, USB latausjohto"
+    ],
+    "featuresEn": [
+      "See into tight spaces and receive live video on the display.",
+      "Use on vehicles, pipes and many other inspection targets.",
+      "70° viewing angle, 6 LED lights",
+      "Camera head 8 mm, IP68",
+      "Camera cable 5 m",
+      "Supports 1600 × 1200 display resolution",
+      "Works with iOS/Apple and Android phones and tablets",
+      "Easy-to-use app",
+      "Wireless range up to 10 m",
+      "Rechargeable 1700 mAh lithium battery",
+      "Accessories: hook, magnet, mirror, USB charge cable"
+    ],
+    "featuresSv": [
+      "Se in i trånga utrymmen och ta emot livevideo på skärmen.",
+      "Används för fordon, rör och många andra inspektionsobjekt.",
+      "70° bildvinkel, 6 LED",
+      "Kamerahuvud 8 mm, IP68",
+      "Kamerakabel 5 m",
+      "Stöd för 1600 × 1200",
+      "Fungerar med iOS/Apple och Android",
+      "Lättanvänd app",
+      "Trådlös räckvidd upp till 10 m",
+      "Uppladdningsbart 1700 mAh litiumbatteri",
+      "Tillbehör: krok, magnet, spegel, USB-kabel"
+    ],
+    "featuresNo": [
+      "Se inn i trange steder og motta livevideo på skjermen.",
+      "Brukes på kjøretøy, rør og mange andre inspeksjonsobjekter.",
+      "70° visningsvinkel, 6 LED",
+      "Kamerahode 8 mm, IP68",
+      "Kamerakabel 5 m",
+      "Støtte for 1600 × 1200",
+      "Fungerer med iOS/Apple og Android",
+      "Enkel app",
+      "Trådløs rekkevidde inntil 10 m",
+      "Oppladbart 1700 mAh litiumbatteri",
+      "Tilbehør: krok, magnet, speil, USB-kabel"
+    ],
+    "featuresEt": [
+      "Vaata kitsastesse kohtadesse ja saa reaalajas videot ekraanile.",
+      "Kasutatav sõidukitel, torudel ja paljudel muudel objektidel.",
+      "70° vaatenurk, 6 LED-tuld",
+      "Kaamerapea 8 mm, IP68",
+      "Kaamerakaabel 5 m",
+      "Toetab 1600 × 1200",
+      "Töötab iOS/Apple ja Android telefonides ja tahvlites",
+      "Lihtne rakendus",
+      "Juhtmeta ulatus kuni 10 m",
+      "Laetav 1700 mAh liitiumaku",
+      "Lisad: konks, magnet, peegel, USB-kaabel"
+    ]
+  },
+  {
+    "sku": "PM007",
+    "imageUrl": "/images/products/PM007.jpg",
+    "datasheetUrl": "/datasheets/PM007.pdf",
+    "featuresFi": [
+      "Kolme pyörimisnopeutta",
+      "Sen U-muotoinen muotoilu jäljittelee ihmisen käsin tekemää vaivausta ja tarjoaa kattavan hierontakokemuksen niskalle, hartioille ja selälle",
+      "Ergonomisen rakenteensa ansiosta se on monikäyttöinen laite, joka voi hieroa kehon alueita kuten hartiat, niska, selkä, reidet, vyötärö, vatsa, jalkaterät ja sääret",
+      "Se hieroo haluttua aluetta, rentouttaa lihaksia ja edistää palautumista kiihdyttämällä verenkiertoa",
+      "Voi säätää hieronnan voimakkuuden käsivarsien ympärillä olevien hihnojen avulla"
+    ],
+    "featuresEn": [
+      "Three rotation speeds",
+      "U-shaped design mimics a manual kneading massage for neck, shoulders and back.",
+      "Ergonomic multi-use design for shoulders, neck, back, thighs, waist, abdomen, feet and calves.",
+      "Massages the target area, relaxes muscles and aids recovery by boosting circulation.",
+      "Intensity adjustable via the arm straps."
+    ],
+    "featuresSv": [
+      "Tre rotationshastigheter",
+      "U-formad design efterliknar manuell knådning för nacke, axlar och rygg.",
+      "Ergonomisk mångfunktionell design för axlar, nacke, rygg, lår, midja, mage, fötter och vader.",
+      "Masserar önskat område, slappnar av muskler och stöder återhämtning genom ökad cirkulation.",
+      "Intensitet ställs med armremmarna."
+    ],
+    "featuresNo": [
+      "Tre rotasjonshastigheter",
+      "U-formet design etterligner manuell elting for nakke, skuldre og rygg.",
+      "Ergonomisk flerbruksdesign for skuldre, nakke, rygg, lår, midje, mage, føtter og legger.",
+      "Masserer ønsket område, slapper av muskler og støtter restitusjon ved økt blodsirkulasjon.",
+      "Intensitet justeres med armstroppene."
+    ],
+    "featuresEt": [
+      "Kolm pöörlemiskiirust",
+      "U-kujuline disain jäljendab käsitsi sõtkumist kaelale, õlgadele ja seljale.",
+      "Ergonoomiline mitmeotstarbeline seade õlgadele, kaelale, seljale, reitele, vöökohale, kõhule, jalgadele ja sääretele.",
+      "Masseerib soovitud piirkonda, lõdvestab lihaseid ja soodustab taastumist vereringet kiirendades.",
+      "Tugevust saab reguleerida käe rihmadega."
+    ]
+  },
+  {
+    "sku": "PM016E",
+    "imageUrl": "/images/products/PM016E.jpg",
+    "datasheetUrl": "/datasheets/PM016E.pdf",
+    "featuresFi": [
+      "Paketissa kaksi paria elektrodeja",
+      "Sopii myös muu merkkisiin kivunlievittäjiin"
+    ],
+    "featuresEn": [
+      "Two pairs of electrodes in the pack",
+      "Also fits other-brand TENS units"
+    ],
+    "featuresSv": [
+      "Två elektrodpar i förpackningen",
+      "Passar även andra TENS-märken"
+    ],
+    "featuresNo": [
+      "To elektrodepar i pakken",
+      "Passer også andre TENS-merker"
+    ],
+    "featuresEt": [
+      "Pakendis kaks elektroodipaari",
+      "Sobib ka teiste TENS-seadmetega"
+    ]
+  },
+  {
+    "sku": "PM023E",
+    "imageUrl": "/images/products/PM023E.jpg",
+    "datasheetUrl": "/datasheets/PM023E.pdf",
+    "featuresFi": [
+      "Paketissa kaksi paria elektrodeja"
+    ],
+    "featuresEn": [
+      "Two pairs of electrodes in the pack"
+    ],
+    "featuresSv": [
+      "Två elektrodpar i förpackningen"
+    ],
+    "featuresNo": [
+      "To elektrodepar i pakken"
+    ],
+    "featuresEt": [
+      "Pakendis kaks elektroodipaari"
+    ]
+  },
+  {
+    "sku": "PM034",
+    "imageUrl": "/images/products/PM034.jpg",
+    "datasheetUrl": "/datasheets/PM034.pdf",
+    "featuresFi": [
+      "Rentouttaa lihaksia ja lievittää stressiä",
+      "Hieroja aktivoi verenkiertoa, rentouttaa kipeytyneitä lihaksia",
+      "Lievittää niskakipuja, fibromyalgia kipuja, päänsärkyä, selkä-, jalka- sekä käsikipuja",
+      "Kolme eri voimakkuutta + erillinen ohjelma",
+      "Voimakas moottori, koko 16 x 9cm",
+      "Ladattava akku (1800mAh), käyttöaika 2 tuntia",
+      "USB-lataus"
+    ],
+    "featuresEn": [
+      "Relaxes muscles and relieves stress",
+      "Activates circulation and relaxes sore muscles.",
+      "Helps with neck, fibromyalgia, headache, back, leg and arm pain",
+      "Three intensity levels + extra programme",
+      "Powerful motor, size 16 × 9 cm",
+      "Rechargeable 1800 mAh battery, 2 h runtime",
+      "USB charging"
+    ],
+    "featuresSv": [
+      "Slappnar av muskler och lindrar stress",
+      "Aktiverar cirkulationen och slappnar av ömma muskler.",
+      "Lindrar nack-, fibromyalgi-, huvud-, rygg-, ben- och armsmärta",
+      "Tre intensitetsnivåer + extra program",
+      "Kraftig motor, storlek 16 × 9 cm",
+      "Uppladdningsbart 1800 mAh-batteri, 2 tim drift",
+      "USB-laddning"
+    ],
+    "featuresNo": [
+      "Slapper av muskler og lindrer stress",
+      "Aktiverer blodsirkulasjonen og slapper av ømme muskler.",
+      "Lindrer nakke-, fibromyalgi-, hode-, rygg-, ben- og armsmerter",
+      "Tre intensitetsnivåer + ekstra program",
+      "Kraftig motor, størrelse 16 × 9 cm",
+      "Oppladbart 1800 mAh-batteri, 2 t drift",
+      "USB-lading"
+    ],
+    "featuresEt": [
+      "Lõdvestab lihaseid ja leevendab stressi",
+      "Elustab vereringet ja lõdvestab kangeid lihaseid.",
+      "Leevendab kaela-, fibromüalgia-, pea-, selja-, jala- ja käevalu",
+      "Kolm tugevust + eraldi programm",
+      "Võimas mootor, suurus 16 × 9 cm",
+      "Laetav 1800 mAh aku, 2 t tööaeg",
+      "USB-laadimine"
+    ]
+  },
+  {
+    "sku": "PM038",
+    "imageUrl": "/images/products/PM038.jpg",
+    "datasheetUrl": "/datasheets/PM038.pdf",
+    "featuresFi": [
+      "Elvyttävä painehieronta reisille ja pohkeisiin",
+      "Supistuvat ja laajentuvat ilmatyynyt elvyttävät sekä kiihdyttävät verenkiertoa",
+      "Vähentää turvotusta, painontunnetta sekä pohkeiden lihasjännitystä",
+      "Auttaa suonikohjujen ehkäisyssä",
+      "Nostaa endorfiinin tasoa joka vähentää kipuja ja tuottaa hyvän olon tunnetta",
+      "Kolme eri ohjelmaa",
+      "Kolme eri voimakkuutta",
+      "Lämmitys",
+      "Akku 3.7V, 2200mAh",
+      "USB lataus"
+    ],
+    "featuresEn": [
+      "Reviving compression massage for thighs and calves.",
+      "Inflating air cushions revive and boost circulation.",
+      "Reduces swelling, heaviness and calf tension.",
+      "Helps prevent varicose veins.",
+      "Raises endorphin levels to ease pain and lift mood.",
+      "Three programmes",
+      "Three intensity levels",
+      "Heating",
+      "Battery 3.7 V, 2200 mAh",
+      "USB charging"
+    ],
+    "featuresSv": [
+      "Återhämtande tryckmassage för lår och vader.",
+      "Luftkuddar som blåses upp stimulerar cirkulationen.",
+      "Minskar svullnad, tyngdkänsla och vadspänning.",
+      "Hjälper mot åderbråck.",
+      "Höjer endorfinnivån, lindrar smärta och ger välbefinnande.",
+      "Tre program",
+      "Tre intensitetsnivåer",
+      "Värme",
+      "Batteri 3,7 V, 2200 mAh",
+      "USB-laddning"
+    ],
+    "featuresNo": [
+      "Opplivende trykkmassasje for lår og legger.",
+      "Luftputer som blåses opp stimulerer blodsirkulasjonen.",
+      "Reduserer hevelse, tyngdefølelse og leggspenning.",
+      "Hjelper mot åreknuter.",
+      "Øker endorfinnivået, lindrer smerte og gir velvære.",
+      "Tre programmer",
+      "Tre intensitetsnivåer",
+      "Varme",
+      "Batteri 3,7 V, 2200 mAh",
+      "USB-lading"
+    ],
+    "featuresEt": [
+      "Taastav surve massaaž reitele ja sääretele.",
+      "Täituvad õhkpadjad elustavad vereringet.",
+      "Vähendab turset, raskustunnet ja säärelihaspinget.",
+      "Aitab veenilaiendeid ennetada.",
+      "Tõstab endorfiinitaset, leevendab valu ja tekitab heaolutunnet.",
+      "Kolm programmi",
+      "Kolm tugevustaset",
+      "Soojendus",
+      "Aku 3,7 V, 2200 mAh",
+      "USB-laadimine"
+    ]
+  },
+  {
+    "sku": "PM705",
+    "imageUrl": "/images/products/PM705.jpg",
+    "datasheetUrl": "/datasheets/PM705.pdf",
+    "featuresFi": [
+      "Neljä hierontapäätä",
+      "8 eri nopeutta",
+      "Käyttö-aika 2-5t, latausaika 3.0t",
+      "7,4V. 2x 1800mAh akku",
+      "Sisältää USB-latausjohdon",
+      "Kätevä koko",
+      "Väri: harmaa"
+    ],
+    "featuresEn": [
+      "Four massage heads",
+      "8 speeds",
+      "Runtime 2–5 h, charge 3.0 h",
+      "7.4 V, 2 × 1800 mAh battery",
+      "USB charging cable included",
+      "Handy size",
+      "Colour: grey"
+    ],
+    "featuresSv": [
+      "Fyra massagehuvuden",
+      "8 hastigheter",
+      "2–5 tim drift, 3,0 tim laddning",
+      "7,4 V, 2 × 1800 mAh",
+      "USB-laddkabel ingår",
+      "Liten storlek",
+      "Färg: grå"
+    ],
+    "featuresNo": [
+      "Fire massasjehoder",
+      "8 hastigheter",
+      "2–5 t drift, 3,0 t lading",
+      "7,4 V, 2 × 1800 mAh",
+      "USB-ladekabel medfølger",
+      "Håndterlig størrelse",
+      "Farge: grå"
+    ],
+    "featuresEt": [
+      "Neli massaažipead",
+      "8 kiirust",
+      "Tööaeg 2–5 t, laadimine 3,0 t",
+      "7,4 V, 2 × 1800 mAh",
+      "USB-laadimiskaabel kuulub",
+      "Käepärane suurus",
+      "Värv: hall"
+    ]
+  },
+  {
+    "sku": "PM706",
+    "imageUrl": "/images/products/PM706.jpg",
+    "datasheetUrl": "/datasheets/PM706.pdf",
+    "featuresFi": [
+      "Neljä hierontapäätä",
+      "6 eri nopeutta",
+      "Käyttö-aika 3t, latausaika 2.5-3t",
+      "7,4V 1800mAh akku",
+      "Teho 20W",
+      "Sisältää USB-latausjohdon"
+    ],
+    "featuresEn": [
+      "Four massage heads",
+      "6 speeds",
+      "Runtime 3 h, charge 2.5–3 h",
+      "7.4 V 1800 mAh battery",
+      "Power 20W",
+      "USB charging cable included"
+    ],
+    "featuresSv": [
+      "Fyra massagehuvuden",
+      "6 hastigheter",
+      "3 tim drift, 2,5–3 tim laddning",
+      "7,4 V 1800 mAh",
+      "Effekt 20W",
+      "USB-laddkabel ingår"
+    ],
+    "featuresNo": [
+      "Fire massasjehoder",
+      "6 hastigheter",
+      "3 t drift, 2,5–3 t lading",
+      "7,4 V 1800 mAh",
+      "Effekt 20W",
+      "USB-ladekabel medfølger"
+    ],
+    "featuresEt": [
+      "Neli massaažipead",
+      "6 kiirust",
+      "Tööaeg 3 t, laadimine 2,5–3 t",
+      "7,4 V 1800 mAh",
+      "Võimsus 20W",
+      "USB-laadimiskaabel kuulub"
+    ]
+  },
+  {
+    "sku": "PM848C",
+    "imageUrl": "/images/products/PM848C.jpg",
+    "datasheetUrl": "/datasheets/PM848C.pdf",
+    "featuresFi": [
+      "LCD näyttö",
+      "WHO riskikategoria indikaattori",
+      "Ilmoittaa epäsäännölliset sydänlyönnit",
+      "2 eri käyttäjää, 99 + 99 muistipaikkaa",
+      "Mittausalue 0~ 299mmHg",
+      "Pulssi 40 ~ 180 lyöntiä /minuutissa",
+      "Viimeisen kolmen mittauksen keskiarvo",
+      "Automaattinen virrankatkaisu",
+      "Näyttö 58 x 48mm",
+      "Käyttää 4 x AA paristoa"
+    ],
+    "featuresEn": [
+      "LCD display",
+      "WHO risk-category indicator",
+      "Detects irregular heartbeat",
+      "2 users, 99 + 99 memories",
+      "Mittausalue 0~ 299mmHg",
+      "Pulse 40–180 bpm",
+      "Average of last three readings",
+      "automatic power-off",
+      "Display 58 × 48 mm",
+      "Uses 4 × AA batteries"
+    ],
+    "featuresSv": [
+      "LCD-display",
+      "WHO-riskkategoriindikator",
+      "Varnar för oregelbunden hjärtrytm",
+      "2 användare, 99 + 99 minnen",
+      "Mittausalue 0~ 299mmHg",
+      "Puls 40–180 slag/min",
+      "Medel av tre senaste mätningar",
+      "automatisk avstängning",
+      "Display 58 × 48 mm",
+      "4 × AA-batterier"
+    ],
+    "featuresNo": [
+      "LCD-display",
+      "WHO-risikokategoriindikator",
+      "Varsler uregelmessig hjerterytme",
+      "2 brukere, 99 + 99 minner",
+      "Mittausalue 0~ 299mmHg",
+      "Puls 40–180 slag/min",
+      "Gjennomsnitt av tre siste målinger",
+      "automatisk avslutning",
+      "Display 58 × 48 mm",
+      "4 × AA-batterier"
+    ],
+    "featuresEt": [
+      "LCD-näidik",
+      "WHO riskikategooria indikaator",
+      "Tuvastab ebaregulaarse südamelöögi",
+      "2 kasutajat, 99 + 99 mälukohta",
+      "Mittausalue 0~ 299mmHg",
+      "Pulss 40–180 lööki/min",
+      "Viimase kolme mõõtmise keskmine",
+      "automaatne väljalülitus",
+      "Näidik 58 × 48 mm",
+      "4 × AA patareid"
+    ]
+  },
+  {
+    "sku": "PS42",
+    "imageUrl": "/images/products/PS42.jpg",
+    "datasheetUrl": "/datasheets/PS42.pdf",
+    "featuresFi": [
+      "Puhdistaa hampaat ja poistaa plakkia tehokkaasti",
+      "Kolme nopeutta, normaali, hellävarainen ja pulssitoiminto",
+      "Eri toiminnoille on oma merkkivalo",
+      "IPX67 suojausluokka sähköhammasharjalle",
+      "Latauslaite sisältyy pakkaukseen",
+      "Sisältää yhden vaihtohammasharjan",
+      "Yhteensopiva Prego Sanigum PS44, PS45, PS46 vaihtoharjan kanssa",
+      "Yhteensopiva Oral-B vaihtoharjan kanssa",
+      "(Oral-B on Braun GMBH rekisteröity tavaramerkki)"
+    ],
+    "featuresEn": [
+      "Puhdistaa hampaat ja poistaa plakkia tehokkaasti",
+      "Three speeds: normal, gentle and pulse",
+      "Dedicated indicator for each mode",
+      "IPX67 rating for the electric toothbrush",
+      "Charger included",
+      "Includes one replacement brush head",
+      "Compatible with Prego Sanigum PS44, PS45, PS46 heads",
+      "Compatible with Oral-B brush heads",
+      "(Oral-B is a registered trademark of Braun GmbH)"
+    ],
+    "featuresSv": [
+      "Puhdistaa hampaat ja poistaa plakkia tehokkaasti",
+      "Tre hastigheter: normal, skonsam och puls",
+      "Egen indikator för varje läge",
+      "IPX67-klassning för eltandborsten",
+      "Laddare medföljer",
+      "En reservborste ingår",
+      "Kompatibel med Prego Sanigum PS44, PS45, PS46",
+      "Kompatibel med Oral-B-borstar",
+      "(Oral-B är ett registrerat varumärke tillhörande Braun GmbH)"
+    ],
+    "featuresNo": [
+      "Puhdistaa hampaat ja poistaa plakkia tehokkaasti",
+      "Tre hastigheter: normal, skånsom og puls",
+      "Egen indikator for hver modus",
+      "IPX67-klassifisering for eltannbørsten",
+      "Lader medfølger",
+      "Ett reservehode inngår",
+      "Kompatibel med Prego Sanigum PS44, PS45, PS46",
+      "Kompatibel med Oral-B-hoder",
+      "(Oral-B er et registrert varemerke tilhørende Braun GmbH)"
+    ],
+    "featuresEt": [
+      "Puhdistaa hampaat ja poistaa plakkia tehokkaasti",
+      "Kolm kiirust: tavaline, õrn ja impulss",
+      "Igal režiimil oma märgutuli",
+      "IPX67 kaitseaste elektrilisele hambaharjale",
+      "Laadija kuulub komplekti",
+      "Üks varuhari kuulub komplekti",
+      "Ühildub Prego Sanigum PS44, PS45, PS46 harjadega",
+      "Ühildub Oral-B harjapeadega",
+      "(Oral-B on Braun GmbH registreeritud kaubamärk)"
+    ]
+  },
+  {
+    "sku": "PS44",
+    "imageUrl": "/images/products/PS44.jpg",
+    "datasheetUrl": "/datasheets/PS44.pdf",
+    "featuresFi": [
+      "4 kpl",
+      "Blisterpakkaus",
+      "Ennaltaehkäisee ien sairauksia",
+      "Poistaa värjääntymiä ien rajasta",
+      "Erinomainen plakin poistaja",
+      "Suomalainen patentti"
+    ],
+    "featuresEn": [
+      "4 pcs",
+      "Blister pack",
+      "Helps prevent gum disease",
+      "Removes stains along the gum line",
+      "Excellent plaque removal",
+      "Finnish patent"
+    ],
+    "featuresSv": [
+      "4 st",
+      "Blisterförpackning",
+      "Förebygger tandköttssjukdom",
+      "Tar bort missfärgningar vid tandköttskanten",
+      "Utmärkt plackborttagning",
+      "Finskt patent"
+    ],
+    "featuresNo": [
+      "4 stk",
+      "Blisterpakning",
+      "Forebygger tannkjøttsykdom",
+      "Fjerner misfarging ved tannkjøttkanten",
+      "Utmerket plakkfjerning",
+      "Finsk patent"
+    ],
+    "featuresEt": [
+      "4 tk",
+      "Blisterpakend",
+      "Ennetab igemehaigusi",
+      "Eemaldab plekid igemepiirilt",
+      "Suurepärane katu eemaldaja",
+      "Soome patent"
+    ]
+  },
+  {
+    "sku": "PS45",
+    "imageUrl": "/images/products/PS45.jpg",
+    "datasheetUrl": "/datasheets/PS45.pdf",
+    "featuresFi": [
+      "Sulcus (ienvaon) vaihtoharja",
+      "4 kpl",
+      "Blisterpakkaus",
+      "Ennaltaehkäisee ien sairauksia",
+      "Poistaa värjääntymiä ien rajasta",
+      "Erinomainen plakin poistaja",
+      "Ikenen tehopuhdistaja",
+      "Suomalainen patentti"
+    ],
+    "featuresEn": [
+      "Sulcus (gum-line) replacement head",
+      "4 pcs",
+      "Blister pack",
+      "Helps prevent gum disease",
+      "Removes stains along the gum line",
+      "Excellent plaque removal",
+      "Gumline power cleaner",
+      "Finnish patent"
+    ],
+    "featuresSv": [
+      "Sulcus (tandköttsficka) reservborste",
+      "4 st",
+      "Blisterförpackning",
+      "Förebygger tandköttssjukdom",
+      "Tar bort missfärgningar vid tandköttskanten",
+      "Utmärkt plackborttagning",
+      "Tandköttsrengörare",
+      "Finskt patent"
+    ],
+    "featuresNo": [
+      "Sulcus (tannkjøttlomme) reservehode",
+      "4 stk",
+      "Blisterpakning",
+      "Forebygger tannkjøttsykdom",
+      "Fjerner misfarging ved tannkjøttkanten",
+      "Utmerket plakkfjerning",
+      "Tannkjøttrenser",
+      "Finsk patent"
+    ],
+    "featuresEt": [
+      "Sulcus (igemevao) varuhari",
+      "4 tk",
+      "Blisterpakend",
+      "Ennetab igemehaigusi",
+      "Eemaldab plekid igemepiirilt",
+      "Suurepärane katu eemaldaja",
+      "Igemete süvapuhastus",
+      "Soome patent"
+    ]
+  },
+  {
+    "sku": "PS46",
+    "imageUrl": "/images/products/PS46.jpg",
+    "datasheetUrl": "/datasheets/PS46.pdf",
+    "featuresFi": [
+      "4 kpl, 2 kpl sinistä ja 2 kpl punaista",
+      "Blisterpakkaus",
+      "Ennaltaehkäisee ien sairauksia",
+      "Poistaa värjääntymiä ien rajasta",
+      "Erinomainen plakin poistaja",
+      "Suomalainen patentti"
+    ],
+    "featuresEn": [
+      "4 pcs, 2 blue and 2 red",
+      "Blister pack",
+      "Helps prevent gum disease",
+      "Removes stains along the gum line",
+      "Excellent plaque removal",
+      "Finnish patent"
+    ],
+    "featuresSv": [
+      "4 st, 2 blå och 2 röda",
+      "Blisterförpackning",
+      "Förebygger tandköttssjukdom",
+      "Tar bort missfärgningar vid tandköttskanten",
+      "Utmärkt plackborttagning",
+      "Finskt patent"
+    ],
+    "featuresNo": [
+      "4 stk, 2 blå og 2 røde",
+      "Blisterpakning",
+      "Forebygger tannkjøttsykdom",
+      "Fjerner misfarging ved tannkjøttkanten",
+      "Utmerket plakkfjerning",
+      "Finsk patent"
+    ],
+    "featuresEt": [
+      "4 tk, 2 sinist ja 2 punast",
+      "Blisterpakend",
+      "Ennetab igemehaigusi",
+      "Eemaldab plekid igemepiirilt",
+      "Suurepärane katu eemaldaja",
+      "Soome patent"
+    ]
+  },
+  {
+    "sku": "LA4",
+    "imageUrl": "/images/products/LA4.jpg",
+    "datasheetUrl": "/datasheets/LA4.pdf",
+    "featuresFi": [
+      "Laminoi luottokorttikoosta A4-kokoon asti",
+      "Telojen vapautustoiminto",
+      "Laminointitaskun paksuus 80–125 micron",
+      "Kuumalaminointi",
+      "Hiljainen käyntiääni",
+      "Koko: 370 × 90 × 60 mm"
+    ],
+    "featuresEn": [
+      "Laminates from credit-card size up to A4",
+      "Roller release function",
+      "Pouch thickness 80–125 micron",
+      "Hot lamination",
+      "Quiet operation",
+      "Size: 370 × 90 × 60 mm"
+    ],
+    "featuresSv": [
+      "Laminerar från kreditkortsstorlek upp till A4",
+      "Rullfrigöring",
+      "Fickans tjocklek 80–125 micron",
+      "Varmlaminering",
+      "Tyst gång",
+      "Mått: 370 × 90 × 60 mm"
+    ],
+    "featuresNo": [
+      "Laminerer fra kredittkortstørrelse opptil A4",
+      "Rullfrigjøring",
+      "Lommetykkelse 80–125 micron",
+      "Varmlaminering",
+      "Stille drift",
+      "Mål: 370 × 90 × 60 mm"
+    ],
+    "featuresEt": [
+      "Lamineerib krediitkaardi suurusest kuni A4-ni",
+      "Rullide vabastusfunktsioon",
+      "Kile paksus 80–125 mikronit",
+      "Kuumlamineerimine",
+      "Vaikne töö",
+      "Mõõt: 370 × 90 × 60 mm"
+    ]
+  },
+  {
+    "sku": "LA4KALVO",
+    "imageUrl": "/images/products/LA4KALVO.jpg",
+    "datasheetUrl": "/datasheets/LA4KALVO.pdf",
+    "featuresFi": [
+      "A4 216 × 303 mm",
+      "2 × 125 micron (kiiltävä)",
+      "100 kpl paketissa",
+      "Vedenkestävä",
+      "Kierrätettävä"
+    ],
+    "featuresEn": [
+      "A4 216 × 303 mm",
+      "2 × 125 micron gloss",
+      "100 pouches per pack",
+      "Water resistant",
+      "Recyclable"
+    ],
+    "featuresSv": [
+      "A4 216 × 303 mm",
+      "2 × 125 micron, blank",
+      "100 st per förpackning",
+      "Vattentålig",
+      "Återvinningsbar"
+    ],
+    "featuresNo": [
+      "A4 216 × 303 mm",
+      "2 × 125 micron, blank",
+      "100 stk per pakke",
+      "Vannavvisende",
+      "Resirkulerbar"
+    ],
+    "featuresEt": [
+      "A4 216 × 303 mm",
+      "2 × 125 mikronit, läikiv",
+      "100 tk pakendis",
+      "Veekindel",
+      "Taaskasutatav"
+    ]
+  },
+  {
+    "sku": "S056D",
+    "imageUrl": "/images/products/S056D.jpg",
+    "datasheetUrl": "/datasheets/S056D.pdf",
+    "featuresFi": [
+      "Automaattinen käynnistys / pysäytys",
+      "Syöttöaukon leveys 220mm",
+      "Tuhoaa 6 arkkia kerralla (70g/m2)",
+      "Peruutustoiminto",
+      "Säiliön koko 10 litraa"
+    ],
+    "featuresEn": [
+      "automatic start / stop",
+      "Feed width 220 mm",
+      "Shreds 6 sheets at once (70 g/m²)",
+      "Reverse function",
+      "Bin capacity 10 litres"
+    ],
+    "featuresSv": [
+      "automatisk start / stopp",
+      "Inmatningsbredd 220 mm",
+      "Hackar 6 ark åt gången (70 g/m²)",
+      "Backfunktion",
+      "Behållare 10 liter"
+    ],
+    "featuresNo": [
+      "automatisk start / stopp",
+      "Matebredde 220 mm",
+      "Makulerer 6 ark om gangen (70 g/m²)",
+      "Reversfunksjon",
+      "Beholder 10 liter"
+    ],
+    "featuresEt": [
+      "automaatne start / stopp",
+      "Söötmisava laius 220 mm",
+      "Purustab 6 lehte korraga (70 g/m²)",
+      "Tagasikäik",
+      "Mahuti 10 liitrit"
+    ]
+  }
+]

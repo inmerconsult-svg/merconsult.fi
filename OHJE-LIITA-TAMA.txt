@@ -1,0 +1,29 @@
+PREGO B2B — näin korvaat vanhan repon (Windows)
+
+GitHubin nettisivu EI pura zip-tiedostoa. Älä lataa tätä .zip-tiedostoa repoon.
+Liitä sen SISÄLTÖ repon kansioon koneella.
+
+1. Pura tämä zip (hiiri oikealla → Pura kaikki).
+   Aukeaa kansio jossa on src, public, package.json.
+
+2. GitHub Desktop → File → Clone repository
+   → valitse Prego-repo (inmerconsult-svg) → Clone.
+   Muista mihin kansioon se tallentuu (yleensä Tiedostot\GitHub\...).
+
+3. Avaa Windowsissa KAKSI ikkunaa:
+   - purettu uusi kansio
+   - GitHubista kloonattu repon kansio
+
+4. Uudessa kansiossa: Ctrl+A (valitse kaikki) → Ctrl+C
+   Repon kansiossa: Ctrl+V
+   → Korvaa tiedostot / kyllä kaikille.
+
+5. Poista repon kansiosta tiedosto  prego-b2b-latest.zip  jos se on vielä siellä.
+
+6. GitHub Desktop: näkyy satoja muuttuneita tiedostoja
+   → Summary: Prego v3
+   → Commit to main → Push origin.
+
+7. Vercel rakentaa automaattisesti. Valmis kun otsikko on:
+   "Testattu laatu, käyttömukavuus ja edullinen hinta"
+   ja valikossa on Yhteystiedot.

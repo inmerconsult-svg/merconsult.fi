@@ -1,0 +1,29 @@
+PREGO B2B — tyhjä GitHub-repo + Vercel
+
+1. GitHub.com → New repository
+   Nimi: prego-b2b
+   Private
+   ÄLÄ rastita README / .gitignore / license (tyhjä repo)
+
+2. GitHub Desktop → Clone repository → prego-b2b
+   (tyhjä kansio koneelle)
+
+3. Pura tämä zip. Saat kansion prego-b2b jossa on src, public, package.json.
+
+4. Kopioi KAIKKI sen sisältö (Ctrl+A, Ctrl+C) kloonattuun tyhjään kansioon (Ctrl+V).
+   Repossa pitää nyt näkyä src, public, package.json — ei zip-tiedostoa.
+
+5. GitHub Desktop → Commit (Prego) → Push origin.
+
+6. Vercel → Add New Project → Import prego-b2b
+   TAI vanhassa Prego-projektissa: Settings → Git → Disconnect
+   sitten Connect Git Repository → prego-b2b
+
+7. Environment Variables (jos uusi Vercel-projekti):
+   DATABASE_URL
+   BETTER_AUTH_SECRET
+   BETTER_AUTH_URL = https://<uusi>.vercel.app
+
+Valmis kun etusivulla lukee:
+Testattu laatu, käyttömukavuus ja edullinen hinta
+ja valikossa on Yhteystiedot.
