@@ -1,6 +1,7 @@
-import { existsSync } from "node:fs";
+import { existsSync, readdirSync } from "node:fs";
 import { readFile } from "node:fs/promises";
-import { join } from "node:path";
+import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
 import { auth } from "@/lib/auth/server";
 import { getSql } from "@/lib/db";
 import datasheetFilenames from "@/data/datasheet-filenames.json";
@@ -13,8 +14,9 @@ function fileName(raw: string): string | null {
   const trimmed = base.trim();
   const sku = trimmed.replace(/\.pdf$/i, "").toUpperCase();
   const name = `${sku}.pdf`;
-  if (!SAFE.test(name) && !SAFE.test(trimmed)) return null;
-  return SAFE.test(name) ? name : trimmed;
+  if (SAFE.test(name)) return name;
+  if (SAFE.test(trimmed)) return trimmed;
+  return null;
 }
 
 function skuFromName(name: string): string {
@@ -22,8 +24,7 @@ function skuFromName(name: string): string {
 }
 
 function downloadName(name: string): string {
-  const sku = skuFromName(name);
-  return NAMES[sku] || name;
+  return NAMES[skuFromName(name)] || name;
 }
 
 function contentDisposition(filename: string): string {
@@ -32,44 +33,98 @@ function contentDisposition(filename: string): string {
   return `attachment; filename="${ascii}"; filename*=UTF-8''${encoded}`;
 }
 
+function toBuffer(data: unknown): Buffer | null {
+  if (data == null) return null;
+  if (Buffer.isBuffer(data)) return data;
+  if (data instanceof Uint8Array) return Buffer.from(data);
+  if (data instanceof ArrayBuffer) return Buffer.from(data);
+  if (ArrayBuffer.isView(data)) return Buffer.from(data.buffer, data.byteOffset, data.byteLength);
+  if (typeof data === "object" && data && "default" in data) return toBuffer((data as { default: unknown }).default);
+  if (typeof data === "string") {
+    if (data.startsWith("%PDF")) return Buffer.from(data, "binary");
+    const b64 = Buffer.from(data, "base64");
+    if (b64.length > 4 && b64.subarray(0, 5).toString() === "%PDF-") return b64;
+    const latin = Buffer.from(data, "latin1");
+    if (latin.subarray(0, 5).toString() === "%PDF-") return latin;
+  }
+  return null;
+}
+
+function moduleDir(): string {
+  try {
+    return dirname(fileURLToPath(import.meta.url));
+  } catch {
+    return process.cwd();
+  }
+}
+
+function datasheetRoots(): string[] {
+  const cwd = process.cwd();
+  const here = moduleDir();
+  return [
+    join(cwd, "datasheets"),
+    join(cwd, "private", "datasheets"),
+    join(cwd, "public", "datasheets"),
+    join(here, "datasheets"),
+    join(here, "..", "datasheets"),
+    join(here, "..", "..", "datasheets"),
+    join("/var/task", "datasheets"),
+    join("/var/task", "private", "datasheets"),
+  ];
+}
+
 async function readFromDisk(name: string): Promise<Buffer | null> {
   const sku = skuFromName(name);
-  const candidates = Array.from(new Set([name, `${sku}.pdf`, name.toLowerCase(), name.toUpperCase()]));
-  const roots = [
-    join(process.cwd(), "private", "datasheets"),
-    join(process.cwd(), "public", "datasheets"),
-  ];
-  for (const root of roots) {
-    for (const candidate of candidates) {
-      const path = join(root, candidate);
+  const wanted = new Set([name, `${sku}.pdf`, name.toLowerCase(), `${sku.toLowerCase()}.pdf`]);
+  for (const root of datasheetRoots()) {
+    try {
+      if (!existsSync(root)) continue;
+      const entries = readdirSync(root);
+      const match =
+        entries.find((f) => wanted.has(f)) ||
+        entries.find((f) => f.toUpperCase() === `${sku}.PDF`);
+      if (!match) continue;
+      const path = join(root, match);
       if (!path.startsWith(root)) continue;
-      if (existsSync(path)) return readFile(path);
+      return await readFile(path);
+    } catch (err) {
+      console.error("[datasheet] disk", root, err);
     }
   }
   return null;
 }
 
+type StorageLike = {
+  getKeys?: () => Promise<string[]>;
+  getItem?: (key: string) => Promise<unknown>;
+  getItemRaw?: (key: string) => Promise<unknown>;
+};
+
 async function readFromNitro(name: string): Promise<Buffer | null> {
   try {
-    const spec: string = "nitropack/runtime";
-    const mod = (await import(spec)) as {
-      useStorage?: (base?: string) => { getItemRaw: (key: string) => Promise<unknown> };
-    };
-    const useStorage = mod.useStorage;
-    if (!useStorage) return null;
+    const { useStorage } = await import("nitro/storage");
     const sku = skuFromName(name);
-    const keys = Array.from(new Set([name, `${sku}.pdf`]));
-    const storages = [useStorage("assets:datasheets"), useStorage("assets"), useStorage()];
-    for (const storage of storages) {
-      for (const key of keys) {
-        const variants = [key, `datasheets:${key}`, `datasheets/${key}`];
-        for (const variant of variants) {
-          const data = await storage.getItemRaw(variant);
-          if (!data) continue;
-          if (Buffer.isBuffer(data)) return data;
-          if (data instanceof Uint8Array) return Buffer.from(data);
-          if (typeof data === "string") return Buffer.from(data);
+    const bases = ["assets:datasheets", "assets/datasheets", "assets", ""];
+    const keys = [`${sku}.pdf`, name, `${sku.toLowerCase()}.pdf`, `datasheets/${sku}.pdf`, `datasheets:${sku}.pdf`];
+    for (const base of bases) {
+      const storage = (base ? useStorage(base) : useStorage()) as StorageLike;
+      if (typeof storage.getKeys === "function") {
+        try {
+          const listed = await storage.getKeys();
+          const hit = listed.find((k) => k.toUpperCase().endsWith(`${sku}.PDF`) || k.toUpperCase() === `${sku}.PDF`);
+          if (hit) {
+            const raw = (await storage.getItemRaw?.(hit)) ?? (await storage.getItem?.(hit));
+            const buf = toBuffer(raw);
+            if (buf) return buf;
+          }
+        } catch {
+          /* try explicit keys */
         }
+      }
+      for (const key of keys) {
+        const raw = (await storage.getItemRaw?.(key)) ?? (await storage.getItem?.(key));
+        const buf = toBuffer(raw);
+        if (buf) return buf;
       }
     }
   } catch (err) {
@@ -99,9 +154,12 @@ export async function serveDatasheet(request: Request, rawName: string): Promise
   }
 
   const name = fileName(rawName);
-  if (!name) return new Response("Not found", { status: 404 });
+  if (!name) return new Response("Tuotekorttia ei löydy", { status: 404 });
   const buf = await readPdf(name);
-  if (!buf) return new Response("Not found", { status: 404 });
+  if (!buf) {
+    console.error("[datasheet] missing", name, "cwd=", process.cwd(), "roots=", datasheetRoots());
+    return new Response("Tuotekorttia ei löydy", { status: 404 });
+  }
 
   return new Response(new Uint8Array(buf), {
     status: 200,

@@ -10,7 +10,7 @@ export const Route = createFileRoute("/api/datasheets/$file")({
           return await serveDatasheet(request, params.file);
         } catch (err) {
           console.error("[datasheet]", err);
-          return new Response("Datasheet unavailable", { status: 500 });
+          return new Response("Tuotekorttia ei voitu ladata", { status: 500 });
         }
       },
     },
