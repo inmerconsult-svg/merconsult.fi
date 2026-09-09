@@ -9,6 +9,11 @@ import datasheetFilenames from "@/data/datasheet-filenames.json";
 const SAFE = /^[A-Za-z0-9._-]{1,80}$/;
 const NAMES = datasheetFilenames as Record<string, string>;
 
+const bundled = import.meta.glob("../../../private/datasheets/*.pdf") as Record<
+  string,
+  () => Promise<{ default: Uint8Array | ArrayBuffer | { default?: Uint8Array } }>
+>;
+
 function fileName(raw: string): string | null {
   const base = decodeURIComponent(raw || "").split("/").pop() || "";
   const trimmed = base.trim();
@@ -38,14 +43,11 @@ function toBuffer(data: unknown): Buffer | null {
   if (Buffer.isBuffer(data)) return data;
   if (data instanceof Uint8Array) return Buffer.from(data);
   if (data instanceof ArrayBuffer) return Buffer.from(data);
-  if (ArrayBuffer.isView(data)) return Buffer.from(data.buffer, data.byteOffset, data.byteLength);
-  if (typeof data === "object" && data && "default" in data) return toBuffer((data as { default: unknown }).default);
-  if (typeof data === "string") {
-    if (data.startsWith("%PDF")) return Buffer.from(data, "binary");
-    const b64 = Buffer.from(data, "base64");
-    if (b64.length > 4 && b64.subarray(0, 5).toString() === "%PDF-") return b64;
-    const latin = Buffer.from(data, "latin1");
-    if (latin.subarray(0, 5).toString() === "%PDF-") return latin;
+  if (ArrayBuffer.isView(data)) {
+    return Buffer.from(data.buffer, data.byteOffset, data.byteLength);
+  }
+  if (typeof data === "object" && data && "default" in data) {
+    return toBuffer((data as { default: unknown }).default);
   }
   return null;
 }
@@ -66,9 +68,8 @@ function datasheetRoots(): string[] {
     join(cwd, "private", "datasheets"),
     join(cwd, "public", "datasheets"),
     join(here, "datasheets"),
-    join(here, "..", "datasheets"),
-    join(here, "..", "..", "datasheets"),
     join("/var/task", "datasheets"),
+    join("/var/task", "public", "datasheets"),
     join("/var/task", "private", "datasheets"),
   ];
 }
@@ -79,10 +80,7 @@ async function readFromDisk(name: string): Promise<Buffer | null> {
   for (const root of datasheetRoots()) {
     try {
       if (!existsSync(root)) continue;
-      const entries = readdirSync(root);
-      const match =
-        entries.find((f) => wanted.has(f)) ||
-        entries.find((f) => f.toUpperCase() === `${sku}.PDF`);
+      const match = readdirSync(root).find((f) => wanted.has(f) || f.toUpperCase() === `${sku}.PDF`);
       if (!match) continue;
       const path = join(root, match);
       if (!path.startsWith(root)) continue;
@@ -94,47 +92,42 @@ async function readFromDisk(name: string): Promise<Buffer | null> {
   return null;
 }
 
-type StorageLike = {
-  getKeys?: () => Promise<string[]>;
-  getItem?: (key: string) => Promise<unknown>;
-  getItemRaw?: (key: string) => Promise<unknown>;
-};
-
-async function readFromNitro(name: string): Promise<Buffer | null> {
+async function readFromBundle(name: string): Promise<Buffer | null> {
+  const sku = skuFromName(name);
+  const needle = `/${sku}.pdf`.toLowerCase();
+  const key = Object.keys(bundled).find((k) => k.replace(/\\/g, "/").toLowerCase().endsWith(needle));
+  if (!key) return null;
   try {
-    const { useStorage } = await import("nitro/storage");
-    const sku = skuFromName(name);
-    const bases = ["assets:datasheets", "assets/datasheets", "assets", ""];
-    const keys = [`${sku}.pdf`, name, `${sku.toLowerCase()}.pdf`, `datasheets/${sku}.pdf`, `datasheets:${sku}.pdf`];
-    for (const base of bases) {
-      const storage = (base ? useStorage(base) : useStorage()) as StorageLike;
-      if (typeof storage.getKeys === "function") {
-        try {
-          const listed = await storage.getKeys();
-          const hit = listed.find((k) => k.toUpperCase().endsWith(`${sku}.PDF`) || k.toUpperCase() === `${sku}.PDF`);
-          if (hit) {
-            const raw = (await storage.getItemRaw?.(hit)) ?? (await storage.getItem?.(hit));
-            const buf = toBuffer(raw);
-            if (buf) return buf;
-          }
-        } catch {
-          /* try explicit keys */
-        }
-      }
-      for (const key of keys) {
-        const raw = (await storage.getItemRaw?.(key)) ?? (await storage.getItem?.(key));
-        const buf = toBuffer(raw);
-        if (buf) return buf;
-      }
-    }
+    const mod = await bundled[key]();
+    return toBuffer(mod) || toBuffer(mod?.default);
   } catch (err) {
-    console.error("[datasheet] nitro storage", err);
+    console.error("[datasheet] bundle", key, err);
+    return null;
   }
-  return null;
 }
 
-async function readPdf(name: string): Promise<Buffer | null> {
-  return (await readFromDisk(name)) || (await readFromNitro(name));
+async function readFromPublicUrl(request: Request, name: string): Promise<Buffer | null> {
+  try {
+    const url = new URL(`/datasheets/${encodeURIComponent(name)}`, request.url);
+    const res = await fetch(url, { redirect: "manual" });
+    if (!res.ok) return null;
+    const type = res.headers.get("content-type") || "";
+    if (!type.includes("pdf") && !type.includes("octet-stream")) return null;
+    const buf = Buffer.from(await res.arrayBuffer());
+    if (buf.length < 8 || buf.subarray(0, 4).toString() !== "%PDF") return null;
+    return buf;
+  } catch (err) {
+    console.error("[datasheet] public url", err);
+    return null;
+  }
+}
+
+async function readPdf(name: string, request: Request): Promise<Buffer | null> {
+  return (
+    (await readFromDisk(name)) ||
+    (await readFromBundle(name)) ||
+    (await readFromPublicUrl(request, name))
+  );
 }
 
 export async function serveDatasheet(request: Request, rawName: string): Promise<Response> {
@@ -155,9 +148,9 @@ export async function serveDatasheet(request: Request, rawName: string): Promise
 
   const name = fileName(rawName);
   if (!name) return new Response("Tuotekorttia ei löydy", { status: 404 });
-  const buf = await readPdf(name);
+  const buf = await readPdf(name, request);
   if (!buf) {
-    console.error("[datasheet] missing", name, "cwd=", process.cwd(), "roots=", datasheetRoots());
+    console.error("[datasheet] missing", name, "cwd=", process.cwd());
     return new Response("Tuotekorttia ei löydy", { status: 404 });
   }
 
